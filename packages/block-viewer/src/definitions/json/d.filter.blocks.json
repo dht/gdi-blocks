@@ -1,0 +1,19 @@
+{
+    "id": "BlockFilter",
+    "fields": [
+        {
+            "id": "tags",
+            "title": "Tags",
+            "cellType": "tags",
+            "optionSelectorId": "$blockTags",
+            "allowMultiple": false
+        }
+    ],
+    "sort": [
+        {
+            "id": "name",
+            "text": "Name",
+            "value": "name"
+        }
+    ]
+}

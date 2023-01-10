@@ -1,0 +1,118 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "ES2020",
+        "module": "ES2022",
+        "lib": [
+            "DOM",
+            "ES2020",
+            "WebWorker"
+        ],
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationDir": "dist/dts",
+        "strict": true,
+        "skipLibCheck": true,
+        "types": [
+            "types-base",
+            "@gdi/types",
+            "@types/jest",
+            "vite/client"
+        ],
+        "jsx": "react-jsx",
+        "baseUrl": "../../",
+        "paths": {
+            "@gdi/block-base": [
+                "packages/block-base"
+            ],
+            "@gdi/block-card-ah4j1": [
+                "blocks/card/block-card-ah4j1"
+            ],
+            "@gdi/block-apps-jf84j": [
+                "blocks/gdi/block-apps-jf84j"
+            ],
+            "@gdi/block-features-j4k1h": [
+                "blocks/gdi/block-features-j4k1h"
+            ],
+            "@gdi/block-footer-ajk34": [
+                "blocks/gdi/block-footer-ajk34"
+            ],
+            "@gdi/block-gallery-ui5873": [
+                "blocks/gdi/block-gallery-ui5873"
+            ],
+            "@gdi/block-hero-ajh53": [
+                "blocks/gdi/block-hero-ajh53"
+            ],
+            "@gdi/block-top-41hj5": [
+                "blocks/gdi/block-top-41hj5"
+            ],
+            "@gdi/block-twins-j1j43": [
+                "blocks/gdi/block-twins-j1j43"
+            ],
+            "@gdi/block-cta-uiey3": [
+                "blocks/kickstarter/block-cta-uiey3"
+            ],
+            "@gdi/block-divider-aku34": [
+                "blocks/kickstarter/block-divider-aku34"
+            ],
+            "@gdi/block-footer-ui4y2": [
+                "blocks/kickstarter/block-footer-ui4y2"
+            ],
+            "@gdi/block-hero-ouywy": [
+                "blocks/kickstarter/block-hero-ouywy"
+            ],
+            "@gdi/block-quotes-opur3": [
+                "blocks/kickstarter/block-quotes-opur3"
+            ],
+            "@gdi/block-top-9yur8": [
+                "blocks/kickstarter/block-top-9yur8"
+            ],
+            "@gdi/block-twins-aou31": [
+                "blocks/kickstarter/block-twins-aou31"
+            ],
+            "@gdi/block-about-iuhr3": [
+                "blocks/starter/block-about-iuhr3"
+            ],
+            "@gdi/block-contact-au487": [
+                "blocks/starter/block-contact-au487"
+            ],
+            "@gdi/block-cta-p8y4a": [
+                "blocks/starter/block-cta-p8y4a"
+            ],
+            "@gdi/block-header-aouu4": [
+                "blocks/starter/block-header-aouu4"
+            ],
+            "@gdi/block-hero-hu45i": [
+                "blocks/starter/block-hero-hu45i"
+            ],
+            "@gdi/block-numbers-jk123": [
+                "blocks/starter/block-numbers-jk123"
+            ],
+            "@gdi/block-portfolio-aiou3": [
+                "blocks/starter/block-portfolio-aiou3"
+            ],
+            "@gdi/block-quotes-iaj2f": [
+                "blocks/starter/block-quotes-iaj2f"
+            ],
+            "@gdi/block-resume-iuo4f": [
+                "blocks/starter/block-resume-iuo4f"
+            ],
+            "@gdi/block-section-gkj41": [
+                "blocks/starter/block-section-gkj41"
+            ],
+            "@gdi/block-services-uoq83": [
+                "blocks/starter/block-services-uoq83"
+            ],
+            "@gdi/block-top-aqwer": [
+                "blocks/starter/block-top-aqwer"
+            ]
+        }
+    },
+    "include": [
+        "src-admin/*.ts",
+        "test/*.ts"
+    ]
+}

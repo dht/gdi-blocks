@@ -1,0 +1,13 @@
+{
+    "id": "BlockGallery",
+    "header": "Blocks",
+    "itemType": "block",
+    "columns": 5,
+    "actions": [
+        {
+            "id": "new",
+            "iconName": "add",
+            "title": "New Block"
+        }
+    ]
+}

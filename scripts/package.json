@@ -1,0 +1,23 @@
+{
+    "name": "gdi-blocks-scripts",
+    "private": true,
+    "version": "0.0.1",
+    "type": "module",
+    "scripts": {},
+    "license": "MIT",
+    "devDependencies": {
+        "@types/jest": "^27.5.1",
+        "base-types": "^0.0.4",
+        "globby": "^13.1.3",
+        "husky": "^8.0.1",
+        "jest": "^28.1.0",
+        "ts-jest": "^28.0.2",
+        "typescript": "^4.6.4"
+    },
+    "description": "",
+    "keywords": [],
+    "author": "",
+    "dependencies": {
+        "lodash": "^4.17.21"
+    }
+}
