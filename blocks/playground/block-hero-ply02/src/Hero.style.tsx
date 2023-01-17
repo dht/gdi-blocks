@@ -4,9 +4,7 @@ import { Grid, mobile, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: HeroExtra }>`
     flex: 1;
-    background-image: url(${(props) => props.extra.imageUrl});
-    background-size: cover;
-    background-position: center bottom;
+    background-color: white;
     height: ${(props) => props.theme.vh(88)};
     display: flex;
     justify-content: center;
@@ -26,25 +24,44 @@ export const Container = styled(Grid.Container)`
 
 export const Container1 = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    align-self: flex-end;
+    align-self: center;
     flex: 1;
-    max-width: 800px;
-    width: 0px;
-    height: 250px;
-    background-color: white;
+    justify-content: center;
 `;
 
-export const H1 = styled.h1`
-    font-size: 50px;
+export const Box = styled.div`
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid grey;
+    margin: 0;
+    ${mobile(
+        css`
+            width: 80%;
+            margin-bottom: 20px;
+            height: 45em;
+        `
+    )};
+`;
+
+export const H2 = styled.h2`
+    text-transform: uppercase;
+    font-size: 30px;
     max-width: 500px;
     font-weight: 500;
-    margin: 10px 0;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    margin: 10px 10px;
     padding: 0;
     padding-bottom: 20px;
-    color: #163c60;
+    color: black;
     text-align: center;
 `;
 
@@ -53,21 +70,23 @@ export const Greeting = styled.div`
     background-color: #ffffff44;
     padding: 2px 30px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 16px;
+    line-height: 1.5em;
     font-weight: bold;
     font-variation-settings: 'wdth' 125, 'wght' 350;
+    padding-bottom: 20px;
 `;
 
 export const Skill = styled.div`
-    color: #163c60;
+    display: inline-block;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
     margin-top: 2px;
-    margin-bottom: 30px;
     font-variation-settings: 'wdth' 125, 'wght' 350;
-    background-color: white;
-    padding: 20px;
+    background-color: #163c60;
+    color: white;
+    padding: 10px;
     border: 1px solid #163c60;
     ${mobile(
         css`
@@ -76,8 +95,8 @@ export const Skill = styled.div`
     )};
 
     &:hover {
-        background-color: #163c60;
-        color: white;
+        background-color: white;
+        color: #163c60;
     }
 `;
 

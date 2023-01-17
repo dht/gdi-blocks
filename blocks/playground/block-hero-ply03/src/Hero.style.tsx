@@ -1,16 +1,30 @@
 import styled from 'styled-components';
 import { HeroExtra } from './Hero';
-import { Grid, mobile, css } from '@gdi/engine';
+import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: HeroExtra }>`
     flex: 1;
-    background-image: url(${(props) => props.extra.imageUrl});
-    background-size: cover;
-    background-position: center bottom;
-    height: ${(props) => props.theme.vh(88)};
-    display: flex;
+    &::before {
+        content: '';
+        background-image: url(${(props) => props.extra.imageUrl});
+        background-size: cover;
+        background-position: center bottom;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        opacity: 0.1;
+    }
+    background-color: rgba(216, 232, 242);
+    ${mobile(
+        css`
+            height: ${(props) => props.theme.vh(130)};
+        `
+    )};
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};
+    display: flex;
 `;
 
 export const Container = styled(Grid.Container)`
@@ -27,14 +41,14 @@ export const Container = styled(Grid.Container)`
 export const Container1 = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    align-self: flex-end;
+    align-self: center;
     flex: 1;
     max-width: 800px;
     width: 0px;
-    height: 250px;
-    background-color: white;
+    height: 70%;
+    position: relative;
 `;
 
 export const H1 = styled.h1`
@@ -46,6 +60,7 @@ export const H1 = styled.h1`
     padding-bottom: 20px;
     color: #163c60;
     text-align: center;
+    position: relative;
 `;
 
 export const Greeting = styled.div`
@@ -53,13 +68,17 @@ export const Greeting = styled.div`
     background-color: #ffffff44;
     padding: 2px 30px;
     border-radius: 5px;
-    font-size: 24px;
+    font-size: 18px;
+    text-align: center;
+    text-align-last: center;
     font-weight: bold;
+    line-height: 1.5;
+    padding-bottom: 20px;
     font-variation-settings: 'wdth' 125, 'wght' 350;
 `;
 
 export const Skill = styled.div`
-    color: #163c60;
+    color: black;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;

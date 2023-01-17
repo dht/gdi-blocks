@@ -1,16 +1,17 @@
 import React, { useContext } from 'react';
 import {
     Container,
-    H1,
     Wrapper,
     Greeting,
     Skill,
     Social,
     Container1,
+    Box,
+    H2,
 } from './Hero.style';
 import { SiteContext, useDataset } from '@gdi/engine';
 
-export const id = 'com.usegdi.blocks.hero-ply01';
+export const id = 'com.usegdi.blocks.hero-ply02';
 
 export type HeroProps = {
     strings: HeroStrings;
@@ -34,12 +35,8 @@ export type HeroExtra = {
 export function Hero(props: HeroProps) {
     const { strings, colors, extra } = props;
     const { slogan, header, description } = strings;
-    const { socialDatasetId } = extra;
 
     const { ga } = useContext(SiteContext);
-
-    const social = useDataset(socialDatasetId);
-    const urls = Object.values(social).map((i: Json) => i.url);
 
     const onClick = (url: string) => () => {
         ga('navigate', {
@@ -55,9 +52,21 @@ export function Hero(props: HeroProps) {
             extra={extra}
         >
             <Container1>
-                <Greeting>{slogan}</Greeting>
-                <H1>{header}</H1>
-                <Skill onClick={() => onClick}>{description}</Skill>
+                <Box>
+                    <H2>Services</H2>
+                    <Greeting>{slogan}</Greeting>
+                    <Skill onClick={() => onClick}>{description}</Skill>
+                </Box>
+                <Box>
+                    <H2>Projects</H2>
+                    <Greeting>{slogan}</Greeting>
+                    <Skill onClick={() => onClick}>{description}</Skill>
+                </Box>
+                <Box>
+                    <H2>Clients</H2>
+                    <Greeting>{slogan}</Greeting>
+                    <Skill onClick={() => onClick}>{description}</Skill>
+                </Box>
             </Container1>
         </Wrapper>
     );
