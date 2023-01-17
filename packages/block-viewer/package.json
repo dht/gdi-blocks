@@ -60,7 +60,10 @@
         "prosemirror-gapcursor": "^1.3.1",
         "prosemirror-history": "^1.3.0",
         "prosemirror-keymap": "^1.2.0",
-        "prosemirror-schema-list": "^1.2.2"
+        "prosemirror-schema-list": "^1.2.2",
+        "@gdi/block-hero-ply01": "latest",
+        "@gdi/block-middle-ply02": "latest",
+        "@gdi/block-middle-ply03": "latest"
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",

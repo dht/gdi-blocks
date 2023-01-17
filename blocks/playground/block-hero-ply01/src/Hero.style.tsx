@@ -10,6 +10,13 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     height: ${(props) => props.theme.vh(88)};
     display: flex;
     font-family: ${(props) => props.theme.fontFamily};
+
+    ${mobile(
+        css`
+            text-align: center;
+          
+        `
+    )}
 `;
 
 export const Container = styled(Grid.Container)`
@@ -22,11 +29,11 @@ export const Container = styled(Grid.Container)`
 
 export const H1 = styled.h1`
     font-size: 42px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 10px 0;
     padding: 0;
-    font-variation-settings: 'wdth' 105, 'wght' 650;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    /* font-variation-settings: 'wdth' 105, 'wght' 650;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5); */
     color: white;
     text-align: center;
 `;

@@ -1,9 +1,9 @@
 import React, { useContext } from 'react';
-import { Container, H1, Wrapper, Greeting, Skill, Social } from './Hero.style';
+import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem } from './Hero.style';
 import { SocialIcons } from '@gdi/web-ui';
 import { SiteContext, useDataset } from '@gdi/engine';
 
-export const id = 'com.usegdi.blocks.hero-ply01';
+export const id = 'com.usegdi.block-middle-ply02';
 
 export type HeroProps = {
     strings: HeroStrings;
@@ -17,22 +17,24 @@ export type HeroStrings = {
     description?: string;
 };
 
-export type HeroColors = {};
+export type HeroColors = {
+    backgroundColor:string;
+};
 
 export type HeroExtra = {
     imageUrl: string;
-    socialDatasetId: string;
+    gridDatasetId: string;
 };
 
 export function Hero(props: HeroProps) {
     const { strings, colors, extra } = props;
     const { slogan, header, description } = strings;
-    const { socialDatasetId } = extra;
+    const { gridDatasetId } = extra;
     console.log(props);
     const { ga } = useContext(SiteContext);
 
-    const social = useDataset(socialDatasetId);
-    const urls = Object.values(social).map((i: Json) => i.url);
+    const gridData = useDataset(gridDatasetId ?? '') ;
+   
 
     const onClick = (url: string) => () => {
         ga('navigate', {
@@ -45,13 +47,25 @@ export function Hero(props: HeroProps) {
             <Wrapper
                 className='Hero-container'
                 data-testid='Hero-container'
-                extra={extra}
+                extra={colors}
             >
                 <Container>
                     <H1>{header}</H1>
-                </Container>
+                    <Skill>{description}</Skill>
+                
+              <GridContainer>{renderItems(gridData)}</GridContainer>
+              </Container>
             </Wrapper>
     );
 }
 
+function renderItems(gridData : Json) {
+    return gridData.map((item: Json, index: number) =>  
+        <GridItem key={index}>
+           <img src={item.imageUrl} alt={item.title} />
+           <SkillAncher>{item.title}</SkillAncher>
+           <Skill>{item.description}</Skill>
+        </GridItem>
+    );
+}
 export default Hero;

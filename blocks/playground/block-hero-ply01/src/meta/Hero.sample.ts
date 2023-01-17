@@ -2,14 +2,14 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            slogan: 'The work of',
-            header: 'David Baker',
-            description: 'Portraits * landscapes * photography',
+            slogan: '',
+            header: 'Create cute websites fast with us!',
+            description: '',
         },
         colors: {},
         extra: {
-            imageUrl: 'https://picsum.photos/seed/11/1557/882',
-            socialDatasetId: 'social',
+            imageUrl: 'https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/slider/slide-1.jpg',
+            socialDatasetId: 'socialDatasetId',
         },
     },
 };
