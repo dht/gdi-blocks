@@ -1,8 +1,8 @@
-import { Hero } from './Hero';
-import { params } from './meta/Hero.params';
-import { sampleData } from './meta/Hero.sample';
-import { dimensions } from './meta/Hero.dimensions';
-import { screenshots } from './meta/Hero.screenshots';
+import { Hero } from './About';
+import { params } from './meta/About.params';
+import { sampleData } from './meta/About.sample';
+import { dimensions } from './meta/About.dimensions';
+import { screenshots } from './meta/About.screenshots';
 
 export const block: IBlock = {
     id: 'com.usegdi.blocks.about-ply03',
