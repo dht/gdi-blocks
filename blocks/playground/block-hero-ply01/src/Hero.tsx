@@ -1,14 +1,5 @@
 import React, { useContext } from 'react';
-import {
-    Container,
-    H1,
-    Wrapper,
-    Greeting,
-    Skill,
-    Social,
-    Container1,
-} from './Hero.style';
-import { SiteContext, useDataset } from '@gdi/engine';
+import { H1, Wrapper, Greeting, Skill, Container1 } from './Hero.style';
 
 export const id = 'com.usegdi.blocks.hero-ply01';
 
@@ -32,21 +23,8 @@ export type HeroExtra = {
 };
 
 export function Hero(props: HeroProps) {
-    const { strings, colors, extra } = props;
+    const { strings, extra } = props;
     const { slogan, header, description } = strings;
-    const { socialDatasetId } = extra;
-
-    const { ga } = useContext(SiteContext);
-
-    const social = useDataset(socialDatasetId);
-    const urls = Object.values(social).map((i: Json) => i.url);
-
-    const onClick = (url: string) => () => {
-        ga('navigate', {
-            category: 'hero',
-            label: url,
-        });
-    };
 
     return (
         <Wrapper
@@ -57,7 +35,7 @@ export function Hero(props: HeroProps) {
             <Container1>
                 <Greeting>{slogan}</Greeting>
                 <H1>{header}</H1>
-                <Skill onClick={() => onClick}>{description}</Skill>
+                <Skill>{description}</Skill>
             </Container1>
         </Wrapper>
     );

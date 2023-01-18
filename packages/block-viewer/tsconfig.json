@@ -73,14 +73,14 @@
             "@gdi/block-twins-aou31": [
                 "blocks/kickstarter/block-twins-aou31"
             ],
+            "@gdi/block-about-ply02": [
+                "blocks/playground/block-about-ply02"
+            ],
+            "@gdi/block-about-ply03": [
+                "blocks/playground/block-about-ply03"
+            ],
             "@gdi/block-hero-ply01": [
                 "blocks/playground/block-hero-ply01"
-            ],
-            "@gdi/block-hero-ply02": [
-                "blocks/playground/block-hero-ply02"
-            ],
-            "@gdi/block-hero-ply03": [
-                "blocks/playground/block-hero-ply03"
             ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
