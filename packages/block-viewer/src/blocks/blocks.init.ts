@@ -14,7 +14,7 @@ import { block as block_hero_ouywy } from '@gdi/block-hero-ouywy';
 import { block as block_quotes_opur3 } from '@gdi/block-quotes-opur3';
 import { block as block_top_9yur8 } from '@gdi/block-top-9yur8';
 import { block as block_twins_aou31 } from '@gdi/block-twins-aou31';
-import { block as block_about_ply03 } from '@gdi/block-about-ply03';
+import { block as block_hero_ply03 } from '@gdi/block-hero-ply03';
 import { block as block_hero_ply01 } from '@gdi/block-hero-ply01';
 import { block as block_hero_ply02 } from '@gdi/block-hero-ply02';
 import { block as block_about_iuhr3 } from '@gdi/block-about-iuhr3';
@@ -47,7 +47,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_quotes_opur3.id]: block_quotes_opur3,
 			[block_top_9yur8.id]: block_top_9yur8,
 			[block_twins_aou31.id]: block_twins_aou31,
-			[block_about_ply03.id]: block_about_ply03,
+			[block_hero_ply03.id]: block_hero_ply03,
 			[block_hero_ply01.id]: block_hero_ply01,
 			[block_hero_ply02.id]: block_hero_ply02,
 			[block_about_iuhr3.id]: block_about_iuhr3,
