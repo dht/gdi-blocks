@@ -1,14 +1,5 @@
 import React, { useContext } from 'react';
-import {
-    Container,
-    Wrapper,
-    Greeting,
-    Container1,
-    H2,
-    Skill,
-    H1,
-} from './Hero.style';
-import { SiteContext, useDataset } from '@gdi/engine';
+import { Wrapper, Greeting, Container, Skill, H1 } from './Hero.style';
 
 export const id = 'com.usegdi.blocks.about-ply03';
 
@@ -36,27 +27,18 @@ export function Hero(props: HeroProps) {
     const { strings, colors, extra } = props;
     const { slogan, slogan1, header, description } = strings;
 
-    const { ga } = useContext(SiteContext);
-
-    const onClick = (url: string) => () => {
-        ga('navigate', {
-            category: 'hero',
-            label: url,
-        });
-    };
-
     return (
         <Wrapper
             className='Hero-container'
             data-testid='Hero-container'
             extra={extra}
         >
-            <Container1>
+            <Container>
                 <H1>{header}</H1>
                 <Greeting>{slogan}</Greeting>
                 <Greeting>{slogan1}</Greeting>
-                <Skill onClick={() => onClick}>{description}</Skill>
-            </Container1>
+                <Skill>{description}</Skill>
+            </Container>
         </Wrapper>
     );
 }

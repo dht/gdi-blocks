@@ -82,6 +82,9 @@
             "@gdi/block-hero-ply01": [
                 "blocks/playground/block-hero-ply01"
             ],
+            "@gdi/block-quotes-ply04": [
+                "blocks/playground/block-quotes-ply04"
+            ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
             ],

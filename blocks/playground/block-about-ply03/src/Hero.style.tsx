@@ -22,23 +22,13 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
             height: ${(props) => props.theme.vh(130)};
         `
     )};
+
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};
     display: flex;
 `;
 
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 10px;
-    height: 250px;
-    background-color: white;
-`;
-
-export const Container1 = styled.div`
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -87,6 +77,8 @@ export const Skill = styled.div`
     font-variation-settings: 'wdth' 125, 'wght' 350;
     background-color: white;
     padding: 20px;
+    margin-top: 1em;
+    margin-bottom: 5em;
     border: 1px solid #163c60;
     ${mobile(
         css`

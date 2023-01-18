@@ -10,7 +10,7 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     height: ${(props) => props.theme.vh(88)};
     ${mobile(
         css`
-            background-image: url('https://static.wixstatic.com/media/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg/v1/fill/w_320,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg');
+            background-image: url(${(props) => props.extra.imageUrlMobile});
             background-size: cover;
             background-position: center bottom;
             height: ${(props) => props.theme.vh(100)};
@@ -21,18 +21,7 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     font-family: ${(props) => props.theme.fontFamily};
 `;
 
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 10px;
-    height: 250px;
-    background-color: white;
-`;
-
-export const Container1 = styled.div`
+export const Container = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;

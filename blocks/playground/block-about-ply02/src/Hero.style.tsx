@@ -5,7 +5,7 @@ import { Grid, mobile, css } from '@gdi/engine';
 export const Wrapper = styled.div<{ extra: HeroExtra }>`
     flex: 1;
     background-color: white;
-    height: ${(props) => props.theme.vh(88)};
+    height: ${(props) => props.theme.vh(60)};
     ${mobile(
         css`
             height: ${(props) => props.theme.vh(300)};
