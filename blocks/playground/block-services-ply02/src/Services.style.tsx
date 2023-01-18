@@ -1,20 +1,19 @@
 import styled from 'styled-components';
 import { ServicesColors } from './Services';
-import { Grid, mobile, css } from '@gdi/engine';
+import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #f6f8fa;
-    height: ${(props) => props.theme.vh(88)};
+    height: ${(props) => props.theme.vh(68)};
     padding-top: 60px;
     padding-left: 12px;
     ${mobile(
         css`
-        padding-top:20px;
+            padding-top: 20px;
             padding-left: 0;
             height: 100%;
         `
     )}
-   
 `;
 
 export const Container = styled(Grid.Container)`
@@ -35,17 +34,6 @@ export const H1 = styled.h1`
     text-align: center;
 `;
 
-export const Greeting = styled.div`
-    color: #33334499;
-    background-color: #ffffff44;
-    padding: 2px 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-variation-settings: 'wdth' 125, 'wght' 350;
-`;
-
 export const Skill = styled.div`
     font-size: 14px;
     line-height: 23px;
@@ -54,7 +42,7 @@ export const Skill = styled.div`
     color: #888;
     margin-top: 2px;
     margin-bottom: 30px;
-    
+
     ${mobile(
         css`
             text-align: center;
@@ -78,17 +66,39 @@ export const SkillAncher = styled.div`
     )}
 `;
 
-
 export const GridContainer = styled(Grid.Container)`
-  display: grid;
-  grid-template-columns: auto auto auto;
-  ${mobile(
+    display: grid;
+    grid-template-columns: auto auto auto;
+    ${mobile(
         css`
-             grid-template-columns: repeat(1, auto);
-             text-align: center;
-             height: 100% !important;
+            grid-template-columns: repeat(1, auto);
+            text-align: center;
+            height: 100% !important;
         `
     )}
 `;
 
-export const Social = styled.div``;
+export const ParentRenderDiv = styled.div`
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    color: #888;
+    .pad {
+        padding-top: 20px;
+    }
+
+    ${device(
+        '720p',
+        css`
+            flex-direction: column;
+        `
+    )}
+`;
+
+export const RenderItem = styled.div`
+    .check {
+        font-size: 60px;
+    }
+`;
+
+export const RenderImage = styled.img``;

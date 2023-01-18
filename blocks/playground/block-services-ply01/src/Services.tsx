@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem } from './Services.style';
+import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RederImage } from './Services.style';
 import { SiteContext, useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.block-services-ply01';
@@ -19,17 +19,14 @@ export type ServicesColors = {
 };
 
 export type ServicesExtra = {
-    serviceDatasetId: string;
+    serviceDataset: Json;
 };
 
 export function Services(props: ServicesProps) {
     const { strings, colors, extra } = props;
     const { header, description } = strings;
-    const { serviceDatasetId } = extra;
-    const { ga } = useContext(SiteContext);
-
-    const gridData = useDataset(serviceDatasetId ?? '') ;
-   
+    const { serviceDataset} = extra;
+  
     return (
             <Wrapper
                 className='Service-container'
@@ -40,7 +37,7 @@ export function Services(props: ServicesProps) {
                     <H1>{header}</H1>
                     <Skill>{description}</Skill>
                 
-              <GridContainer>{renderItems(gridData)}</GridContainer>
+              <GridContainer>{renderItems(serviceDataset)}</GridContainer>
               </Container>
             </Wrapper>
     );
@@ -49,7 +46,7 @@ export function Services(props: ServicesProps) {
 function renderItems(gridData : Json) {
     return gridData.map((item: Json, index: number) =>  
         <GridItem key={index}>
-           <img src={item.imageUrl} alt={item.title} />
+           <RederImage src={item.imageUrl} alt={item.title} />
            <SkillAncher>{item.title}</SkillAncher>
            <Skill>{item.description}</Skill>
         </GridItem>

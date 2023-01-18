@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { ServicesColors } from './Services';
-import { Grid, mobile, device,css } from '@gdi/engine';
+import { Grid, mobile, device, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #ffffff;
-    height: ${(props) => props.theme.vh(88)};
-
+    height: ${(props) => props.theme.vh(68)};
+    padding-top: 25px;
     ${mobile(
         css`
-          height: auto;
+            height: auto;
         `
     )}
 `;
@@ -21,9 +21,8 @@ export const Container = styled(Grid.Container)`
     flex: 1;
     ${mobile(
         css`
-         padding-left: 10px;
-         padding-right: 10px;
-         
+            padding-left: 10px;
+            padding-right: 10px;
         `
     )}
 `;
@@ -38,7 +37,7 @@ export const H1 = styled.h1`
     text-align: center;
     ${mobile(
         css`
-          font-size: 25px;
+            font-size: 25px;
         `
     )}
 `;
@@ -51,7 +50,7 @@ export const Skill = styled.div`
     color: #888;
     margin-top: 2px;
     margin-bottom: 30px;
-    
+
     ${mobile(
         css`
             text-align: center;
@@ -69,7 +68,7 @@ export const SkillAncher = styled.div`
     margin-bottom: 30px;
     cursor: pointer;
     ${device(
-        '720p', 
+        '720p',
         css`
             font-size: 20px;
         `
@@ -80,7 +79,6 @@ export const SkillAncher = styled.div`
             text-align: center;
         `
     )}
-  
 `;
 
 export const GridContainer = styled(Grid.Container)`
@@ -91,9 +89,10 @@ export const GridContainer = styled(Grid.Container)`
     flex: 1;
 
     ${device(
-        '720p', 
+        '720p',
         css`
-          column-gap: 15px;   `
+            column-gap: 15px;
+        `
     )}
 
     ${mobile(
@@ -101,7 +100,6 @@ export const GridContainer = styled(Grid.Container)`
             flex-direction: column;
         `
     )}
-    
 `;
 
 export const GridItem = styled(Grid.Container)`
@@ -111,16 +109,19 @@ export const GridItem = styled(Grid.Container)`
     margin-right: 30px;
 
     ${device(
-        '720p', 
+        '720p',
         css`
-           width:30% !important; `
+            width: 30% !important;
+        `
     )}
 
     ${mobile(
         css`
-           padding-left: 12px;
-           padding-right: 12px;
-           width: 100% !important;
+            padding-left: 12px;
+            padding-right: 12px;
+            width: 100% !important;
         `
     )}
-    `
+`;
+
+export const RederImage = styled.img``

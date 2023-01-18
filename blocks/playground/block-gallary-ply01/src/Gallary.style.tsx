@@ -7,7 +7,7 @@ export const Wrapper = styled.div<{ extra: GallaryExtra }>`
     background-image: url(${(props) => props.extra.imageUrl});
     background-size: cover;
     background-position: center bottom;
-    height: ${(props) => props.theme.vh(88)};
+    height: ${(props) => props.theme.vh(70)};
     display: flex;
     font-family: ${(props) => props.theme.fontFamily};
 
