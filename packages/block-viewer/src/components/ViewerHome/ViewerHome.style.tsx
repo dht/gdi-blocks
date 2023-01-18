@@ -52,3 +52,31 @@ export const Ul = styled.ul`
 `;
 
 export const Li = styled.li``;
+
+export const Group = styled.div``;
+
+export const H2 = styled.h2`
+    font-size: 23px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding-bottom: 4px;
+    margin-top: 10px;
+
+    cursor: pointer;
+
+    &:hover {
+        border-bottom: 3px solid rgba(0, 0, 0, 0.6);
+    }
+`;
+
+export const Clear = styled.button`
+    font-size: 18px;
+    border: none;
+    background-color: transparent;
+    color: dodgerblue;
+
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+`;
