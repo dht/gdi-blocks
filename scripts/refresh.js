@@ -29,10 +29,27 @@ const run = async () => {
 
     const blockImports = [],
         blockParams = [],
-        dependencies = [];
+        dependencies = [],
+        byTemplate = {};
 
     for (let packageName of packages) {
         const p = readJson(`${cwd}/${packageName}/package.json`);
+        let [templateName, blockName] = packageName.split('/');
+        blockName = blockName.replace('block-', '');
+        const orderPath = `${cwd}/${templateName}/.order`;
+
+        let orderValues = {};
+
+        if (fs.existsSync(orderPath)) {
+            fs.readFileSync(orderPath, 'utf8')
+                .split('\n')
+                .forEach((b, index) => {
+                    orderValues[b] = index;
+                });
+        }
+
+        byTemplate[templateName] = byTemplate[templateName] ?? {};
+        byTemplate[templateName][blockName] = orderValues[blockName] ?? 99;
 
         const name = p.name.split('/').pop().replace('block-', '');
         const name_ = name.replace(/-/g, '_');
@@ -91,6 +108,11 @@ ${viteAlias.join('\n')}
     writeJson(
         `../packages/block-viewer/src/blocks/blocks.datasets.json`,
         datasets.data
+    );
+
+    writeJson(
+        '../packages/block-viewer/src/blocks/blocks.byTemplate.json',
+        byTemplate
     );
 
     console.timeEnd('refresh');

@@ -7,7 +7,7 @@ import { useElements } from '../hooks/useElements';
 export const BlockMixerContainer = () => {
     const { blockId } = useParams();
 
-    const elements = useElements(blockId);
+    const elements = useElements(blockId ? [blockId] : []);
 
     const callbacks = useMemo(
         () => ({

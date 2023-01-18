@@ -2,8 +2,11 @@ import { Logo, TrianglesBk } from '@gdi/web-ui';
 import React, { useState } from 'react';
 import {
     A,
+    Clear,
     Content,
+    Group,
     H1,
+    H2,
     Li,
     LogoWrapper,
     Ul,
@@ -12,6 +15,8 @@ import {
 import { sortBy } from 'shared-base';
 import { useNavigate } from 'react-router-dom';
 import BlockPreview from '../BlockPreview/BlockPreview';
+import byTemplate from '../../blocks/blocks.byTemplate.json';
+import { useLocalStorage } from 'react-use';
 
 export type ViewerHomeProps = {
     blocks: IBlocks;
@@ -20,13 +25,21 @@ export type ViewerHomeProps = {
 export function ViewerHome(props: ViewerHomeProps) {
     const navigate = useNavigate();
     const [currentBlockName, setCurrentBlockName] = useState<string>('');
-    const { blocks } = props;
+    const [currentTemplate, setCurrentTemplate] = useLocalStorage<string>(
+        'currentTemplate',
+        ''
+    );
 
     function onClick(path: string) {
         navigate(path);
     }
 
-    function renderBlock(block: IBlock) {
+    function focusOnTemplate(template: string) {
+        setCurrentTemplate(template);
+        navigate(`/templates/${template}`);
+    }
+
+    function renderBlock(block: NameAndOrder) {
         const { name } = block;
 
         const path = `/${name}`;
@@ -36,7 +49,7 @@ export function ViewerHome(props: ViewerHomeProps) {
                 <A
                     onClick={() => onClick(path)}
                     onMouseOver={() => setCurrentBlockName(name)}
-                    key={block.id}
+                    key={block.name}
                     className='block'
                 >
                     {name}
@@ -45,10 +58,34 @@ export function ViewerHome(props: ViewerHomeProps) {
         );
     }
 
-    function renderBlocks() {
-        return Object.values(blocks)
-            .sort(sortBy('name'))
-            .map((block: IBlock) => renderBlock(block));
+    function renderBlocks(template: string) {
+        const blocks = byTemplate[template];
+
+        return Object.keys(blocks)
+            .map((key) => ({
+                name: key.replace('block-', ''),
+                order: blocks[key],
+            }))
+            .sort(sortBy('order'))
+            .map((block: NameAndOrder) => renderBlock(block));
+    }
+
+    function renderTemplate(template: string) {
+        return (
+            <Group key={template} className='template'>
+                <H2 onClick={() => focusOnTemplate(template)}>{template}</H2>
+                {renderBlocks(template)}
+            </Group>
+        );
+    }
+
+    function renderTemplates() {
+        return Object.keys(byTemplate)
+            .filter(
+                (template: string) =>
+                    !currentTemplate || template === currentTemplate
+            )
+            .map((template: string) => renderTemplate(template));
     }
 
     function renderPreview() {
@@ -66,13 +103,25 @@ export function ViewerHome(props: ViewerHomeProps) {
                 </LogoWrapper>
 
                 <Content>
-                    <H1>Blocks</H1>
-                    <Ul>{renderBlocks()}</Ul>
+                    <H1>
+                        Blocks{' '}
+                        {currentTemplate && (
+                            <Clear onClick={() => setCurrentTemplate('')}>
+                                clear focus
+                            </Clear>
+                        )}
+                    </H1>
+                    <Ul>{renderTemplates()}</Ul>
                 </Content>
                 {renderPreview()}
             </Wrapper>
         </TrianglesBk>
     );
 }
+
+type NameAndOrder = {
+    name: string;
+    order: number;
+};
 
 export default ViewerHome;
