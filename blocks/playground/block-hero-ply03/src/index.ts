@@ -5,8 +5,8 @@ import { dimensions } from './meta/Hero.dimensions';
 import { screenshots } from './meta/Hero.screenshots';
 
 export const block: IBlock = {
-    id: 'com.usegdi.blocks.hero-ply01',
-    name: 'hero-ply01',
+    id: 'com.usegdi.blocks.hero-ply03',
+    name: 'hero-ply03',
     description: '',
     params,
     sampleData,

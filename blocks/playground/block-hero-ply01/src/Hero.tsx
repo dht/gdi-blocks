@@ -3,7 +3,7 @@ import { Container, H1, Wrapper, Greeting, Skill, Social } from './Hero.style';
 import { SocialIcons } from '@gdi/web-ui';
 import { SiteContext, useDataset } from '@gdi/engine';
 
-export const id = 'com.usegdi.blocks.hero-hu45i';
+export const id = 'com.usegdi.blocks.hero-ply01';
 
 export type HeroProps = {
     strings: HeroStrings;
