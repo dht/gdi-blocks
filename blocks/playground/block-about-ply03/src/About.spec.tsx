@@ -1,13 +1,13 @@
-import { HeroDriver } from './Hero.driver';
+import { AboutDriver } from './About.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
 describe('Hero', () => {
-    let driver: HeroDriver;
+    let driver: AboutDriver;
 
     beforeAll(() => {
-        driver = new HeroDriver();
+        driver = new AboutDriver();
     });
 
     it('should render button', () => {
@@ -41,10 +41,10 @@ describe('Hero', () => {
 });
 
 describe('Hero snapshots', () => {
-    let driver: HeroDriver;
+    let driver: AboutDriver;
 
     beforeAll(() => {
-        driver = new HeroDriver();
+        driver = new AboutDriver();
     });
 
     it('should match snapshot', () => {

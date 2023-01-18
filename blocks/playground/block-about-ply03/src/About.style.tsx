@@ -1,19 +1,30 @@
 import styled from 'styled-components';
-import { HeroExtra } from './Hero';
-import { Grid, mobile, css } from '@gdi/engine';
+import { HeroExtra } from './About';
+import { Grid, mobile, css ,device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     
     background-color: white;
-    background-size: cover;
+    background-size: 100% 100%;
     height: 100vh;
     color: #000;
     font-family: ${(props) => props.theme.fontFamily};
+
+    ${device(
+        'tablet',
+        css`
+            height: 140vh;
+        
+        `)}
+
     ${mobile(
         css`
-            height: 300vh;
+            height: 130rem;
         `
-    )}
+    )};
+
+
+
 `;
 
 export const Container = styled(Grid.Container)`
@@ -73,9 +84,42 @@ export const Skill = styled.div`
 export const FlexContainer = styled.div`
   display: flex;
   flex-direction: row; 
-  padding-left: 19%;
-  padding-right: 19%;
-  
+  padding-left: 10%;
+  padding-right: 10%;
+  border-top: 1px solid silver;
+  ${device(
+    'HD+',
+        css`
+            padding-left: 20px;
+            padding-right: 20px;
+        `
+  )}       
+
+  ${device(
+    'HD',
+        css`
+            padding-left: 10px;
+            padding-right: 10px;
+        `
+  )}  
+
+  ${device(
+    '720p',
+        css`
+            
+            padding-left: 10px;
+            padding-right: 10px;
+        `
+    )}
+        
+  ${device(
+        'tablet',
+        css`
+            flex-direction: column;
+            padding-left: 16px !important;
+            padding-right: 10px;
+        
+        `)}
   ${mobile(
     css`
         display: flex;
@@ -84,6 +128,11 @@ export const FlexContainer = styled.div`
         padding-right: 0%;
     `
   )}
+
+   
+
+
+
 `;
 
 export const Col = styled.div`
@@ -179,12 +228,24 @@ export const HeroImg = styled.div<{extra:HeroExtra}>`
 `;
 
 export const HeroCard = styled.div`
-    border: 1px solid silver;
-    height: 270px;
+    height: 290px;
     width: 40%;
     float: left;
     padding: 20px;
     border-radius: 8px;
+
+    .ic {
+        padding: 10px;
+        background-color: antiquewhite;
+        border-radius: 50%;
+        font-weight: bold;
+        font-size: 30px;
+        
+    }
+
+    &:hover .ic {
+        color:black;
+    }
 
     &:hover {
         background: rgb(21,112,195);
@@ -195,7 +256,7 @@ background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(
 
     }
     &:hover H2 {
-        color: white;
+        color: white !important;
         transition-duration: 0.8s;
     }
     &:hover Span {
@@ -213,7 +274,7 @@ background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(
 
 ` 
 
-export const H2 = styled.h2`
+export const H2 = styled.h4`
     font-weight: bold;
 `
 
@@ -249,3 +310,5 @@ export const Button = styled.button`
             `
         )}
 `
+
+export const CardIcone = styled.span``

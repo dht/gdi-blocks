@@ -12,8 +12,7 @@ export const params: IWidgetParams = {
         colors: {},
         extra: {
             imageUrl: { fieldType: 'image', isRequired: true, order: 1 },
-            socialDatasetId: { fieldType: 'dataset', order: 3 },
-            heroDatasetId:{fieldType:'dataset', order:2}
+            her01Dataset:{fieldType:'dataset',order:2}
         },
     },
 };

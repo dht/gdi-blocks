@@ -1,19 +1,19 @@
 import React, { useContext } from 'react';
 import { SiteContext } from '@gdi/engine';
 import { render, fireEvent } from '@testing-library/react';
-import { Hero, HeroProps } from './Hero';
+import { About, AboutProps } from './About';
 import { BaseComponentDriver } from 'testing-base';
 
-export class HeroDriver extends BaseComponentDriver {
-    private props: Partial<HeroProps> = {};
+export class AboutDriver extends BaseComponentDriver {
+    private props: Partial<AboutProps> = {};
 
     constructor() {
-        super('Hero');
+        super('About');
     }
 
     when: any = {
         rendered: () => {
-            render(<Hero {...(this.props as HeroProps)} />);
+            render(<About {...(this.props as AboutProps)} />);
             return this;
         },
         clicked: () => {
@@ -21,12 +21,12 @@ export class HeroDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<Hero {...(this.props as HeroProps)} />);
+            return this.snapshot(<About {...(this.props as AboutProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<HeroProps>) => {
+        props: (props: Partial<AboutProps>) => {
             this.props = props;
             return this;
         },

@@ -1,24 +1,20 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import {
     H1,
     Wrapper,
     FlexContainer,
     Col,
     P,
-    ClientIcon,
-    HeroImg,
     HeroCard,
     H2,
     Span,
     Button,
-} from './Hero.style';
-import { SiteContext, useDataset } from '@gdi/engine';
+    CardIcone,
+} from './About.style';
 
+export const id = 'com.usegdi.blocks.about-ply03';
 
-
-export const id = 'com.usegdi.blocks.hero-ply03';
-
-export type HeroProps = {
+export type AboutProps = {
     strings: HeroStrings;
     colors: HeroColors;
     extra: HeroExtra;
@@ -29,7 +25,6 @@ export type HeroStrings = {
     header: string;
     description?: string;
     buttonText?: string;
-    description2?: string;
 };
 
 export type HeroColors = {};
@@ -37,35 +32,26 @@ export type HeroColors = {};
 export type HeroExtra = {
     imageUrl: string;
     socialDatasetId: string;
-    ply03CardId: string;
+    aboutCardData:Json;
 };
 
-export function Hero(props: HeroProps) {
+export function About(props: AboutProps) {
     const { strings, extra } = props;
-    const { header, description, buttonText, description2 } = strings;
-    const {  ply03CardId } = extra;
+    const { header, description, buttonText } = strings;
+    const { aboutCardData } = extra;
 
-    const { ga } = useContext(SiteContext);
-
-    const ply03Card = useDataset(ply03CardId);
-
-    const onClick = (url: string) => () => {
-        ga('navigate', {
-            category: 'hero',
-            label: url,
-        });
-    };
 
     return (
         <>
             <Wrapper>
                 <FlexContainer>
                     <Col>
-                        {ply03Card.map((value: any) => {
+                        {aboutCardData.map((value: Json,index:number) => {
                             return (
                                 <>
-                                    <HeroCard className='mt-5 ml-5'>
-                                        <H2>{value.cardTitle}</H2>
+                                    <HeroCard className='mt-5 ml-5 shadow '>
+                                        <CardIcone className='material-symbols-outlined ic '> {value.cardIcon} </CardIcone>
+                                        <H2 className='mt-3'>{value.cardTitle}</H2>
                                         <Span> {value.cardDescription} </Span>
                                     </HeroCard>
                                 </>
@@ -75,8 +61,6 @@ export function Hero(props: HeroProps) {
                     <Col className=''>
                         <H1 className='mt-50px'> {header} </H1>
                         <P> {description} </P>
-                            <br />
-                        <P> {description2} </P>
                         <Button className='mt-10'> {buttonText} </Button>
                     </Col>
                 </FlexContainer>
@@ -85,4 +69,4 @@ export function Hero(props: HeroProps) {
     );
 }
 
-export default Hero;
+export default About;

@@ -10,8 +10,20 @@ export const sampleData: ISampleDataPerFlavour = {
         colors: {},
         extra: {
             imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/hero-img-1.png',
-            socialDatasetId: 'social',
-            heroDatasetId:'heroDataset'
+            clientDataSet:[
+                {
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client4.png"
+                },
+                {
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client2.png"
+                },
+                {
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client1.png"
+                },
+                {
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client3.png"
+                }
+        ]
         },
     },
 };

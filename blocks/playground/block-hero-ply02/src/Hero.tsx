@@ -1,15 +1,17 @@
-import React, { useContext } from 'react';
-import { 
-    H1, 
-    Wrapper, 
-    FlexContainer , 
-    Col,
+import React from 'react';
+import {
+    H1,
+    Wrapper,
     P,
     ClientIcon,
-    HeroImg
-
+    HeroImg,
+    Container,
+    Row,
+    Column,
+    HeroButton,
+    Br,
+    Client,
 } from './Hero.style';
-import { useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.hero-ply02';
 
@@ -23,7 +25,7 @@ export type HeroStrings = {
     slogan?: string;
     header: string;
     description?: string;
-    buttonText?:string;
+    buttonText?: string;
 };
 
 export type HeroColors = {};
@@ -31,52 +33,41 @@ export type HeroColors = {};
 export type HeroExtra = {
     imageUrl: string;
     socialDatasetId: string;
-    heroDatasetId:string;
-
+    heroDatasetId: string;
+    clientDataSet: Json;
 };
 
 export function Hero(props: HeroProps) {
     const { strings, extra } = props;
-    const { header, description ,buttonText } = strings;
-    const { heroDatasetId } = extra;
-
-
-
-
-    const heroData = useDataset(heroDatasetId);
-
-
-   
+    const { header, description, buttonText } = strings;
+    const { clientDataSet } = extra;
 
     return (
- 
         <>
-        <Wrapper>
-        <FlexContainer>
-            <Col> 
-                <H1 className='pt-10'> {header} </H1>
-                 <P>{description}</P>
-                 <button className='hero-button'>{buttonText} </button>
-                 <br />
-                 <br /><br />
-                   {heroData.map((clientimage:any)=>{
-                    return(
-                        <>
-                            <ClientIcon>
-                            <img src={clientimage.imgUrl}/>
-                            </ClientIcon>
-                        </>
-                    )
-                   })}
-             </Col>
-            <Col>
-                <HeroImg
-                extra={extra}
-                ></HeroImg>
-            </Col>
-        </FlexContainer>
-        </Wrapper>
-        
+            <Wrapper>
+                    <Container>
+                        <Row>
+                        <Column>
+                        <H1 className='pt-10'> {header} </H1>
+                        <P> {description} </P>
+                        <HeroButton> {buttonText} </HeroButton>
+                        <Br></Br>
+                        {clientDataSet.map((clientimage: Json) => {
+                            return (
+                                <>
+                                    <ClientIcon>
+                                        <Client src={clientimage.imgUrl} />
+                                    </ClientIcon>
+                                </>
+                            );
+                        })}
+                        </Column>
+                        <Column>
+                            <HeroImg extra={extra}></HeroImg>
+                        </Column>
+                        </Row>
+                    </Container>
+             </Wrapper>
         </>
     );
 }

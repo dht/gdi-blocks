@@ -63,7 +63,8 @@
         "prosemirror-schema-list": "^1.2.2",
         "@gdi/block-hero-ply01": "latest",
         "@gdi/block-hero-ply02": "latest",
-        "@gdi/block-hero-ply03": "latest"
+        "@gdi/block-hero-ply03": "latest",
+        "@gdi/block-about-ply03": "latest"
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",
