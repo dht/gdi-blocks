@@ -6,7 +6,7 @@ import { screenshots } from './meta/Hero.screenshots';
 
 export const block: IBlock = {
     id: 'com.usegdi.blocks.hero-ply01',
-    name: 'HOME',
+    name: 'hero-ply01',
     description: '',
     params,
     sampleData,
