@@ -41,8 +41,8 @@ export type HeroExtra = {
 
 export function Hero(props: HeroProps) {
     const { strings, extra } = props;
-    const { slogan, header, description, buttonText, description2 } = strings;
-    const { socialDatasetId, ply03CardId } = extra;
+    const { header, description, buttonText, description2 } = strings;
+    const {  ply03CardId } = extra;
 
     const { ga } = useContext(SiteContext);
 
