@@ -1,18 +1,18 @@
 import { EngineView } from '@gdi/engine';
 import React from 'react';
 import { Json } from 'redux-connected/dist/dts/types';
-import { Wrapper, Content } from './BlockViewer.style';
-import { BlockTabs } from '../Tabs/Tabs';
+import { Wrapper, Content } from './TemplateViewer.style';
+import { TemplateTabs } from '../Tabs/Tabs';
 import { useSearchParams } from 'react-router-dom';
 import classnames from 'classnames';
 
-export type BlockViewerProps = {
+export type TemplateViewerProps = {
     elements: Json[];
     datasets: Json;
     mobileMode?: boolean;
 };
 
-export function BlockViewer(props: BlockViewerProps) {
+export function TemplateViewer(props: TemplateViewerProps) {
     const { elements, mobileMode, datasets } = props;
     const [search] = useSearchParams();
 
@@ -25,8 +25,8 @@ export function BlockViewer(props: BlockViewerProps) {
 
     return (
         <Wrapper
-            className='BlockViewer-wrapper'
-            data-testid='BlockViewer-wrapper'
+            className='TemplateViewer-wrapper'
+            data-testid='TemplateViewer-wrapper'
             zoom={zoom}
         >
             <Content className={className}>
@@ -37,9 +37,9 @@ export function BlockViewer(props: BlockViewerProps) {
                     backgroundColor='transparent'
                 />
             </Content>
-            {!fullscreen ? <BlockTabs /> : null}
+            {!fullscreen ? <TemplateTabs /> : null}
         </Wrapper>
     );
 }
 
-export default BlockViewer;
+export default TemplateViewer;

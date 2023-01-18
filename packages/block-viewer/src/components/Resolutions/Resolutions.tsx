@@ -1,4 +1,4 @@
-import BlockTabs from '../BlockTabs/BlockTabs';
+import { BlockTabs } from '../Tabs/Tabs';
 import React from 'react';
 import ResolutionSelect from './Resolutions.select';
 import { Content, Header, IFrame, Wrapper } from './Resolutions.style';

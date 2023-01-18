@@ -1,13 +1,13 @@
-import { BlockTabsDriver } from './BlockTabs.driver';
+import { TemplateViewerDriver } from './TemplateViewer.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
-describe('BlockTabs', () => {
-    let driver: BlockTabsDriver;
+describe('TemplateViewer', () => {
+    let driver: TemplateViewerDriver;
 
     beforeAll(() => {
-        driver = new BlockTabsDriver();
+        driver = new TemplateViewerDriver();
     });
 
     it('should render button', () => {
@@ -22,7 +22,7 @@ describe('BlockTabs', () => {
         const wrapperClassName = element.get.wrapperClassName();
         const innerText = element.get.label();
 
-        expect(wrapperClassName).toContain('BlockTabs-wrapper');
+        expect(wrapperClassName).toContain('TemplateViewer-wrapper');
         expect(innerText).toBe(label);
     });
 
@@ -40,11 +40,11 @@ describe('BlockTabs', () => {
     });
 });
 
-describe('BlockTabs snapshots', () => {
-    let driver: BlockTabsDriver;
+describe('TemplateViewer snapshots', () => {
+    let driver: TemplateViewerDriver;
 
     beforeAll(() => {
-        driver = new BlockTabsDriver();
+        driver = new TemplateViewerDriver();
     });
 
     it('should match snapshot', () => {
