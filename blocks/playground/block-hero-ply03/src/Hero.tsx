@@ -15,6 +15,7 @@ import {
 import { SiteContext, useDataset } from '@gdi/engine';
 
 
+
 export const id = 'com.usegdi.blocks.hero-ply03';
 
 export type HeroProps = {
@@ -76,7 +77,6 @@ export function Hero(props: HeroProps) {
                         <P> {description} </P>
                             <br />
                         <P> {description2} </P>
-
                         <Button className='mt-10'> {buttonText} </Button>
                     </Col>
                 </FlexContainer>
