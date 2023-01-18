@@ -7,9 +7,9 @@
         "refresh": "cd scripts && node refresh.js"
     },
     "workspaces": [
-        "packages/*",
+        "packages/block-base",
+        "packages/block-viewer",
         "blocks/**",
-        "articles/*",
         "scripts"
     ],
     "license": "MIT",
