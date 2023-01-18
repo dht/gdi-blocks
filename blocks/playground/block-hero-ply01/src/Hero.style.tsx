@@ -8,6 +8,14 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     background-size: cover;
     background-position: center bottom;
     height: ${(props) => props.theme.vh(88)};
+    ${mobile(
+        css`
+            background-image: url('https://static.wixstatic.com/media/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg/v1/fill/w_320,h_348,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg');
+            background-size: cover;
+            background-position: center bottom;
+            height: ${(props) => props.theme.vh(100)};
+        `
+    )};
     display: flex;
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};
@@ -32,9 +40,14 @@ export const Container1 = styled.div`
     align-self: flex-end;
     flex: 1;
     max-width: 800px;
-    width: 0px;
     height: 250px;
     background-color: white;
+    ${mobile(
+        css`
+            max-width: 330px;
+            height: 250px;
+        `
+    )};
 `;
 
 export const H1 = styled.h1`
@@ -46,6 +59,11 @@ export const H1 = styled.h1`
     padding-bottom: 20px;
     color: #163c60;
     text-align: center;
+    ${mobile(
+        css`
+            font-size: 30px;
+        `
+    )};
 `;
 
 export const Greeting = styled.div`
@@ -56,6 +74,11 @@ export const Greeting = styled.div`
     font-size: 24px;
     font-weight: bold;
     font-variation-settings: 'wdth' 125, 'wght' 350;
+    ${mobile(
+        css`
+            font-size: 16px;
+        `
+    )};
 `;
 
 export const Skill = styled.div`

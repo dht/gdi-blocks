@@ -6,6 +6,11 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     flex: 1;
     background-color: white;
     height: ${(props) => props.theme.vh(88)};
+    ${mobile(
+        css`
+            height: ${(props) => props.theme.vh(300)};
+        `
+    )};
     display: flex;
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};
@@ -29,6 +34,11 @@ export const Container1 = styled.div`
     align-self: center;
     flex: 1;
     justify-content: center;
+    ${mobile(
+        css`
+            flex-direction: column;
+        `
+    )};
 `;
 
 export const Box = styled.div`
