@@ -33,8 +33,6 @@ export type HeroExtra = {
 };
 
 export function Hero(props: HeroProps) {
-    console.log('props ->', props);
-
     const { strings, extra } = props;
     const { slogan, priceNote } = strings;
     const { currentPrice, previousPrice, hudDatasetId, imageUrl } = extra;

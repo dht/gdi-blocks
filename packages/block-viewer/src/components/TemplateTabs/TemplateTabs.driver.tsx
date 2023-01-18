@@ -1,18 +1,18 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { BlockTabs, BlockTabsProps } from './BlockTabs';
+import { TemplateTabs, TemplateTabsProps } from './TemplateTabs';
 import { BaseComponentDriver } from 'testing-base';
 
-export class BlockTabsDriver extends BaseComponentDriver {
-    private props: Partial<BlockTabsProps> = {};
+export class TemplateTabsDriver extends BaseComponentDriver {
+    private props: Partial<TemplateTabsProps> = {};
 
     constructor() {
-        super('BlockTabs');
+        super('TemplateTabs');
     }
 
     when: any = {
         rendered: () => {
-            render(<BlockTabs {...(this.props as BlockTabsProps)} />);
+            render(<TemplateTabs {...(this.props as TemplateTabsProps)} />);
             return this;
         },
         clicked: () => {
@@ -20,12 +20,12 @@ export class BlockTabsDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<BlockTabs {...(this.props as BlockTabsProps)} />);
+            return this.snapshot(<TemplateTabs {...(this.props as TemplateTabsProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<BlockTabsProps>) => {
+        props: (props: Partial<TemplateTabsProps>) => {
             this.props = props;
             return this;
         },

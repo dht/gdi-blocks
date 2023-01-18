@@ -1,0 +1,37 @@
+{
+    "card": {
+        "card-ah4j1": 0
+    },
+    "gdi": {
+        "apps-jf84j": 3,
+        "features-j4k1h": 5,
+        "footer-ajk34": 6,
+        "gallery-ui5873": 4,
+        "hero-ajh53": 1,
+        "top-41hj5": 0,
+        "twins-j1j43": 2
+    },
+    "kickstarter": {
+        "cta-uiey3": 5,
+        "divider-aku34": 2,
+        "footer-ui4y2": 6,
+        "hero-ouywy": 1,
+        "quotes-opur3": 3,
+        "top-9yur8": 0,
+        "twins-aou31": 4
+    },
+    "starter": {
+        "about-iuhr3": 2,
+        "contact-au487": 9,
+        "cta-p8y4a": 3,
+        "header-aouu4": 99,
+        "hero-hu45i": 1,
+        "numbers-jk123": 4,
+        "portfolio-aiou3": 5,
+        "quotes-iaj2f": 6,
+        "resume-iuo4f": 7,
+        "section-gkj41": 99,
+        "services-uoq83": 8,
+        "top-aqwer": 0
+    }
+}

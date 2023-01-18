@@ -1,11 +1,15 @@
 import React, { useMemo } from 'react';
-import { Back, Wrapper } from './BlockTabs.style';
+import { Back, Wrapper } from './Tabs.style';
 import { TabsMini } from '@gdi/web-ui';
 import { useNavigate, useParams, useLocation } from 'react-router-dom';
 
-export type BlockTabsProps = {};
+export type TabsProps = {
+    tabs: ITab[];
+};
 
-export function BlockTabs(_props: BlockTabsProps) {
+export function Tabs(props: TabsProps) {
+    const { tabs } = props;
+
     const navigate = useNavigate();
     const params = useParams();
     const location = useLocation();
@@ -30,7 +34,7 @@ export function BlockTabs(_props: BlockTabsProps) {
     }
 
     return (
-        <Wrapper className='BlockTabs-wrapper' data-testid='BlockTabs-wrapper'>
+        <Wrapper className='Tabs-wrapper' data-testid='Tabs-wrapper'>
             <Back onClick={onHome}>
                 <i className='material-icons'>home</i>
             </Back>
@@ -39,22 +43,44 @@ export function BlockTabs(_props: BlockTabsProps) {
     );
 }
 
-const tabs = [
-    {
-        id: 'viewer',
-        text: 'Viewer',
-        path: 'view',
-    },
-    {
-        id: 'mixer',
-        text: 'Mixer',
-        path: 'mixer',
-    },
-    {
-        id: 'devices',
-        text: 'Devices',
-        path: 'devices',
-    },
-];
+type ITab = {
+    id: string;
+    text: string;
+    path: string;
+};
 
-export default BlockTabs;
+export function BlockTabs() {
+    const tabs = [
+        {
+            id: 'viewer',
+            text: 'Viewer',
+            path: 'view',
+        },
+        {
+            id: 'mixer',
+            text: 'Mixer',
+            path: 'mixer',
+        },
+        {
+            id: 'devices',
+            text: 'Devices',
+            path: 'devices',
+        },
+    ];
+
+    return <Tabs tabs={tabs} />;
+}
+
+export function TemplateTabs() {
+    const tabs = [
+        {
+            id: 'viewer',
+            text: 'Viewer',
+            path: 'view',
+        },
+    ];
+
+    return <Tabs tabs={tabs} />;
+}
+
+export default Tabs;
