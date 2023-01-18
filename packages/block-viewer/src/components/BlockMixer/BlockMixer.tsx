@@ -1,5 +1,5 @@
 import React from 'react';
-import BlockTabs from '../BlockTabs/BlockTabs';
+import { BlockTabs } from '../Tabs/Tabs';
 import { EngineEdit } from '@gdi/engine';
 import { Container, Content, Wrapper } from './BlockMixer.style';
 
