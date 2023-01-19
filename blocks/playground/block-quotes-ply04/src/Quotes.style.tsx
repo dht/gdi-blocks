@@ -2,13 +2,15 @@ import styled from 'styled-components';
 import { QuotesExtra } from './Quotes';
 import { Grid, mobile, css } from '@gdi/engine';
 
-export const Wrapper = styled.div<{ extra: QuotesExtra }>`
+export const Wrapper = styled.div`
     flex: 1;
-    background-image: url(${(props) => props.extra.imageUrl});
     background-size: cover;
     background-position: center bottom;
+    background-color: white;
+    color: black;
     height: ${(props) => props.theme.vh(88)};
     display: flex;
+    border-top: 1px solid silver;
     font-family: ${(props) => props.theme.fontFamily};
 `;
 
@@ -21,40 +23,31 @@ export const Container = styled(Grid.Container)`
 `;
 
 export const H1 = styled.h1`
-    font-size: 42px;
-    max-width: 400px;
-    margin: 10px 0;
+    font-size: 50px;
     padding: 0;
-    font-variation-settings: 'wdth' 105, 'wght' 650;
-    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-    color: white;
+    color: black;
     text-align: center;
-`;
-
-export const Greeting = styled.div`
-    color: #33334499;
-    background-color: #ffffff44;
-    padding: 2px 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-variation-settings: 'wdth' 125, 'wght' 350;
-`;
-
-export const Skill = styled.div`
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 17px;
-    margin-top: 2px;
-    margin-bottom: 30px;
-    font-variation-settings: 'wdth' 125, 'wght' 350;
+    font-weight:normal;
 
     ${mobile(
         css`
-            text-align: center;
+            font-size: 30px;
         `
     )}
 `;
 
-export const Social = styled.div``;
+
+
+export const SubTitle = styled.p`
+    font-size: 22px;
+    color: #666666;
+`;
+
+export const ImageContainer = styled.img`
+    width: 100%;
+    height: 400px;
+`;
+
+
+export const Row = styled.div``;
+export const Column = styled.div``;

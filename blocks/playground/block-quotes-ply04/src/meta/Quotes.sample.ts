@@ -2,14 +2,13 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            slogan: 'The work of',
-            header: 'David Baker',
-            description: 'Portraits * landscapes * photography',
+            slogan: 'We built it from ground up to give you an amazing experience',
+            header: 'From wireframes – to code',
         },
         colors: {},
         extra: {
-            imageUrl: 'https://picsum.photos/seed/11/1557/882',
-            socialDatasetId: 'social',
+            imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/wire-frame.jpg',
+            
         },
     },
 };

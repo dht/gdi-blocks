@@ -1,7 +1,14 @@
+import { Column } from '@gdi/engine';
 import React, { useContext } from 'react';
-import { Container, H1, Wrapper, Greeting, Skill, Social } from './Quotes.style';
-import { SocialIcons } from '@gdi/web-ui';
-import { SiteContext, useDataset } from '@gdi/engine';
+import { 
+    Container, 
+    H1, 
+    Wrapper,
+    Row,
+    SubTitle,
+    ImageContainer, 
+
+} from './Quotes.style';
 
 export const id = 'com.usegdi.blocks.quotes-ply04';
 
@@ -14,36 +21,29 @@ export type QuotesProps = {
 export type HeroStrings = {
     slogan?: string;
     header: string;
-    description?: string;
 };
 
 export type HeroColors = {};
 
 export type QuotesExtra = {
     imageUrl: string;
-    socialDatasetId: string;
+   
 };
 
 export function Quotes(props: QuotesProps) {
     const { strings, colors, extra } = props;
-    const { slogan, header, description } = strings;
-    const { socialDatasetId } = extra;
-
-
-
-    
+    const { slogan, header } = strings;
+    const { imageUrl } = extra;
 
     return (
-        <Wrapper
-            className='Hero-container'
-            data-testid='Hero-container'
-            extra={extra}
-        >
+        <Wrapper >
             <Container>
-                <Greeting>{slogan}</Greeting>
-                <H1>{header}</H1>
-                <Skill>{description}</Skill>
-                
+                <Row className='row'>
+                    <Column className="col-lg-12 text-center"><H1>{header}</H1><SubTitle> {slogan}</SubTitle></Column>
+                </Row>
+                <Row>
+                <Column className='col-lg-12' ><ImageContainer src={imageUrl} className="shadow" /></Column>
+                </Row>
             </Container>
         </Wrapper>
     );
