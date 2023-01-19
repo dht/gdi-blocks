@@ -39,6 +39,7 @@ export default defineConfig({
 			'@gdi/block-quotes-opur3': `${cwd}/blocks/kickstarter/block-quotes-opur3/src`,
 			'@gdi/block-top-9yur8': `${cwd}/blocks/kickstarter/block-top-9yur8/src`,
 			'@gdi/block-twins-aou31': `${cwd}/blocks/kickstarter/block-twins-aou31/src`,
+			'@gdi/block-hero-plylx': `${cwd}/blocks/playground/block-hero-plylx/src`,
 			'@gdi/block-about-iuhr3': `${cwd}/blocks/starter/block-about-iuhr3/src`,
 			'@gdi/block-contact-au487': `${cwd}/blocks/starter/block-contact-au487/src`,
 			'@gdi/block-cta-p8y4a': `${cwd}/blocks/starter/block-cta-p8y4a/src`,
