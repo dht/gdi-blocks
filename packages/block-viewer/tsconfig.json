@@ -73,6 +73,9 @@
             "@gdi/block-twins-aou31": [
                 "blocks/kickstarter/block-twins-aou31"
             ],
+            "@gdi/block-hero-plylx": [
+                "blocks/playground/block-hero-plylx"
+            ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
             ],
