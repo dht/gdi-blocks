@@ -4,8 +4,9 @@ import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #f6f8fa;
-    height: ${(props) => props.theme.vh(68)};
-    padding-top: 60px;
+    height: ${(props) => props.theme.vh(50)};
+    font-family: ubuntu,sans-serif;
+    padding-top: 80px;
     padding-left: 12px;
     ${mobile(
         css`
@@ -35,7 +36,7 @@ export const H1 = styled.h1`
 `;
 
 export const Skill = styled.div`
-    font-size: 14px;
+    font-size: 18px;
     line-height: 23px;
     max-width: 100%;
     word-wrap: break-word;
@@ -51,7 +52,7 @@ export const Skill = styled.div`
 `;
 
 export const SkillAncher = styled.div`
-    font-size: 14px;
+    font-size: 18px;
     line-height: 23px;
     max-width: 100%;
     word-wrap: break-word;
@@ -81,10 +82,12 @@ export const GridContainer = styled(Grid.Container)`
 export const ParentRenderDiv = styled.div`
     display: flex;
     flex-direction: row;
-    column-gap: 5px;
+    column-gap: 30px;
     color: #888;
+    
     .pad {
         padding-top: 20px;
+     
     }
 
     ${device(
@@ -96,8 +99,9 @@ export const ParentRenderDiv = styled.div`
 `;
 
 export const RenderItem = styled.div`
+    
     .check {
-        font-size: 60px;
+        font-size: 70px;
     }
 `;
 

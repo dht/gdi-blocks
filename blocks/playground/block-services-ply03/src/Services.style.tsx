@@ -13,6 +13,9 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
     ${mobile(
         css`
             height: auto;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            padding-left: 5px;
         `
     )}
 `;
@@ -28,6 +31,7 @@ export const Container = styled(Grid.Container)`
         css`
             padding-left: 10px;
             padding-right: 10px;
+            flex-direction: column;
         `
     )}
 `;
@@ -43,6 +47,8 @@ export const H1 = styled.h1`
     ${mobile(
         css`
             font-size: 25px;
+            text-align: ;
+            padding-top: 30px;
         `
     )}
 `;
@@ -58,7 +64,7 @@ export const Skill = styled.div`
 
     ${mobile(
         css`
-            text-align: center;
+            text-align: start;
         `
     )}
 `;
@@ -92,7 +98,7 @@ export const GridContainer = styled(Grid.Container)`
     ${device(
         '720p',
         css`
-            column-gap: 15px;
+            column-gap: 15px; ;
         `
     )}
 
@@ -112,14 +118,14 @@ export const GridItem = styled(Grid.Container)`
     ${device(
         '720p',
         css`
-            width: 30% !important;
+            /* width: 30% !important; */
         `
     )}
 
     ${mobile(
         css`
-            padding-left: 12px;
-            padding-right: 12px;
+            /* padding-left: 12px;
+            padding-right: 12px; */
             width: 100% !important;
         `
     )}
@@ -131,21 +137,42 @@ export const Infortmation = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width: ${(props) => props.theme.vw(38)};
-   
-`
+
+    ${mobile(
+        css`
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 100%;
+        `
+    )}
+`;
 
 export const ReadIcon = styled.div`
     display: flex;
     flex-direction: row;
     column-gap: 18px;
-    
+    cursor: pointer;
     .check {
         font-size: 41px;
         color: #888;
-        cursor: pointer;
         background-color: #f6f8fa;
-       border-radius: 50%;
-       /* border: 1px solid grey; */
-        padding: 10px;
+        border-radius: 50%;
+        /* border: 1px solid grey; */
+        padding: 15px;
     }
-    `
+    &:hover {
+        .check {
+        color: #fff;
+        background-color: #888;
+        }
+      }
+`;
+
+export const Image = styled.img`
+    ${mobile(
+        css`
+            width: ${(props) => props.theme.vw(90)}; ;
+        `
+    )}
+`;

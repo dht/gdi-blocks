@@ -79,6 +79,9 @@
             "@gdi/block-gallery-ply01": [
                 "blocks/playground/block-gallery-ply01"
             ],
+            "@gdi/block-hero-gallery-ply01": [
+                "blocks/playground/block-hero-gallery-ply01"
+            ],
             "@gdi/block-quotes-ply01": [
                 "blocks/playground/block-quotes-ply01"
             ],

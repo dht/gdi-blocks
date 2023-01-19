@@ -4,7 +4,7 @@ import { Grid, mobile, device, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #ffffff;
-    height: ${(props) => props.theme.vh(68)};
+    height: ${(props) => props.theme.vh(50)};
     padding-top: 25px;
     ${mobile(
         css`
@@ -107,7 +107,6 @@ export const GridItem = styled(Grid.Container)`
     flex-direction: column;
     justify-content: center;
     margin-right: 30px;
-
     ${device(
         '720p',
         css`
@@ -124,4 +123,16 @@ export const GridItem = styled(Grid.Container)`
     )}
 `;
 
-export const RederImage = styled.img``
+export const RederImage = styled.img`
+transition: transform .3s;
+ width: 100%;
+ cursor: pointer;
+
+&:hover {
+    transform: scale(1.1); 
+}
+`
+
+export const RenderDiv = styled.div`
+overflow: hidden;
+`

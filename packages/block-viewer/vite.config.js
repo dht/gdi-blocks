@@ -41,6 +41,7 @@ export default defineConfig({
 			'@gdi/block-twins-aou31': `${cwd}/blocks/kickstarter/block-twins-aou31/src`,
 			'@gdi/block-footer-ply01': `${cwd}/blocks/playground/block-footer-ply01/src`,
 			'@gdi/block-gallery-ply01': `${cwd}/blocks/playground/block-gallery-ply01/src`,
+			'@gdi/block-hero-gallery-ply01': `${cwd}/blocks/playground/block-hero-gallery-ply01/src`,
 			'@gdi/block-quotes-ply01': `${cwd}/blocks/playground/block-quotes-ply01/src`,
 			'@gdi/block-services-ply01': `${cwd}/blocks/playground/block-services-ply01/src`,
 			'@gdi/block-services-ply02': `${cwd}/blocks/playground/block-services-ply02/src`,

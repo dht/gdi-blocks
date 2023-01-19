@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RederImage } from './Services.style';
+import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RenderDiv,RederImage } from './Services.style';
 
 
 export const id = 'com.usegdi.block-services-ply01';
@@ -46,7 +46,9 @@ export function Services(props: ServicesProps) {
 function renderItems(gridData : Json) {
     return gridData.map((item: Json, index: number) =>  
         <GridItem key={item.id}>
+            <RenderDiv>
            <RederImage src={item.imageUrl} alt={item.title} />
+           </RenderDiv>
            <SkillAncher>{item.title}</SkillAncher>
            <Skill>{item.description}</Skill>
         </GridItem>
