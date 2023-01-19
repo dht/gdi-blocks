@@ -6,7 +6,6 @@ import {
     Wrapper,
     Row,
     SubTitle,
-    ImageContainer,
     VideoImage,
     ProductInfo, 
     Column,
@@ -71,5 +70,4 @@ export function Cta(props: CtaProps) {
         </Wrapper>
     );
 }
-
 export default Cta;

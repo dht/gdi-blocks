@@ -44,10 +44,7 @@ export const SubTitle = styled.p`
     color: #666666;
 `;
 
-export const ImageContainer = styled.img`
-    width: 100%;
-    height: 400px;
-`;
+
 
 export const VideoImage = styled.div<{extra:CtaExtra}>`
 background-image: url(${(props)=> props.extra.imageUrl});

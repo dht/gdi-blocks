@@ -165,7 +165,7 @@ export const P = styled.div`
 
 
 export const AboutCard = styled.div`
-    height: 290px;
+    height: 300px;
     width: 32%;
     float: left;
     padding: 20px;
@@ -186,7 +186,7 @@ export const AboutCard = styled.div`
 
     &:hover {
         background: rgb(21,112,195);
-background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(108,92,210,0.7567301090358018) 30%, rgba(180,104,203,0.8211558793439251) 100%, rgba(30,48,34,1) 100%);
+        background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(108,92,210,0.7567301090358018) 30%, rgba(180,104,203,0.8211558793439251) 100%, rgba(30,48,34,1) 100%);
         transition-duration: 0.4s !important;
         cursor: pointer;
         transform: scale(1.05);
@@ -200,6 +200,14 @@ background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(
         color: white;
         transition-duration: 0.8s !important;
     }
+
+    ${device(
+        'tablet',
+            css`
+                width: 290px;
+            `
+        )}
+
     ${mobile(
         css`
             float: none;
@@ -209,10 +217,18 @@ background: linear-gradient(16deg, rgba(21,112,195,0.5970662434895833) 5%, rgba(
         `
     )}
 
+    
+
 ` 
 
 export const H2 = styled.h4`
     font-weight: bold;
+    ${device(
+        '720p',
+            css`
+                font-size: 21px;
+            `
+    )}
 `
 
 export const Span = styled.span`
@@ -221,6 +237,12 @@ export const Span = styled.span`
     font-weight: normal;
     word-spacing: 4px;
     letter-spacing: 1px;
+    ${device(
+        '720p',
+            css`
+                font-size: 15px;
+            `
+    )}
 `
 
 export const Button = styled.button`
