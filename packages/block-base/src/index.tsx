@@ -28,3 +28,4 @@ export { Stars } from './components/Stars/Stars';
 export { StreetSign } from './components/StreetSign/StreetSign';
 export { TopMenu } from './components/TopMenu/TopMenu';
 export { Whatsapp } from './components/Whatsapp/Whatsapp';
+export { default as GoogleMap } from 'google-map-react';
