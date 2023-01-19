@@ -1,19 +1,18 @@
 import React, { useContext } from 'react';
-import { SiteContext } from '@gdi/engine';
 import { render, fireEvent } from '@testing-library/react';
-import { Resume, ResumeProps } from './Resume';
+import { Contact, ContactProps } from './Contact';
 import { BaseComponentDriver } from 'testing-base';
 
-export class ResumeDriver extends BaseComponentDriver {
-    private props: Partial<ResumeProps> = {};
+export class ContactDriver extends BaseComponentDriver {
+    private props: Partial<ContactProps> = {};
 
     constructor() {
-        super('Resume');
+        super('Contact');
     }
 
     when: any = {
         rendered: () => {
-            render(<Resume {...(this.props as ResumeProps)} />);
+            render(<Contact {...(this.props as ContactProps)} />);
             return this;
         },
         clicked: () => {
@@ -21,12 +20,12 @@ export class ResumeDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<Resume {...(this.props as ResumeProps)} />);
+            return this.snapshot(<Contact {...(this.props as ContactProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<ResumeProps>) => {
+        props: (props: Partial<ContactProps>) => {
             this.props = props;
             return this;
         },

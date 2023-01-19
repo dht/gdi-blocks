@@ -1,13 +1,13 @@
-import { ResumeDriver } from './Resume.driver';
+import { ContactDriver } from './Contact.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
-describe('Resume', () => {
-    let driver: ResumeDriver;
+describe('Contact', () => {
+    let driver: ContactDriver;
 
     beforeAll(() => {
-        driver = new ResumeDriver();
+        driver = new ContactDriver();
     });
 
     it('should render button', () => {
@@ -22,7 +22,7 @@ describe('Resume', () => {
         const containerClassName = element.get.containerClassName();
         const innerText = element.get.label();
 
-        expect(containerClassName).toContain('Resume-container');
+        expect(containerClassName).toContain('Contact-container');
         expect(innerText).toBe(label);
     });
 
@@ -40,11 +40,11 @@ describe('Resume', () => {
     });
 });
 
-describe('Resume snapshots', () => {
-    let driver: ResumeDriver;
+describe('Contact snapshots', () => {
+    let driver: ContactDriver;
 
     beforeAll(() => {
-        driver = new ResumeDriver();
+        driver = new ContactDriver();
     });
 
     it('should match snapshot', () => {

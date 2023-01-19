@@ -14,7 +14,7 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'Resume',
+            name: 'Contact',
             formats: ['es', 'umd'],
             fileName: (format) => `block-contact-ply05.${format}.js`,
         },

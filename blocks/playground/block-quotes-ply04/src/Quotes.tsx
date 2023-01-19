@@ -12,6 +12,7 @@ import {
     QuotePerson,
     QuotePersonJobTitle,
     QuotePersonName,
+    H1,
 } from './Quotes.style';
 import { SiteContext, useDataset } from '@gdi/engine';
 
@@ -85,6 +86,7 @@ export function Quotes(props: QuotesProps) {
     }
     return (
         <Wrapper className='Media-container' data-testid='Media-container'>
+            <H1>{'TESTIMONIALS'}</H1>
             <Arrows
                 items={items}
                 activeIndex={activeIndex}

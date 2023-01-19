@@ -1,8 +1,8 @@
-import { Resume } from './Resume';
-import { params } from './meta/Resume.params';
-import { sampleData } from './meta/Resume.sample';
-import { dimensions } from './meta/Resume.dimensions';
-import { screenshots } from './meta/Resume.screenshots';
+import { Contact } from './Contact';
+import { params } from './meta/Contact.params';
+import { sampleData } from './meta/Contact.sample';
+import { dimensions } from './meta/Contact.dimensions';
+import { screenshots } from './meta/Contact.screenshots';
 
 export const block: IBlock = {
     id: 'com.usegdi.blocks.contact-ply05',
@@ -12,9 +12,9 @@ export const block: IBlock = {
     sampleData,
     dimensions,
     screenshots,
-    tags: ['type-resume'],
+    tags: ['type-contact'],
     dataTags: [],
-    widgetType: 'resume',
+    widgetType: 'contact',
     isBlock: true,
-    component: Resume,
+    component: Contact,
 };

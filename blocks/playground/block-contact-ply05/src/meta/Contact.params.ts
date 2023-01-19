@@ -1,4 +1,4 @@
-import { id } from '../Resume';
+import { id } from '../Contact';
 
 export const params: IWidgetParams = {
     id,
@@ -9,7 +9,7 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            resumeDatasetId: { fieldType: 'dataset', order: 0 },
+            contactDatasetId: { fieldType: 'dataset', order: 0 },
         },
     },
 };

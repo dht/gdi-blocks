@@ -29,6 +29,18 @@ export const ContainerItem = styled.div`
     `)}
 `;
 
+export const H1 = styled.h1`
+    font-size: 40px;
+    max-width: 500px;
+    font-weight: 400;
+    margin: 10px 0;
+    padding: 0;
+    padding-bottom: 50px;
+    color: #163c60;
+    text-align: center;
+    position: relative;
+`;
+
 export const Image = styled.div<{ url: string }>`
     background-image: url(${(props) => props.url});
     background-size: contain;

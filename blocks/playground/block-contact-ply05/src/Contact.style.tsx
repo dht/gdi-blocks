@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { ResumeColors } from './Resume';
 import { mobile, Grid, css } from '@gdi/engine';
 
 export const Wrapper = styled.div`
@@ -113,7 +112,7 @@ export const IconWrapperEmail = styled.div`
     `)}
 `;
 
-export const ResumeTitle = styled.h3`
+export const ContactTitle = styled.h3`
     font-size: 32px;
     padding: 0;
     padding-left: 15px;
@@ -128,7 +127,7 @@ export const ResumeTitle = styled.h3`
     `)}
 `;
 
-export const ResumeTitleText = styled.div`
+export const ContactTitleText = styled.div`
     margin-left: 5px;
     flex: 1;
     align-self: flex-start;

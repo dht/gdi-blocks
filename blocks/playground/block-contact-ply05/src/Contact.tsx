@@ -1,14 +1,12 @@
-import { Icon } from '@gdi/web-ui';
 import React from 'react';
 import {
     Container,
     Wrapper,
     H2,
-    Description,
     Row,
     Column,
-    ResumeTitle,
-    ResumeTitleText,
+    ContactTitle,
+    ContactTitleText,
     Items,
     Item,
     JobTitle,
@@ -17,43 +15,39 @@ import {
     Year,
     Dash,
     LineRow,
-    IconWrapper,
     JobDescription,
     Input,
-    Box,
-    InputBox,
-    NameText,
     MapContainer,
     IconWrapperEmail,
     IconWrapperName,
-} from './Resume.style';
+} from './Contact.style';
 import { useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.contact-ply05';
 
-export type ResumeProps = {
-    strings: ResumeStrings;
-    colors: ResumeColors;
-    extra: ResumeExtra;
+export type ContactProps = {
+    strings: ContactStrings;
+    colors: ContactColors;
+    extra: ContactExtra;
 };
 
-export type ResumeStrings = {
+export type ContactStrings = {
     header: string;
     description?: string;
 };
 
-export type ResumeColors = {};
+export type ContactColors = {};
 
-export type ResumeExtra = {
-    resumeDatasetId?: string;
+export type ContactExtra = {
+    ContactDatasetId?: string;
 };
 
-export function Resume(props: ResumeProps) {
+export function Contact(props: ContactProps) {
     const { strings, extra } = props;
     const { header, description } = strings;
-    const { resumeDatasetId } = extra;
+    const { ContactDatasetId } = extra;
 
-    const items = useDataset(resumeDatasetId ?? '');
+    const items = useDataset(ContactDatasetId ?? '');
 
     const educationItems = items.filter((i: Json) => i.type === 'education');
     const experienceItems = items.filter((i: Json) => i.type === 'experience');
@@ -82,32 +76,32 @@ export function Resume(props: ResumeProps) {
     }
 
     return (
-        <Wrapper className='Resume-container' data-testid='Resume-container'>
+        <Wrapper className='Contact-container' data-testid='Contact-container'>
             <Container>
                 <H2>{header}</H2>
                 <Row>
                     <Column>
-                        <ResumeTitle>
-                            <ResumeTitleText>Name</ResumeTitleText>
+                        <ContactTitle>
+                            <ContactTitleText>Name</ContactTitleText>
                             <Input></Input>
                             <IconWrapperName>
                                 <i className='material-symbols-outlined'>
                                     badge
                                 </i>
                             </IconWrapperName>
-                        </ResumeTitle>
+                        </ContactTitle>
                         <Items>{renderItems(educationItems)}</Items>
                     </Column>
                     <Column>
-                        <ResumeTitle>
-                            <ResumeTitleText>Email</ResumeTitleText>
+                        <ContactTitle>
+                            <ContactTitleText>Email</ContactTitleText>
                             <Input></Input>
                             <IconWrapperEmail>
                                 <i className='material-symbols-outlined'>
                                     mail
                                 </i>
                             </IconWrapperEmail>
-                        </ResumeTitle>
+                        </ContactTitle>
                         <Items>{renderItems(experienceItems)}</Items>
                     </Column>
                 </Row>
@@ -117,4 +111,4 @@ export function Resume(props: ResumeProps) {
     );
 }
 
-export default Resume;
+export default Contact;
