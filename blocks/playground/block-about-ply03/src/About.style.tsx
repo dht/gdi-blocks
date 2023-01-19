@@ -55,10 +55,6 @@ export const H1 = styled.h1`
     )}
 `;
 
-
-
-
-
 export const FlexContainer = styled.div`
   display: flex;
   flex-direction: row; 
@@ -106,10 +102,6 @@ export const FlexContainer = styled.div`
         padding-right: 0%;
     `
   )}
-
-   
-
-
 
 `;
 
@@ -174,7 +166,7 @@ export const P = styled.div`
 
 export const AboutCard = styled.div`
     height: 290px;
-    width: 40%;
+    width: 32%;
     float: left;
     padding: 20px;
     border-radius: 8px;

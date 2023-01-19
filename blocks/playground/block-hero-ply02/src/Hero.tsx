@@ -9,7 +9,6 @@ import {
     Row,
     Column,
     HeroButton,
-    Br,
     Client,
 } from './Hero.style';
 
@@ -51,16 +50,19 @@ export function Hero(props: HeroProps) {
                         <H1 className='pt-10'> {header} </H1>
                         <P> {description} </P>
                         <HeroButton> {buttonText} </HeroButton>
-                        <Br></Br>
-                        {clientDataSet.map((clientimage: Json) => {
-                            return (
+
+                        <ClientIcon className='row mt-5'>
+                        {clientDataSet.map((clientImage:Json)=>{
+                            return(
                                 <>
-                                    <ClientIcon>
-                                        <Client src={clientimage.imgUrl} />
-                                    </ClientIcon>
+                                <ClientIcon className="col-lg-3 col-3 ">
+                                <Client src={clientImage.imgUrl} />
+                                </ClientIcon>
                                 </>
-                            );
-                        })}
+                            )
+                        })} 
+                        </ClientIcon>
+
                         </Column>
                         <Column>
                             <HeroImg extra={extra}></HeroImg>

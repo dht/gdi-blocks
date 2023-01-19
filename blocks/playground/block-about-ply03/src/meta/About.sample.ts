@@ -9,13 +9,11 @@ export const sampleData: ISampleDataPerFlavour = {
         colors: {},
         extra: {
             imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/hero-img-1.png',
-            socialDatasetId: 'social',
-            ply03CardId:'ply03Card',
             aboutCardData:[
                 {
-                    cardTitle:"Super Creative",
-                    cardDescription:"Digital transformation describes an organisation making a fundamental change from its.",
-                    cardIcon:"Bed"
+                    "cardTitle":"Super Creative",
+                    "cardDescription":"Digital transformation describes an organisation making a fundamental change from its.",
+                    "cardIcon":"Bed"
                 },
                 {
                     "cardTitle":"Feature-driven",

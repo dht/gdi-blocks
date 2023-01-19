@@ -40,7 +40,6 @@ export function About(props: AboutProps) {
     const { header, description, buttonText } = strings;
     const { aboutCardData } = extra;
 
-
     return (
         <>
             <Wrapper>
@@ -58,7 +57,7 @@ export function About(props: AboutProps) {
                             );
                         })}
                     </Col>
-                    <Col className=''>
+                    <Col>
                         <H1 className='mt-50px'> {header} </H1>
                         <P> {description} </P>
                         <Button className='mt-10'> {buttonText} </Button>

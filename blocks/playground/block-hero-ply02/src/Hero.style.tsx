@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     background-size: cover;
     height: 84vh;
     color: #000;
-    
+
     ${mobile(
         css`
             height: 110vh;
@@ -26,18 +26,18 @@ export const Container = styled(Grid.Container)`
 
 export const Row = styled(Grid.Row)`
     width: 100%;
-`
+`;
 
 export const Column = styled(Grid.Column)`
     width: 100%;
-    
+
     .pt-10 {
         padding-top: 10%;
     }
     H1 {
         font-weight: normal;
     }
-`
+`;
 
 export const HeroButton = styled.button`
     margin-top: 30px;
@@ -49,7 +49,7 @@ export const HeroButton = styled.button`
     font-weight: bold;
     cursor: pointer;
     background-color: #5c6ac4;
-`
+`;
 
 export const H1 = styled.h1`
     font-size: 60px;
@@ -70,8 +70,6 @@ export const H1 = styled.h1`
     )}
 `;
 
-
-
 export const P = styled.p`
     font-weight: normal;
     font-size: 22px;
@@ -86,22 +84,6 @@ export const P = styled.p`
     )}
 `;
 
-export const ClientIcon = styled.div`
-    float: left;
-    margin-top: 40px;
-    img {
-        margin-left: 20px;
-    }
-    ${mobile(
-        css`
-            height: 20px;
-            width: 130px;
-            img {
-                margin-left: 10px;
-            }
-        `
-    )}
-`;
 
 export const HeroImg = styled.div<{ extra: HeroExtra }>`
     background-image: url(${(props) => props.extra.imageUrl});
@@ -111,7 +93,6 @@ export const HeroImg = styled.div<{ extra: HeroExtra }>`
     margin-top: 50px;
     background-size: 100% 100%;
 
-     
     ${device(
         '720p',
         css`
@@ -131,10 +112,35 @@ export const HeroImg = styled.div<{ extra: HeroExtra }>`
         css`
             height: 300px;
             background-size: 100% 100%;
-            width: 100%; 
+            width: 100%;
         `
     )}
 `;
 
-export const Br = styled.br``;
-export const Client = styled.img``;
+export const Client = styled.img`
+    ${device(
+        'tablet',
+        css`
+            width: 100%;
+        `
+    )}
+
+    ${device(
+        '720p',
+        css`
+            width: 100%;
+            height: 30px;
+        `
+    )}   
+
+    ${mobile(
+        css`
+            height: 24px;
+            width: 100%;
+        `
+    )}
+`;
+
+
+export const ClientIcon = styled.div``;
+
