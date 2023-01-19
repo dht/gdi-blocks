@@ -10,16 +10,18 @@ export type TopMenuProps = {
 type IMenuItem = {
     href: string;
     title: string;
+    isTitle?: boolean;
 };
 
 export function TopMenu(props: TopMenuProps) {
     const { items } = props;
 
     function renderItem(item: IMenuItem, index: number) {
-        const { title, href } = item;
+        const { title, href, isTitle } = item;
 
+        console.log(isTitle);
         if (!title) {
-            return null;
+            return `text`;
         }
 
         const className = classnames(item, {
@@ -27,7 +29,7 @@ export function TopMenu(props: TopMenuProps) {
         });
 
         return (
-            <MenuItem key={href}>
+            <MenuItem key={href} extra={isTitle}>
                 <MenuItemLink
                     key={item.title + String(index)}
                     className={className}

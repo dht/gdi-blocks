@@ -42,6 +42,8 @@ export default defineConfig({
 			'@gdi/block-about-ply02': `${cwd}/blocks/playground/block-about-ply02/src`,
 			'@gdi/block-about-ply03': `${cwd}/blocks/playground/block-about-ply03/src`,
 			'@gdi/block-contact-ply05': `${cwd}/blocks/playground/block-contact-ply05/src`,
+			'@gdi/block-footer-ply06': `${cwd}/blocks/playground/block-footer-ply06/src`,
+			'@gdi/block-header-ply07': `${cwd}/blocks/playground/block-header-ply07/src`,
 			'@gdi/block-hero-ply01': `${cwd}/blocks/playground/block-hero-ply01/src`,
 			'@gdi/block-quotes-ply04': `${cwd}/blocks/playground/block-quotes-ply04/src`,
 			'@gdi/block-about-iuhr3': `${cwd}/blocks/starter/block-about-iuhr3/src`,

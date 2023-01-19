@@ -82,6 +82,12 @@
             "@gdi/block-contact-ply05": [
                 "blocks/playground/block-contact-ply05"
             ],
+            "@gdi/block-footer-ply06": [
+                "blocks/playground/block-footer-ply06"
+            ],
+            "@gdi/block-header-ply07": [
+                "blocks/playground/block-header-ply07"
+            ],
             "@gdi/block-hero-ply01": [
                 "blocks/playground/block-hero-ply01"
             ],

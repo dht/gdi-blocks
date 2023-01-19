@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 import { HeroExtra } from './Hero';
-import { Grid, mobile, css } from '@gdi/engine';
+import { mobile, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: HeroExtra }>`
     flex: 1;
     background-image: url(${(props) => props.extra.imageUrl});
     background-size: cover;
     background-position: center bottom;
+    transform: scale(1);
+    transition: transform 1s ease-in-out;
     height: ${(props) => props.theme.vh(88)};
     ${mobile(
         css`

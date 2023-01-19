@@ -17,6 +17,8 @@ import { block as block_twins_aou31 } from '@gdi/block-twins-aou31';
 import { block as block_about_ply02 } from '@gdi/block-about-ply02';
 import { block as block_about_ply03 } from '@gdi/block-about-ply03';
 import { block as block_contact_ply05 } from '@gdi/block-contact-ply05';
+import { block as block_footer_ply06 } from '@gdi/block-footer-ply06';
+import { block as block_header_ply07 } from '@gdi/block-header-ply07';
 import { block as block_hero_ply01 } from '@gdi/block-hero-ply01';
 import { block as block_quotes_ply04 } from '@gdi/block-quotes-ply04';
 import { block as block_about_iuhr3 } from '@gdi/block-about-iuhr3';
@@ -52,6 +54,8 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_about_ply02.id]: block_about_ply02,
 			[block_about_ply03.id]: block_about_ply03,
 			[block_contact_ply05.id]: block_contact_ply05,
+			[block_footer_ply06.id]: block_footer_ply06,
+			[block_header_ply07.id]: block_header_ply07,
 			[block_hero_ply01.id]: block_hero_ply01,
 			[block_quotes_ply04.id]: block_quotes_ply04,
 			[block_about_iuhr3.id]: block_about_iuhr3,

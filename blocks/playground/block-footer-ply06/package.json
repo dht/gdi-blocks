@@ -1,6 +1,6 @@
 {
-    "name": "@gdi/block-base",
-    "version": "0.4.14",
+    "name": "@gdi/block-footer-ply06",
+    "version": "0.4.6",
     "scripts": {
         "build": "tsc & vite build && npm run scss",
         "test": "jest",
@@ -8,9 +8,9 @@
         "coverage": "jest --coverage=true"
     },
     "dependencies": {
+        "@gdi/block-base": "^0.4.13",
         "@gdi/engine": "^0.4.6",
-        "@gdi/web-ui": "^0.4.4",
-        "classnames": "^2.3.2",
+        "polished": "^4.2.2",
         "shared-base": "^0.4.2",
         "styled-components": "^5.3.6"
     },
@@ -42,13 +42,13 @@
     "files": [
         "dist"
     ],
-    "main": "./dist/block-base.umd.js",
-    "module": "./dist/block-base.es.js",
+    "main": "./dist/block-footer-ply06.umd.js",
+    "module": "./dist/block-footer-ply06.es.js",
     "types": "./dist/dts/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/block-base.es.js",
-            "require": "./dist/block-base.umd.js"
+            "import": "./dist/block-footer-ply06.es.js",
+            "require": "./dist/block-footer-ply06.umd.js"
         },
         "./dist/index.css": {
             "import": "./dist/index.css",
