@@ -45,7 +45,7 @@ export function ViewerHome(props: ViewerHomeProps) {
         const path = `/${name}`;
 
         return (
-            <Li>
+            <Li key={name}>
                 <A
                     onClick={() => onClick(path)}
                     onMouseOver={() => setCurrentBlockName(name)}
@@ -72,7 +72,7 @@ export function ViewerHome(props: ViewerHomeProps) {
 
     function renderTemplate(template: string) {
         return (
-            <Group key={template} className='template'>
+            <Group key={template} className='template' key={template}>
                 <H2 onClick={() => focusOnTemplate(template)}>{template}</H2>
                 {renderBlocks(template)}
             </Group>

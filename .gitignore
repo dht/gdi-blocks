@@ -10,3 +10,15 @@ coverage
 *.mtl
 .cloc
 .todos
+clients/site
+clients/gdi-admin/.firebaserc
+clients/gdi-admin/config/tsconfig.paths.extra.json
+clients/gdi-admin/config/vite.extra.ts
+clients/gdi-admin/stats.html
+firebaseConfig.ts
+firebaseServiceAccount.json
+firebase-debug.log
+**/logs/build*.log
+**/logs/publish*.log
+.logs
+yarn.lock
