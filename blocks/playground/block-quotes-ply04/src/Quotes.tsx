@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Container, H1, Wrapper, Greeting, Skill, Social } from './Hero.style';
+import { Container, H1, Wrapper, Greeting, Skill, Social } from './Quotes.style';
 import { SocialIcons } from '@gdi/web-ui';
 import { SiteContext, useDataset } from '@gdi/engine';
 
@@ -29,17 +29,9 @@ export function Quotes(props: QuotesProps) {
     const { slogan, header, description } = strings;
     const { socialDatasetId } = extra;
 
-    const { ga } = useContext(SiteContext);
 
-    const social = useDataset(socialDatasetId);
-    const urls = Object.values(social).map((i: Json) => i.url);
 
-    const onClick = (url: string) => () => {
-        ga('navigate', {
-            category: 'hero',
-            label: url,
-        });
-    };
+    
 
     return (
         <Wrapper
@@ -51,9 +43,7 @@ export function Quotes(props: QuotesProps) {
                 <Greeting>{slogan}</Greeting>
                 <H1>{header}</H1>
                 <Skill>{description}</Skill>
-                <Social>
-                    <SocialIcons grayscale urls={urls} onClick={onClick} />
-                </Social>
+                
             </Container>
         </Wrapper>
     );
