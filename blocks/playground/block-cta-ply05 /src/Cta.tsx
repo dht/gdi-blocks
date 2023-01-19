@@ -62,8 +62,7 @@ export function Cta(props: CtaProps) {
                                 </Column> 
                             </>
                         )
-                    })}
-                                       
+                    })}          
                             </Row>
                         </ProductInfo>
                     </Column>
