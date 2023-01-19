@@ -16,7 +16,7 @@ export default defineConfig({
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'Hero',
             formats: ['es', 'umd'],
-            fileName: (format) => `block-hero-ply01.${format}.js`,
+            fileName: (format) => `block-quotes-ply04.${format}.js`,
         },
         rollupOptions: {
             plugins: [ANALYZE_BUNDLE ? analyze() : null],

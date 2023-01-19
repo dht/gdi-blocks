@@ -76,11 +76,11 @@
             "@gdi/block-hero-ply03": [
                 "blocks/playground/block-about-ply03"
             ],
-            "@gdi/block-hero-ply01": [
-                "blocks/playground/block-hero-ply01"
-            ],
             "@gdi/block-hero-ply02": [
                 "blocks/playground/block-hero-ply02"
+            ],
+            "@gdi/block-quotes-ply04": [
+                "blocks/playground/block-quotes-ply04"
             ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"

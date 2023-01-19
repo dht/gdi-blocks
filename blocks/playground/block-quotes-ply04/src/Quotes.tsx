@@ -3,12 +3,12 @@ import { Container, H1, Wrapper, Greeting, Skill, Social } from './Hero.style';
 import { SocialIcons } from '@gdi/web-ui';
 import { SiteContext, useDataset } from '@gdi/engine';
 
-export const id = 'com.usegdi.blocks.hero-ply01';
+export const id = 'com.usegdi.blocks.quotes-ply04';
 
-export type HeroProps = {
+export type QuotesProps = {
     strings: HeroStrings;
     colors: HeroColors;
-    extra: HeroExtra;
+    extra: QuotesExtra;
 };
 
 export type HeroStrings = {
@@ -19,12 +19,12 @@ export type HeroStrings = {
 
 export type HeroColors = {};
 
-export type HeroExtra = {
+export type QuotesExtra = {
     imageUrl: string;
     socialDatasetId: string;
 };
 
-export function Hero(props: HeroProps) {
+export function Quotes(props: QuotesProps) {
     const { strings, colors, extra } = props;
     const { slogan, header, description } = strings;
     const { socialDatasetId } = extra;
@@ -59,4 +59,4 @@ export function Hero(props: HeroProps) {
     );
 }
 
-export default Hero;
+export default Quotes;

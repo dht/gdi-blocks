@@ -1,4 +1,4 @@
-import { HeroDriver } from './Hero.driver';
+import { HeroDriver } from './Quotes.driver';
 import Chance from 'chance';
 
 const chance = new Chance();

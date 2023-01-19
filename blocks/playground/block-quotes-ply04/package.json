@@ -1,5 +1,5 @@
 {
-    "name": "@gdi/block-hero-ply01",
+    "name": "@gdi/block-quotes-ply04",
     "version": "0.4.6",
     "scripts": {
         "build": "tsc & vite build && npm run scss",
@@ -43,13 +43,13 @@
     "files": [
         "dist"
     ],
-    "main": "./dist/block-hero-ply01.umd.js",
-    "module": "./dist/block-hero-ply01.es.js",
+    "main": "./dist/block-quotes-ply04.umd.js",
+    "module": "./dist/block-quotes-ply04.es.js",
     "types": "./dist/dts/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/block-hero-ply01.es.js",
-            "require": "./dist/block-hero-ply01.umd.js"
+            "import": "./dist/block-quotes-ply04.es.js",
+            "require": "./dist/block-quotes-ply04.umd.js"
         },
         "./dist/index.css": {
             "import": "./dist/index.css",

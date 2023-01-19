@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
 import { SiteContext } from '@gdi/engine';
 import { render, fireEvent } from '@testing-library/react';
-import { Hero, HeroProps } from './Hero';
+import { Quotes, QuotesProps } from './Quotes';
 import { BaseComponentDriver } from 'testing-base';
 
 export class HeroDriver extends BaseComponentDriver {
-    private props: Partial<HeroProps> = {};
+    private props: Partial<QuotesProps> = {};
 
     constructor() {
         super('Hero');
@@ -13,7 +13,7 @@ export class HeroDriver extends BaseComponentDriver {
 
     when: any = {
         rendered: () => {
-            render(<Hero {...(this.props as HeroProps)} />);
+            render(<Quotes {...(this.props as QuotesProps)} />);
             return this;
         },
         clicked: () => {
@@ -21,12 +21,12 @@ export class HeroDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<Hero {...(this.props as HeroProps)} />);
+            return this.snapshot(<Quotes {...(this.props as QuotesProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<HeroProps>) => {
+        props: (props: Partial<QuotesProps>) => {
             this.props = props;
             return this;
         },

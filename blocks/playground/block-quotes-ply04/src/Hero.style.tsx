@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { HeroExtra } from './Hero';
+import { QuotesExtra } from './Quotes';
 import { Grid, mobile, css } from '@gdi/engine';
 
-export const Wrapper = styled.div<{ extra: HeroExtra }>`
+export const Wrapper = styled.div<{ extra: QuotesExtra }>`
     flex: 1;
     background-image: url(${(props) => props.extra.imageUrl});
     background-size: cover;

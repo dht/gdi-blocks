@@ -1,4 +1,4 @@
-import { id } from '../Hero';
+import { id } from '../Quotes';
 
 export const params: IWidgetParams = {
     id,
