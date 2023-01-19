@@ -94,16 +94,8 @@ ${viteAlias.join('\n')}
         contentBlockInit
     );
 
-    const packageViewer = readJson('../packages/block-viewer/package.json');
-
-    packageViewer.dependencies = {
-        ...packageViewer.dependencies,
-        ...dependencies,
-    };
-
-    writeJson('../packages/block-viewer/package.json', packageViewer);
-
     const datasets = await axios.get(DATASETS_JSON_URL);
+    // updateViewerPackageJson()
 
     writeJson(
         `../packages/block-viewer/src/blocks/blocks.datasets.json`,
@@ -116,6 +108,17 @@ ${viteAlias.join('\n')}
     );
 
     console.timeEnd('refresh');
+};
+
+const updateViewerPackageJson = () => {
+    const packageViewer = readJson('../packages/block-viewer/package.json');
+
+    packageViewer.dependencies = {
+        ...packageViewer.dependencies,
+        ...dependencies,
+    };
+
+    writeJson('../packages/block-viewer/package.json', packageViewer);
 };
 
 const readJson = (path) => {
