@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RederImage } from './Services.style';
-import { SiteContext, useDataset } from '@gdi/engine';
+
 
 export const id = 'com.usegdi.block-services-ply01';
 
@@ -45,7 +45,7 @@ export function Services(props: ServicesProps) {
 
 function renderItems(gridData : Json) {
     return gridData.map((item: Json, index: number) =>  
-        <GridItem key={index}>
+        <GridItem key={item.id}>
            <RederImage src={item.imageUrl} alt={item.title} />
            <SkillAncher>{item.title}</SkillAncher>
            <Skill>{item.description}</Skill>

@@ -21,9 +21,12 @@
         "twins-aou31": 4
     },
     "playground": {
-        "gallary-ply01": 99,
-        "services-ply01": 99,
-        "services-ply02": 99
+        "footer-ply01": 5,
+        "gallery-ply01": 0,
+        "quotes-ply01": 4,
+        "services-ply01": 1,
+        "services-ply02": 2,
+        "services-ply03": 3
     },
     "starter": {
         "about-iuhr3": 2,

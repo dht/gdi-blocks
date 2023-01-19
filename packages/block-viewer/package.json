@@ -67,7 +67,12 @@
         "@gdi/block-hero-ply04": "latest",
         "@gdi/block-gallary-ply01": "latest",
         "@gdi/block-services-ply01": "latest",
-        "@gdi/block-services-ply02": "latest"
+        "@gdi/block-services-ply02": "latest",
+        "@gdi/block-gallery-ply01": "latest",
+        "@gdi/block-hero-gallery-ply01": "latest",
+        "@gdi/block-quotes-ply01": "latest",
+        "@gdi/block-footer-ply01": "latest",
+        "@gdi/block-services-ply03": "latest"
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",

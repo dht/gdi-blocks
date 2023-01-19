@@ -14,9 +14,12 @@ import { block as block_hero_ouywy } from '@gdi/block-hero-ouywy';
 import { block as block_quotes_opur3 } from '@gdi/block-quotes-opur3';
 import { block as block_top_9yur8 } from '@gdi/block-top-9yur8';
 import { block as block_twins_aou31 } from '@gdi/block-twins-aou31';
-import { block as block_gallary_ply01 } from '@gdi/block-gallary-ply01';
+import { block as block_footer_ply01 } from '@gdi/block-footer-ply01';
+import { block as block_gallery_ply01 } from '@gdi/block-gallery-ply01';
+import { block as block_quotes_ply01 } from '@gdi/block-quotes-ply01';
 import { block as block_services_ply01 } from '@gdi/block-services-ply01';
 import { block as block_services_ply02 } from '@gdi/block-services-ply02';
+import { block as block_services_ply03 } from '@gdi/block-services-ply03';
 import { block as block_about_iuhr3 } from '@gdi/block-about-iuhr3';
 import { block as block_contact_au487 } from '@gdi/block-contact-au487';
 import { block as block_cta_p8y4a } from '@gdi/block-cta-p8y4a';
@@ -47,9 +50,12 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_quotes_opur3.id]: block_quotes_opur3,
 			[block_top_9yur8.id]: block_top_9yur8,
 			[block_twins_aou31.id]: block_twins_aou31,
-			[block_gallary_ply01.id]: block_gallary_ply01,
+			[block_footer_ply01.id]: block_footer_ply01,
+			[block_gallery_ply01.id]: block_gallery_ply01,
+			[block_quotes_ply01.id]: block_quotes_ply01,
 			[block_services_ply01.id]: block_services_ply01,
 			[block_services_ply02.id]: block_services_ply02,
+			[block_services_ply03.id]: block_services_ply03,
 			[block_about_iuhr3.id]: block_about_iuhr3,
 			[block_contact_au487.id]: block_contact_au487,
 			[block_cta_p8y4a.id]: block_cta_p8y4a,
