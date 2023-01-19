@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { HeroExtra } from './About';
 import { Grid, mobile, css ,device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
@@ -56,30 +55,9 @@ export const H1 = styled.h1`
     )}
 `;
 
-export const Greeting = styled.div`
-    color: #33334499;
-    background-color: #ffffff44;
-    padding: 2px 30px;
-    border-radius: 5px;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-variation-settings: 'wdth' 125, 'wght' 350;
-`;
 
-export const Skill = styled.div`
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 17px;
-    margin-top: 2px;
-    margin-bottom: 30px;
-    font-variation-settings: 'wdth' 125, 'wght' 350;
-    ${mobile(
-        css`
-            text-align: center;
-        `
-    )}
-`;
+
+
 
 export const FlexContainer = styled.div`
   display: flex;
@@ -193,41 +171,8 @@ export const P = styled.div`
 `;
 
 
-export const ClientIcon = styled.div`
-    float: left;
-    margin-top: 40px;
-    img {
-        margin-left: 20px;
-    }
-    ${mobile(
-        css`
-            height:20px;
-            width: 130px;
-            img {
-                margin-left: 10px;
-            }
-        `
-    )}
-`
 
-export const HeroImg = styled.div<{extra:HeroExtra}>`
-    background-image: url(${(props) => props.extra.imageUrl});
-    height:100%;
-    width: 100%;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    background-size:cover;
-    
-    ${mobile(
-        css`
-            height: 300px;
-            background-size: 100% 100%;
-            width: 300px;
-        `
-    )}
-`;
-
-export const HeroCard = styled.div`
+export const AboutCard = styled.div`
     height: 290px;
     width: 40%;
     float: left;
