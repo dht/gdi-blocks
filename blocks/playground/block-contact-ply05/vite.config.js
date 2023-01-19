@@ -14,9 +14,9 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'About',
+            name: 'Resume',
             formats: ['es', 'umd'],
-            fileName: (format) => `block-about-ply02.${format}.js`,
+            fileName: (format) => `block-contact-ply05.${format}.js`,
         },
         rollupOptions: {
             plugins: [ANALYZE_BUNDLE ? analyze() : null],

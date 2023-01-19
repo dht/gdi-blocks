@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { HeroExtra } from './About';
+import { AboutExtra } from './About';
 import { mobile, css } from '@gdi/engine';
 
-export const Wrapper = styled.div<{ extra: HeroExtra }>`
+export const Wrapper = styled.div<{ extra: AboutExtra }>`
     flex: 1;
     &::before {
         content: '';
@@ -53,7 +53,7 @@ export const H1 = styled.h1`
     position: relative;
 `;
 
-export const Greeting = styled.div`
+export const Body = styled.div`
     color: black;
     background-color: #ffffff44;
     padding: 2px 30px;
@@ -67,7 +67,7 @@ export const Greeting = styled.div`
     font-variation-settings: 'wdth' 125, 'wght' 350;
 `;
 
-export const Skill = styled.div`
+export const Button = styled.div`
     color: black;
     font-weight: bold;
     font-size: 16px;

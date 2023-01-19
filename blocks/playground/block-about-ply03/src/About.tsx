@@ -1,46 +1,46 @@
 import React, { useContext } from 'react';
-import { Wrapper, Greeting, Container, Skill, H1 } from './About.style';
+import { Wrapper, Body, Container, Button, H1 } from './About.style';
 
 export const id = 'com.usegdi.blocks.about-ply03';
 
-export type HeroProps = {
-    strings: HeroStrings;
-    colors: HeroColors;
-    extra: HeroExtra;
+export type AboutProps = {
+    strings: AboutStrings;
+    colors: AboutColors;
+    extra: AboutExtra;
 };
 
-export type HeroStrings = {
-    slogan?: string;
-    slogan1?: string;
+export type AboutStrings = {
+    descriptionOne?: string;
+    descriptionTwo?: string;
     header: string;
-    description?: string;
+    button?: string;
 };
 
-export type HeroColors = {};
+export type AboutColors = {};
 
-export type HeroExtra = {
+export type AboutExtra = {
     imageUrl: string;
     socialDatasetId: string;
 };
 
-export function Hero(props: HeroProps) {
+export function About(props: AboutProps) {
     const { strings, extra } = props;
-    const { slogan, slogan1, header, description } = strings;
+    const { descriptionOne, descriptionTwo, header, button } = strings;
 
     return (
         <Wrapper
-            className='Hero-container'
-            data-testid='Hero-container'
+            className='About-container'
+            data-testid='About-container'
             extra={extra}
         >
             <Container>
                 <H1>{header}</H1>
-                <Greeting>{slogan}</Greeting>
-                <Greeting>{slogan1}</Greeting>
-                <Skill>{description}</Skill>
+                <Body>{descriptionOne}</Body>
+                <Body>{descriptionTwo}</Body>
+                <Button>{button}</Button>
             </Container>
         </Wrapper>
     );
 }
 
-export default Hero;
+export default About;

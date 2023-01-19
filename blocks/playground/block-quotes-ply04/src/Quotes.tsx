@@ -1,22 +1,17 @@
-import { Icon } from '@gdi/web-ui';
 import React, { useState, useContext } from 'react';
 import {
     Arrow,
     Wrapper,
     ContainerArrows,
     ContainerDots,
-    ContainerItem,
     Content,
     Dot,
-    Image,
     Quote,
     QuoteBody,
     QuoteContent,
     QuotePerson,
-    QuotePersonImage,
     QuotePersonJobTitle,
     QuotePersonName,
-    QuoteSign,
 } from './Quotes.style';
 import { SiteContext, useDataset } from '@gdi/engine';
 
@@ -36,6 +31,7 @@ export type QuotesExtra = {
     quotesDatasetId?: string;
 };
 
+//  TODO:: CHANGE THE DATASET WITH OUR CUSTOM DATA. Get it from props
 export function Quotes(props: QuotesProps) {
     const { extra } = props;
     const { quotesDatasetId } = extra;
@@ -61,7 +57,7 @@ export function Quotes(props: QuotesProps) {
     }
 
     function renderItem(item: Json, index: number) {
-        const { name, jobTitle, company, avatarUrl, description } = item;
+        const { name, jobTitle, company, description } = item;
 
         const style: React.CSSProperties = {
             transform: `translateX(${(index - activeIndex) * 100}%)`,
@@ -97,48 +93,6 @@ export function Quotes(props: QuotesProps) {
             <Content>{renderItems()}</Content>
             <Dots items={items} activeIndex={activeIndex} onChange={onChange} />
         </Wrapper>
-    );
-}
-
-export type MediaItemProps = {
-    item: string;
-    style: React.CSSProperties;
-};
-
-export function MediaItem(props: MediaItemProps) {
-    const { item } = props;
-
-    const isVideo = item.includes('youtube.com');
-
-    const Cmp = isVideo ? MediaItemVideo : MediaItemImage;
-
-    return <Cmp {...props} key={item} />;
-}
-
-export function MediaItemVideo(props: MediaItemProps) {
-    const { style, item } = props;
-
-    return (
-        <ContainerItem style={style}>
-            <iframe
-                width='650'
-                height='404'
-                src={item}
-                title='YouTube video player'
-                allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-                allowFullScreen
-            ></iframe>
-        </ContainerItem>
-    );
-}
-
-export function MediaItemImage(props: MediaItemProps) {
-    const { style, item } = props;
-
-    return (
-        <ContainerItem style={style}>
-            {/* <Image url={item} /> */}
-        </ContainerItem>
     );
 }
 

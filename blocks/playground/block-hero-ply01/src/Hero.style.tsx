@@ -70,7 +70,7 @@ export const Greeting = styled.div`
     )};
 `;
 
-export const Skill = styled.div`
+export const Button = styled.div`
     color: #163c60;
     font-weight: bold;
     font-size: 16px;

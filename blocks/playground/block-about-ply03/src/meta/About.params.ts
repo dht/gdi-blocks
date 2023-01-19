@@ -4,10 +4,14 @@ export const params: IWidgetParams = {
     id,
     schema: {
         strings: {
-            slogan: { fieldType: 'text', order: 0 },
-            slogan1: { fieldType: 'text', order: 0 },
-            header: { fieldType: 'text', isRequired: true, order: 1 },
-            description: { fieldType: 'longText', order: 2 },
+            descriptionOne: {
+                fieldType: 'longText',
+                isRequired: true,
+                order: 0,
+            },
+            descriptionTwo: { fieldType: 'longText', order: 1 },
+            header: { fieldType: 'text', isRequired: true, order: 2 },
+            description: { fieldType: 'text', order: 3 },
         },
         colors: {},
         extra: {

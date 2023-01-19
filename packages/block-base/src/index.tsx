@@ -6,6 +6,7 @@ export { BkGrid } from './components/BkGrid/BkGrid';
 export { BkSolid } from './components/BkSolid/BkSolid';
 export { BottomBar } from './components/BottomBar/BottomBar';
 export { ButtonBase } from './components/Button/Button.style';
+export { CustomButtonBase } from './components/CustomButton/CustomButton.style';
 export { ButtonCta } from './components/ButtonCta/ButtonCta';
 export { ButtonKickstarter } from './components/ButtonKickstarter/ButtonKickstarter';
 export { Decoration } from './components/Decoration/Decoration';

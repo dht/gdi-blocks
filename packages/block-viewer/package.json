@@ -64,7 +64,8 @@
         "@gdi/block-hero-ply01": "latest",
         "@gdi/block-about-ply02": "latest",
         "@gdi/block-about-ply03": "latest",
-        "@gdi/block-quotes-ply04": "latest"
+        "@gdi/block-quotes-ply04": "latest",
+        "@gdi/block-contact-ply05": "latest"
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",

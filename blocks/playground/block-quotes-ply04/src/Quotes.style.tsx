@@ -69,8 +69,8 @@ export const Dot = styled.div<{ active?: boolean }>`
     width: 10px;
     height: 10px;
     margin: 0 3px;
-    border: 1px solid #fff;
-    background-color: ${(props) => (props.active ? '#eee' : 'transparent')};
+    border: 1px solid black;
+    background-color: ${(props) => (props.active ? 'black' : 'transparent')};
     border-radius: 50%;
     cursor: pointer;
 

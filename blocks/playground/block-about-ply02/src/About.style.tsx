@@ -1,14 +1,14 @@
 import styled from 'styled-components';
-import { HeroExtra } from './About';
-import { Grid, mobile, css } from '@gdi/engine';
+import { AboutExtra } from './About';
+import { mobile, css } from '@gdi/engine';
 
-export const Wrapper = styled.div<{ extra: HeroExtra }>`
+export const Wrapper = styled.div<{ extra: AboutExtra }>`
     flex: 1;
     background-color: white;
     height: ${(props) => props.theme.vh(60)};
     ${mobile(
         css`
-            height: ${(props) => props.theme.vh(300)};
+            height: ${(props) => props.theme.vh(250)};
         `
     )};
     display: flex;
@@ -16,18 +16,7 @@ export const Wrapper = styled.div<{ extra: HeroExtra }>`
     font-family: ${(props) => props.theme.fontFamily};
 `;
 
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: 10px;
-    height: 250px;
-    background-color: white;
-`;
-
-export const Container1 = styled.div`
+export const Container = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,7 +41,7 @@ export const Box = styled.div`
         css`
             width: 80%;
             margin-bottom: 20px;
-            height: 45em;
+            height: 35em;
         `
     )};
 `;
@@ -75,7 +64,7 @@ export const H2 = styled.h2`
     text-align: center;
 `;
 
-export const Greeting = styled.div`
+export const Body = styled.div`
     color: black;
     background-color: #ffffff44;
     padding: 2px 30px;
@@ -87,7 +76,7 @@ export const Greeting = styled.div`
     padding-bottom: 20px;
 `;
 
-export const Skill = styled.div`
+export const Button = styled.div`
     display: inline-block;
     font-weight: bold;
     font-size: 16px;
@@ -109,5 +98,3 @@ export const Skill = styled.div`
         color: #163c60;
     }
 `;
-
-export const Social = styled.div``;

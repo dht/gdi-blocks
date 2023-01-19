@@ -1,74 +1,48 @@
 import React, { useContext } from 'react';
-import {
-    Container,
-    Wrapper,
-    Greeting,
-    Skill,
-    Container1,
-    Box,
-    H2,
-} from './About.style';
-import { SiteContext, useDataset } from '@gdi/engine';
+import { Container, Wrapper, Body, Button, Box, H2 } from './About.style';
 
 export const id = 'com.usegdi.blocks.about-ply02';
 
-export type HeroProps = {
-    strings: HeroStrings;
-    colors: HeroColors;
-    extra: HeroExtra;
+export type AboutProps = {
+    strings: AboutStrings;
+    colors: AboutColors;
+    extra: AboutExtra;
 };
 
-export type HeroStrings = {
-    slogan?: string;
-    header: string;
+export type AboutStrings = {
+    button: string;
     description?: string;
 };
 
-export type HeroColors = {};
+export type AboutColors = {};
 
-export type HeroExtra = {
+export type AboutExtra = {
     imageUrl: string;
     socialDatasetId: string;
+    headerParams: [];
 };
 
-export function Hero(props: HeroProps) {
-    const { strings, colors, extra } = props;
-    const { slogan, header, description } = strings;
-
-    const { ga } = useContext(SiteContext);
-
-    const onClick = (url: string) => () => {
-        ga('navigate', {
-            category: 'hero',
-            label: url,
-        });
-    };
+export function About(props: AboutProps) {
+    const { strings, extra } = props;
+    const { button, description } = strings;
 
     return (
         <Wrapper
-            className='Hero-container'
-            data-testid='Hero-container'
+            className='About-container'
+            data-testid='About-container'
             extra={extra}
         >
-            <Container1>
-                <Box>
-                    <H2>Services</H2>
-                    <Greeting>{slogan}</Greeting>
-                    <Skill onClick={() => onClick}>{description}</Skill>
-                </Box>
-                <Box>
-                    <H2>Projects</H2>
-                    <Greeting>{slogan}</Greeting>
-                    <Skill onClick={() => onClick}>{description}</Skill>
-                </Box>
-                <Box>
-                    <H2>Clients</H2>
-                    <Greeting>{slogan}</Greeting>
-                    <Skill onClick={() => onClick}>{description}</Skill>
-                </Box>
-            </Container1>
+            <Container>
+                {extra.headerParams.map((header) => (
+                    <Box>
+                        <H2>{header}</H2>
+                        <Body>{description}</Body>
+                        <Button>{button}</Button>
+                    </Box>
+                ))}
+            </Container>
         </Wrapper>
     );
 }
 
-export default Hero;
+export default About;

@@ -4,7 +4,7 @@ export const sampleData: ISampleDataPerFlavour = {
         strings: {
             slogan: 'Developing Innovative Strategies',
             header: 'ACHIEVING GROWTH',
-            description: 'Book A Consultation',
+            button: 'Book A Consultation',
         },
         colors: {},
         extra: {

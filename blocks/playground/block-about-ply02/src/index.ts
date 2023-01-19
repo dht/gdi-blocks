@@ -1,4 +1,4 @@
-import { Hero } from './About';
+import { About } from './About';
 import { params } from './meta/About.params';
 import { sampleData } from './meta/About.sample';
 import { dimensions } from './meta/About.dimensions';
@@ -12,9 +12,9 @@ export const block: IBlock = {
     sampleData,
     dimensions,
     screenshots,
-    tags: ['type-hero'],
+    tags: ['type-about'],
     dataTags: [],
-    widgetType: 'hero',
+    widgetType: 'about',
     isBlock: true,
-    component: Hero,
+    component: About,
 };
