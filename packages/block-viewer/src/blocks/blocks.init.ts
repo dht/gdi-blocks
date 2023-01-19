@@ -15,6 +15,7 @@ import { block as block_quotes_opur3 } from '@gdi/block-quotes-opur3';
 import { block as block_top_9yur8 } from '@gdi/block-top-9yur8';
 import { block as block_twins_aou31 } from '@gdi/block-twins-aou31';
 import { block as block_hero_ply03 } from '@gdi/block-hero-ply03';
+import { block as block_cta_ply05 } from '@gdi/block-cta-ply05';
 import { block as block_hero_ply02 } from '@gdi/block-hero-ply02';
 import { block as block_quotes_ply04 } from '@gdi/block-quotes-ply04';
 import { block as block_about_iuhr3 } from '@gdi/block-about-iuhr3';
@@ -48,6 +49,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_top_9yur8.id]: block_top_9yur8,
 			[block_twins_aou31.id]: block_twins_aou31,
 			[block_hero_ply03.id]: block_hero_ply03,
+			[block_cta_ply05.id]: block_cta_ply05,
 			[block_hero_ply02.id]: block_hero_ply02,
 			[block_quotes_ply04.id]: block_quotes_ply04,
 			[block_about_iuhr3.id]: block_about_iuhr3,
