@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
-import { IResolution, resolutions } from './Resolutions.data';
+import { IResolution, resolutions } from './ResolutionsSelector.data';
 
-export type ResolutionSelectProps = {
+export type ResolutionSelectorProps = {
     value?: string;
     onChange: (resolutionId: string) => void;
 };
 
-export function ResolutionSelect(props: ResolutionSelectProps) {
+export function ResolutionSelector(props: ResolutionSelectorProps) {
     const { value } = props;
 
     function onChange(event: React.ChangeEvent<HTMLSelectElement>) {
@@ -46,4 +46,4 @@ export const Select = styled.select`
     color: #fff;
 `;
 
-export default ResolutionSelect;
+export default ResolutionSelector;
