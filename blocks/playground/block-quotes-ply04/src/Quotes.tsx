@@ -38,12 +38,8 @@ export function Quotes(props: QuotesProps) {
     return (
         <Wrapper >
             <Container>
-                <Row className='row'>
-                    <Column className="col-lg-12 text-center"><H1>{header}</H1><SubTitle> {slogan}</SubTitle></Column>
-                </Row>
-                <Row>
-                <Column className='col-lg-12' ><ImageContainer src={imageUrl} className="shadow" /></Column>
-                </Row>
+                <Row className='row'><Column className="col-lg-12 text-center"><H1>{header}</H1><SubTitle> {slogan}</SubTitle></Column></Row>
+                <Row><Column className='col-lg-12' ><ImageContainer src={imageUrl} className="shadow" /></Column></Row>
             </Container>
         </Wrapper>
     );

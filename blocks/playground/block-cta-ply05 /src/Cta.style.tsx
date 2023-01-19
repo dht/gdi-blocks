@@ -11,8 +11,13 @@ export const Wrapper = styled.div`
     height: ${(props) => props.theme.vh(88)};
     display: flex;
     border-top: 1px solid silver;
-
     font-family: ${(props) => props.theme.fontFamily};
+
+    ${mobile(
+        css`
+            height: 170vh;
+        `
+    )}
 `;
 
 export const Container = styled(Grid.Container)`
@@ -56,11 +61,13 @@ background-repeat: no-repeat;
 
 `
 export const ProductInfo = styled.div`
-    height: 520px;
+height: 520px;
 width: 700px;
 padding: 10%;
 display: block !important;
 flex-direction: column !important ;
+
+
 `
 
 

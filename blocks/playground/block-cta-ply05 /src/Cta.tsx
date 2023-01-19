@@ -55,7 +55,7 @@ export function Cta(props: CtaProps) {
                             {productDataset.map((value:Json,index:number)=>{
                         return(
                             <>
-                                <Column className='col-lg-12 '><Icon className={iconClass} > {value.icon} </Icon>
+                                <Column className='col-lg-12'><Icon className={iconClass} > {value.icon} </Icon>
                                    <H5 className='mt-2'> {value.label} </H5>
                                    <ProductDescription> {value.description} </ProductDescription>
                                 </Column> 
