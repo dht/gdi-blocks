@@ -5,13 +5,13 @@ import { useNavigate, useParams, useLocation } from 'react-router-dom';
 
 export type TabsProps = {
     tabs: ITab[];
+    onSelect: (tab: ITab) => void;
 };
 
 export function Tabs(props: TabsProps) {
     const { tabs } = props;
 
     const navigate = useNavigate();
-    const params = useParams();
     const location = useLocation();
 
     const tabId = useMemo(() => {
@@ -24,8 +24,7 @@ export function Tabs(props: TabsProps) {
         const tab = tabs.find((t) => t.id === tabId);
 
         if (tab) {
-            const { blockId } = params;
-            navigate(`/${blockId}/${tab.path}`, { replace: true });
+            props.onSelect(tab);
         }
     }
 
@@ -50,6 +49,10 @@ type ITab = {
 };
 
 export function BlockTabs() {
+    const params = useParams();
+    const navigate = useNavigate();
+    const { blockId } = params;
+
     const tabs = [
         {
             id: 'viewer',
@@ -68,19 +71,36 @@ export function BlockTabs() {
         },
     ];
 
-    return <Tabs tabs={tabs} />;
+    function onSelect(tab: ITab) {
+        navigate(`/${blockId}/${tab.path}`, { replace: true });
+    }
+
+    return <Tabs tabs={tabs} onSelect={onSelect} />;
 }
 
 export function TemplateTabs() {
+    const params = useParams();
+    const navigate = useNavigate();
+    const { templateId } = params;
+
     const tabs = [
         {
             id: 'viewer',
             text: 'Viewer',
             path: 'view',
         },
+        {
+            id: 'devices',
+            text: 'Devices',
+            path: 'devices',
+        },
     ];
 
-    return <Tabs tabs={tabs} />;
+    function onSelect(tab: ITab) {
+        navigate(`/templates/${templateId}/${tab.path}`, { replace: true });
+    }
+
+    return <Tabs tabs={tabs} onSelect={onSelect} />;
 }
 
 export default Tabs;

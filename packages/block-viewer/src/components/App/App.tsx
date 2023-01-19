@@ -8,6 +8,7 @@ import ResolutionsContainer from '../../containers/ResolutionsContainer';
 import PhotoBoothContainer from '../../containers/PhotoBoothContainer';
 import ViewerHomeContainer from '../../containers/ViewerHomeContainer';
 import TemplateViewerContainer from '../../containers/TemplateViewerContainer';
+import TemplateDevicesContainer from '../../containers/TemplateDevicesContainer';
 
 export type AppProps = {};
 
@@ -18,9 +19,18 @@ export function App(_props: AppProps) {
                 <Route path='/' element={<ViewerHomeContainer />} />
                 <Route path='/gallery' element={<BlocksContainer />} />
                 <Route
+                    path='/templates/:templateId/devices'
+                    element={<TemplateDevicesContainer />}
+                />
+                <Route
+                    path='/templates/:templateId/view'
+                    element={<TemplateViewerContainer />}
+                />
+                <Route
                     path='/templates/:templateId'
                     element={<TemplateViewerContainer />}
                 />
+
                 <Route path='/:blockId' element={<BlockViewerContainer />} />
                 <Route
                     path='/:blockId/view'
