@@ -21,5 +21,4 @@ firebase-debug.log
 **/logs/build*.log
 **/logs/publish*.log
 .logs
-packages/block-viewer/src/blocks/blocks.datasets.json
 yarn.lock
