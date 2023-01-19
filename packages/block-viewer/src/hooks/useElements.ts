@@ -21,6 +21,7 @@ export function useElements(blockIds: string[] = [], order = {}) {
                 const firstData = parseSampleData(sampleData[firstKey]);
 
                 return {
+                    id,
                     order: order[blockId] ?? 1,
                     pageInstanceId: 'i1',
                     widgetId: id,

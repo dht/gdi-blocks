@@ -1,22 +1,22 @@
-import { BlockTabs } from '../Tabs/Tabs';
 import React from 'react';
-import { Content, Header, IFrame, Wrapper } from './Resolutions.style';
-import { resolutions } from './Resolutions.data';
+import { Content, Header, IFrame, Wrapper } from './TemplateDevices.style';
+import { resolutions } from './TemplateDevices.data';
 import { useLocalStorage } from 'react-use';
 import { useParams } from 'react-router-dom';
+import { TemplateTabs } from '../Tabs/Tabs';
 import ResolutionSelector from '../ResolutionSelector/ResolutionSelector';
 
-export type ResolutionsProps = {};
+export type TemplateDevicesProps = {};
 
-export function Resolutions(_props: ResolutionsProps) {
-    const { blockId } = useParams();
+export function TemplateDevices(_props: TemplateDevicesProps) {
+    const { templateId } = useParams();
     const [resolutionId, setResolutionId] = useLocalStorage(
         'resolutionId',
         '1080p'
     );
 
     function renderIFrame() {
-        const url = `http://localhost:3001/${blockId}/view?fullscreen=true`;
+        const url = `http://localhost:3001/templates/${templateId}/view?fullscreen=true`;
 
         const resolution = Object.values(resolutions).find(
             (resolution) => resolution.id === resolutionId
@@ -50,9 +50,9 @@ export function Resolutions(_props: ResolutionsProps) {
                 </Header>
                 {renderIFrame()}
             </Content>
-            <BlockTabs />
+            <TemplateTabs />
         </Wrapper>
     );
 }
 
-export default Resolutions;
+export default TemplateDevices;
