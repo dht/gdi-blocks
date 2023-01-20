@@ -8,7 +8,6 @@ export { BottomBar } from './components/BottomBar/BottomBar';
 export { ButtonBase } from './components/Button/Button.style';
 export { CustomButtonBase } from './components/CustomButton/CustomButton.style';
 export { ButtonCta } from './components/ButtonCta/ButtonCta';
-export { CustomButtonBase } from './components/CustomButton/CustomButton.style';
 export { Decoration } from './components/Decoration/Decoration';
 export { Divider } from './components/Divider/Divider';
 export { Features } from './components/Features/Features';

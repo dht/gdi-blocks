@@ -11,11 +11,11 @@ export const Wrapper = styled.div`
     justify-content: flex-end;
 `;
 
-export const MenuItem = styled.div<{ color: string, extra: boolean }>`
+export const MenuItem = styled.div<{ color: string; extra: any }>`
     padding: 20px;
     cursor: pointer;
     white-space: nowrap;
-  flex: ${(props) => (props.extra ? 'auto' : 'none')};
+    flex: ${(props) => (props.extra ? 'auto' : 'none')};
 
     &:hover {
         background: rgba(255, 255, 255, 0.1);

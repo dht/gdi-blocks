@@ -28,7 +28,6 @@ export function TopMenu(props: TopMenuProps) {
     function renderItem(item: IMenuItem, index: number) {
         const { title, href, isTitle } = item;
 
-        console.log(isTitle);
         if (!title) {
             return `text`;
         }
