@@ -1,0 +1,6 @@
+{
+    "web": {
+        "path": ".",
+        "template": "react"
+    }
+}

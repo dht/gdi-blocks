@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bk, BottomBar, MainMenu, Signature } from '@gdi/block-base';
+import { Bk, BottomBar, MainMenu } from '@gdi/block-base';
 import {
     Avatar,
     Bottom,
@@ -11,6 +11,7 @@ import {
     Top,
     Wrapper,
 } from './Card.style';
+import { Signature } from './parts/Signature/Signature';
 
 export const id = 'com.usegdi.blocks.card-ah4j1';
 

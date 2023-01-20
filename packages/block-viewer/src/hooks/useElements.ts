@@ -2,11 +2,15 @@ import React, { useContext, useMemo } from 'react';
 import { EngineContext, parseSampleData } from '@gdi/engine';
 import { unflattenInstanceProps, sortBy } from 'shared-base';
 
-export function useElements(blockIds: string[] = [], order = {}) {
+export function useElements(
+    blockIds: string[] = [],
+    order = {},
+    menuItems: string[] = []
+) {
     const { blocks } = useContext(EngineContext);
 
     const elements = useMemo(() => {
-        return blockIds
+        const items: Json = blockIds
             .map((blockId: string) => {
                 const block = Object.values(blocks).find(
                     (b: IBlock) => b.name === blockId
@@ -30,6 +34,29 @@ export function useElements(blockIds: string[] = [], order = {}) {
             })
             .filter((i) => i)
             .sort(sortBy('order'));
+
+        menuItems.forEach((menuItem) => {
+            items.push({
+                id: `menu-${menuItem}`,
+                order: 0,
+                pageInstanceId: 'i1',
+                widgetId: 'com.usegdi.blocks.section-gkj41',
+                instanceProps: {
+                    strings: {
+                        text: menuItem,
+                    },
+                    extra: {
+                        id: menuItem,
+                        isHidden: true,
+                    },
+                },
+                widget: {
+                    tags: ['type-section'],
+                },
+            });
+        });
+
+        return items;
     }, [blockIds, blocks]);
 
     return elements as IElement[];
