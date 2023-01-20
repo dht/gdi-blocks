@@ -58,7 +58,7 @@ export function Cta(props: CtaProps) {
                 </Row>
 
                 <Row className='row'>
-                    <Column className='col-lg-6 p-0 mt-4'>
+                    <Column className='col-lg-6 mt-4'>
                         <VideoImage extra={extra} >
                             <ModalButton
                                 type='button'

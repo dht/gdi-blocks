@@ -10,6 +10,7 @@ export const Wrapper = styled.div`
     color: black;
     height: ${(props) => props.theme.vh(88)};
     display: flex;
+    padding-top: 70px;
     border-top: 1px solid silver;
     font-family: ${(props) => props.theme.fontFamily};
 
