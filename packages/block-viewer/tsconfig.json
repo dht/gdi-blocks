@@ -76,6 +76,12 @@
             "@gdi/block-hero-plylx": [
                 "blocks/playground/block-hero-plylx"
             ],
+            "@gdi/block-top-41j4k": [
+                "blocks/playground/block-top-41j4k"
+            ],
+            "@gdi/block-grid-st001": [
+                "blocks/stack/block-grid-st001"
+            ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
             ],

@@ -9,4 +9,5 @@ export const Wrapper = styled.div<{ zoom: string }>`
 export const Content = styled.div`
     min-height: 100vh;
     overflow: auto;
+    overflow-x: hidden;
 `;

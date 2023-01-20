@@ -1,18 +1,18 @@
 import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { ButtonKickstarter, ButtonKickstarterProps } from './ButtonKickstarter';
+import { Top, TopProps } from './Top';
 import { BaseComponentDriver } from 'testing-base';
 
-export class ButtonKickstarterDriver extends BaseComponentDriver {
-    private props: Partial<ButtonKickstarterProps> = {};
+export class TopDriver extends BaseComponentDriver {
+    private props: Partial<TopProps> = {};
 
     constructor() {
-        super('ButtonKickstarter');
+        super('Top');
     }
 
     when: any = {
         rendered: () => {
-            render(<ButtonKickstarter {...(this.props as ButtonKickstarterProps)} />);
+            render(<Top {...(this.props as TopProps)} />);
             return this;
         },
         clicked: () => {
@@ -20,19 +20,19 @@ export class ButtonKickstarterDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<ButtonKickstarter {...(this.props as ButtonKickstarterProps)} />);
+            return this.snapshot(<Top {...(this.props as TopProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<ButtonKickstarterProps>) => {
+        props: (props: Partial<TopProps>) => {
             this.props = props;
             return this;
         },
     };
 
     get = {
-        WrapperClassName: () => {
+        containerClassName: () => {
             return this.wrapper.className;
         },
         label: () => {

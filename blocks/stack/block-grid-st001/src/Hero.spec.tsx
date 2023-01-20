@@ -1,13 +1,13 @@
-import { ButtonKickstarterDriver } from './ButtonKickstarter.driver';
+import { HeroDriver } from './Hero.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
-describe('ButtonKickstarter', () => {
-    let driver: ButtonKickstarterDriver;
+describe('Hero', () => {
+    let driver: HeroDriver;
 
     beforeAll(() => {
-        driver = new ButtonKickstarterDriver();
+        driver = new HeroDriver();
     });
 
     it('should render button', () => {
@@ -19,10 +19,10 @@ describe('ButtonKickstarter', () => {
             })
             .when.rendered();
 
-        const wrapperClassName = element.get.wrapperClassName();
+        const containerClassName = element.get.containerClassName();
         const innerText = element.get.label();
 
-        expect(wrapperClassName).toContain('ButtonKickstarter-wrapper');
+        expect(containerClassName).toContain('Hero-container');
         expect(innerText).toBe(label);
     });
 
@@ -40,11 +40,11 @@ describe('ButtonKickstarter', () => {
     });
 });
 
-describe('ButtonKickstarter snapshots', () => {
-    let driver: ButtonKickstarterDriver;
+describe('Hero snapshots', () => {
+    let driver: HeroDriver;
 
     beforeAll(() => {
-        driver = new ButtonKickstarterDriver();
+        driver = new HeroDriver();
     });
 
     it('should match snapshot', () => {

@@ -1,13 +1,13 @@
-import { TopMenuDriver } from './TopMenu.driver';
+import { TopDriver } from './Top.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
-describe('TopMenu', () => {
-    let driver: TopMenuDriver;
+describe('Top', () => {
+    let driver: TopDriver;
 
     beforeAll(() => {
-        driver = new TopMenuDriver();
+        driver = new TopDriver();
     });
 
     it('should render button', () => {
@@ -22,7 +22,7 @@ describe('TopMenu', () => {
         const containerClassName = element.get.containerClassName();
         const innerText = element.get.label();
 
-        expect(containerClassName).toContain('TopMenu-container');
+        expect(containerClassName).toContain('Top-wrapper');
         expect(innerText).toBe(label);
     });
 
@@ -40,11 +40,11 @@ describe('TopMenu', () => {
     });
 });
 
-describe('TopMenu snapshots', () => {
-    let driver: TopMenuDriver;
+describe('Top snapshots', () => {
+    let driver: TopDriver;
 
     beforeAll(() => {
-        driver = new TopMenuDriver();
+        driver = new TopDriver();
     });
 
     it('should match snapshot', () => {

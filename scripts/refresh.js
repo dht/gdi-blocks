@@ -30,15 +30,18 @@ const run = async () => {
     const blockImports = [],
         blockParams = [],
         dependencies = [],
-        byTemplate = {};
+        byTemplate = {},
+        menu = {};
 
     for (let packageName of packages) {
         const p = readJson(`${cwd}/${packageName}/package.json`);
         let [templateName, blockName] = packageName.split('/');
         blockName = blockName.replace('block-', '');
         const orderPath = `${cwd}/${templateName}/.order`;
+        const menuPath = `${cwd}/${templateName}/.menu`;
 
-        let orderValues = {};
+        let orderValues = {},
+            menuValues = [];
 
         if (fs.existsSync(orderPath)) {
             fs.readFileSync(orderPath, 'utf8')
@@ -46,6 +49,15 @@ const run = async () => {
                 .forEach((b, index) => {
                     orderValues[b] = index;
                 });
+        }
+
+        if (fs.existsSync(menuPath)) {
+            menuValues = fs
+                .readFileSync(menuPath, 'utf8')
+                .split('\n')
+                .filter((i) => i);
+
+            menu[templateName] = menuValues;
         }
 
         byTemplate[templateName] = byTemplate[templateName] ?? {};
@@ -106,6 +118,8 @@ ${viteAlias.join('\n')}
         '../packages/block-viewer/src/blocks/blocks.byTemplate.json',
         byTemplate
     );
+
+    writeJson('../packages/block-viewer/src/blocks/blocks.menu.json', menu);
 
     console.timeEnd('refresh');
 };

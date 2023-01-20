@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { SiteContext } from '@gdi/engine';
 import { render, fireEvent } from '@testing-library/react';
-import { TopMenu, TopMenuProps } from './TopMenu';
+import { Hero, HeroProps } from './Hero';
 import { BaseComponentDriver } from 'testing-base';
 
-export class TopMenuDriver extends BaseComponentDriver {
-    private props: Partial<TopMenuProps> = {};
+export class HeroDriver extends BaseComponentDriver {
+    private props: Partial<HeroProps> = {};
 
     constructor() {
-        super('TopMenu');
+        super('Hero');
     }
 
     when: any = {
         rendered: () => {
-            render(<TopMenu {...(this.props as TopMenuProps)} />);
+            render(<Hero {...(this.props as HeroProps)} />);
             return this;
         },
         clicked: () => {
@@ -20,12 +21,12 @@ export class TopMenuDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<TopMenu {...(this.props as TopMenuProps)} />);
+            return this.snapshot(<Hero {...(this.props as HeroProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<TopMenuProps>) => {
+        props: (props: Partial<HeroProps>) => {
             this.props = props;
             return this;
         },

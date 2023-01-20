@@ -24,6 +24,12 @@ export const LogoWrapper = styled.div`
     position: fixed;
     top: 100px;
     left: 100px;
+
+    @media (max-width: 1400px) {
+        top: 20px;
+        left: 20px;
+        zoom: 0.7;
+    }
 `;
 
 export const A = styled.button`
@@ -79,4 +85,10 @@ export const Clear = styled.button`
         text-decoration: underline;
         cursor: pointer;
     }
+`;
+
+export const FullScreenWrapper = styled.div`
+    position: Absolute;
+    top: 10px;
+    right: 48px;
 `;
