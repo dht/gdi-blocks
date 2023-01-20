@@ -44,7 +44,7 @@ export type TestomonialsExtra = {
 };
 
 export function Testomonials(props: TestomonialsProps) {
-    const { strings, colors, extra } = props;
+    const { strings, extra } = props;
     const { slogan, header } = strings;
     const { testimonialDataSet } = extra;
 
