@@ -5,8 +5,9 @@ export const Wrapper = styled.div`
     flex: 1;
     background-color: #fff;
     color: #888;
-    padding: 50px 0;
-    font-size: 18px;
+    padding: 42px 0 95px;
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
 `;
 
 export const Container = styled(Grid.Container)`
@@ -20,7 +21,7 @@ export const Container = styled(Grid.Container)`
 `;
 
 export const Text = styled.div`
-    font-size: 18px;
+    font-size: 14px;
 `;
 
 export const Image = styled.img``

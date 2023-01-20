@@ -9,7 +9,8 @@ import {
     GridItem,
     ReadIcon,
     Infortmation,
-    Image
+    Image,
+    Figure
 } from './Services.style';
 
 export const id = 'com.usegdi.block-services-ply01';
@@ -44,9 +45,9 @@ export function Services(props: ServicesProps) {
             extra={colors}
         >
             <Container>
-                <div>
+                <Figure>
                     <Image src={imageUrl} alt={strings.header} />
-                </div>
+                </Figure>
                 <Infortmation>
                     <H1>{header}</H1>
                     <Skill>{description}</Skill>

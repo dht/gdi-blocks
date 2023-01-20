@@ -1,5 +1,5 @@
 {
-    "name": "@gdi/block-hero-gallery-ply01",
+    "name": "@gdi/block-header-ply07",
     "version": "0.4.6",
     "scripts": {
         "build": "tsc & vite build && npm run scss",
@@ -10,7 +10,6 @@
     "dependencies": {
         "@gdi/block-base": "^0.4.13",
         "@gdi/engine": "^0.4.6",
-        "@gdi/web-ui": "^0.4.6",
         "polished": "^4.2.2",
         "shared-base": "^0.4.2",
         "styled-components": "^5.3.6"
@@ -43,13 +42,13 @@
     "files": [
         "dist"
     ],
-    "main": "./dist/block-hero-gallery-ply01.umd.js",
-    "module": "./dist/block-hero-gallery-ply01.es.js",
+    "main": "./dist/block-header-ply07.umd.js",
+    "module": "./dist/block-header-ply07.es.js",
     "types": "./dist/dts/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/block-hero-gallery-ply01.es.js",
-            "require": "./dist/block-hero-gallery-ply01.umd.js"
+            "import": "./dist/block-header-ply07.es.js",
+            "require": "./dist/block-header-ply07.umd.js"
         },
         "./dist/index.css": {
             "import": "./dist/index.css",

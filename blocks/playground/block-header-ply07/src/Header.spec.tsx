@@ -1,13 +1,13 @@
-import { QuotesDriver } from './Quotes.driver';
+import { HeaderDriver } from './Header.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
 
-describe('Quotes', () => {
-    let driver: QuotesDriver;
+describe('Header', () => {
+    let driver: HeaderDriver;
 
     beforeAll(() => {
-        driver = new QuotesDriver();
+        driver = new HeaderDriver();
     });
 
     it('should render button', () => {
@@ -19,10 +19,10 @@ describe('Quotes', () => {
             })
             .when.rendered();
 
-        const containerClassName = element.get.containerClassName();
+        const wrapperClassName = element.get.wrapperClassName();
         const innerText = element.get.label();
 
-        expect(containerClassName).toContain('Quotes-container');
+        expect(wrapperClassName).toContain('Header-wrapper');
         expect(innerText).toBe(label);
     });
 
@@ -40,11 +40,11 @@ describe('Quotes', () => {
     });
 });
 
-describe('Quotes snapshots', () => {
-    let driver: QuotesDriver;
+describe('Header snapshots', () => {
+    let driver: HeaderDriver;
 
     beforeAll(() => {
-        driver = new QuotesDriver();
+        driver = new HeaderDriver();
     });
 
     it('should match snapshot', () => {

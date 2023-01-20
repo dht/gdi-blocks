@@ -53,9 +53,9 @@ function renderItems(gridData: Json) {
                 <i className='material-icons check'>{item.icon}</i>
             </RenderItem>
             <RenderItem className='pad'>
-                <Skill className='text-dark'>{item.title}</Skill>
-                <Skill>{item.description}</Skill>
-                <SkillAncher>{item.readmore}</SkillAncher>
+                <Skill>{item.title}</Skill>
+                <Skill className='descr'>{item.description}</Skill>
+                <SkillAncher>{item.readmore}  <i className='material-icons'>chevron_right</i></SkillAncher>
             </RenderItem>
         </ParentRenderDiv>
     ));

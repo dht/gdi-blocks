@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { mobile, css } from '@gdi/engine';
-
-export const Wrapper = styled.div`
+import {IMenuItem , IMenuItemColorFont} from "./TopMenu"
+export const Wrapper = styled.div<{ extra: IMenuItemColorFont }>`
     flex: 1;
-    background-color: black;
-    font-family: 'Encode Sans', sans-serif;
+    background-color: ${(props) => (props.extra.isColor ? props.extra.backgroundColor : `#333`)} ; 
+    font-family: ${(props) => (props.extra.isColor ? props.extra.fontFamily : `Encode Sans, sans-serif`)} ; 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -17,21 +17,20 @@ export const Wrapper = styled.div`
     `)}
 `;
 
-export const MenuItem = styled.div`
+export const MenuItem = styled.div<{ extra: IMenuItem }>`
     padding: 20px;
     cursor: pointer;
-
+    flex: ${(props) => (props.extra.isFlex ? 'auto' : 'none')};
     &:hover {
-        background: rgba(255, 255, 255, 0.1);
-
+        background:${(props) => (props.extra.isTitle ? '#fff' : ' rgba(255, 255, 255, 0.1)')};
         a {
-            color: #f2c973;
+            color: ${(props) => (props.extra.isTitle ? '#333' : '#f2c973')};
         }
     }
 `;
 
-export const MenuItemLink = styled.a`
-    color: white;
+export const MenuItemLink = styled.a <{ extra: IMenuItem }>`
+    color: ${(props) => (props.extra ? '#333' : '#fff')};
     text-decoration: none;
     font-size: 18px;
     font-variation-settings: 'wdth' 110, 'wght' 650;

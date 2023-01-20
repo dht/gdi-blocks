@@ -1,19 +1,18 @@
-import React, { useContext } from 'react';
-import { SiteContext } from '@gdi/engine';
+import React from 'react';
 import { render, fireEvent } from '@testing-library/react';
-import { Quotes, QuotesProps } from './Quotes';
+import { Header, HeaderProps } from './Header';
 import { BaseComponentDriver } from 'testing-base';
 
-export class QuotesDriver extends BaseComponentDriver {
-    private props: Partial<QuotesProps> = {};
+export class HeaderDriver extends BaseComponentDriver {
+    private props: Partial<HeaderProps> = {};
 
     constructor() {
-        super('Quotes');
+        super('Header');
     }
 
     when: any = {
         rendered: () => {
-            render(<Quotes {...(this.props as QuotesProps)} />);
+            render(<Header {...(this.props as HeaderProps)} />);
             return this;
         },
         clicked: () => {
@@ -21,19 +20,19 @@ export class QuotesDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<Quotes {...(this.props as QuotesProps)} />);
+            return this.snapshot(<Header {...(this.props as HeaderProps)} />);
         },
     };
 
     given: any = {
-        props: (props: Partial<QuotesProps>) => {
+        props: (props: Partial<HeaderProps>) => {
             this.props = props;
             return this;
         },
     };
 
     get = {
-        containerClassName: () => {
+        WrapperClassName: () => {
             return this.wrapper.className;
         },
         label: () => {

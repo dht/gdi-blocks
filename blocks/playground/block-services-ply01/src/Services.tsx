@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, H1, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RenderDiv,RederImage } from './Services.style';
+import { Container, H2, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RenderDiv,RederImage , IconArrow} from './Services.style';
 
 
 export const id = 'com.usegdi.block-services-ply01';
@@ -33,12 +33,15 @@ export function Services(props: ServicesProps) {
                 data-testid='Service-container'
                 extra={colors}
             >
-                <Container>
-                    <H1>{header}</H1>
+                <Container className='tabletView'>
+                    <H2>{header}</H2>
                     <Skill>{description}</Skill>
                 
-              <GridContainer>{renderItems(serviceDataset)}</GridContainer>
+              <GridContainer className='tabletView'>{renderItems(serviceDataset)}</GridContainer>
               </Container>
+              <IconArrow>
+           <i className='material-icons iconFont'>expand_less</i>
+         </IconArrow>
             </Wrapper>
     );
 }

@@ -24,7 +24,7 @@ export const sampleData: ISampleDataPerFlavour = {
                 imageUrl:'https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/testimonials/testimonials-3.jpg',
                 name:'Federico Blancato, Italy',
                 jobTitle:'Designer',
-                description:'fter graduating from the university, I faced with the problem. There were no company where I had not heard a refusal. My friend advised me company. I have chosen a probation program. I was lucky enough to undergo a training in Google company. That was 3 years ago, and nowadays I am a happy top-manager of this company.'
+                description:'After graduating from the university, I faced with the problem. There were no company where I had not heard a refusal. My friend advised me company. I have chosen a probation program. I was lucky enough to undergo a training in Google company. That was 3 years ago, and nowadays I am a happy top-manager of this company.'
             },
           
         ],

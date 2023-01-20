@@ -8,14 +8,16 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: ${(props) => props.theme.vh(88)};
-    padding-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    /* height: ${(props) => props.theme.vh(88)}; */
+    padding: 69px 0 ;
     ${mobile(
         css`
-            height: auto;
+            /* height: auto;
             padding-top: 50px;
             padding-bottom: 50px;
-            padding-left: 5px;
+            padding-left: 5px; */
         `
     )}
 `;
@@ -23,10 +25,25 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
 export const Container = styled(Grid.Container)`
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     column-gap: 40px;
     flex: 1;
+
+    ${device(
+        '720p',
+        css`
+            /* padding-left: 130px; */
+        `
+    )}
+
+${device(
+        'HD',
+        css`
+            /* padding-left: 40px; */
+        `
+    )}
+
     ${mobile(
         css`
             padding-left: 10px;
@@ -54,10 +71,10 @@ export const H1 = styled.h1`
 `;
 
 export const Skill = styled.div`
-    font-size: 18px;
+    font-size: 14px;
     line-height: 23px;
     max-width: 100%;
-    word-wrap: break-word;
+    word-wrap: break-all;
     color: #888;
     margin-top: 20px;
     margin-bottom: 30px;
@@ -69,14 +86,16 @@ export const Skill = styled.div`
     )}
 `;
 
-export const SkillAncher = styled.div`
-    font-size: 22px;
+export const SkillAncher = styled.span`
+    font-size: 20px;
     line-height: 23px;
     max-width: 100%;
-    word-wrap: break-word;
+    word-wrap: break-all;
+    font-weight: 300;
     color: #888;
-    margin-top: 12px;
-    margin-bottom: 30px;
+    /* margin-top: 12px; */
+    text-decoration: none;
+    /* margin-bottom: 30px; */
     cursor: pointer;
     ${device(
         '720p',
@@ -151,11 +170,12 @@ export const Infortmation = styled.div`
 export const ReadIcon = styled.div`
     display: flex;
     flex-direction: row;
+    align-items: center;
     column-gap: 18px;
     cursor: pointer;
     .check {
-        font-size: 41px;
-        color: #888;
+        font-size: 30px;
+        color: #1d9d73;
         background-color: #f6f8fa;
         border-radius: 50%;
         /* border: 1px solid grey; */
@@ -164,7 +184,7 @@ export const ReadIcon = styled.div`
     &:hover {
         .check {
         color: #fff;
-        background-color: #888;
+        background-color: #1d9d73;
         }
       }
 `;
@@ -176,3 +196,6 @@ export const Image = styled.img`
         `
     )}
 `;
+
+export const Figure = styled.div``
+ 

@@ -4,13 +4,22 @@ import { Grid, mobile, device, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #ffffff;
-    height: ${(props) => props.theme.vh(50)};
-    padding-top: 25px;
-    ${mobile(
+    /* height: ${(props) => props.theme.vh(60)}; */
+    font-family: 'Ubuntu', sans-serif;
+    padding: 50px 0;
+
+    ${device('720p', css``)}
+    ${device(
+        'tablet',
         css`
-            height: auto;
+            .tabletView {
+                padding: 0px 19px 0 18px;
+              /* width: ${(props) => props.theme.vw(100)}; */
+            }
+            
         `
     )}
+    ${mobile(css``)}
 `;
 
 export const Container = styled(Grid.Container)`
@@ -27,14 +36,20 @@ export const Container = styled(Grid.Container)`
     )}
 `;
 
-export const H1 = styled.h1`
+export const H2 = styled.h2`
     font-size: 35px;
     margin: 10px 0;
     max-width: 100%;
     padding: 0;
     color: #333;
-    font-weight: 300;
+    font-weight: 400;
     text-align: center;
+    line-height: 1.2307em;
+    padding-bottom: 35px;
+
+    &:hover {
+        color: #333;
+    }
     ${mobile(
         css`
             font-size: 25px;
@@ -44,13 +59,18 @@ export const H1 = styled.h1`
 
 export const Skill = styled.div`
     font-size: 14px;
-    line-height: 23px;
+    line-height: 22px;
     max-width: 100%;
-    word-wrap: break-word;
+    text-align: center;
     color: #888;
-    margin-top: 2px;
     margin-bottom: 30px;
 
+    ${device(
+        'tablet',
+        css`
+            /* width: ${(props) => props.theme.vw(93)}; */
+        `
+    )}
     ${mobile(
         css`
             text-align: center;
@@ -59,18 +79,27 @@ export const Skill = styled.div`
 `;
 
 export const SkillAncher = styled.div`
-    font-size: 22px;
+    font-size: 20px;
     line-height: 23px;
     max-width: 100%;
-    word-wrap: break-word;
-    color: #888;
-    margin-top: 12px;
-    margin-bottom: 30px;
+    color: #1d9d73;
+    margin: 20px 0 15px;
+    font-weight: 300;
     cursor: pointer;
+    &:hover {
+        color: #333;
+    }
     ${device(
         '720p',
         css`
             font-size: 20px;
+        `
+    )}
+
+    ${device(
+        'tablet',
+        css`
+            font-size: 16px;
         `
     )}
 
@@ -106,33 +135,69 @@ export const GridItem = styled(Grid.Container)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 30px;
+    text-align: center;
+    &:nth-child(2) {
+        margin: 0 30px;
+    }
     ${device(
         '720p',
         css`
-            width: 30% !important;
+            width: 30%;
         `
     )}
-
+    ${device(
+        'tablet',
+        css`
+            &:nth-child(2) {
+                margin: 0 10px;
+            }
+        `
+    )}
     ${mobile(
         css`
             padding-left: 12px;
             padding-right: 12px;
-            width: 100% !important;
+            width: 100%;
         `
     )}
 `;
 
 export const RederImage = styled.img`
-transition: transform .3s;
- width: 100%;
- cursor: pointer;
+    transition: transform 0.3s;
+    width: 100%;
+    cursor: pointer;
 
-&:hover {
-    transform: scale(1.1); 
-}
-`
+    &:hover {
+        transform: scale(1.1);
+    }
+`;
 
 export const RenderDiv = styled.div`
-overflow: hidden;
-`
+    overflow: hidden;
+`;
+
+export const IconArrow = styled.div`
+    height: 42px;
+    width: 42px;
+    color: #1d9d73;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 99;
+    border-radius: 42px;
+    text-align: center;
+    font-size: 27px;
+    border: 1px solid #1d9d73;
+    cursor: pointer;
+    &:hover {
+        color: #fff;
+        background-color: #1d9d73;
+    }
+
+    ${device(
+        'tablet',
+        css`
+            display: none;
+        `
+    )}
+`;

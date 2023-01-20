@@ -4,13 +4,14 @@ import { mobile, Grid, css } from '@gdi/engine';
 export const Wrapper = styled.div`
     flex: 1;
     background-color: #f6f8fa;
-    padding: 50px;
+    padding-top: 90px;
+    padding-bottom: 50px;
     display: flex;
     flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
     align-items: center;
-    padding: ${(props) => props.theme.vh(20)} 0;
+    /* padding: ${(props) => props.theme.vh(20)} 0; */
     display: flex;
-    font-family: ${(props) => props.theme.fontFamily};
     color: #888;
 `;
 
@@ -37,7 +38,6 @@ export const Arrow = styled.div`
     position: absolute;
     font-size: 50px;
     margin-top: 170px;
-    /* background-color: #112; */
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -102,15 +102,16 @@ export const QuoteSign = styled.div`
 
 export const QuoteBody = styled.div`
     color: #888;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1.5;
     text-align: center;
     padding: 0 10px;
+    font-weight: 200;
 `;
 
 export const QuotePerson = styled.div`
     text-align: center;
-    width: 200px;
+    width: 225px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -121,8 +122,8 @@ export const QuotePersonImage = styled.div<{ imageUrl: string }>`
     background-image: url(${(props) => props.imageUrl});
     background-size: cover;
     background-position: center center;
-    width: 170px;
-    height: 170px;
+    width: 151px;
+    height: 151px;
     border-radius: 50%;
     margin-bottom: 20px;
 `;
@@ -130,12 +131,11 @@ export const QuotePersonImage = styled.div<{ imageUrl: string }>`
 export const QuotePersonName = styled.div`
     font-size: 20px;
     color:#333;
-    font-variation-settings: 'wdth' 85, 'wght' 450;
-    margin-bottom: 7px;
+    font-weight: 200;
 `;
 
 export const QuotePersonJobTitle = styled.div`
     color: #888;
-    font-size: 18px;
-    font-variation-settings: 'wdth' 100, 'wght' 300;
+    font-size: 15px;
+    font-weight: 200;
 `;

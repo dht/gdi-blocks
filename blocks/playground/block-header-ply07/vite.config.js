@@ -14,9 +14,9 @@ export default defineConfig({
         sourcemap: true,
         lib: {
             entry: path.resolve(__dirname, 'src/index.ts'),
-            name: 'Quotes',
+            name: 'Header',
             formats: ['es', 'umd'],
-            fileName: (format) => `block-hero-gallery-ply01.${format}.js`,
+            fileName: (format) => `block-header-ply07.${format}.js`,
         },
         rollupOptions: {
             plugins: [ANALYZE_BUNDLE ? analyze() : null],
