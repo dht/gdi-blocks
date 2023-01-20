@@ -85,6 +85,9 @@
             "@gdi/block-quotes-ply04": [
                 "blocks/playground/block-quotes-ply04"
             ],
+            "@gdi/block-testimonials-ply06": [
+                "blocks/playground/block-testimonials-ply06"
+            ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
             ],

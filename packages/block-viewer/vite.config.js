@@ -43,6 +43,7 @@ export default defineConfig({
 			'@gdi/block-cta-ply05': `${cwd}/blocks/playground/block-cta-ply05/src`,
 			'@gdi/block-hero-ply02': `${cwd}/blocks/playground/block-hero-ply02/src`,
 			'@gdi/block-quotes-ply04': `${cwd}/blocks/playground/block-quotes-ply04/src`,
+			'@gdi/block-testimonials-ply06': `${cwd}/blocks/playground/block-testimonials-ply06/src`,
 			'@gdi/block-about-iuhr3': `${cwd}/blocks/starter/block-about-iuhr3/src`,
 			'@gdi/block-contact-au487': `${cwd}/blocks/starter/block-contact-au487/src`,
 			'@gdi/block-cta-p8y4a': `${cwd}/blocks/starter/block-cta-p8y4a/src`,

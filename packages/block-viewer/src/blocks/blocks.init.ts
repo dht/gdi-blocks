@@ -18,6 +18,7 @@ import { block as block_hero_ply03 } from '@gdi/block-hero-ply03';
 import { block as block_cta_ply05 } from '@gdi/block-cta-ply05';
 import { block as block_hero_ply02 } from '@gdi/block-hero-ply02';
 import { block as block_quotes_ply04 } from '@gdi/block-quotes-ply04';
+import { block as block_testimonials_ply06 } from '@gdi/block-testimonials-ply06';
 import { block as block_about_iuhr3 } from '@gdi/block-about-iuhr3';
 import { block as block_contact_au487 } from '@gdi/block-contact-au487';
 import { block as block_cta_p8y4a } from '@gdi/block-cta-p8y4a';
@@ -52,6 +53,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_cta_ply05.id]: block_cta_ply05,
 			[block_hero_ply02.id]: block_hero_ply02,
 			[block_quotes_ply04.id]: block_quotes_ply04,
+			[block_testimonials_ply06.id]: block_testimonials_ply06,
 			[block_about_iuhr3.id]: block_about_iuhr3,
 			[block_contact_au487.id]: block_contact_au487,
 			[block_cta_p8y4a.id]: block_cta_p8y4a,
