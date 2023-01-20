@@ -7,7 +7,6 @@ export const Wrapper = styled.div`
     background-size: 100% 100%;
     height: 100vh;
     color: #000;
-    /* font-family: ${(props) => props.theme.fontFamily}; */
     font-family: 'Circular',sans-serif;
 
     ${device(
@@ -167,7 +166,14 @@ export const P = styled.div`
     color:#666666;
 
     font-family: 'Roboto', sans-serif;
-        
+    
+    ${device(
+        'HD',
+            css`
+                font-size: 17px;
+            `
+    )}
+
     ${device(
         '720p',
             css`
@@ -267,6 +273,15 @@ export const Span = styled.span`
     font-weight: normal;
     word-spacing: 4px;
     letter-spacing: 1px;
+
+    ${device(
+        'HD',
+            css`
+                word-spacing: 3px;
+                letter-spacing: normal;
+                font-size: 16px;
+            `
+    )}
     ${device(
         '720p',
             css`
