@@ -79,6 +79,9 @@
             "@gdi/block-hero-ply03": [
                 "blocks/playground/block-about-ply03"
             ],
+            "@gdi/block-apps-ply07": [
+                "blocks/playground/block-apps-ply07"
+            ],
             "@gdi/block-cta-ply05": [
                 "blocks/playground/block-cta-ply05"
             ],

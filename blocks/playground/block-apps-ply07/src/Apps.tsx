@@ -22,28 +22,28 @@ import {
     CarouselSubContainer,
     CarouselSubContainer2,
     ClientImage,
-} from './Testomonials.style';
+} from './Apps.style';
 
-export const id = 'com.usegdi.blocks.testimonials-ply06';
+export const id = 'com.usegdi.blocks.apps-ply07';
 
-export type TestomonialsProps = {
-    strings: TestimonialsStrings;
-    colors: TestomonialsColors;
-    extra: TestomonialsExtra;
+export type AppsProps = {
+    strings: AppsStrings;
+    colors: AppsColors;
+    extra: AppsExtra;
 };
 
-export type TestimonialsStrings = {
+export type AppsStrings = {
     slogan?: string;
     header: string;
 };
 
-export type TestomonialsColors = {};
+export type AppsColors = {};
 
-export type TestomonialsExtra = {
+export type AppsExtra = {
     testimonialDataSet:Json
 };
 
-export function Testomonials(props: TestomonialsProps) {
+export function Apps(props: AppsProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
     const { testimonialDataSet } = extra;
@@ -115,4 +115,4 @@ chevron_right
        
     );
 }
-export default Testomonials;
+export default Apps;
