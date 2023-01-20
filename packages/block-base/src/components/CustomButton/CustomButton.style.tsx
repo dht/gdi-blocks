@@ -1,7 +1,7 @@
 import { mobile } from '@gdi/engine';
 import styled, { css } from 'styled-components';
 
-export const CustomButtonBase = styled.div`
+export const CustomButtonBase = styled.button`
     color: #163c60;
     font-weight: bold;
     font-size: 16px;
@@ -12,6 +12,7 @@ export const CustomButtonBase = styled.div`
     background-color: white;
     padding: 20px;
     border: 1px solid #163c60;
+
     ${mobile(
         css`
             text-align: center;

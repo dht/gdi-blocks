@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Back, Content, Front, Wrapper } from './Parallax.style';
+import { loadImages } from 'shared-base';
 import classnames from 'classnames';
 
 export type ParallaxProps = {
@@ -13,30 +14,32 @@ export type ParallaxProps = {
 };
 
 export function Parallax(props: ParallaxProps) {
-    const {
-        placeholderImageUrl,
-        backImageUrl,
-        backImageUrlMobile,
-        frontImageUrl,
-        frontImageUrlMobile,
-    } = props;
+    const { backImageUrl, frontImageUrl } = props;
+    const [isRunning, setRunning] = useState(false);
 
-    const className = classnames('Parallax-wrapper', props.className);
+    const className = classnames('Parallax-wrapper', props.className, {
+        running: isRunning,
+    });
+
+    async function loadAllImages() {
+        try {
+            await loadImages([backImageUrl, frontImageUrl]);
+            setRunning(true);
+        } catch (_err) {}
+    }
+
+    useEffect(() => {
+        loadAllImages();
+    }, []);
 
     return (
         <Wrapper
             className={className}
             data-testid='Parallax-wrapper'
-            imageUrl={placeholderImageUrl}
+            props={props}
         >
-            <Back
-                imageUrl={backImageUrl}
-                imageUrlMobile={backImageUrlMobile}
-            ></Back>
-            <Front
-                imageUrl={frontImageUrl}
-                imageUrlMobile={frontImageUrlMobile}
-            ></Front>
+            <Back className='back'></Back>
+            <Front className='front'></Front>
             <Content className={className}>{props.children}</Content>
         </Wrapper>
     );

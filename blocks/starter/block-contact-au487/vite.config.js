@@ -26,6 +26,7 @@ export default defineConfig({
                 'react/jsx-runtime': '',
                 'react-select/creatable': '',
                 ...p.dependencies,
+                ...p.peerDependencies,
             }),
         },
     },

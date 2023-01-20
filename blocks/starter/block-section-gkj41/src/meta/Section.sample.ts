@@ -8,6 +8,7 @@ export const sampleData: ISampleDataPerFlavour = {
         extra: {
             id: 'features',
             href: '',
+            isHidden: true,
         },
     },
 };

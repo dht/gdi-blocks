@@ -1,6 +1,7 @@
 import React from 'react';
-import { ButtonCta, StreetSign } from '@gdi/block-base';
+import { ButtonCta } from '@gdi/block-base';
 import { H1, P, StreetSignWrapper, Wrapper } from './Cta.style';
+import { StreetSign } from './parts/StreetSign/StreetSign';
 
 export const id = 'com.usegdi.blocks.cta-uiey3';
 
