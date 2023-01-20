@@ -76,7 +76,6 @@
             "@gdi/block-twins-aou31": [
                 "blocks/kickstarter/block-twins-aou31"
             ],
-<<<<<<< HEAD
             "@gdi/block-hero-ply03": [
                 "blocks/playground/block-about-ply03"
             ],
@@ -91,7 +90,7 @@
             ],
             "@gdi/block-testimonials-ply06": [
                 "blocks/playground/block-testimonials-ply06"
-=======
+            ],
             "@gdi/block-hero-plylx": [
                 "blocks/reference/block-hero-plylx"
             ],
@@ -100,7 +99,6 @@
             ],
             "@gdi/block-grid-st001": [
                 "blocks/stack/block-grid-st001"
->>>>>>> main
             ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"

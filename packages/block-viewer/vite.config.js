@@ -40,17 +40,14 @@ export default defineConfig({
 			'@gdi/block-quotes-opur3': `${cwd}/blocks/kickstarter/block-quotes-opur3/src`,
 			'@gdi/block-top-9yur8': `${cwd}/blocks/kickstarter/block-top-9yur8/src`,
 			'@gdi/block-twins-aou31': `${cwd}/blocks/kickstarter/block-twins-aou31/src`,
-<<<<<<< HEAD
 			'@gdi/block-hero-ply03': `${cwd}/blocks/playground/block-about-ply03/src`,
 			'@gdi/block-cta-ply05': `${cwd}/blocks/playground/block-cta-ply05/src`,
 			'@gdi/block-hero-ply02': `${cwd}/blocks/playground/block-hero-ply02/src`,
 			'@gdi/block-quotes-ply04': `${cwd}/blocks/playground/block-quotes-ply04/src`,
 			'@gdi/block-testimonials-ply06': `${cwd}/blocks/playground/block-testimonials-ply06/src`,
-=======
 			'@gdi/block-hero-plylx': `${cwd}/blocks/reference/block-hero-plylx/src`,
 			'@gdi/block-top-41j4k': `${cwd}/blocks/reference/block-top-41j4k/src`,
 			'@gdi/block-grid-st001': `${cwd}/blocks/stack/block-grid-st001/src`,
->>>>>>> main
 			'@gdi/block-about-iuhr3': `${cwd}/blocks/starter/block-about-iuhr3/src`,
 			'@gdi/block-contact-au487': `${cwd}/blocks/starter/block-contact-au487/src`,
 			'@gdi/block-cta-p8y4a': `${cwd}/blocks/starter/block-cta-p8y4a/src`,

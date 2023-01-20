@@ -14,36 +14,33 @@ export const Wrapper = styled.div`
     border-top: 1px solid silver;
     font-family: ${(props) => props.theme.fontFamily};
 
-    ${mobile(
-        css`
-            height: 100%;
-        `
-    )}
-
     ${device(
         'tablet',
             css`
+                height: 70vh;
+            `
+    )}
+    
+
+    ${device(
+        'mobile',
+            css`
                 
-                height: 170vh;
+             height: 120vh;
             `
         
         )}
 `;
 
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-`;
+
 
 export const H1 = styled.h1`
     font-size: 50px;
     padding: 0;
     color: black;
     text-align: center;
-    font-weight:normal;
+    font-weight:500;
+
      
     ${device(
         'tablet',
@@ -69,185 +66,255 @@ export const SubTitle = styled.p`
 
 
 
-export const VideoImage = styled.div<{extra:TestomonialsExtra}>`
-background-image: url(${(props)=> props.extra.imageUrl});
-height: 520px;
-width: 700px;
-background-size:contain;
-background-repeat: no-repeat;
-display: flex;
-align-items: center;
-justify-content: center;
-
-.playbutton {
-    font-size: 160px;
-    
-}
-.iframe-class {
-    height: 40rem;
-    width: 100%;
-}
-
-.modal-class {
-    background-color: transparent !important;
-    width: 1220px;
-    height: 100%;
-    padding: 0px;
-    border: none;
-    position: absolute;
-    left: -300px;
-}
-
-${device(
-    'HD+',
-        css`
-        .iframe-class {
-            height: 400px;
-
-        }
-        .modal-class {
-            width: 1000px;
-            height: 490px;
-            left: -210px;
-            top: 0px;
-
-        }
-            
-        `
-)}
-
-${device(
-    'HD',
-        css`
-            .iframe-class {
-            height: 300px;
-
-        }
-        .modal-class {
-            width: 620px;
-            height: 300px;
-            left: 0px;
-            top: 100px;
-
-        }
-        `
-)}
-
-${device(
-    '720p',
-        css`
-            .iframe-class {
-            height: 300px;
-
-        }
-        .modal-class {
-            width: 620px;
-            height: 300px;
-            left: -30px;
-            top: 100px;
-
-        }
-        `
-)}
-
-${device(
-    'tablet',
-        css`
-            .iframe-class {
-            height: 300px;
-
-        }
-        .modal-class {
-            width: 620px;
-            height: 300px;
-            left: -70px;
-            top: 100px;
-
-        }
-        `
-    
-    )}
-
-${mobile(
-    css`
-        .iframe-class {
-            height: 200px;
-
-        }
-        .modal-class {
-            width: 370px;
-            height: 200px;
-            left: -5px;
-            top: 200px;
-
-        }
-    `
-    
-    )}
-
-
-
-
-`
-export const ProductInfo = styled.div`
-height: 520px;
-width: 700px;
-padding: 10%;
-display: block !important;
-flex-direction: column !important;
-
-
-
-
-${mobile(
-    css`
-        .products-card {
-            position: relative;
-    height: 200px;
-    left: 100px;
-    width: 390px;
-    margin-top: 0px;
-    top: -100px;
-    margin-bottom: 70px;
-}
-    `
-)}
-
-`;
-
-
 
 export const Row = styled.div``;
 export const Column = styled.div``;
 
-export const H5 = styled.h5``;
-export const ModalButton = styled.button``;
 
-export const PlayIcon = styled.span``;
 
-export const ModalContent = styled.div``;
-export const ModalHeader = styled.div``;
-export const ModalDialog = styled.div``;
 
-export const ModalBody = styled.div``;
 
-export const ModalIframe = styled.iframe``;
+export const CarouselInner = styled.div``;
+export const Carousel = styled.div``;
 
-export const ProductDescription = styled.p`
-font-size: 19px;
-font-weight: lighter;
-    
-`
-export const Icon = styled.span`
-    padding: 18px;
-    font-weight: bold;
+export const CarouselItem = styled.div`
+    .carousel-container {
+        display: flex;
+
+    }
+    ${device(
+        'mobile',
+            css`
+                .carousel-container {
+                    flex-direction :column-reverse ;
+                }
+               
+            `
+    )}
+`;
+
+export const CarouselContainer = styled.div``
+
+export const CarouselPrev = styled.button``;
+export const CarouselNext = styled.button``;
+
+
+export const ClientImage = styled.img`
+    min-height: 270px !important;
+    height: 100%;
+    width: 99%;
+    border-radius: 0px 10px 10px 0px;
+    background-size: cover !important;
+
+    ${device(
+        'tablet',
+            css`
+                position: absolute;
+                overflow: hidden;
+                width: 60%;
+                height: 270px;
+                
+            `
+    )}
+    ${mobile(
+        css`
+            position: static;
+            width: 100%;
+            height: 300px;
+            border-radius: 10px 10px 0px 0px;
+        `
+    )}
+`;
+
+export const CarouselPrevIcon = styled.span`
+    background-color: white;
+    position: absolute;
+    left: -40px;
     font-size: 30px;
-    color: #007ACE;
+    font-weight: bolder !important;
+    color: black;
+    padding: 18px;
     border-radius: 50%;
-    background-color: aliceblue;
+
+    ${device(
+        'tablet',
+            css`
+                padding: 10px;
+                left: -30px;
+            `
+    )}
+
+    ${mobile(
+        css`
+            display: none;
+        `
+    )}
+`;
+export const CarouselNextIcon = styled.span`
+background-color: white;
+    position: absolute;
+    right: -40px;
+    font-size: 30px;
+    font-weight: bolder !important;
+    color: black;
+    padding: 18px;
+    border-radius: 50%;
+
+    ${device(
+        'tablet',
+            css`
+                padding: 10px;
+                right: -30px;
+            `
+    )}
+
+
+    ${mobile(
+        css`
+            display: none;
+        `
+    )}
+
+`;
+
+export const ClientName = styled.span`
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    font-style: normal;
+
+    ${device('tablet',
+        css`
+            
+            font-size: 15px;
+        `
+    )}
+`;
+
+export const CarouselSubContainer = styled.div`
+    width: 100%;
+    border: 0.8px solid #B5B5B5;
+    padding: 50px;
+    border-right: none;
+    border-radius: 10px 0px 0px 10px;
+    
+    .margintop-p {
+        margin-top: 25px;
+    }
+    
+    .margintop {
+        margin-top: 50px;
+    }
+
+    ${device(
+        'tablet',
+            css`
+                .margintop {
+                    margin-top: 0px;
+                }
+                .margintop-p {
+                    margin-top: 0px;
+                }
+                padding: 20px;
+                padding-bottom: 10px;
+            `
+    )}
+
+    ${device(
+        'tablet',
+            css`
+                .margintop {
+                    margin-top: 0px;
+                }
+            `
+    )}
+
+    ${mobile(
+        css`
+            border: 0.8px solid #B5B5B5;
+            border-radius: 0px 0px 10px 10px;
+            border-top: none;
+            padding: 17px;
+            .margintop {
+                margin-top: 20px;
+            }
+        `
+        )}
+
+
+`
+
+export const CarouselSubContainer2 = styled.div`
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
+    
+    ${device(
+        'tablet',
+            css`
+                min-height: 270px;
+
+            `
+    )}
+
+    ${mobile(
+        css`
+        border-radius: 10px 10px 0px 0px;
+        `
+    )}
+
+`;
+
+
+export const ClientLogo = styled.img`
+    height:45px;
+    ${device(
+        'tablet',
+            css`
+                height: 30px;
+            `
+    )}
+`;
+
+export const ClientSign = styled.img`
+    height: 40px;
+
+    ${device(
+        'tablet',
+            css`
+                height: 30px;
+            `
+    )}
+
+`;
+
+
+
+export const Span = styled.span`
+    color: rgb(102, 102, 102);
+`;
+
+export const P = styled.p`
+    font-size: 20px;
+    color: rgb(102, 102, 102);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28.8px;
+
+    ${device(
+        'tablet',
+            css`
+                font-size: 14px;
+                line-height: 21px;
+            `
+    )}
+
 `;
 
 
 
 
-export const iconClass = "material-symbols-outlined"
+
+export const Container = styled.div``;
+
+
+

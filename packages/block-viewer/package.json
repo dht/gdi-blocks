@@ -18,12 +18,6 @@
         "@gdi/web-ui": "^0.4.6",
         "firebaseui": "^6.0.1",
         "igrid": "^0.4.2",
-        "prosemirror-commands": "^1.5.0",
-        "prosemirror-dropcursor": "^1.5.0",
-        "prosemirror-gapcursor": "^1.3.1",
-        "prosemirror-history": "^1.3.0",
-        "prosemirror-keymap": "^1.2.0",
-        "prosemirror-schema-list": "^1.2.2",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-redux": "^8.0.2",
@@ -34,7 +28,6 @@
         "shared-base": "^0.4.8",
         "styled-components": "^5.3.5",
         "testing-base": "^0.4.2",
-<<<<<<< HEAD
         "types-base": "^0.0.3",
         "prosemirror-commands": "^1.5.0",
         "prosemirror-dropcursor": "^1.5.0",
@@ -46,9 +39,6 @@
         "@gdi/block-hero-ply02": "latest",
         "@gdi/block-hero-ply03": "latest",
         "@gdi/block-about-ply03": "latest"
-=======
-        "types-base": "^0.0.3"
->>>>>>> main
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",

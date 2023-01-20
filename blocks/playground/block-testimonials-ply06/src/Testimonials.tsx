@@ -2,23 +2,26 @@ import React, { useContext } from 'react';
 import {
     Container,
     H1,
-    H5,
     Wrapper,
     Row,
     SubTitle,
-    VideoImage,
-    ProductInfo,
     Column,
-    Icon,
-    ProductDescription,
-    iconClass,
-    ModalButton,
-    PlayIcon,
-    ModalContent,
-    ModalHeader,
-    ModalDialog,
-    ModalBody,
-    ModalIframe,
+    CarouselInner,
+    Carousel,
+    CarouselItem,
+    CarouselPrev,
+    CarouselNext,
+    CarouselPrevIcon,
+    CarouselNextIcon,
+    P,
+    ClientName,
+    Span,
+    ClientLogo,
+    ClientSign,
+    CarouselContainer,
+    CarouselSubContainer,
+    CarouselSubContainer2,
+    ClientImage,
 } from './Testomonials.style';
 
 export const id = 'com.usegdi.blocks.testimonials-ply06';
@@ -37,98 +40,79 @@ export type TestimonialsStrings = {
 export type TestomonialsColors = {};
 
 export type TestomonialsExtra = {
-    imageUrl: string;
-    productDataset: Json;
-    youtubeUrl:string
+    testimonialDataSet:Json
 };
 
 export function Testomonials(props: TestomonialsProps) {
     const { strings, colors, extra } = props;
     const { slogan, header } = strings;
-    const { imageUrl, productDataset,youtubeUrl } = extra;
+    const { testimonialDataSet } = extra;
 
     return (
-        <Wrapper>
-            <Container>
-                <Row className='row'>
-                    <Column className='col-lg-12 text-center'>
-                        <H1>{header}</H1>
-                        <SubTitle> {slogan}</SubTitle>
-                    </Column>
-                </Row>
+        <>
+            <Wrapper>
+                <Container className='container' >
+                    <Row className='row'>
+                        <Column className='col-lg-12 text-center'>
+                            <H1> {header} </H1>
+                            <SubTitle>  {slogan} </SubTitle>
+                        </Column>
+                    </Row>
 
-                <Row className='row'>
-                    <Column className='col-lg-6 mt-4'>
-                        <VideoImage extra={extra} >
-                            <ModalButton
-                                type='button'
-                                className=' btn'
-                                data-bs-toggle='modal'
-                                data-bs-target='#exampleModal'
-                            >
-                                <PlayIcon className='material-symbols-outlined playbutton '>
-                                    play_circle
-                                </PlayIcon>
-                            </ModalButton>
+                    <Row className='row'>
+                        <Column className='col-lg-12'>
+                        <Carousel id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
+  <CarouselInner className="carousel-inner">
+    {testimonialDataSet.map((clientData:Json)=>{
+        return(
+            <>
+            <CarouselItem className=" carousel-item active">
+        <CarouselContainer className='carousel-container '>
+            <CarouselSubContainer>
+                <ClientLogo src={clientData.logo} alt="" />
+                <P className='margintop-p'>“ {clientData.description} ”</P>
+                <ClientSign className='margintop' src={clientData.sign} alt="sign" />
+                <br />
+                <ClientName> {clientData.clientName} </ClientName>
+                <br />
+                <Span> {clientData.clientDesignation} </Span>
+            </CarouselSubContainer>
 
-                            <Row
-                                className='modal fade'
-                                id='exampleModal'
-                                aria-labelledby='exampleModalLabel'
-                                aria-hidden='true'
-                            >
-                                <ModalDialog className='modal-dialog'>
-                                    <ModalContent className='modal-content modal-class  '>
-                                        <ModalHeader className='modal-header  '>
-                                            <ModalButton
-                                                type='button'
-                                                className='btn-close btn-danger btn '
-                                                data-bs-dismiss='modal'
-                                                aria-label='Close'
-                                            ></ModalButton>
-                                        </ModalHeader>
+            <CarouselSubContainer2 className=" w-100 ">
+               
+                <ClientImage src={clientData.image} alt="client Image" />    
+            </CarouselSubContainer2>    
+        </CarouselContainer> 
+    </CarouselItem>
+            </>
+        )
+    })}
+  </CarouselInner>
 
-                                        <ModalBody className='modal-body'>
-                                            <ModalIframe
-                                               className='iframe-class'
-                                                src={youtubeUrl}
-                                            ></ModalIframe>
-                                        </ModalBody>
-                                    </ModalContent>
-                                </ModalDialog>
-                            </Row>
-                            
-                        </VideoImage>
-                    </Column>
-                    
-                    <Column className='col-lg-6 d-flex'>
-                        <ProductInfo>
-                            <Row className='row'>
-                                {productDataset.map(
-                                    (value: Json, index: number) => {
-                                        return (
-                                            <>
-                                                <Column className='col-lg-12 products-card '>
-                                                    <Icon className={iconClass}>
-                                                        {value.icon}
-                                                    </Icon>
-                                                    <H5 className='mt-2'>
-                                                        {value.label}
-                                                    </H5>
-                                                    <ProductDescription>
-                                                        {value.description}
-                                                    </ProductDescription>
-                                                </Column>
-                                            </>
-                                        );
-                                    }
-                                )}
-                            </Row>
-                        </ProductInfo>
-                    </Column>
-                </Row>
-            </Container>
-        </Wrapper>
+  <CarouselPrev className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <CarouselPrevIcon className="shadow material-symbols-outlined" aria-hidden="true"> 
+chevron_left
+     </CarouselPrevIcon>
+    <span className="visually-hidden">Previous</span>
+  </CarouselPrev>
+
+
+  <CarouselNext className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <CarouselNextIcon className="shadow material-symbols-outlined" aria-hidden="true">
+chevron_right
+    </CarouselNextIcon>
+    <span className="visually-hidden">Next</span>
+  </CarouselNext>
+</Carousel>
+                        </Column>
+                    </Row>
+
+                </Container>    
+            
+            </Wrapper>
+        </>
+
+       
     );
 }
 export default Testomonials;

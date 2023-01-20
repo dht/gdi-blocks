@@ -2,28 +2,30 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            slogan: 'Doesn’t matter what nich you’re after – Webify has it all.',
-            header: 'A product for every niche',
+            slogan: 'See what people have to say about our product',
+            header: 'But don’t take our work for it',
         },
         colors: {},
         extra: {
-            productDataset : [
+            testimonialDataSet : [
                 {
-                    icon:"local_mall",
-                    label:"Super Creative",
-                    description:"Our award-winning templates are the most beautiful way to present your ideas online. Stand out with a professional website, portfolio, or online store."
+                    logo:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client2.png",
+                    description:'We had so many different requirements for the tool that we easily knocked out 99% of them because they didn’t have the customizations and the features that we needed',
+                    sign:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
+                    clientName:"Bob Mathews",
+                    clientDesignation:"System Engineer",
+                    image:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/testimonial1.png" 
                 },
                 {
-                    icon:"layers",
-                    label:"Design-driven",
-                    description:"Trusted by the world’s best, Squarespace empowers people with creative ideas to succeed. Every block is designed and coded with huge attention to details."
-                }
+                    logo:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client3.png",
+                    description:'Your testimonial page serves as a platform to show off how others have benefited from your product or service, making it a powerful tool.',
+                    sign:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
+                    clientName:"Anna Robertson",
+                    clientDesignation:"Web Consultant",
+                    image:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/Testi.png"
+                },
                 
-                
-            ],
-            imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/video-block-bg.jpg',
-            youtubeUrl:'https://www.youtube.com/embed/7KIEvEODCI4?autoplay=1'
-            
+            ],  
         },
     },
 };
