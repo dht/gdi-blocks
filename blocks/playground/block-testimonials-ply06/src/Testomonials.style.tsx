@@ -20,6 +20,13 @@ export const Wrapper = styled.div`
                 height: 70vh;
             `
     )}
+
+    ${device(
+        '720p',
+            css`
+                height: 97vh;
+            `
+    )}
     
 
     ${device(
