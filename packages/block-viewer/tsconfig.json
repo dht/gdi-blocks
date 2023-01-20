@@ -43,6 +43,9 @@
             "@gdi/block-gallery-ui5873": [
                 "blocks/gdi/block-gallery-ui5873"
             ],
+            "@gdi/block-header-aouu4": [
+                "blocks/gdi/block-header-aouu4"
+            ],
             "@gdi/block-hero-ajh53": [
                 "blocks/gdi/block-hero-ajh53"
             ],
@@ -94,6 +97,15 @@
             "@gdi/block-quotes-ply04": [
                 "blocks/playground/block-quotes-ply04"
             ],
+            "@gdi/block-hero-plylx": [
+                "blocks/reference/block-hero-plylx"
+            ],
+            "@gdi/block-top-41j4k": [
+                "blocks/reference/block-top-41j4k"
+            ],
+            "@gdi/block-grid-st001": [
+                "blocks/stack/block-grid-st001"
+            ],
             "@gdi/block-about-iuhr3": [
                 "blocks/starter/block-about-iuhr3"
             ],
@@ -102,9 +114,6 @@
             ],
             "@gdi/block-cta-p8y4a": [
                 "blocks/starter/block-cta-p8y4a"
-            ],
-            "@gdi/block-header-aouu4": [
-                "blocks/starter/block-header-aouu4"
             ],
             "@gdi/block-hero-hu45i": [
                 "blocks/starter/block-hero-hu45i"

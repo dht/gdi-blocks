@@ -8,29 +8,27 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 0 gold;
     justify-content: flex-end;
-    ${mobile(css`
-        display: none;
-    `)}
 `;
 
-export const MenuItem = styled.div<{ extra: any }>`
+export const MenuItem = styled.div<{ color: string, extra: boolean }>`
     padding: 20px;
     cursor: pointer;
-    flex: ${(props) => (props.extra ? 'auto' : 'none')};
+    white-space: nowrap;
+  flex: ${(props) => (props.extra ? 'auto' : 'none')};
+
     &:hover {
         background: rgba(255, 255, 255, 0.1);
 
         a {
-            color: #f2c973;
+            color: ${(props) => props.color};
         }
     }
 `;
 
-export const MenuItemLink = styled.a`
-    color: white;
+export const MenuItemLink = styled.a<{ color: string }>`
+    color: ${(props) => props.color};
     text-decoration: none;
     font-size: 18px;
-    font-variation-settings: 'wdth' 110, 'wght' 650;
+    font-variation-settings: 'wdth' 105, 'wght' 350;
 `;

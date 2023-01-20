@@ -4,6 +4,7 @@ import {
     A,
     Clear,
     Content,
+    FullScreenWrapper,
     Group,
     H1,
     H2,
@@ -14,6 +15,7 @@ import {
 } from './ViewerHome.style';
 import { sortBy } from 'shared-base';
 import { useNavigate } from 'react-router-dom';
+import { switchToFullscreen } from '../../utils/fullscreen';
 import BlockPreview from '../BlockPreview/BlockPreview';
 import byTemplate from '../../blocks/blocks.byTemplate.json';
 import { useLocalStorage } from 'react-use';
@@ -114,6 +116,11 @@ export function ViewerHome(props: ViewerHomeProps) {
                     <Ul>{renderTemplates()}</Ul>
                 </Content>
                 {renderPreview()}
+                <FullScreenWrapper>
+                    <button onClick={switchToFullscreen}>
+                        <i className='material-icons'>fullscreen</i>
+                    </button>
+                </FullScreenWrapper>
             </Wrapper>
         </TrianglesBk>
     );
