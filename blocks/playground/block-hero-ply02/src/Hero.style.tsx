@@ -8,6 +8,13 @@ export const Wrapper = styled.div`
     height: 84vh;
     color: #000;
 
+    ${device(
+        'tablet'
+            ,css`
+                height: 120vh;
+            
+            `)}
+
     ${mobile(
         css`
             height: 110vh;
@@ -15,29 +22,9 @@ export const Wrapper = styled.div`
     )}
 `;
 
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: white;
-`;
 
-export const Row = styled(Grid.Row)`
-    width: 100%;
-`;
 
-export const Column = styled(Grid.Column)`
-    width: 100%;
 
-    .pt-10 {
-        padding-top: 10%;
-    }
-    H1 {
-        font-weight: normal;
-    }
-`;
 
 export const HeroButton = styled.button`
     margin-top: 30px;
@@ -53,15 +40,25 @@ export const HeroButton = styled.button`
 
 export const H1 = styled.h1`
     font-size: 60px;
-    margin: 10px 0;
     padding: 0;
-    line-height: 55px;
     vertical-align: baseline;
     color: black;
+    line-height: 60px;
     font-family: 'Circular', sans-serif;
     word-spacing: 5px;
-    font-weight: bold;
-
+    
+    ${device(
+        '720p',
+            css`
+                font-size: 45px;
+            `
+    )}
+    ${device(
+        'tablet',
+            css`
+                font-size: 45px;
+            `
+    )}
     ${mobile(
         css`
             font-size: 35px;
@@ -143,4 +140,31 @@ export const Client = styled.img`
 
 
 export const ClientIcon = styled.div``;
+
+
+export const Container = styled.div``;
+export const Row = styled.div`
+    .p-40px {
+        padding: 40px;
+    }
+
+    ${device(
+        'tablet',
+            css`
+                .p-40px {
+                    padding: 0px;
+                }
+            `
+    )}
+
+    ${mobile(
+        css`
+            .p-40px {
+                padding: 10px;
+            }
+        `
+    )}
+`;
+export const Column = styled.div``;
+
 

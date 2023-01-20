@@ -58,7 +58,7 @@ export function About(props: AboutProps) {
                         })}
                     </Col>
                     <Col>
-                        <H1 className='mt-50px'> {header} </H1>
+                        <H1 className='mt-50px' style={{fontFamily:"'Circular',sans-serif"}} > {header} </H1>
                         <P> {description} </P>
                         <Button className='mt-10'> {buttonText} </Button>
                     </Col>

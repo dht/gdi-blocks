@@ -31,7 +31,7 @@ export type QuotesExtra = {
 };
 
 export function Quotes(props: QuotesProps) {
-    const { strings, colors, extra } = props;
+    const { strings, extra } = props;
     const { slogan, header } = strings;
     const { imageUrl } = extra;
 

@@ -43,15 +43,14 @@ export function Hero(props: HeroProps) {
 
     return (
         <>
-            <Wrapper>
-                    <Container>
-                        <Row>
-                        <Column>
-                        <H1 className='pt-10'> {header} </H1>
-                        <P> {description} </P>
-                        <HeroButton> {buttonText} </HeroButton>
-
-                        <ClientIcon className='row mt-5'>
+             <Wrapper>
+                <Container className='container'>
+                    <Row className='row'>
+                        <Column className='col-lg-6 p-40px '>
+                            <H1> {header} </H1>
+                            <P> {description} </P>
+                            <HeroButton> {buttonText} </HeroButton>
+                            <ClientIcon className='row mt-5'>
                         {clientDataSet.map((clientImage:Json)=>{
                             return(
                                 <>
@@ -62,13 +61,14 @@ export function Hero(props: HeroProps) {
                             )
                         })} 
                         </ClientIcon>
+                        </Column>
 
+                        <Column className='col-lg-6' >
+                        <HeroImg extra={extra}></HeroImg>
+                        
                         </Column>
-                        <Column>
-                            <HeroImg extra={extra}></HeroImg>
-                        </Column>
-                        </Row>
-                    </Container>
+                    </Row>
+                </Container>
              </Wrapper>
         </>
     );

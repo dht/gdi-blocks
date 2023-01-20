@@ -7,7 +7,8 @@ export const Wrapper = styled.div`
     background-size: 100% 100%;
     height: 100vh;
     color: #000;
-    font-family: ${(props) => props.theme.fontFamily};
+    /* font-family: ${(props) => props.theme.fontFamily}; */
+    font-family: 'Circular',sans-serif;
 
     ${device(
         'tablet',
@@ -45,7 +46,20 @@ export const H1 = styled.h1`
     font-family: 'Circular',sans-serif;
     word-spacing: 5px;
     font-weight: 400;
+    
+    ${device(
+        '720p',
+            css`
+                font-size:45px;
+            `
+    )}
 
+    ${device(
+        'tablet',
+            css`
+                font-size: 35px;
+            `
+    )}
     ${mobile(
         css`
             font-size: 35px;
@@ -147,11 +161,27 @@ export const Col = styled.div`
 `;
 
 export const P = styled.div`
-    font-weight: normal;
+    font-weight: light;
     font-size: 19px;
     letter-spacing: 1px;
     color:#666666;
-    word-spacing: 5px;
+
+    font-family: 'Roboto', sans-serif;
+        
+    ${device(
+        '720p',
+            css`
+                font-size: 18px;
+            `
+    )}
+
+    ${device(
+        'tablet',
+            css`
+                font-size: 17px;
+            `
+
+        )}
 
     ${mobile(
         css`

@@ -44,6 +44,13 @@ export const H1 = styled.h1`
     color: black;
     text-align: center;
     font-weight:normal;
+     
+    ${device(
+        'tablet',
+            css`
+                font-size: 35px;
+            `
+    )}
 
     ${mobile(
         css`
@@ -57,6 +64,7 @@ export const H1 = styled.h1`
 export const SubTitle = styled.p`
     font-size: 22px;
     color: #666666;
+    font-family: 'Roboto', sans-serif;
 `;
 
 
