@@ -17,9 +17,11 @@ export const sampleData: ISampleDataPerFlavour = {
                     icon:"layers",
                     label:"Design-driven",
                     description:"Trusted by the world’s best, Squarespace empowers people with creative ideas to succeed. Every block is designed and coded with huge attention to details."
-                }
+                },
+                
             ],
             imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/video-block-bg.jpg',
+            youtubeUrl:'https://www.youtube.com/embed/7KIEvEODCI4?autoplay=1'
             
         },
     },

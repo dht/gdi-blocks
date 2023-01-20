@@ -11,6 +11,7 @@ export const params: IWidgetParams = {
         extra: {
             productDataset : {fieldType:'dataset', order:2},
             imageUrl: { fieldType: 'image', isRequired: true, order: 1 },
+            youtubeUrl : {fieldType:'text' , order:2}
         },
     },
 };
