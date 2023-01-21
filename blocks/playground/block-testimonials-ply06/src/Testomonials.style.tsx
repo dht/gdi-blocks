@@ -1,6 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css, device } from '@gdi/engine';
-import { TestomonialsExtra } from './Testimonials';
+import {  mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;

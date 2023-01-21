@@ -1,28 +1,11 @@
 import React, { useContext } from 'react';
-import {
-    Container,
-    H1,
-    Wrapper,
-    Row,
-    SubTitle,
-    Column,
-    CarouselInner,
-    Carousel,
-    CarouselItem,
-    CarouselPrev,
-    CarouselNext,
-    CarouselPrevIcon,
-    CarouselNextIcon,
-    P,
-    ClientName,
-    Span,
-    ClientLogo,
-    ClientSign,
-    CarouselContainer,
-    CarouselSubContainer,
-    CarouselSubContainer2,
-    ClientImage,
-} from './Apps.style';
+import { Container, Wrapper, H2, Overlay, SubTitle, ProductImage } from './Apps.style';
+
+import { LocalGallery } from '@gdi/web-ui';
+
+import classnames from 'classnames';
+import { Column, Grid, SiteContext, useDataset } from '@gdi/engine';
+import { hideText, padding } from 'polished';
 
 export const id = 'com.usegdi.blocks.apps-ply07';
 
@@ -40,79 +23,79 @@ export type AppsStrings = {
 export type AppsColors = {};
 
 export type AppsExtra = {
-    testimonialDataSet:Json
+    appsDatasetId: string;
+    appsDataset: Json;
 };
 
 export function Apps(props: AppsProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { testimonialDataSet } = extra;
+    const { appsDatasetId, appsDataset } = extra;
+
+    const apps = useDataset(appsDatasetId);
+    console.log(appsDataset);
+
+    const { ga } = useContext(SiteContext);
+
+    function onClick(item: Json) {
+        ga('navigate', {
+            category: 'gallery',
+            label: item.id,
+            source: 'apps',
+        });
+    }
+
+    function onView(item: Json) {
+        ga('view', {
+            category: 'gallery',
+            label: item.id,
+            source: 'apps',
+        });
+    }
+
+    function onTagChange(tagId: string) {
+        ga('component', {
+            category: 'gallery',
+            label: 'tagChange',
+            tagId,
+            source: 'apps',
+        });
+    }
+
+    function renderOverlay(item: Json) {
+        const { tags, imgUrl } = item;
+
+        return (
+            <Overlay className='text-dark' style={{ margin: '10px' }}>
+                <ProductImage src={imgUrl} className="galleryImage" />
+            </Overlay>
+        );
+    }
 
     return (
         <>
-            <Wrapper>
-                <Container className='container' >
-                    <Row className='row'>
-                        <Column className='col-lg-12 text-center'>
-                            <H1> {header} </H1>
-                            <SubTitle>  {slogan} </SubTitle>
-                        </Column>
-                    </Row>
-
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
-                        <Carousel id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-  <CarouselInner className="carousel-inner">
-    {testimonialDataSet.map((clientData:Json)=>{
-        return(
-            <>
-            <CarouselItem className=" carousel-item active" >
-        <CarouselContainer className='carousel-container '>
-            <CarouselSubContainer>
-                <ClientLogo src={clientData.logo} alt="" />
-                <P className='margintop-p'>“ {clientData.description} ”</P>
-                <ClientSign className='margintop' src={clientData.sign} alt="sign" />
-                <br />
-                <ClientName> {clientData.clientName} </ClientName>
-                <br />
-                <Span> {clientData.clientDesignation} </Span>
-            </CarouselSubContainer>
-
-            <CarouselSubContainer2 className=" w-100 ">
-               
-                <ClientImage src={clientData.image} alt="client Image" />    
-            </CarouselSubContainer2>    
-        </CarouselContainer> 
-    </CarouselItem>
-            </>
-        )
-    })}
-  </CarouselInner>
-
-  <CarouselPrev className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <CarouselPrevIcon className="shadow material-symbols-outlined" aria-hidden="true"> 
-chevron_left
-     </CarouselPrevIcon>
-    <span className="visually-hidden">Previous</span>
-  </CarouselPrev>
-
-
-  <CarouselNext className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <CarouselNextIcon className="shadow material-symbols-outlined" aria-hidden="true">
-chevron_right
-    </CarouselNextIcon>
-    <span className="visually-hidden">Next</span>
-  </CarouselNext>
-</Carousel>
-                        </Column>
-                    </Row>
-
-                </Container>    
-            
+            <Wrapper
+                className='Apps-wrapper bg-light '
+                data-testid='Apps-wrapper'
+            >
+                <Container>
+                    <H2 id='templates' className='text-dark text-center'>
+                        {header}
+                    </H2>
+                    <SubTitle className='text-center'> {slogan} </SubTitle>
+                    <div className='text-dark'>
+                        <LocalGallery
+                            items={appsDataset as Json[]}
+                            contain
+                            renderOverlay={renderOverlay}
+                            onClick={onClick}
+                            onView={onView}
+                            onTagChange={onTagChange}
+                        />
+                    </div>
+                </Container>
             </Wrapper>
         </>
-
-       
     );
 }
 export default Apps;

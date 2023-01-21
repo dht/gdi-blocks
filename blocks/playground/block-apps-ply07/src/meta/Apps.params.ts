@@ -9,7 +9,8 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            testimonialDataSet : {fieldType:'dataset',order:2}
+            appsDatasetId: { fieldType: 'dataset', isRequired: true, order: 0 },
+            appsDataset :{fieldType:'dataset', order:1}
         },
     },
 };
