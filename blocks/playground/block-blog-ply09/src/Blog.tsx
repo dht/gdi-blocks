@@ -37,8 +37,7 @@ export type BlogExtra = {
 };
 
 export function Blog(props: BlogProps) {
-    const { strings, extra } = props;
-    const { slogan, header } = strings;
+    const { extra } = props;
     const { BlogDataSet } = extra;
 
     return (
