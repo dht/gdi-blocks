@@ -152,11 +152,9 @@ export const Col = styled.div`
 `;
 
 export const P = styled.div`
-    font-weight: light;
+    font-weight: 300;
     font-size: 19px;
-    letter-spacing: 1px;
     color:#666666;
-
     font-family: 'Roboto', sans-serif;
     
     ${device(
@@ -307,4 +305,40 @@ export const Button = styled.button`
         )}
 `
 
-export const CardIcone = styled.span``
+export const CardIcone = styled.span`
+
+        color: #5C6AC4 !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #EEF0F9;
+
+        &.icon2 {
+            color: red !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #FCEAE7;
+        }
+
+
+        &.icon3 {
+            color: #9C6ADE !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #F5F0FC;
+        }
+
+        &.icon4 {
+            color: #47C1BF !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #ECF9F9;
+        }
+`

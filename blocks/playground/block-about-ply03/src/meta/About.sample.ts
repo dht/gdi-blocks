@@ -13,7 +13,7 @@ export const sampleData: ISampleDataPerFlavour = {
                 {
                     "cardTitle":"Super Creative",
                     "cardDescription":"Digital transformation describes an organisation making a fundamental change from its.",
-                    "cardIcon":"Bed"
+                    "cardIcon":"weekend"
                 },
                 {
                     "cardTitle":"Feature-driven",

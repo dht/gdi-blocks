@@ -49,7 +49,7 @@ export function About(props: AboutProps) {
                             return (
                                 <>
                                     <AboutCard className='mt-5 ml-5 shadow '>
-                                        <CardIcone className='material-symbols-outlined ic '> {value.cardIcon} </CardIcone>
+                                        <CardIcone  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon3":"" || index===3?"icon4":"" } `} > {value.cardIcon} </CardIcone>
                                         <H2 className='mt-3'>{value.cardTitle}</H2>
                                         <Span> {value.cardDescription} </Span>
                                     </AboutCard>
