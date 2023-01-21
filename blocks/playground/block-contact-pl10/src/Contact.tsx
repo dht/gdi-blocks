@@ -1,19 +1,15 @@
 import React, { useContext } from 'react';
 import {
     
-    Card,
-    CardHeader,
-    CardFooterText,
-    Container,
+    
+    ContainerFluid,
     Header,
     Row,
     Column,
     SubHeader,
     Wrapper,
-    CardBody,
-    CardImage,
-    CardTitle,
-    CardDescription,
+    ContactBack,
+   
     
 } from './Contact.style';
 
@@ -43,39 +39,23 @@ export function Contact(props: ContactProps) {
     return (
         <>
             <Wrapper>
-                <Container className='container' >
-                    <Row className='row'>
-                        <Column className='text-center col-lg-12'> 
-                        <Header>Latest reads from blog</Header>
-                         <SubHeader>See what we're up to on a rainy night</SubHeader> 
-                         </Column>
-                    </Row>
-                    <Row className='row'>
+                <ContainerFluid className=' p-0 container-fluid' >
+                        <Row className='row'>
+                            <Column className='col-lg-12'>
+                                <ContactBack>
 
-                        {BlogDataSet.map((blogData:Json)=>{
-                            return(
-                                <>
-                                <Column className='col-lg-4 mt-5'> 
-                            <Card className='card p-0'>
-                                <CardHeader className='card-header bg-light p-0 '>
-                                    <CardImage src={blogData.imgUrl} alt="" />
-                                </CardHeader>
-                                <CardBody className='card-body'>
-                                    <CardTitle> {blogData.title} </CardTitle>
-                                    <CardDescription> {blogData.description} </CardDescription>
-                                    <CardFooterText>
-                                        {blogData.name} &nbsp; &nbsp; 
-                                        {blogData.date}
-                                    </CardFooterText>
-                                </CardBody>
-                            </Card>
-                        
-                         </Column>
-                                </>
-                            )
-                        })}
-                    </Row>
-                </Container>
+                                    <div className="row">
+                                        <div className="col-lg-6 ">
+                                            <img src="https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png" alt="" />
+                                        </div>
+                                        <div className="col-lg-6">
+                                            djdj
+                                        </div>
+                                    </div>
+                                </ContactBack>
+                            </Column>
+                        </Row>
+                </ContainerFluid>
           </Wrapper>
         </>
     );
