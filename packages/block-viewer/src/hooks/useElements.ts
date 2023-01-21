@@ -1,39 +1,15 @@
 import React, { useContext, useMemo } from 'react';
-import { EngineContext, parseSampleData } from '@gdi/engine';
-import { unflattenInstanceProps, sortBy } from 'shared-base';
+import { EngineContext } from '@gdi/engine';
 
 export function useElements(
-    blockIds: string[] = [],
-    order = {},
-    menuItems: string[] = []
+    pageStructure: IElement[],
+    menuItems: string[] = [],
+    predicate?: (element: IElement) => boolean
 ) {
     const { blocks } = useContext(EngineContext);
 
     const elements = useMemo(() => {
-        const items: Json = blockIds
-            .map((blockId: string) => {
-                const block = Object.values(blocks).find(
-                    (b: IBlock) => b.name === blockId
-                );
-
-                if (!block) {
-                    return null;
-                }
-
-                const { id, sampleData } = block;
-                const firstKey = Object.keys(sampleData)[0];
-                const firstData = parseSampleData(sampleData[firstKey]);
-
-                return {
-                    id,
-                    order: order[blockId] ?? 1,
-                    pageInstanceId: 'i1',
-                    widgetId: id,
-                    instanceProps: unflattenInstanceProps(firstData),
-                };
-            })
-            .filter((i) => i)
-            .sort(sortBy('order'));
+        const items = [...pageStructure];
 
         menuItems.forEach((menuItem) => {
             items.push({
@@ -56,8 +32,18 @@ export function useElements(
             });
         });
 
-        return items;
-    }, [blockIds, blocks]);
+        return items.filter(predicate || i);
+    }, [pageStructure, blocks]);
 
     return elements as IElement[];
 }
+
+export const useBlock = (pageStructure: IElement[], blockId: string) => {
+    return useElements(pageStructure, [], (element: IElement) => {
+        const { widgetId } = element;
+        const name = widgetId.split('.').pop();
+        return name === blockId;
+    });
+};
+
+const i = () => true;

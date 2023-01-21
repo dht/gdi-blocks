@@ -23,11 +23,9 @@ export const Wrapper = styled.div<{ props: ParallaxProps }>`
 
         &.mobile {
             .back {
-                background-image: url(${(p) => p.props.backImageUrlMobile});
             }
 
             .front {
-                background-image: url(${(p) => p.props.frontImageUrlMobile});
             }
         }
     }

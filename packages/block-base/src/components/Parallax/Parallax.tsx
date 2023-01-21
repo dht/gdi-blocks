@@ -7,9 +7,7 @@ export type ParallaxProps = {
     children: React.ReactNode;
     placeholderImageUrl: string;
     backImageUrl: string;
-    backImageUrlMobile: string;
     frontImageUrl: string;
-    frontImageUrlMobile: string;
     className?: string;
 };
 

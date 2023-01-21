@@ -24,6 +24,7 @@ export default defineConfig({
     resolve: {
         alias: {
 			'@gdi/block-base': `${cwd}/packages/block-base/src`,
+			'@gdi/store-viewer': `${cwd}/stores/gdi-store-viewer/src`,
 			'@gdi/block-card-ah4j1': `${cwd}/blocks/card/block-card-ah4j1/src`,
 			'@gdi/block-apps-jf84j': `${cwd}/blocks/gdi/block-apps-jf84j/src`,
 			'@gdi/block-features-j4k1h': `${cwd}/blocks/gdi/block-features-j4k1h/src`,

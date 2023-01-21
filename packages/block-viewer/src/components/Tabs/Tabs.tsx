@@ -72,7 +72,7 @@ export function BlockTabs() {
     ];
 
     function onSelect(tab: ITab) {
-        navigate(`/${blockId}/${tab.path}`, { replace: true });
+        navigate(`/blocks/${blockId}/${tab.path}`, { replace: true });
     }
 
     return <Tabs tabs={tabs} onSelect={onSelect} />;
@@ -88,6 +88,11 @@ export function TemplateTabs() {
             id: 'viewer',
             text: 'Viewer',
             path: 'view',
+        },
+        {
+            id: 'mixer',
+            text: 'Mixer',
+            path: 'mixer',
         },
         {
             id: 'devices',

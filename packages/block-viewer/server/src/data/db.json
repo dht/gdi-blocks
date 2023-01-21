@@ -1,0 +1,4048 @@
+{
+  "datasets": {
+    "social": {
+      "1": {
+        "id": "1",
+        "url": "http://twitter.com/username",
+        "title": "http://twitter.com/username"
+      },
+      "2": {
+        "title": "http://instagram.com/username",
+        "id": "2",
+        "url": "http://instagram.com/username"
+      },
+      "3": {
+        "url": "http://behance.com/username",
+        "title": "http://behance.com/username",
+        "id": "3"
+      }
+    },
+    "resume": {
+      "1": {
+        "jobTitle": "Photography",
+        "company": "Baker Studio NY",
+        "yearStart": "2010",
+        "id": "1",
+        "description": "Enim rem aliquid officiis amet et cumque modi culpa et et corrupti rerum in voluptates assumenda eos velit laudantium voluptas consequuntur molestiae aliquam suscipit at enim doloremque a harum velit.",
+        "yearEnd": "2013",
+        "type": "education"
+      },
+      "2": {
+        "description": "Delectus quia cum qui nostrum et consequuntur molestiae debitis explicabo magni quas facilis reprehenderit quae veritatis est quod vel et voluptatibus accusantium.",
+        "type": "education",
+        "yearStart": "2015",
+        "company": "NYC",
+        "jobTitle": "Student",
+        "id": "2",
+        "yearEnd": "2019"
+      },
+      "3": {
+        "jobTitle": "Masters",
+        "yearStart": "2020",
+        "type": "education",
+        "company": "Julliard",
+        "description": "Inventore veniam fuga libero consequuntur qui reiciendis recusandae porro aperiam ex sunt assumenda ut similique iure harum labore sint saepe molestiae id ab qui.",
+        "id": "3",
+        "yearEnd": "2024"
+      },
+      "4": {
+        "yearStart": "2015",
+        "yearEnd": "2017",
+        "description": "Enim ut suscipit veritatis assumenda est enim nostrum dolores ex iusto quia velit ut dolorem sapiente maxime eligendi numquam veniam omnis odit ut optio sunt.",
+        "jobTitle": "Photographer",
+        "type": "experience",
+        "company": "AirBnb",
+        "id": "4"
+      },
+      "5": {
+        "type": "experience",
+        "id": "5",
+        "company": "Google",
+        "description": "Dolores similique incidunt et sed ea minima ut enim quo numquam ipsa optio laudantium possimus veniam incidunt nisi ut error et quia explicabo.",
+        "jobTitle": "3D drone photographer",
+        "yearStart": "2017",
+        "yearEnd": "2023"
+      },
+      "6": {
+        "yearStart": "2023",
+        "yearEnd": "",
+        "type": "experience",
+        "id": "6",
+        "description": "Quaerat ex vero occaecati nemo dolores est corporis vero eos ratione adipisci laudantium ut doloremque a quisquam ratione perspiciatis vel modi ut.",
+        "company": "David Baker",
+        "jobTitle": "Freelance photographer"
+      }
+    },
+    "portfolio": {
+      "1": {
+        "thumbImageUrl": "https://picsum.photos/seed/11/300/300",
+        "description": "Amet est cum ut nesciunt voluptas provident ut dolorem aperiam aliquam qui rerum provident.",
+        "id": "1",
+        "tags": [
+          "Design",
+          "Marketing"
+        ],
+        "title": "Sitting on the dock in NYC at fall",
+        "imageUrl": "https://picsum.photos/seed/11/1200/800"
+      },
+      "2": {
+        "title": "Responsive",
+        "description": "Quae esse dignissimos blanditiis corrupti repellat porro neque consequatur rerum explicabo placeat sunt nostrum.",
+        "imageUrl": "https://picsum.photos/seed/12/1200/800",
+        "tags": [
+          "Design",
+          "Photography"
+        ],
+        "id": "2",
+        "thumbImageUrl": "https://picsum.photos/seed/12/300/300"
+      },
+      "3": {
+        "description": "Harum libero voluptatem et molestias qui aut ipsum aperiam cum laboriosam veniam provident eos.",
+        "title": "Responsive",
+        "imageUrl": "https://picsum.photos/seed/13/1200/800",
+        "tags": [
+          "Design",
+          "Marketing",
+          "Photography"
+        ],
+        "id": "3",
+        "thumbImageUrl": "https://picsum.photos/seed/13/300/300"
+      },
+      "4": {
+        "imageUrl": "https://picsum.photos/seed/14/1200/800",
+        "description": "Sint enim fugiat porro voluptas eos est deserunt ducimus quia omnis corporis recusandae soluta.",
+        "id": "4",
+        "tags": [
+          "Design"
+        ],
+        "thumbImageUrl": "https://picsum.photos/seed/14/300/300",
+        "title": "Responsive"
+      },
+      "5": {
+        "id": "5",
+        "title": "Responsive",
+        "thumbImageUrl": "https://picsum.photos/seed/15/300/300",
+        "tags": [
+          "Marketing"
+        ],
+        "description": "Natus sit commodi eos et voluptatum natus enim eveniet placeat aut ipsa repudiandae esse.",
+        "imageUrl": "https://picsum.photos/seed/15/1200/800"
+      },
+      "6": {
+        "title": "Responsive",
+        "id": "6",
+        "imageUrl": "https://picsum.photos/seed/16/1200/800",
+        "tags": [
+          "Design",
+          "Photography"
+        ],
+        "description": "Perferendis tenetur saepe sint quia dolorem tempora ipsam non doloremque sapiente magnam rem recusandae provident qui ea et consequatur quaerat non.",
+        "thumbImageUrl": "https://picsum.photos/seed/16/300/300"
+      },
+      "7": {
+        "title": "Responsive",
+        "tags": [
+          "Marketing"
+        ],
+        "thumbImageUrl": "https://picsum.photos/seed/17/300/300",
+        "imageUrl": "https://picsum.photos/seed/17/1200/800",
+        "description": "Rerum quo dolore quo cum magni modi sed et id molestiae reiciendis dolor tempora.",
+        "id": "7"
+      },
+      "8": {
+        "title": "Responsive",
+        "id": "8",
+        "imageUrl": "https://picsum.photos/seed/18/1200/800",
+        "description": "Quam qui quia voluptatem numquam cum eaque pariatur nesciunt dolores dicta voluptate ut eius ipsam qui eos quaerat qui.",
+        "thumbImageUrl": "https://picsum.photos/seed/18/300/300",
+        "tags": [
+          "Photography"
+        ]
+      }
+    },
+    "quotes": {
+      "1": {
+        "avatarUrl": "https://i.pravatar.cc/100?u=100",
+        "jobTitle": "CEO",
+        "id": "1",
+        "description": "Iusto aut dolores repudiandae illo iste eum id corporis ut numquam vel voluptatem porro ad totam voluptatem odio et dolorem rerum asperiores et omnis et minima autem quidem laudantium fugiat reiciendis esse et quia tempora vitae et corporis.",
+        "name": "William Baker",
+        "company": "AirBnb"
+      },
+      "2": {
+        "avatarUrl": "https://i.pravatar.cc/100?u=101",
+        "id": "2",
+        "company": "AirBnb",
+        "jobTitle": "Head of Photography",
+        "name": "Carol McMillan",
+        "description": "Nemo reprehenderit rem laborum et veniam voluptas voluptas et in est adipisci ut consequatur doloremque eum rem id voluptatem et ipsam dolores blanditiis hic officia perferendis sunt eaque in quas."
+      },
+      "3": {
+        "description": "Molestiae doloribus commodi laudantium totam magni impedit ullam aut voluptatem occaecati ut ratione accusantium impedit sit porro ipsa non impedit ut voluptatibus quis aspernatur voluptatibus necessitatibus veritatis laborum odio numquam ut voluptatem ipsa distinctio possimus.",
+        "avatarUrl": "https://i.pravatar.cc/100?u=102",
+        "jobTitle": "Photographer Team Lead",
+        "id": "3",
+        "company": "Google",
+        "name": "Jeffery Newman"
+      },
+      "4": {
+        "jobTitle": "CEO",
+        "description": "Sint vitae qui sint architecto enim consequatur assumenda aspernatur quaerat voluptatum unde quas et dicta repellendus adipisci dolore a quia iure quo quo commodi iste ut quidem nisi unde ut sed deserunt laudantium culpa numquam autem omnis magnam dolores quas.",
+        "avatarUrl": "https://i.pravatar.cc/100?u=103",
+        "name": "Manuel Lopez",
+        "company": "FlatRent Inc.",
+        "id": "4"
+      }
+    },
+    "numbers": {
+      "1": {
+        "iconName": "UserFollowed",
+        "title": "Happy Clients",
+        "id": "1",
+        "value": 100
+      },
+      "2": {
+        "id": "2",
+        "iconName": "Trophy2",
+        "title": "Completed projects",
+        "value": 50
+      },
+      "3": {
+        "value": 5,
+        "id": "3",
+        "title": "Specialized cameras",
+        "iconName": "Camera"
+      },
+      "4": {
+        "title": "DJI drones",
+        "id": "4",
+        "value": 8,
+        "iconName": "Cloudy"
+      }
+    },
+    "services": {
+      "1": {
+        "iconName": "CityNext",
+        "description": "Sint ea repellendus autem labore magnam molestiae soluta dolor fugit neque porro quis id.",
+        "id": "1",
+        "title": "Urban photography"
+      },
+      "2": {
+        "iconName": "Street",
+        "title": "Nature photography",
+        "description": "Sed tempore nisi consequatur sed sunt placeat at voluptates quaerat cupiditate omnis.",
+        "id": "2"
+      },
+      "3": {
+        "description": "Vel minima odio iste et sed quasi corrupti nostrum aperiam quisquam sunt deleniti id molestias.",
+        "iconName": "FrontCamera",
+        "title": "Portrait photography",
+        "id": "3"
+      }
+    },
+    "templates": {
+      "1": {
+        "id": "1",
+        "title": "Starter",
+        "imageUrl": "https://static-b9ebe.web.app/template-starter.jpg",
+        "description": "A simple freelance template to get you started with GDI",
+        "tags": [
+          "V1"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/packages/gdi-template-starter"
+      },
+      "2": {
+        "id": "2",
+        "title": "gDI",
+        "imageUrl": "https://static-b9ebe.web.app/template-gdi.jpg",
+        "description": "The gDI homepage template",
+        "tags": [
+          "V1"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/packages/gdi-template-gdi"
+      }
+    },
+    "apps": {
+      "1": {
+        "id": "1",
+        "title": "Dashboard",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Overview of your business",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/apps/app-dashboard"
+      },
+      "2": {
+        "id": "2",
+        "title": "Factory",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Build custom widgets",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/apps/app-factory"
+      },
+      "3": {
+        "id": "3",
+        "title": "Mixer",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Mix blocks, create a site",
+        "tags": [
+          "Beta"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/apps/app-mixer"
+      },
+      "4": {
+        "id": "4",
+        "title": "Settings",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Account & site settings",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/apps/app-settings"
+      },
+      "5": {
+        "id": "5",
+        "title": "Biblo",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage interesting reads",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-biblo"
+      },
+      "6": {
+        "id": "6",
+        "title": "Campaigns",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Advertise your business",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-campaigns"
+      },
+      "7": {
+        "id": "7",
+        "title": "Carts",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Offer carts in your site",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-carts"
+      },
+      "8": {
+        "id": "8",
+        "title": "Comments",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Offer comments in your site",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-comments"
+      },
+      "9": {
+        "id": "9",
+        "title": "Dashboard3D",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "3D dashboard with Babylon.js",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-dashboard3d"
+      },
+      "10": {
+        "id": "10",
+        "title": "Devtools",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "See network calls & dev data",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-devtools"
+      },
+      "11": {
+        "id": "11",
+        "title": "Events",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage your calendar",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-events"
+      },
+      "12": {
+        "id": "12",
+        "title": "Knowledge",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage links",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-knowledge"
+      },
+      "13": {
+        "id": "13",
+        "title": "Leads",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage leads",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-leads"
+      },
+      "14": {
+        "id": "14",
+        "title": "Money",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Track your income & expenses",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-money"
+      },
+      "15": {
+        "id": "15",
+        "title": "Orders",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Allow order in your site",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-orders"
+      },
+      "16": {
+        "id": "16",
+        "title": "People",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage contacts",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-people"
+      },
+      "17": {
+        "id": "17",
+        "title": "Products",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Allow a store in your site",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-products"
+      },
+      "18": {
+        "id": "18",
+        "title": "Sales",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Track sales",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-sales"
+      },
+      "19": {
+        "id": "19",
+        "title": "Soundboard",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage your attention",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-soundboard"
+      },
+      "20": {
+        "id": "20",
+        "title": "Studio",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "3D micro-rooms for VR",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-studio"
+      },
+      "21": {
+        "id": "21",
+        "title": "Tasks",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage tasks and projects",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-tasks"
+      },
+      "22": {
+        "id": "22",
+        "title": "Things",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Manage past-time activities",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-things"
+      },
+      "23": {
+        "id": "23",
+        "title": "Voice",
+        "imageUrl": "https://static-b9ebe.web.app/app.png",
+        "description": "Voice control & assistance",
+        "tags": [
+          "Draft"
+        ],
+        "href": "https://github.com/dht/gdi/tree/main/extra/apps/app-voice"
+      }
+    },
+    "topLinks": {
+      "1": {
+        "id": "1",
+        "iconName": "https://static-b9ebe.web.app/stack.svg",
+        "href": "https://stackoverflow.com/questions/tagged/gdi-cms"
+      },
+      "2": {
+        "id": "2",
+        "iconName": "https://static-b9ebe.web.app/discord.svg",
+        "href": "https://discord.gg/egAbyQHRrm"
+      },
+      "3": {
+        "id": "3",
+        "iconName": "https://static-b9ebe.web.app/twitter-logo.svg",
+        "href": "https://twitter.com/use_gdi"
+      }
+    },
+    "features": {
+      "1": {
+        "id": "1",
+        "title": "Landing pages",
+        "tag": "",
+        "isSupported": true
+      },
+      "2": {
+        "id": "2",
+        "title": "Image upload",
+        "tag": "",
+        "isSupported": true
+      },
+      "3": {
+        "id": "3",
+        "title": "Multiple templates",
+        "tag": "",
+        "isSupported": true
+      },
+      "4": {
+        "id": "4",
+        "title": "Custom domains",
+        "tag": "",
+        "isSupported": true
+      },
+      "5": {
+        "id": "5",
+        "title": "Admin UI",
+        "tag": "",
+        "isSupported": true
+      },
+      "6": {
+        "id": "6",
+        "title": "ECommerce",
+        "tag": ""
+      },
+      "7": {
+        "id": "7",
+        "title": "Site users",
+        "tag": ""
+      },
+      "8": {
+        "id": "8",
+        "title": "Google Analytics",
+        "tag": "v0.17"
+      },
+      "9": {
+        "id": "9",
+        "title": "Custom widgets",
+        "tag": "v0.20"
+      }
+    },
+    "footerLinks": {
+      "1": {
+        "id": "1",
+        "title": "Github",
+        "href": "https://github.com/dht/gdi"
+      }
+    },
+    "hudHero": {
+      "config": {
+        "color": "#00ff15",
+        "height": 700,
+        "width": 1000,
+        "alpha": 0,
+        "beta": 0.5,
+        "radius": 7,
+        "glbPath": "/bag.glb"
+      },
+      "items": [
+        {
+          "id": "1",
+          "text": "Ergonomic back system",
+          "origin": [
+            0,
+            -250
+          ],
+          "textTop": 60,
+          "isLeft": true
+        },
+        {
+          "id": "2",
+          "text": "20L capacity (+13\" laptop)",
+          "origin": [
+            100,
+            -100
+          ],
+          "textTop": 200,
+          "isLeft": false
+        },
+        {
+          "id": "3",
+          "text": "Rain & dust protection",
+          "origin": [
+            80,
+            -60
+          ],
+          "textTop": 450,
+          "isLeft": false
+        },
+        {
+          "id": "4",
+          "text": "Durable materials",
+          "origin": [
+            0,
+            80
+          ],
+          "textTop": 550,
+          "isLeft": true
+        }
+      ],
+      "timeline": [
+        {
+          "id": "1",
+          "itemId": "1",
+          "millis": 100,
+          "visibility": "APPEAR"
+        },
+        {
+          "id": "2",
+          "itemId": "1",
+          "millis": 3100,
+          "visibility": "DISAPPEAR",
+          "cameraPosition": {
+            "alpha": 1
+          }
+        },
+        {
+          "id": "3",
+          "itemId": "2",
+          "millis": 3600,
+          "visibility": "APPEAR"
+        },
+        {
+          "id": "4",
+          "itemId": "2",
+          "millis": 6600,
+          "visibility": "DISAPPEAR",
+          "cameraPosition": {
+            "alpha": 0,
+            "beta": 0.5
+          }
+        },
+        {
+          "id": "5",
+          "itemId": "3",
+          "millis": 7100,
+          "visibility": "APPEAR"
+        },
+        {
+          "id": "6",
+          "itemId": "3",
+          "millis": 10100,
+          "visibility": "DISAPPEAR",
+          "cameraPosition": {
+            "alpha": 0.5,
+            "beta": 1.5
+          }
+        },
+        {
+          "id": "7",
+          "itemId": "4",
+          "millis": 10600,
+          "visibility": "APPEAR"
+        },
+        {
+          "id": "8",
+          "itemId": "4",
+          "millis": 13600,
+          "visibility": "DISAPPEAR",
+          "cameraPosition": {
+            "alpha": 0,
+            "beta": 1.5
+          }
+        }
+      ]
+    },
+    "videoReviews": {
+      "r1": {
+        "id": "r1",
+        "name": "Jason McBright",
+        "age": 29,
+        "location": "Oklahoma",
+        "youtubeUrl": "https://www.youtube.com/embed/O3EplEYzvBY"
+      },
+      "r2": {
+        "id": "r2",
+        "name": "Olivia Daniels",
+        "age": 24,
+        "location": "New York",
+        "youtubeUrl": "https://www.youtube.com/embed/O3EplEYzvBY"
+      }
+    }
+  },
+  "widgets": [
+    {
+      "id": "com.usegdi.blocks.card-ah4j1",
+      "name": "card-ah4j1",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.card-ah4j1",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 400,
+            "ratio": 2.5
+          },
+          "mobile": {
+            "width": 500,
+            "height": 1337,
+            "ratio": 0.3739715781600598
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 400,
+              "ratio": 2.5,
+              "url": "screenshot.gdi.card-basic.normal.desktop.large.webp",
+              "urlIsRemote": false
+            },
+            "thumb": {
+              "width": 1000,
+              "height": 400,
+              "ratio": 2.5,
+              "url": "screenshot.gdi.card-basic.normal.desktop.thumb.webp",
+              "urlIsRemote": false
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 1337,
+              "ratio": 0.3739715781600598,
+              "url": "screenshot.gdi.card-basic.normal.mobile.large.webp",
+              "urlIsRemote": false
+            },
+            "thumb": {
+              "width": 500,
+              "height": 1337,
+              "ratio": 0.3739715781600598,
+              "url": "screenshot.gdi.card-basic.normal.mobile.thumb.webp",
+              "urlIsRemote": false
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-card"
+      ],
+      "dataTags": [],
+      "widgetType": "card",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.apps-jf84j",
+      "name": "apps-jf84j",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.apps-jf84j",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {
+            "appsDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Apps"
+          },
+          "colors": {},
+          "extra": {
+            "appsDatasetId": "apps"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 1097.3958333333333,
+            "ratio": 0.9112482202183199
+          },
+          "mobile": {
+            "width": 500,
+            "height": 877.9166666666667,
+            "ratio": 0.5695301376364499
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 1097.3958333333333,
+              "ratio": 0.9112482202183199,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.apps-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 438.95833333333337,
+              "ratio": 0.9112482202183199,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.apps-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 877.9166666666667,
+              "ratio": 0.5695301376364499,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.apps-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 351.1666666666667,
+              "ratio": 0.5695301376364499,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.apps-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-apps"
+      ],
+      "dataTags": [],
+      "widgetType": "apps",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.features-j4k1h",
+      "name": "features-j4k1h",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.features-j4k1h",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "version": {
+              "fieldType": "text",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "featuresDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Features",
+            "version": "v0.16.0"
+          },
+          "colors": {},
+          "extra": {
+            "featuresDatasetId": "features"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 378.21044921875,
+            "ratio": 2.644030597424394
+          },
+          "mobile": {
+            "width": 500,
+            "height": 302.568359375,
+            "ratio": 1.6525191233902463
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 378.21044921875,
+              "ratio": 2.644030597424394,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.features-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 151.2841796875,
+              "ratio": 2.644030597424394,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.features-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 302.568359375,
+              "ratio": 1.6525191233902463,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.features-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 121.02734375,
+              "ratio": 1.6525191233902463,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.features-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-features"
+      ],
+      "dataTags": [],
+      "widgetType": "features",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.footer-ajk34",
+      "name": "footer-ajk34",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.footer-ajk34",
+        "schema": {
+          "strings": {
+            "text": {
+              "fieldType": "text",
+              "order": 0
+            }
+          },
+          "colors": {},
+          "extra": {
+            "linksDatasetId": {
+              "fieldType": "dataset",
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "text": "2022 David All Rights Reserved"
+          },
+          "colors": {},
+          "extra": {
+            "linksDatasetId": "footerLinks"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 71.52777777777779,
+            "ratio": 13.980582524271844
+          },
+          "mobile": {
+            "width": 500,
+            "height": 61.824406804265195,
+            "ratio": 8.08742090454648
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 71.52777777777779,
+              "ratio": 13.980582524271844,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.footer-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 28.611111111111114,
+              "ratio": 13.980582524271844,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.footer-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 61.824406804265195,
+              "ratio": 8.08742090454648,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.footer-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 24.729762721706077,
+              "ratio": 8.08742090454648,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.footer-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-footer"
+      ],
+      "dataTags": [],
+      "widgetType": "footer",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.gallery-ui5873",
+      "name": "gallery-ui5873",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.gallery-ui5873",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {
+            "galleryDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Gallery"
+          },
+          "colors": {},
+          "extra": {
+            "galleryDatasetId": "templates"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 381.25000000000006,
+            "ratio": 2.622950819672131
+          },
+          "mobile": {
+            "width": 500,
+            "height": 305,
+            "ratio": 1.639344262295082
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 381.25000000000006,
+              "ratio": 2.622950819672131,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Gallery-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 152.5,
+              "ratio": 2.622950819672131,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Gallery-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 305,
+              "ratio": 1.639344262295082,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Gallery-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 122,
+              "ratio": 1.639344262295082,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Gallery-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-gallery"
+      ],
+      "dataTags": [],
+      "widgetType": "gallery",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.header-aouu4",
+      "name": "header-aouu4",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.header-aouu4",
+        "schema": {
+          "strings": {
+            "text": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "text": "Header"
+          },
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-header"
+      ],
+      "dataTags": [],
+      "widgetType": "header",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.hero-ajh53",
+      "name": "hero-ajh53",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.hero-ajh53",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "installation": {
+              "fieldType": "text",
+              "order": 2
+            },
+            "ctaButtonText": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            },
+            "secondaryButtonText": {
+              "fieldType": "text",
+              "order": 4
+            }
+          },
+          "colors": {},
+          "extra": {
+            "href": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 0
+            },
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "hrefSecondary": {
+              "fieldType": "url",
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "There's a new CMS in town",
+            "header": "gDI",
+            "ctaButtonText": "See Demo",
+            "secondaryButtonText": "Visit Github"
+          },
+          "colors": {},
+          "extra": {
+            "installation": "npm install -g @gdi/cli",
+            "href": "https://gdi-demo.web.app/admin/pages?demo=on",
+            "hrefSecondary": "https://github.com/dht/gdi",
+            "imageUrl": "https://static-b9ebe.web.app/gdi-hero.jpg"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 260.4166666666667,
+            "ratio": 3.84
+          },
+          "mobile": {
+            "width": 500,
+            "height": 208.33323160807294,
+            "ratio": 2.400001171875572
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 260.4166666666667,
+              "ratio": 3.84,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.hero-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 104.16666666666667,
+              "ratio": 3.84,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.hero-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 208.33323160807294,
+              "ratio": 2.400001171875572,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.hero-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 83.33329264322917,
+              "ratio": 2.400001171875572,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.hero-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-hero"
+      ],
+      "dataTags": [],
+      "widgetType": "hero",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.top-41hj5",
+      "name": "top-41hj5",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.top-41hj5",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "logoImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 0
+            },
+            "githubUrl": {
+              "fieldType": "url",
+              "order": 1
+            },
+            "socialDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "logoUrl": "https://static-b9ebe.web.app/logo-gdi.svg",
+            "githubUrl": "https://github.com/dht/gdi",
+            "socialDatasetId": "topLinks"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 50.61848958333333,
+            "ratio": 19.755627009646304
+          },
+          "mobile": {
+            "width": 500,
+            "height": 32.955729166666664,
+            "ratio": 15.17186882655077
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 50.61848958333333,
+              "ratio": 19.755627009646304,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 20.247395833333332,
+              "ratio": 19.755627009646304,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 32.955729166666664,
+              "ratio": 15.17186882655077,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 13.182291666666666,
+              "ratio": 15.17186882655077,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-Top"
+      ],
+      "dataTags": [],
+      "widgetType": "Top",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.twins-j1j43",
+      "name": "twins-j1j43",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.twins-j1j43",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 0
+            },
+            "description": {
+              "fieldType": "longText",
+              "isRequired": true,
+              "order": 1
+            },
+            "buttonText": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            },
+            "headerSecondary": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 2
+            },
+            "descriptionSecondary": {
+              "fieldType": "longText",
+              "isRequired": true,
+              "order": 3
+            },
+            "buttonTextSecondary": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            },
+            "notes": {
+              "fieldType": "longText",
+              "isRequired": false,
+              "order": 4
+            }
+          },
+          "colors": {},
+          "extra": {
+            "href": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 0
+            },
+            "hrefSecondary": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 1
+            },
+            "rotation": {
+              "fieldType": "number",
+              "isRequired": false,
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Build for [Firebase]",
+            "description": "Use Firebase to host your site, store your data and manage your users. You can do all that with Firebase's free Spark plan*",
+            "buttonText": "See features",
+            "headerSecondary": "Made with [React]",
+            "descriptionSecondary": "It's easy to extend the CMS with your React skills. Create new templates, apps or data stores. Use JSONs to import & export anything",
+            "buttonTextSecondary": "Visit Github",
+            "notes": "* The Blaze plan is required for Image Uploading. Thumbnail resizing is done via Cloud Functions. It can still be free for low usage."
+          },
+          "colors": {},
+          "extra": {
+            "href": "#features",
+            "hrefSecondary": "https://github.com/dht/gdi",
+            "rotation": 0
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 390.625,
+            "ratio": 2.56
+          },
+          "mobile": {
+            "width": 500,
+            "height": 312.5,
+            "ratio": 1.6
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 390.625,
+              "ratio": 2.56,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.twins-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 156.25,
+              "ratio": 2.56,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.twins-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 312.5,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.twins-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 125,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.twins-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-twins"
+      ],
+      "dataTags": [],
+      "widgetType": "twins",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.cta-uiey3",
+      "name": "cta-uiey3",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.cta-uiey3",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "paragraph": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "number": {
+              "fieldType": "number",
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Join the movement",
+            "paragraph": "backers already have their back covered"
+          },
+          "colors": {},
+          "extra": {
+            "number": 9510
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 416.6666666666667,
+            "ratio": 2.4
+          },
+          "mobile": {
+            "width": 500,
+            "height": 202.70270270270268,
+            "ratio": 2.466666666666667
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 416.6666666666667,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.contactUs-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 166.66666666666669,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.contactUs-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 202.70270270270268,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.contactUs-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 81.08108108108108,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.contactUs-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-cta"
+      ],
+      "dataTags": [],
+      "widgetType": "cta",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.divider-aku34",
+      "name": "divider-aku34",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.divider-aku34",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-divider"
+      ],
+      "dataTags": [],
+      "widgetType": "divider",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.footer-ui4y2",
+      "name": "footer-ui4y2",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.footer-ui4y2",
+        "schema": {
+          "strings": {
+            "text": {
+              "fieldType": "text",
+              "order": 0
+            }
+          },
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "text": "2023"
+          },
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-about"
+      ],
+      "dataTags": [],
+      "widgetType": "about",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.hero-ouywy",
+      "name": "hero-ouywy",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.hero-ouywy",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "priceNote": {
+              "fieldType": "text",
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 0
+            },
+            "previousPrice": {
+              "fieldType": "number",
+              "order": 1
+            },
+            "currentPrice": {
+              "fieldType": "number",
+              "isRequired": true,
+              "order": 2
+            },
+            "hudDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 3
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "We've got your back",
+            "priceNote": "For early city birds"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://static-b9ebe.web.app/hero-bk-2.png",
+            "previousPrice": 399,
+            "currentPrice": 289.79,
+            "hudDatasetId": "hudHero"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-hero"
+      ],
+      "dataTags": [],
+      "widgetType": "hero",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.quotes-opur3",
+      "name": "quotes-opur3",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.quotes-opur3",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "reviewsDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 3
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "reviewsDatasetId": "videoReviews"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-about"
+      ],
+      "dataTags": [],
+      "widgetType": "about",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.top-9yur8",
+      "name": "top-9yur8",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.top-9yur8",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-about"
+      ],
+      "dataTags": [],
+      "widgetType": "about",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.twins-aou31",
+      "name": "twins-aou31",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.twins-aou31",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "description": {
+              "fieldType": "longText",
+              "order": 2
+            },
+            "ctaButtonText": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            }
+          },
+          "colors": {},
+          "extra": {
+            "href": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 0
+            },
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "My name is David Baker",
+            "header": "An experienced New York based photographer",
+            "description": "{lorem-43}",
+            "ctaButtonText": "Contact me"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://static-b9ebe.web.app/ny-me.webp",
+            "href": "#contactMe"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-twins"
+      ],
+      "dataTags": [],
+      "widgetType": "twins",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.hero-plylx",
+      "name": "hero-plylx",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.hero-plylx",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "button": {
+              "fieldType": "text",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "placeholderImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "backImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "frontImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "socialDatasetId": {
+              "fieldType": "dataset",
+              "order": 3
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "Developing Innovative Strategies",
+            "header": "ACHIEVING GROWTH",
+            "button": "Book A Consultation"
+          },
+          "colors": {},
+          "extra": {
+            "placeholderImageUrl": "https://static-b9ebe.web.app/mountain-lowres.jpg",
+            "backImageUrl": "https://static-b9ebe.web.app/mountain-back.png",
+            "frontImageUrl": "https://static-b9ebe.web.app/mountain-front.png",
+            "socialDatasetId": "social"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 625,
+            "ratio": 1.6
+          },
+          "mobile": {
+            "width": 500,
+            "height": 304.05405405405406,
+            "ratio": 1.6444444444444444
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 625,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 250,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 304.05405405405406,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 121.62162162162163,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-hero"
+      ],
+      "dataTags": [],
+      "widgetType": "hero",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.top-41j4k",
+      "name": "top-41j4k",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.top-41j4k",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "logoImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 0
+            },
+            "githubUrl": {
+              "fieldType": "url",
+              "order": 1
+            },
+            "socialDatasetId": {
+              "fieldType": "dataset",
+              "isRequired": true,
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "James Consulting"
+          },
+          "colors": {},
+          "extra": {}
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 50.61848958333333,
+            "ratio": 19.755627009646304
+          },
+          "mobile": {
+            "width": 500,
+            "height": 32.955729166666664,
+            "ratio": 15.17186882655077
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 50.61848958333333,
+              "ratio": 19.755627009646304,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 20.247395833333332,
+              "ratio": 19.755627009646304,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 32.955729166666664,
+              "ratio": 15.17186882655077,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 13.182291666666666,
+              "ratio": 15.17186882655077,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.gdi.Top-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-Top"
+      ],
+      "dataTags": [],
+      "widgetType": "Top",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.grid-st001",
+      "name": "grid-st001",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.grid-st001",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "button": {
+              "fieldType": "text",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "placeholderImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "backImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "backImageUrlMobile": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "frontImageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "frontImageUrlMobile": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "socialDatasetId": {
+              "fieldType": "dataset",
+              "order": 3
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "Developing Innovative Strategies",
+            "header": "ACHIEVING GROWTH",
+            "button": "Book A Consultation"
+          },
+          "colors": {},
+          "extra": {
+            "placeholderImageUrl": "https://static-b9ebe.web.app/mountain-lowres.jpg",
+            "backImageUrl": "https://static-b9ebe.web.app/mountain-back.png",
+            "backImageUrlMobile": "https://static-b9ebe.web.app/mountain-back.png",
+            "frontImageUrl": "https://static-b9ebe.web.app/mountain-front.png",
+            "frontImageUrlMobile": "https://static-b9ebe.web.app/mountain-front.png",
+            "socialDatasetId": "social"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 625,
+            "ratio": 1.6
+          },
+          "mobile": {
+            "width": 500,
+            "height": 304.05405405405406,
+            "ratio": 1.6444444444444444
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 625,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.grid-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 250,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.grid-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 304.05405405405406,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.grid-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 121.62162162162163,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.grid-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-grid"
+      ],
+      "dataTags": [],
+      "widgetType": "grid",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.about-iuhr3",
+      "name": "about-iuhr3",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.about-iuhr3",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "description": {
+              "fieldType": "longText",
+              "order": 2
+            },
+            "ctaButtonText": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            }
+          },
+          "colors": {},
+          "extra": {
+            "href": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 0
+            },
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "My name is David Baker",
+            "header": "An experienced New York based photographer",
+            "description": "{lorem-43}",
+            "ctaButtonText": "Contact me"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://static-b9ebe.web.app/ny-me.webp",
+            "href": "#contactMe"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 533.3333333333334,
+            "ratio": 1.875
+          },
+          "mobile": {
+            "width": 500,
+            "height": 270.27027027027026,
+            "ratio": 1.85
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 533.3333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 213.33333333333334,
+              "ratio": 1.875,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 270.27027027027026,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 108.1081081081081,
+              "ratio": 1.85,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.aboutMe-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-about"
+      ],
+      "dataTags": [],
+      "widgetType": "about",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.contact-au487",
+      "name": "contact-au487",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.contact-au487",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "phoneNumber": {
+              "fieldType": "text",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "Get a quote for your project",
+            "phoneNumber": "1234567890"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://static-b9ebe.web.app/ny1.webp"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 416.6666666666667,
+            "ratio": 2.4
+          },
+          "mobile": {
+            "width": 500,
+            "height": 202.70270270270268,
+            "ratio": 2.466666666666667
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 416.6666666666667,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Contact-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 166.66666666666669,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Contact-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 202.70270270270268,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Contact-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 81.08108108108108,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Contact-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-contact"
+      ],
+      "dataTags": [],
+      "widgetType": "contact",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.cta-p8y4a",
+      "name": "cta-au487",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.cta-p8y4a",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "ctaButtonText": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 3
+            }
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 0
+            },
+            "href": {
+              "fieldType": "url",
+              "isRequired": true,
+              "order": 1
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "Join my 15th October course",
+            "ctaButtonText": "Join Course"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://static-b9ebe.web.app/ny2.webp",
+            "href": "#"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 416.6666666666667,
+            "ratio": 2.4
+          },
+          "mobile": {
+            "width": 500,
+            "height": 202.70270270270268,
+            "ratio": 2.466666666666667
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 416.6666666666667,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Cta-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 166.66666666666669,
+              "ratio": 2.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Cta-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 202.70270270270268,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Cta-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 81.08108108108108,
+              "ratio": 2.466666666666667,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.Cta-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-cta"
+      ],
+      "dataTags": [],
+      "widgetType": "cta",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.hero-hu45i",
+      "name": "hero-hu45i",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.hero-hu45i",
+        "schema": {
+          "strings": {
+            "slogan": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "description": {
+              "fieldType": "longText",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            },
+            "socialDatasetId": {
+              "fieldType": "dataset",
+              "order": 3
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "slogan": "The work of",
+            "header": "David Baker",
+            "description": "Portraits * landscapes * photography"
+          },
+          "colors": {},
+          "extra": {
+            "imageUrl": "https://picsum.photos/seed/11/1557/882",
+            "socialDatasetId": "social"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 625,
+            "ratio": 1.6
+          },
+          "mobile": {
+            "width": 500,
+            "height": 304.05405405405406,
+            "ratio": 1.6444444444444444
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 625,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 250,
+              "ratio": 1.6,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 304.05405405405406,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 121.62162162162163,
+              "ratio": 1.6444444444444444,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.hero-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-hero"
+      ],
+      "dataTags": [],
+      "widgetType": "hero",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.numbers-jk123",
+      "name": "numbers-jk123",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.numbers-jk123",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "numbersDatasetId": {
+              "fieldType": "dataset",
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "numbersDatasetId": "myNumbers"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 343.1857638888889,
+            "ratio": 2.9138737827241683
+          },
+          "mobile": {
+            "width": 500,
+            "height": 153.44172297297297,
+            "ratio": 3.258566120820146
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 343.1857638888889,
+              "ratio": 2.9138737827241683,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myNumbers-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 137.27430555555557,
+              "ratio": 2.9138737827241683,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myNumbers-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 153.44172297297297,
+              "ratio": 3.258566120820146,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myNumbers-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 61.376689189189186,
+              "ratio": 3.258566120820146,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myNumbers-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-numbers"
+      ],
+      "dataTags": [],
+      "widgetType": "numbers",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.portfolio-aiou3",
+      "name": "portfolio-aiou3",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.portfolio-aiou3",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "description": {
+              "fieldType": "longText",
+              "isRequired": true,
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {
+            "portfolioDatasetId": {
+              "fieldType": "dataset",
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "My Portfolio",
+            "description": "{lorem-14}"
+          },
+          "colors": {},
+          "extra": {
+            "portfolioDatasetId": "portfolio"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 739.2686631944445,
+            "ratio": 1.3526882036077557
+          },
+          "mobile": {
+            "width": 500,
+            "height": 359.4594594594595,
+            "ratio": 1.3909774436090225
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 739.2686631944445,
+              "ratio": 1.3526882036077557,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myPortfolio-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 295.70746527777777,
+              "ratio": 1.3526882036077557,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myPortfolio-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 359.4594594594595,
+              "ratio": 1.3909774436090225,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myPortfolio-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 143.78378378378378,
+              "ratio": 1.3909774436090225,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myPortfolio-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-portfolio"
+      ],
+      "dataTags": [],
+      "widgetType": "portfolio",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.quotes-iaj2f",
+      "name": "quotes-iaj2f",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.quotes-iaj2f",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "quotesDatasetId": {
+              "fieldType": "dataset",
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "quotesDatasetId": "quotes"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 434.7222222222222,
+            "ratio": 2.3003194888178915
+          },
+          "mobile": {
+            "width": 500,
+            "height": 211.48648648648648,
+            "ratio": 2.364217252396166
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 434.7222222222222,
+              "ratio": 2.3003194888178915,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.quotes-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 173.88888888888889,
+              "ratio": 2.3003194888178915,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.quotes-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 211.48648648648648,
+              "ratio": 2.364217252396166,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.quotes-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 84.5945945945946,
+              "ratio": 2.364217252396166,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.quotes-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-quotes"
+      ],
+      "dataTags": [],
+      "widgetType": "quotes",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.resume-iuo4f",
+      "name": "resume-iuo4f",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.resume-iuo4f",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "isRequired": true,
+              "order": 1
+            },
+            "description": {
+              "fieldType": "longText",
+              "order": 2
+            }
+          },
+          "colors": {},
+          "extra": {
+            "resumeDatasetId": {
+              "fieldType": "dataset",
+              "order": 0
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "My Resume",
+            "description": "{lorem-14}"
+          },
+          "colors": {},
+          "extra": {
+            "resumeDatasetId": "resume"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 833.0403645833334,
+            "ratio": 1.2004220233675902
+          },
+          "mobile": {
+            "width": 500,
+            "height": 485.3990709459459,
+            "ratio": 1.0300802575200645
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 833.0403645833334,
+              "ratio": 1.2004220233675902,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myResume-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 333.2161458333333,
+              "ratio": 1.2004220233675902,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myResume-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 485.3990709459459,
+              "ratio": 1.0300802575200645,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myResume-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 194.15962837837836,
+              "ratio": 1.0300802575200645,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myResume-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-resume"
+      ],
+      "dataTags": [],
+      "widgetType": "resume",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.section-gkj41",
+      "name": "section-gkj41",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.section-gkj41",
+        "schema": {
+          "strings": {
+            "text": {
+              "fieldType": "text",
+              "order": 0
+            }
+          },
+          "colors": {},
+          "extra": {
+            "id": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "href": {
+              "fieldType": "text",
+              "order": 1
+            },
+            "isHidden": {
+              "fieldType": "checkbox",
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "text": "Features"
+          },
+          "colors": {},
+          "extra": {
+            "id": "features",
+            "href": "",
+            "isHidden": true
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 69.44444444444444,
+            "ratio": 14.4
+          },
+          "mobile": {
+            "width": 500,
+            "height": 33.78394874366554,
+            "ratio": 14.799927734727857
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 69.44444444444444,
+              "ratio": 14.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.sectionHeader-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 27.77777777777778,
+              "ratio": 14.4,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.sectionHeader-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 33.78394874366554,
+              "ratio": 14.799927734727857,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.sectionHeader-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 13.513579497466216,
+              "ratio": 14.799927734727857,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.sectionHeader-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-section"
+      ],
+      "dataTags": [],
+      "widgetType": "section",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.services-uoq83",
+      "name": "services-uoq83",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.services-uoq83",
+        "schema": {
+          "strings": {
+            "header": {
+              "fieldType": "text",
+              "order": 0
+            },
+            "description": {
+              "fieldType": "longText",
+              "isRequired": true,
+              "order": 1
+            }
+          },
+          "colors": {},
+          "extra": {
+            "servicesDatasetId": {
+              "fieldType": "dataset",
+              "order": 2
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {
+            "header": "My Services",
+            "description": "{lorem-14}"
+          },
+          "colors": {},
+          "extra": {
+            "servicesDatasetId": "services"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 507.04210069444446,
+            "ratio": 1.97222281666631
+          },
+          "mobile": {
+            "width": 500,
+            "height": 243.7816722972973,
+            "ratio": 2.0510155471828853
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 507.04210069444446,
+              "ratio": 1.97222281666631,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myServices-basic.normal.desktop.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 400,
+              "height": 202.81684027777777,
+              "ratio": 1.97222281666631,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myServices-basic.normal.desktop.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 243.7816722972973,
+              "ratio": 2.0510155471828853,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myServices-basic.normal.mobile.large.webp?alt=media",
+              "urlIsRemote": true
+            },
+            "thumb": {
+              "width": 200,
+              "height": 97.5126689189189,
+              "ratio": 2.0510155471828853,
+              "url": "https://storage.googleapis.com/download/storage/v1/b/life-b033c.appspot.com/o/screenshots%2Fscreenshot.starter.myServices-basic.normal.mobile.thumb.webp?alt=media",
+              "urlIsRemote": true
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-services"
+      ],
+      "dataTags": [],
+      "widgetType": "services",
+      "isBlock": true
+    },
+    {
+      "id": "com.usegdi.blocks.top-aqwer",
+      "name": "top-aqwer",
+      "description": "",
+      "params": {
+        "id": "com.usegdi.blocks.top-aqwer",
+        "schema": {
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "logoUrl": {
+              "fieldType": "image",
+              "isRequired": true,
+              "order": 1
+            }
+          }
+        }
+      },
+      "sampleData": {
+        "normal": {
+          "id": "normal",
+          "strings": {},
+          "colors": {},
+          "extra": {
+            "logoUrl": "https://static-b9ebe.web.app/logo-blake6b.svg"
+          }
+        }
+      },
+      "dimensions": {
+        "normal": {
+          "desktop": {
+            "width": 1000,
+            "height": 400,
+            "ratio": 2.5
+          },
+          "mobile": {
+            "width": 500,
+            "height": 1337,
+            "ratio": 0.3739715781600598
+          }
+        }
+      },
+      "screenshots": {
+        "normal": {
+          "desktop": {
+            "large": {
+              "width": 1000,
+              "height": 400,
+              "ratio": 2.5,
+              "url": "screenshot.gdi.top header-basic.normal.desktop.large.webp",
+              "urlIsRemote": false
+            },
+            "thumb": {
+              "width": 1000,
+              "height": 400,
+              "ratio": 2.5,
+              "url": "screenshot.gdi.top header-basic.normal.desktop.thumb.webp",
+              "urlIsRemote": false
+            }
+          },
+          "mobile": {
+            "large": {
+              "width": 500,
+              "height": 1337,
+              "ratio": 0.3739715781600598,
+              "url": "screenshot.gdi.top header-basic.normal.mobile.large.webp",
+              "urlIsRemote": false
+            },
+            "thumb": {
+              "width": 500,
+              "height": 1337,
+              "ratio": 0.3739715781600598,
+              "url": "screenshot.gdi.top header-basic.normal.mobile.thumb.webp",
+              "urlIsRemote": false
+            }
+          }
+        }
+      },
+      "tags": [
+        "type-top"
+      ],
+      "dataTags": [],
+      "widgetType": "top",
+      "isBlock": true
+    }
+  ],
+  "instances": [
+    {
+      "id": "instance-card-1",
+      "widgetId": "com.usegdi.blocks.card-ah4j1",
+      "pageInstanceId": "card",
+      "order": 0
+    },
+    {
+      "id": "instance-gdi-1",
+      "widgetId": "com.usegdi.blocks.apps-jf84j",
+      "pageInstanceId": "gdi",
+      "order": 4
+    },
+    {
+      "id": "instance-gdi-2",
+      "widgetId": "com.usegdi.blocks.features-j4k1h",
+      "pageInstanceId": "gdi",
+      "order": 6
+    },
+    {
+      "id": "instance-gdi-3",
+      "widgetId": "com.usegdi.blocks.footer-ajk34",
+      "pageInstanceId": "gdi",
+      "order": 7
+    },
+    {
+      "id": "instance-gdi-4",
+      "widgetId": "com.usegdi.blocks.gallery-ui5873",
+      "pageInstanceId": "gdi",
+      "order": 5
+    },
+    {
+      "id": "instance-gdi-5",
+      "widgetId": "com.usegdi.blocks.header-aouu4",
+      "pageInstanceId": "gdi",
+      "order": 3
+    },
+    {
+      "id": "instance-gdi-6",
+      "widgetId": "com.usegdi.blocks.hero-ajh53",
+      "pageInstanceId": "gdi",
+      "order": 1
+    },
+    {
+      "id": "instance-gdi-7",
+      "widgetId": "com.usegdi.blocks.top-41hj5",
+      "pageInstanceId": "gdi",
+      "order": 0
+    },
+    {
+      "id": "instance-gdi-8",
+      "widgetId": "com.usegdi.blocks.twins-j1j43",
+      "pageInstanceId": "gdi",
+      "order": 2
+    },
+    {
+      "id": "instance-kickstarter-1",
+      "widgetId": "com.usegdi.blocks.cta-uiey3",
+      "pageInstanceId": "kickstarter",
+      "order": 5
+    },
+    {
+      "id": "instance-kickstarter-2",
+      "widgetId": "com.usegdi.blocks.divider-aku34",
+      "pageInstanceId": "kickstarter",
+      "order": 2
+    },
+    {
+      "id": "instance-kickstarter-3",
+      "widgetId": "com.usegdi.blocks.footer-ui4y2",
+      "pageInstanceId": "kickstarter",
+      "order": 6
+    },
+    {
+      "id": "instance-kickstarter-4",
+      "widgetId": "com.usegdi.blocks.hero-ouywy",
+      "pageInstanceId": "kickstarter",
+      "order": 1
+    },
+    {
+      "id": "instance-kickstarter-5",
+      "widgetId": "com.usegdi.blocks.quotes-opur3",
+      "pageInstanceId": "kickstarter",
+      "order": 3
+    },
+    {
+      "id": "instance-kickstarter-6",
+      "widgetId": "com.usegdi.blocks.top-9yur8",
+      "pageInstanceId": "kickstarter",
+      "order": 0
+    },
+    {
+      "id": "instance-kickstarter-7",
+      "widgetId": "com.usegdi.blocks.twins-aou31",
+      "pageInstanceId": "kickstarter",
+      "order": 4
+    },
+    {
+      "id": "instance-reference-1",
+      "widgetId": "com.usegdi.blocks.hero-plylx",
+      "pageInstanceId": "reference",
+      "order": 1
+    },
+    {
+      "id": "instance-reference-2",
+      "widgetId": "com.usegdi.blocks.top-41j4k",
+      "pageInstanceId": "reference",
+      "order": 0
+    },
+    {
+      "id": "instance-stack-1",
+      "widgetId": "com.usegdi.blocks.grid-st001",
+      "pageInstanceId": "stack",
+      "order": 99
+    },
+    {
+      "id": "instance-starter-1",
+      "widgetId": "com.usegdi.blocks.about-iuhr3",
+      "pageInstanceId": "starter",
+      "order": 2
+    },
+    {
+      "id": "instance-starter-2",
+      "widgetId": "com.usegdi.blocks.contact-au487",
+      "pageInstanceId": "starter",
+      "order": 9
+    },
+    {
+      "id": "instance-starter-3",
+      "widgetId": "com.usegdi.blocks.cta-p8y4a",
+      "pageInstanceId": "starter",
+      "order": 99
+    },
+    {
+      "id": "instance-starter-4",
+      "widgetId": "com.usegdi.blocks.hero-hu45i",
+      "pageInstanceId": "starter",
+      "order": 1
+    },
+    {
+      "id": "instance-starter-5",
+      "widgetId": "com.usegdi.blocks.numbers-jk123",
+      "pageInstanceId": "starter",
+      "order": 4
+    },
+    {
+      "id": "instance-starter-6",
+      "widgetId": "com.usegdi.blocks.portfolio-aiou3",
+      "pageInstanceId": "starter",
+      "order": 5
+    },
+    {
+      "id": "instance-starter-7",
+      "widgetId": "com.usegdi.blocks.quotes-iaj2f",
+      "pageInstanceId": "starter",
+      "order": 6
+    },
+    {
+      "id": "instance-starter-8",
+      "widgetId": "com.usegdi.blocks.resume-iuo4f",
+      "pageInstanceId": "starter",
+      "order": 7
+    },
+    {
+      "id": "instance-starter-9",
+      "widgetId": "com.usegdi.blocks.section-gkj41",
+      "pageInstanceId": "starter",
+      "order": 99
+    },
+    {
+      "id": "instance-starter-10",
+      "widgetId": "com.usegdi.blocks.services-uoq83",
+      "pageInstanceId": "starter",
+      "order": 8
+    },
+    {
+      "id": "instance-starter-11",
+      "widgetId": "com.usegdi.blocks.top-aqwer",
+      "pageInstanceId": "starter",
+      "order": 0
+    }
+  ],
+  "instanceProps": [
+    {
+      "id": "instance-card-1"
+    },
+    {
+      "id": "instance-gdi-1",
+      "strings_header": "Apps",
+      "extra_appsDatasetId": "apps"
+    },
+    {
+      "id": "instance-gdi-2",
+      "strings_header": "Features",
+      "strings_version": "v0.16.0",
+      "extra_featuresDatasetId": "features"
+    },
+    {
+      "id": "instance-gdi-3",
+      "strings_text": "2022 David All Rights Reserved",
+      "extra_linksDatasetId": "footerLinks"
+    },
+    {
+      "id": "instance-gdi-4",
+      "strings_header": "Gallery",
+      "extra_galleryDatasetId": "templates"
+    },
+    {
+      "id": "instance-gdi-5",
+      "strings_text": "Header"
+    },
+    {
+      "id": "instance-gdi-6",
+      "strings_slogan": "There's a new CMS in town",
+      "strings_header": "gDI",
+      "strings_ctaButtonText": "See Demo",
+      "strings_secondaryButtonText": "Visit Github",
+      "extra_installation": "npm install -g @gdi/cli",
+      "extra_href": "https://gdi-demo.web.app/admin/pages?demo=on",
+      "extra_hrefSecondary": "https://github.com/dht/gdi",
+      "extra_imageUrl": "https://static-b9ebe.web.app/gdi-hero.jpg"
+    },
+    {
+      "id": "instance-gdi-7",
+      "extra_logoUrl": "https://static-b9ebe.web.app/logo-gdi.svg",
+      "extra_githubUrl": "https://github.com/dht/gdi",
+      "extra_socialDatasetId": "topLinks"
+    },
+    {
+      "id": "instance-gdi-8",
+      "strings_header": "Build for [Firebase]",
+      "strings_description": "Use Firebase to host your site, store your data and manage your users. You can do all that with Firebase's free Spark plan*",
+      "strings_buttonText": "See features",
+      "strings_headerSecondary": "Made with [React]",
+      "strings_descriptionSecondary": "It's easy to extend the CMS with your React skills. Create new templates, apps or data stores. Use JSONs to import & export anything",
+      "strings_buttonTextSecondary": "Visit Github",
+      "strings_notes": "* The Blaze plan is required for Image Uploading. Thumbnail resizing is done via Cloud Functions. It can still be free for low usage.",
+      "extra_href": "#features",
+      "extra_hrefSecondary": "https://github.com/dht/gdi",
+      "extra_rotation": 0
+    },
+    {
+      "id": "instance-kickstarter-1",
+      "strings_header": "Join the movement",
+      "strings_paragraph": "backers already have their back covered",
+      "extra_number": 9510
+    },
+    {
+      "id": "instance-kickstarter-2"
+    },
+    {
+      "id": "instance-kickstarter-3",
+      "strings_text": "2023"
+    },
+    {
+      "id": "instance-kickstarter-4",
+      "strings_slogan": "We've got your back",
+      "strings_priceNote": "For early city birds",
+      "extra_imageUrl": "https://static-b9ebe.web.app/hero-bk-2.png",
+      "extra_previousPrice": 420,
+      "extra_currentPrice": 290,
+      "extra_hudDatasetId": "hudHero"
+    },
+    {
+      "id": "instance-kickstarter-5",
+      "extra_reviewsDatasetId": "videoReviews"
+    },
+    {
+      "id": "instance-kickstarter-6"
+    },
+    {
+      "id": "instance-kickstarter-7",
+      "strings_slogan": "My name is David Baker",
+      "strings_header": "An experienced New York based photographer",
+      "strings_description": "{lorem-43}",
+      "strings_ctaButtonText": "Contact me",
+      "extra_imageUrl": "https://static-b9ebe.web.app/ny-me.webp",
+      "extra_href": "#contactMe"
+    },
+    {
+      "id": "instance-reference-1",
+      "strings_slogan": "Developing Innovative Strategies",
+      "strings_header": "ACHIEVING GROWTH",
+      "strings_button": "Book A Consultation",
+      "extra_placeholderImageUrl": "https://static-b9ebe.web.app/mountain-lowres.jpg",
+      "extra_backImageUrl": "https://static-b9ebe.web.app/mountain-back.png",
+      "extra_frontImageUrl": "https://static-b9ebe.web.app/mountain-front.png",
+      "extra_socialDatasetId": "social"
+    },
+    {
+      "id": "instance-reference-2",
+      "strings_header": "James Consulting"
+    },
+    {
+      "id": "instance-stack-1",
+      "strings_slogan": "Developing Innovative Strategies",
+      "strings_header": "ACHIEVING GROWTH",
+      "strings_button": "Book A Consultation",
+      "extra_placeholderImageUrl": "https://static-b9ebe.web.app/mountain-lowres.jpg",
+      "extra_backImageUrl": "https://static-b9ebe.web.app/mountain-back.png",
+      "extra_backImageUrlMobile": "https://static-b9ebe.web.app/mountain-back.png",
+      "extra_frontImageUrl": "https://static-b9ebe.web.app/mountain-front.png",
+      "extra_frontImageUrlMobile": "https://static-b9ebe.web.app/mountain-front.png",
+      "extra_socialDatasetId": "social"
+    },
+    {
+      "id": "instance-starter-1",
+      "strings_slogan": "My name is David Baker",
+      "strings_header": "An experienced New York based photographer",
+      "strings_description": "{lorem-43}",
+      "strings_ctaButtonText": "Contact me",
+      "extra_imageUrl": "https://static-b9ebe.web.app/ny-me.webp",
+      "extra_href": "#contactMe"
+    },
+    {
+      "id": "instance-starter-2",
+      "strings_header": "Get a quote for your project",
+      "strings_phoneNumber": "1234567890",
+      "extra_imageUrl": "https://static-b9ebe.web.app/ny1.webp"
+    },
+    {
+      "id": "instance-starter-3",
+      "strings_slogan": "Join my 15th October course",
+      "strings_ctaButtonText": "Join Course",
+      "extra_imageUrl": "https://static-b9ebe.web.app/ny2.webp",
+      "extra_href": "#"
+    },
+    {
+      "id": "instance-starter-4",
+      "strings_slogan": "The work of",
+      "strings_header": "David Baker",
+      "strings_description": "Portraits * landscapes * photography",
+      "extra_imageUrl": "https://picsum.photos/seed/11/1557/882",
+      "extra_socialDatasetId": "social"
+    },
+    {
+      "id": "instance-starter-5",
+      "extra_numbersDatasetId": "myNumbers"
+    },
+    {
+      "id": "instance-starter-6",
+      "strings_header": "My Portfolio",
+      "strings_description": "{lorem-14}",
+      "extra_portfolioDatasetId": "portfolio"
+    },
+    {
+      "id": "instance-starter-7",
+      "extra_quotesDatasetId": "quotes"
+    },
+    {
+      "id": "instance-starter-8",
+      "strings_header": "My Resume",
+      "strings_description": "{lorem-14}",
+      "extra_resumeDatasetId": "resume"
+    },
+    {
+      "id": "instance-starter-9",
+      "strings_text": "Features",
+      "extra_id": "features",
+      "extra_href": "",
+      "extra_isHidden": true
+    },
+    {
+      "id": "instance-starter-10",
+      "strings_header": "My Services",
+      "strings_description": "{lorem-14}",
+      "extra_servicesDatasetId": "services"
+    },
+    {
+      "id": "instance-starter-11",
+      "extra_logoUrl": "https://static-b9ebe.web.app/logo-blake6b.svg"
+    }
+  ]
+}
