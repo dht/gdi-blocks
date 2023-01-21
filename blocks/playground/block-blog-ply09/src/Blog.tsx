@@ -1,27 +1,20 @@
 import React, { useContext } from 'react';
 import {
+    
+    Card,
+    CardHeader,
+    CardFooterText,
     Container,
-    H1,
-    Wrapper,
+    Header,
     Row,
-    SubTitle,
     Column,
-    CarouselInner,
-    Carousel,
-    CarouselItem,
-    CarouselPrev,
-    CarouselNext,
-    CarouselPrevIcon,
-    CarouselNextIcon,
-    P,
-    ClientName,
-    Span,
-    ClientLogo,
-    ClientSign,
-    CarouselContainer,
-    CarouselSubContainer,
-    CarouselSubContainer2,
-    ClientImage,
+    SubHeader,
+    Wrapper,
+    CardBody,
+    CardImage,
+    CardTitle,
+    CardDescription,
+    
 } from './Blog.style';
 
 export const id = 'com.usegdi.blocks.blog-ply09';
@@ -40,129 +33,51 @@ export type BlogStrings = {
 export type BlogColors = {};
 
 export type BlogExtra = {
-    testimonialDataSet: Json;
+    BlogDataSet: Json;
 };
 
 export function Blog(props: BlogProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { testimonialDataSet } = extra;
+    const { BlogDataSet } = extra;
 
     return (
         <>
             <Wrapper>
-                <Container className='container'>
+                <Container className='container' >
                     <Row className='row'>
-                        <Column className='col-lg-12 text-center'>
-                            <H1> {header} </H1>
-                            <SubTitle> {slogan} </SubTitle>
-                        </Column>
+                        <Column className='text-center col-lg-12'> 
+                        <Header>Latest reads from blog</Header>
+                         <SubHeader>See what we're up to on a rainy night</SubHeader> 
+                         </Column>
                     </Row>
-
                     <Row className='row'>
-                        <Column className='col-lg-12'>
-                            <Carousel
-                                id='carouselExampleControls'
-                                className='carousel slide'
-                                data-bs-ride='carousel'
-                            >
-                                <CarouselInner className='carousel-inner'>
-                                    {testimonialDataSet.map(
-                                        (clientData: Json,index:number) => {
-                                            return (
-                                                <>
-                                                    <CarouselItem className={`carousel-item ${index===0?"active":""} `}>
-                                                        <CarouselContainer className='carousel-container '>
-                                                            <CarouselSubContainer>
-                                                                <ClientLogo
-                                                                    src={
-                                                                        clientData.logo
-                                                                    }
-                                                                    alt=''
-                                                                />
-                                                                <P className='margintop-p'>
-                                                                    {
-                                                                        clientData.description
-                                                                    }
-                                                                    ”
-                                                                </P>
-                                                                <ClientSign
-                                                                    className='margintop'
-                                                                    src={
-                                                                        clientData.sign
-                                                                    }
-                                                                    alt='sign'
-                                                                />
-                                                                <br />
-                                                                <ClientName>
-                                                                    
-                                                                    {
-                                                                        clientData.clientName
-                                                                    }
-                                                                </ClientName>
-                                                                <br />
-                                                                <Span>
-                                                                    
-                                                                    {
-                                                                        clientData.clientDesignation
-                                                                    }
-                                                                </Span>
-                                                            </CarouselSubContainer>
 
-                                                            <CarouselSubContainer2 className=' w-100 '>
-                                                                <ClientImage
-                                                                    src={
-                                                                        clientData.image
-                                                                    }
-                                                                    alt='client Image'
-                                                                />
-                                                            </CarouselSubContainer2>
-                                                        </CarouselContainer>
-                                                    </CarouselItem>
-                                                </>
-                                            );
-                                        }
-                                    )}
-                                </CarouselInner>
-
-                                <CarouselPrev
-                                    className='carousel-control-prev'
-                                    type='button'
-                                    data-bs-target='#carouselExampleControls'
-                                    data-bs-slide='prev'
-                                >
-                                    <CarouselPrevIcon
-                                        className='shadow material-symbols-outlined'
-                                        aria-hidden='true'
-                                    >
-                                        chevron_left
-                                    </CarouselPrevIcon>
-                                    <span className='visually-hidden'>
-                                        Previous
-                                    </span>
-                                </CarouselPrev>
-
-                                <CarouselNext
-                                    className='carousel-control-next'
-                                    type='button'
-                                    data-bs-target='#carouselExampleControls'
-                                    data-bs-slide='next'
-                                >
-                                    <CarouselNextIcon
-                                        className='shadow material-symbols-outlined'
-                                        aria-hidden='true'
-                                    >
-                                        chevron_right
-                                    </CarouselNextIcon>
-                                    <span className='visually-hidden'>
-                                        Next
-                                    </span>
-                                </CarouselNext>
-                            </Carousel>
-                        </Column>
+                        {BlogDataSet.map((blogData:Json)=>{
+                            return(
+                                <>
+                                <Column className='col-lg-4 mt-5'> 
+                            <Card className='card p-0'>
+                                <CardHeader className='card-header bg-light p-0 '>
+                                    <CardImage src={blogData.imgUrl} alt="" />
+                                </CardHeader>
+                                <CardBody className='card-body'>
+                                    <CardTitle> {blogData.title} </CardTitle>
+                                    <CardDescription> {blogData.description} </CardDescription>
+                                    <CardFooterText>
+                                        {blogData.name} &nbsp; &nbsp; 
+                                        {blogData.date}
+                                    </CardFooterText>
+                                </CardBody>
+                            </Card>
+                        
+                         </Column>
+                                </>
+                            )
+                        })}
                     </Row>
                 </Container>
-            </Wrapper>
+          </Wrapper>
         </>
     );
 }

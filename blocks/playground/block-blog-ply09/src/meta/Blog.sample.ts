@@ -7,24 +7,28 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            testimonialDataSet : [
+            BlogDataSet : [
                 {
-                    logo:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client2.png",
-                    description:'We had so many different requirements for the tool that we easily knocked out 99% of them because they didn’t have the customizations and the features that we needed',
-                    sign:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
-                    clientName:"Bob Mathews",
-                    clientDesignation:"System Engineer",
-                    image:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/testimonial1.png" 
+                    title:"Lifestyle",
+                    description:"The Thin Blur Line Between Corporate Lifestyle & Other Things",
+                    name:"David Beck",
+                    date:"April 15, 2019",
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/d2phv1q00pk-570x392.jpg"
+                } ,
+                {
+                    title:"Lifestyle",
+                    description:"Halfway Though a Decade & More",
+                    name:"David Beck",
+                    date:"April 15, 2019",
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/hcfwew744z4-570x392.jpg"
                 },
                 {
-                    logo:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client3.png",
-                    description:'Your testimonial page serves as a platform to show off how others have benefited from your product or service, making it a powerful tool.',
-                    sign:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
-                    clientName:"Anna Robertson",
-                    clientDesignation:"Web Consultant",
-                    image:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/Testi.png"
-                },
-                
+                    title:"Lifestyle",
+                    description:"How to Live a Balanced Life like Everyone",
+                    name:"David Beck",
+                    date:"April 15, 2019",
+                    imgUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/5qgiuubxkwm-570x392.jpg"
+                }                
             ],  
         },
     },
