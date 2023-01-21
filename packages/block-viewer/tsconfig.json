@@ -82,6 +82,9 @@
             "@gdi/block-apps-ply07": [
                 "blocks/playground/block-apps-ply07"
             ],
+            "@gdi/block-counter-ply08": [
+                "blocks/playground/block-counter-ply08"
+            ],
             "@gdi/block-cta-ply05": [
                 "blocks/playground/block-cta-ply05"
             ],
