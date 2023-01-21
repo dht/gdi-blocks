@@ -38,7 +38,7 @@ export const HeroButton = styled.button`
     background-color: #5c6ac4;
 `;
 
-export const H1 = styled.h1`
+export const H1 = styled.h3`
     font-size: 60px;
     padding: 0;
     vertical-align: baseline;

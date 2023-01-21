@@ -1,9 +1,19 @@
 import React, { useContext } from 'react';
-import { Container, Wrapper, H2, Overlay, SubTitle, ProductImage } from './Counter.style';
+import { 
+    Container, 
+    Wrapper, 
+    SubTitle, 
+    Row, 
+    H1,
+    Card,
+    CardBody,
+    Icon,
+    CardCounter,
+    CardTitle
+} from './Counter.style';
 
-import { LocalGallery } from '@gdi/web-ui';
 
-import { SiteContext } from '@gdi/engine';
+import { Column } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.counter-ply08';
 
@@ -15,80 +25,51 @@ export type CounterProps = {
 
 export type CounterStrings = {
     slogan?: string;
-    header: string;
+    header?: string;
 };
 
 export type CounterColors = {};
 
 export type CounterExtra = {
-    appsDatasetId: string;
-    appsDataset: Json;
+    counterDataset: Json;
 };
 
 export function Apps(props: CounterProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { appsDataset } = extra;
-
-   
-    const { ga } = useContext(SiteContext);
-
-    function onClick(item: Json) {
-        ga('navigate', {
-            category: 'gallery',
-            label: item.id,
-            source: 'apps',
-        });
-    }
-
-    function onView(item: Json) {
-        ga('view', {
-            category: 'gallery',
-            label: item.id,
-            source: 'apps',
-        });
-    }
-
-    function onTagChange(tagId: string) {
-        ga('component', {
-            category: 'gallery',
-            label: 'tagChange',
-            tagId,
-            source: 'apps',
-        });
-    }
-
-    function renderOverlay(item: Json) {
-        const { imgUrl } = item;
-
-        return (
-            <Overlay className='text-dark' style={{ margin: '10px' }}>
-                <ProductImage src={imgUrl} className="galleryImage" />
-            </Overlay>
-        );
-    }
+    const { counterDataset } = extra;
 
     return (
         <>
-            <Wrapper
-                className='Apps-wrapper bg-light '
-                data-testid='Apps-wrapper'
-            >
+            <Wrapper>
+
                 <Container>
-                    <H2 id='templates' className='text-dark text-center'>
-                        {header}
-                    </H2>
-                    <SubTitle className='text-center'> {slogan} </SubTitle>
-                    <div className='text-dark'>
-                        <LocalGallery
-                            items={appsDataset as Json[]}
-                            contain
-                            renderOverlay={renderOverlay}
-                            onClick={onClick}
-                            onView={onView}
-                            onTagChange={onTagChange}
-                        />
-                    </div>
+
+                    <Row>
+                        <Column className='text-center'>
+                            <H1>{header}</H1>
+                            <SubTitle> {slogan} </SubTitle>
+                        </Column>
+                    </Row>
+                    <Row>
+                        {counterDataset.map((counterData:Json)=>{
+                            return(
+                                <>
+                                 <Column>
+                            <Card className='card'>
+                                <CardBody className='card-body'>
+                                <Icon className="material-symbols-outlined">
+                                {counterData.icon}
+                                </Icon>
+                                <CardCounter> {counterData.count} </CardCounter>
+                                <CardTitle> {counterData.title} </CardTitle>
+                                </CardBody>
+                            </Card>
+                        </Column>
+                                </>
+                            )
+                        })}
+                    </Row>
                 </Container>
             </Wrapper>
         </>

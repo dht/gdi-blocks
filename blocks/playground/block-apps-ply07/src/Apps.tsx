@@ -1,5 +1,12 @@
 import React, { useContext } from 'react';
-import { Container, Wrapper, H2, Overlay, SubTitle, ProductImage } from './Apps.style';
+import { 
+    Container, 
+    Wrapper, 
+    H2, 
+    Overlay, 
+    SubTitle, 
+    ProductImage 
+} from './Apps.style';
 
 import { LocalGallery } from '@gdi/web-ui';
 

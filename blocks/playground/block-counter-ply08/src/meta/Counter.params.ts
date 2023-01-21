@@ -9,7 +9,7 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            appsDataset :{fieldType:'dataset', order:1}
+            counterDataset :{fieldType:'dataset', order:1}
         },
     },
 };

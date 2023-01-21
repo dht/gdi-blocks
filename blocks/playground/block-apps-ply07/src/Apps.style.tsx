@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
     padding-bottom: 75px;
 `;
 
-export const H2 = styled.h2`
+export const H2 = styled.h3`
     font-size: 50px;
     padding: 0;
     margin: 0;
@@ -16,6 +16,8 @@ export const H2 = styled.h2`
 
     ${mobile(css`
         text-align: center;
+        font-size: 35px;
+        font-weight: 500;
     `)}
 `;
 

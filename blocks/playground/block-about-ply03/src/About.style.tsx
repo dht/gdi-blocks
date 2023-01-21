@@ -6,10 +6,11 @@ export const Wrapper = styled.div`
     background-color: white;
     background-size: 100% 100%;
     height: auto;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
     color: #000;
     font-family: 'Circular',sans-serif;
-
+    border-top:1px solid silver;
+    padding-top: 100px;
     ${device(
         'tablet',
         css`
@@ -25,15 +26,6 @@ export const Wrapper = styled.div`
 
 
 
-`;
-
-export const Container = styled(Grid.Container)`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    background-color: white;
 `;
 
 export const H1 = styled.h1`
@@ -62,7 +54,7 @@ export const H1 = styled.h1`
     )}
     ${mobile(
         css`
-            font-size: 35px;
+            font-size: 30px;
             line-height: 35px;
             margin-left: 10px;
         `
@@ -74,7 +66,6 @@ export const FlexContainer = styled.div`
   flex-direction: row; 
   padding-left: 10%;
   padding-right: 10%;
-  border-top: 1px solid silver;
   ${device(
     'HD+',
         css`
@@ -192,7 +183,7 @@ export const P = styled.div`
 
     ${mobile(
         css`
-            font-size: 17px;
+            font-size: 15.5px;
             padding-left: 12px;
             padding-right: 12px;
         `

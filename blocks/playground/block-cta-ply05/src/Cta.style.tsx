@@ -10,7 +10,8 @@ export const Wrapper = styled.div`
     color: black;
     height: ${(props) => props.theme.vh(88)};
     display: flex;
-    padding-top: 70px;
+    padding-top: 200px;
+    padding-bottom: 150px;
     border-top: 1px solid silver;
     font-family: ${(props) => props.theme.fontFamily};
 
@@ -38,7 +39,7 @@ export const Container = styled(Grid.Container)`
     flex: 1;
 `;
 
-export const H1 = styled.h1`
+export const H1 = styled.h3`
     font-size: 50px;
     padding: 0;
     color: black;
