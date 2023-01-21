@@ -3,9 +3,7 @@ import { Container, Wrapper, H2, Overlay, SubTitle, ProductImage } from './Apps.
 
 import { LocalGallery } from '@gdi/web-ui';
 
-import classnames from 'classnames';
-import { Column, Grid, SiteContext, useDataset } from '@gdi/engine';
-import { hideText, padding } from 'polished';
+import { SiteContext } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.apps-ply07';
 
@@ -30,11 +28,9 @@ export type AppsExtra = {
 export function Apps(props: AppsProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { appsDatasetId, appsDataset } = extra;
+    const { appsDataset } = extra;
 
-    const apps = useDataset(appsDatasetId);
-    console.log(appsDataset);
-
+   
     const { ga } = useContext(SiteContext);
 
     function onClick(item: Json) {
@@ -63,7 +59,7 @@ export function Apps(props: AppsProps) {
     }
 
     function renderOverlay(item: Json) {
-        const { tags, imgUrl } = item;
+        const { imgUrl } = item;
 
         return (
             <Overlay className='text-dark' style={{ margin: '10px' }}>

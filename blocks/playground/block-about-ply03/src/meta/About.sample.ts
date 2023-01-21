@@ -29,7 +29,9 @@ export const sampleData: ISampleDataPerFlavour = {
                     "cardTitle":"Avant Garde",
                     "cardDescription":"We can change the way your business thinks and behaves long-term in order to combat the threat of digital disruption.",
                     "cardIcon":"local_pizza"
-                }
+                },
+                
+                
 
             ]
         },

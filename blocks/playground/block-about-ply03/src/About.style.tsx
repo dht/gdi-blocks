@@ -5,7 +5,8 @@ export const Wrapper = styled.div`
     
     background-color: white;
     background-size: 100% 100%;
-    height: 100vh;
+    height: auto;
+    padding-bottom: 100px;
     color: #000;
     font-family: 'Circular',sans-serif;
 
