@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mobile, Grid, css } from '@gdi/engine';
+import { mobile, Grid, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;
@@ -143,9 +143,30 @@ export const ContactMessage = styled.div`
     align-items: center;
     font-variation-settings: 'wdth' 115, 'wght' 400;
 
+    ${device(
+        'HD',
+        css`
+            width: 648px;
+        `
+    )}
+
+    ${device(
+        '720p',
+        css`
+            width: 468px;
+        `
+    )}
+
+    ${device(
+        'tablet',
+        css`
+            width: 230px;
+        `
+    )}
+
     ${mobile(css`
         font-size: 30px;
-        width: 100%;
+        width: 10%;
         display: contents;
     `)}
 `;

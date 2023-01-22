@@ -11,6 +11,8 @@ export const Wrapper = styled.div`
 `;
 
 export const Container = styled(Grid.Container)`
+    padding: 10px;
+
     ${mobile(css``)}
 `;
 

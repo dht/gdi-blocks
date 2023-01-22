@@ -21,7 +21,7 @@ export const Wrapper = styled(Parallax)`
 export const Box = styled.div`
     background-color: white;
     width: 800px;
-    height: 40%;
+    height: 38%;
     padding: 30px 50px;
     text-align: center;
     border-radius: 20px 20px 0 0;
@@ -34,7 +34,15 @@ export const Box = styled.div`
             height: 45%;
         `
     )}
+
     ${device(
+        'HD',
+        css`
+            height: 45%;
+        `
+    )}
+
+${device(
         'tablet',
         css`
             height: 35%;
