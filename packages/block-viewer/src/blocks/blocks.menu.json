@@ -1,16 +1,13 @@
 {
-    "card": [
-        "Card"
-    ],
-    "gdi": [
-        "Apps",
-        "Tempaltes",
-        "Features"
-    ],
-    "kickstarter": [
-        "Customers ❤️",
-        "Movement",
-        "Diary",
+    "card": ["Card"],
+    "gdi": ["Apps", "Tempaltes", "Features"],
+    "kickstarter": ["Customers ❤️", "Movement", "Diary", "Contact"],
+    "playground": [
+        "About",
+        "Projects",
+        "Services",
+        "Plans & Pricing",
+        "Tools & Tips",
         "Contact"
     ],
     "reference": [
@@ -21,14 +18,6 @@
         "Tools & Tips",
         "Contact"
     ],
-    "stack": [
-        "Stack"
-    ],
-    "starter": [
-        "Portfolio",
-        "Services",
-        "Resume",
-        "Testimonials",
-        "Contact Me"
-    ]
+    "stack": ["Stack"],
+    "starter": ["Portfolio", "Services", "Resume", "Testimonials", "Contact Me"]
 }

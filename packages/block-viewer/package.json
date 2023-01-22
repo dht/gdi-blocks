@@ -34,12 +34,7 @@
         "shared-base": "^0.4.8",
         "styled-components": "^5.3.5",
         "testing-base": "^0.4.2",
-        "types-base": "^0.0.3",
-        "@gdi/block-hero-ply01": "latest",
-        "@gdi/block-about-ply02": "latest",
-        "@gdi/block-about-ply03": "latest",
-        "@gdi/block-quotes-ply04": "latest",
-        "@gdi/block-contact-ply05": "latest"
+        "types-base": "^0.0.3"
     },
     "devDependencies": {
         "@testing-library/react": "^13.3.0",

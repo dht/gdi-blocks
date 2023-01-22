@@ -1,6 +1,14 @@
-import React from 'react';
-import { H1, Wrapper } from './Header.style';
+import React, { useContext } from 'react';
+import {
+    Wrapper,
+    Container,
+    Row,
+    Title,
+    Column,
+    MobileContainer,
+} from './Header.style';
 import { TopMenu } from '../../../../packages/block-base/src/components/TopMenu/TopMenu';
+import { ITopMenuItem, SiteContext } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.header-ply07';
 
@@ -11,37 +19,55 @@ export type HeaderProps = {
 };
 
 export type HeaderStrings = {
-    text: string;
+    header: string;
 };
 
 export type HeaderColors = {};
 
 export type HeaderExtra = {};
 
+function row(
+    header: string,
+    onClick: (componentName: string) => (item: Json) => void,
+    menuItems: ITopMenuItem[]
+) {
+    return (
+        <Row>
+            <Column>
+                <Title>{header}</Title>
+            </Column>
+            <Column>
+                <TopMenu
+                    color='white'
+                    onClick={onClick('TopMenu')}
+                    items={menuItems}
+                />
+            </Column>
+        </Row>
+    );
+}
+
 export function Header(props: HeaderProps) {
     const { strings } = props;
-    const { text } = strings;
+    const { header } = strings;
+    const { menuItems, ga } = useContext(SiteContext);
 
+    const onClick = (componentName: string) => (item: Json) => {
+        ga('navigate', {
+            category: 'menu',
+            label: componentName,
+            destination: item.url,
+        });
+    };
     return (
-        <Wrapper className='Header-wrapper' data-testid='Header-wrapper'>
-            <TopMenu
-                items={[
-                    { href: './', title: 'JAMES CONSULTING', isTitle: true },
-                    { href: './about', title: 'About' },
-                    { href: './projects', title: 'Projects' },
-                    { href: './services', title: 'Services' },
-                    { href: './plans', title: 'Plans & Pricing' },
-                    { href: './tools', title: 'Tools & Tips' },
-                    { href: './contact', title: 'Contact' },
-                ]}
-                onClick={function (item: {
-                    href: string;
-                    title: string;
-                }): void {
-                    throw new Error('Function not implemented.');
-                }}
-                {...{ item: { href: '', title: 'James' } }}
-            ></TopMenu>
+        <Wrapper className='Top-wrapper' data-testid='Top-wrapper'>
+            {window.innerWidth <= 768 ? (
+                <MobileContainer>
+                    {row(header, onClick, menuItems)}
+                </MobileContainer>
+            ) : (
+                <Container>{row(header, onClick, menuItems)}</Container>
+            )}
         </Wrapper>
     );
 }

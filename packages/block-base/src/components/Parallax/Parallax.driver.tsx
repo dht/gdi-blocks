@@ -20,7 +20,9 @@ export class ParallaxDriver extends BaseComponentDriver {
             return this;
         },
         snapshot: () => {
-            return this.snapshot(<Parallax {...(this.props as ParallaxProps)} />);
+            return this.snapshot(
+                <Parallax {...(this.props as ParallaxProps)} />
+            );
         },
     };
 

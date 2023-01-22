@@ -55,22 +55,25 @@ export const Row = styled(Grid.Row)`
     flex-direction: row;
     align-items: flex-start;
     flex: 1;
-    width: 1200px;
+    width: 70%;
+    margin: 30px 0px;
 
     ${mobile(css`
+        margin: 0px 0px;
         width: auto;
         flex-direction: column;
+        width: 85%;
     `)}
 `;
 
-export const Column = styled(Grid.Column)`
+export const Column = styled(Grid.Column)<{ isButton?: boolean }>`
     flex: 1;
-    margin: 30px 50px;
     display: flex;
     flex-direction: column;
 
     ${mobile(css`
         margin: 30px 0;
+        display: ${(props) => (props.isButton ? 'contents' : 'flex')};
     `)}
 `;
 
@@ -112,15 +115,51 @@ export const IconWrapperEmail = styled.div`
     `)}
 `;
 
-export const ContactTitle = styled.h3`
+export const ContactTitle = styled.div`
     font-size: 32px;
     padding: 0;
     padding-left: 15px;
     margin: 0;
-    display: flex;
+    display: block;
     flex-direction: row;
     align-items: center;
-    font-variation-settings: 'wdth' 115, 'wght' 250;
+    font-variation-settings: 'wdth' 115, 'wght' 400;
+
+    ${mobile(css`
+        font-size: 34px;
+        padding-left: 0;
+        display: contents;
+    `)}
+`;
+
+export const ContactMessage = styled.div`
+    width: 710px;
+    font-size: 32px;
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    font-variation-settings: 'wdth' 115, 'wght' 400;
+
+    ${mobile(css`
+        font-size: 30px;
+        width: 100%;
+        display: contents;
+    `)}
+`;
+
+export const ContactTitle3 = styled.div`
+    width: 140px;
+    font-size: 32px;
+    padding: 0;
+    padding-left: 15px;
+    margin: 0;
+    display: block;
+    flex-direction: row;
+    align-items: center;
+    font-variation-settings: 'wdth' 115, 'wght' 400;
 
     ${mobile(css`
         font-size: 34px;
@@ -130,34 +169,69 @@ export const ContactTitle = styled.h3`
 export const ContactTitleText = styled.div`
     margin-left: 5px;
     flex: 1;
+    font-size: 20px;
+    font-weight: 500;
     align-self: flex-start;
-    padding-bottom: 8px;
+    /* padding-bottom: 8px; */
     position: relative;
-    left: 30%;
-    margin-bottom: 60px;
+    /* margin-bottom: 60px; */
 
+    ${mobile(css``)}
+`;
+
+export const Button = styled.button`
+    height: 70px;
+    width: 190px;
+    color: #163c60;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 2px;
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid white;
+
+    ${mobile(
+        css`
+            text-align: center;
+            width: 285px;
+        `
+    )};
+
+    &:hover {
+        background-color: #163c60;
+        color: white;
+    }
+`;
+
+export const InputContainer = styled.div`
     ${mobile(css`
         text-align: center;
     `)}
 `;
 
-export const Input = styled.input`
+export const Input = styled.input<{ isRequired?: boolean }>`
     padding: 10px;
     border: none;
     border-bottom: 2px solid #ccc;
+    border-bottom: ${(props) =>
+        props.isRequired ? '2px solid red' : '2px solid #ccc'};
     background-color: #163c60;
-    font-size: 20px;
-    width: 50%;
-    height: 30px;
+    font-size: 18px;
+    width: 100%;
     color: white;
     padding-bottom: 5px;
     box-sizing: content-box;
 
     &:focus {
-        padding: 10px;
-        border-bottom: 4px solid #ccc;
+        border-bottom: 2px solid #ccc;
         outline: none;
     }
+
+    ${mobile(css`
+        padding: 0px;
+    `)}
 `;
 
 export const MapContainer = styled.div`

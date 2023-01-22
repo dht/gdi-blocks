@@ -1,58 +1,65 @@
 import styled from 'styled-components';
-import { HeroExtra } from './Hero';
-import { mobile, css } from '@gdi/engine';
+import { mobile, css, device } from '@gdi/engine';
+import { Parallax } from '@gdi/block-base';
 
-export const Wrapper = styled.div<{ extra: HeroExtra }>`
+export const Wrapper = styled(Parallax)`
     flex: 1;
-    background-image: url(${(props) => props.extra.imageUrl});
-    background-size: cover;
-    background-position: center bottom;
-    transform: scale(1);
-    transition: transform 1s ease-in-out;
-    height: ${(props) => props.theme.vh(88)};
+    min-height: ${(props) => props.theme.vh(78)};
+
     ${mobile(
         css`
-            background-image: url(${(props) => props.extra.imageUrlMobile});
-            background-size: cover;
-            background-position: center bottom;
-            height: ${(props) => props.theme.vh(100)};
+            min-height: ${(props) => props.theme.vh(75)};
         `
     )};
     display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};
 `;
 
-export const Container = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-end;
-    flex: 1;
-    max-width: 800px;
-    height: 250px;
+export const Box = styled.div`
     background-color: white;
-    ${mobile(
+    width: 800px;
+    height: 40%;
+    padding: 30px 50px;
+    text-align: center;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0.5),
+        0 0 10px rgba(0, 0, 0, 0.5);
+
+    ${device(
+        '720p',
         css`
-            max-width: 330px;
-            height: 250px;
+            height: 45%;
         `
-    )};
+    )}
+    ${device(
+        'tablet',
+        css`
+            height: 35%;
+            width: 90%;
+        `
+    )}
+    ${device(
+        'mobile',
+        css`
+            height: 42%;
+            width: 90%;
+        `
+    )}
 `;
 
 export const H1 = styled.h1`
     font-size: 50px;
-    max-width: 500px;
     font-weight: 500;
-    margin: 10px 0;
-    padding: 0;
-    padding-bottom: 20px;
+    margin: 10px 0 30px;
     color: #163c60;
     text-align: center;
+    white-space: nowrap;
     ${mobile(
         css`
-            font-size: 30px;
+            font-size: 26px;
         `
     )};
 `;
@@ -65,8 +72,10 @@ export const Greeting = styled.div`
     font-size: 24px;
     font-weight: bold;
     font-variation-settings: 'wdth' 125, 'wght' 350;
+    white-space: nowrap;
     ${mobile(
         css`
+            white-space: break-spaces;
             font-size: 16px;
         `
     )};

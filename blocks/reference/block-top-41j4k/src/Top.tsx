@@ -23,6 +23,7 @@ export function Top(props: TopProps) {
     const { strings } = props;
     const { header } = strings;
     const { menuItems, ga } = useContext(SiteContext);
+    console.log(menuItems);
 
     const onClick = (componentName: string) => (item: Json) => {
         ga('navigate', {

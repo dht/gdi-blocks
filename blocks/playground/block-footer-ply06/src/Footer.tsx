@@ -40,7 +40,6 @@ export function Footer(props: FooterProps) {
     const { strings, extra } = props;
     const { text, address, mail, tel, description } = strings;
     const { linksDatasetId = '', menu } = extra;
-    console.log(strings);
 
     const social = useDataset(linksDatasetId);
     const urls = Object.values(social).map((i: Json) => i.url);

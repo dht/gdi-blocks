@@ -20,8 +20,13 @@ import {
     MapContainer,
     IconWrapperEmail,
     IconWrapperName,
+    InputContainer,
+    ContactTitle3,
+    ContactMessage,
+    Button,
 } from './Contact.style';
 import { useDataset } from '@gdi/engine';
+import GoogleMapReact from 'google-map-react';
 
 export const id = 'com.usegdi.blocks.contact-ply05';
 
@@ -82,31 +87,74 @@ export function Contact(props: ContactProps) {
                 <Row>
                     <Column>
                         <ContactTitle>
-                            <ContactTitleText>Name</ContactTitleText>
-                            <Input></Input>
-                            <IconWrapperName>
-                                <i className='material-symbols-outlined'>
-                                    badge
-                                </i>
-                            </IconWrapperName>
+                            <ContactTitleText>First Name</ContactTitleText>
+                            <InputContainer>
+                                <Input></Input>
+                            </InputContainer>
                         </ContactTitle>
                         <Items>{renderItems(educationItems)}</Items>
                     </Column>
                     <Column>
                         <ContactTitle>
-                            <ContactTitleText>Email</ContactTitleText>
-                            <Input></Input>
-                            <IconWrapperEmail>
-                                <i className='material-symbols-outlined'>
-                                    mail
-                                </i>
-                            </IconWrapperEmail>
+                            <ContactTitleText>Last Name</ContactTitleText>
+                            <InputContainer>
+                                <Input></Input>
+                            </InputContainer>
                         </ContactTitle>
+                        <Items>{renderItems(experienceItems)}</Items>
+                    </Column>
+                </Row>
+                <Row>
+                    <Column>
+                        <ContactTitle>
+                            <ContactTitleText>Email *</ContactTitleText>
+                            <InputContainer>
+                                <Input isRequired={true}></Input>
+                            </InputContainer>
+                        </ContactTitle>
+                        <Items>{renderItems(educationItems)}</Items>
+                    </Column>
+                    <Column>
+                        <ContactTitle>
+                            <ContactTitleText>Subject</ContactTitleText>
+                            <InputContainer>
+                                <Input></Input>
+                            </InputContainer>
+                        </ContactTitle>
+                        <Items>{renderItems(experienceItems)}</Items>
+                    </Column>
+                </Row>
+                <Row>
+                    <Column>
+                        <ContactMessage>
+                            <ContactTitleText>Message *</ContactTitleText>
+                            <InputContainer>
+                                <Input isRequired={true}></Input>
+                            </InputContainer>
+                        </ContactMessage>
+                        <Items>{renderItems(educationItems)}</Items>
+                    </Column>
+                    <Column isButton={true}>
+                        <ContactTitle3>
+                            <Button>Submit</Button>
+                        </ContactTitle3>
                         <Items>{renderItems(experienceItems)}</Items>
                     </Column>
                 </Row>
             </Container>
             <MapContainer></MapContainer>
+            {/* <div style={{ height: '50vh', width: '100%' }}>
+                <GoogleMapReact
+                    bootstrapURLKeys={{
+                        key: 'AIzaSyDRai_xikJ4YCZS-EZLHt3Q13FYWjUNOI8',
+                    }}
+                    defaultCenter={{
+                        lat: 10.99835602,
+                        lng: 77.01502627,
+                    }}
+                    defaultZoom={11}
+                ></GoogleMapReact>
+            </div> */}
         </Wrapper>
     );
 }

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { H1, Wrapper, Greeting, Button, Container } from './Hero.style';
+import { H1, Wrapper, Greeting, Box } from './Hero.style';
 import { CustomButtonBase } from '../../../../packages/block-base/src/index';
 
 export const id = 'com.usegdi.blocks.hero-ply01';
@@ -32,13 +32,13 @@ export function Hero(props: HeroProps) {
         <Wrapper
             className='Hero-container'
             data-testid='Hero-container'
-            extra={extra}
+            {...extra}
         >
-            <Container>
+            <Box>
                 <Greeting>{slogan}</Greeting>
                 <H1>{header}</H1>
                 <CustomButtonBase>{button}</CustomButtonBase>
-            </Container>
+            </Box>
         </Wrapper>
     );
 }

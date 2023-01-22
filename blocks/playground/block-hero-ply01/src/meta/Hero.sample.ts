@@ -8,6 +8,14 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
+            placeholderImageUrl:
+                'https://static-b9ebe.web.app/mountain-lowres.jpg',
+            backImageUrl: 'https://static-b9ebe.web.app/mountain-back.png',
+            backImageUrlMobile:
+                'https://static-b9ebe.web.app/mountain-back.png',
+            frontImageUrl: 'https://static-b9ebe.web.app/mountain-front.png',
+            frontImageUrlMobile:
+                'https://static-b9ebe.web.app/mountain-front.png',
             imageUrl:
                 'https://static.wixstatic.com/media/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg/v1/fill/w_2000,h_739,al_c,q_85,enc_auto/82fcd3_47a465bb9c6f4b52a0cc83f281806af8~mv2.jpg',
             imageUrlMobile:

@@ -40,7 +40,6 @@ export function Quotes(props: QuotesProps) {
     const [activeIndex, setActiveIndex] = useState(0);
 
     const items = useDataset(quotesDatasetId ?? '');
-    console.log(items);
 
     const { ga } = useContext(SiteContext);
 

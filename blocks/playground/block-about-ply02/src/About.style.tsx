@@ -1,14 +1,21 @@
 import styled from 'styled-components';
 import { AboutExtra } from './About';
-import { mobile, css } from '@gdi/engine';
+import { mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: AboutExtra }>`
     flex: 1;
     background-color: white;
     height: ${(props) => props.theme.vh(60)};
+    ${device(
+        'tablet',
+        css`
+            height: ${(props) => props.theme.vh(100)};
+        `
+    )};
+
     ${mobile(
         css`
-            height: ${(props) => props.theme.vh(250)};
+            height: ${(props) => props.theme.vh(170)};
         `
     )};
     display: flex;
@@ -39,9 +46,11 @@ export const Box = styled.div`
     margin: 0;
     ${mobile(
         css`
-            width: 80%;
+            width: 95%;
             margin-bottom: 20px;
-            height: 35em;
+            height: 26em;
+            padding: 1px;
+            border: 0px solid grey;
         `
     )};
 `;
