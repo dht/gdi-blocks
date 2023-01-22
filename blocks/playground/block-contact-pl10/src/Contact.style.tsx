@@ -13,8 +13,6 @@ export const Wrapper = styled.div`
     padding-bottom: 0px;
     font-family: ${(props) => props.theme.fontFamily};
 
-
-
     ${device(
         '720p',
             css`
@@ -28,8 +26,6 @@ export const Wrapper = styled.div`
                 height: auto;
             `
     )}
-
-   
 
     ${device(
         'mobile',
@@ -77,8 +73,7 @@ ${mobile(
 
 export const ContactBack = styled.div`
 background-color: #7A77D0;
-padding: 100px 200px 100px 200px;
-
+padding: 90px 200px 90px 200px;
 
     ${device(
         'HD',
@@ -154,15 +149,11 @@ export const EmailBox = styled.input`
 
 `;
 
-
-export const EmailContainer = styled.div``;
-
 export const SubmitButton = styled.button`
 min-height: 47px;
 border: none;
 outline: none;
 font-size: 17px;
-
 padding: 10px 16px ;
 color: white;
 background-color: #50B83C;
@@ -179,17 +170,6 @@ font-weight: bold;
     `
   )}
 `;
-
-    
-
-
-
-
-
-
-
-
-
 
 export const SubHeader = styled.p`
     font-size: 22px;

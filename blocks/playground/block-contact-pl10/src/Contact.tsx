@@ -1,7 +1,5 @@
 import React, { useContext } from 'react';
 import {
-    
-    
     ContainerFluid,
     Header,
     Row,
@@ -11,10 +9,7 @@ import {
     ContactBack,
     ContactImage,
     EmailBox,
-    SubmitButton,
-    EmailContainer,
-   
-    
+    SubmitButton, 
 } from './Contact.style';
 
 export const id = 'com.usegdi.blocks.contact-pl10';
@@ -23,8 +18,6 @@ export type ContactProps = {
     strings: ContactStrings;
     colors: ContactColors;
     extra: ContactExtra;
-
-
 };
 
 export type ContactStrings = {
@@ -45,7 +38,6 @@ export function Contact(props: ContactProps) {
     const { contactImageUrl  } = extra;
     const { slogan, header , placeholder , buttonText } = strings;
 
-
     return (
         <>
             <Wrapper id='contact' >
@@ -53,7 +45,6 @@ export function Contact(props: ContactProps) {
                         <Row className='row'>
                             <Column className='col-lg-12'>
                                 <ContactBack>
-
                                     <Row className="row">
                                         <Column className="col-lg-6 text-center ">
                                             <ContactImage src={contactImageUrl} alt="" />
@@ -61,10 +52,8 @@ export function Contact(props: ContactProps) {
                                         <Column className="col-lg-6">
                                            <Header> {header} </Header>
                                            <SubHeader> {slogan} </SubHeader>
-                                            <EmailContainer>
                                             <EmailBox type="text" placeholder={placeholder} />
                                             <SubmitButton> {buttonText} </SubmitButton>
-                                            </EmailContainer>
                                         </Column>
                                     </Row>
                                 </ContactBack>
