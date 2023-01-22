@@ -28,6 +28,9 @@
             "@gdi/block-base": [
                 "packages/block-base"
             ],
+            "@gdi/store-viewer": [
+                "stores/gdi-store-viewer"
+            ],
             "@gdi/block-card-ah4j1": [
                 "blocks/card/block-card-ah4j1"
             ],

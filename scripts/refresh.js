@@ -4,44 +4,39 @@ import _ from 'lodash';
 import { globbySync } from 'globby';
 import axios from 'axios';
 
-const __dirname = path.resolve();
-
 const DATASETS_JSON_URL =
     'https://raw.githubusercontent.com/dht/gdi-jsons/main/viewer.json';
 
+const __dirname = path.resolve();
+const cwd = path.resolve(__dirname, '../blocks');
+
 const run = async () => {
     console.time('refresh');
-
-    const cwd = path.resolve(__dirname, '../blocks');
 
     const packages = globbySync('*/*', {
         cwd,
         onlyDirectories: true,
     });
 
-    const viteAlias = [
-        "\t\t\t'@gdi/block-base': `${cwd}/packages/block-base/src`,",
-    ];
+    fixVite(packages);
+    fixTsConfig(packages);
+    refreshBlockImports(packages);
+    refreshMenu(packages);
+    getOrder(packages);
+};
 
-    const tsConfigPaths = {
-        '@gdi/block-base': ['packages/block-base'],
-    };
+const getOrder = (packages) => {
+    console.time('getOrder');
 
-    const blockImports = [],
-        blockParams = [],
-        dependencies = [],
-        byTemplate = {},
-        menu = {};
+    const byTemplate = {};
 
     for (let packageName of packages) {
         const p = readJson(`${cwd}/${packageName}/package.json`);
         let [templateName, blockName] = packageName.split('/');
         blockName = blockName.replace('block-', '');
         const orderPath = `${cwd}/${templateName}/.order`;
-        const menuPath = `${cwd}/${templateName}/.menu`;
 
-        let orderValues = {},
-            menuValues = [];
+        let orderValues = {};
 
         if (fs.existsSync(orderPath)) {
             fs.readFileSync(orderPath, 'utf8')
@@ -51,33 +46,32 @@ const run = async () => {
                 });
         }
 
-        if (fs.existsSync(menuPath)) {
-            menuValues = fs
-                .readFileSync(menuPath, 'utf8')
-                .split('\n')
-                .filter((i) => i);
-
-            menu[templateName] = menuValues;
-        }
-
         byTemplate[templateName] = byTemplate[templateName] ?? {};
         byTemplate[templateName][blockName] = orderValues[blockName] ?? 99;
+    }
 
-        const name = p.name.split('/').pop().replace('block-', '');
-        const name_ = name.replace(/-/g, '_');
+    writeJson(
+        '../packages/block-viewer/src/data/raw/blocks.byTemplate.json',
+        byTemplate
+    );
 
-        tsConfigPaths[p.name] = [`blocks/${packageName}`];
+    console.timeEnd('getOrder');
+};
+
+const fixVite = (packages) => {
+    console.time('fixVite');
+
+    const viteAlias = [
+        "\t\t\t'@gdi/block-base': `${cwd}/packages/block-base/src`,",
+        "\t\t\t'@gdi/store-viewer': `${cwd}/stores/gdi-store-viewer/src`,",
+    ];
+
+    for (let packageName of packages) {
+        const p = readJson(`${cwd}/${packageName}/package.json`);
+
         viteAlias.push(
             `\t\t\t'${p.name}': \`\${cwd}/blocks/${packageName}/src\`,`
         );
-
-        dependencies[p.name] = 'latest';
-
-        blockImports.push(
-            `import { block as block_${name_} } from '@gdi/block-${name}';`
-        );
-
-        blockParams.push(`[block_${name_}.id]: block_${name_}`);
     }
 
     let viteConfig = fs.readFileSync(
@@ -96,43 +90,79 @@ ${viteAlias.join('\n')}
 
     fs.writeFileSync(`../packages/block-viewer/vite.config.js`, viteConfig);
 
+    console.timeEnd('fixVite');
+};
+
+const fixTsConfig = (packages) => {
+    console.time('fixTsConfig');
+
+    const tsConfigPaths = {
+        '@gdi/block-base': ['packages/block-base'],
+        '@gdi/store-viewer': ['stores/gdi-store-viewer'],
+    };
+
+    for (let packageName of packages) {
+        const p = readJson(`${cwd}/${packageName}/package.json`);
+        tsConfigPaths[p.name] = [`blocks/${packageName}`];
+    }
+
     const tsConfig = readJson(`../packages/block-viewer/tsconfig.json`);
     tsConfig.compilerOptions.paths = tsConfigPaths;
     writeJson(`../packages/block-viewer/tsconfig.json`, tsConfig);
 
+    console.timeEnd('fixTsConfig');
+};
+
+const refreshMenu = (packages) => {
+    console.time('refreshMenu');
+    const menu = {};
+
+    for (let packageName of packages) {
+        let [templateName, _blockName] = packageName.split('/');
+        const menuPath = `${cwd}/${templateName}/.menu`;
+
+        let menuValues = [];
+
+        if (fs.existsSync(menuPath)) {
+            menuValues = fs
+                .readFileSync(menuPath, 'utf8')
+                .split('\n')
+                .filter((i) => i);
+
+            menu[templateName] = menuValues;
+        }
+    }
+
+    writeJson('../packages/block-viewer/src/data/blocks.menu.json', menu);
+
+    console.timeEnd('refreshMenu');
+};
+
+const refreshBlockImports = (packages) => {
+    console.time('refreshBlockImports');
+
+    const blockImports = [],
+        blockParams = [];
+
+    for (let packageName of packages) {
+        const p = readJson(`${cwd}/${packageName}/package.json`);
+        const name = p.name.split('/').pop().replace('block-', '');
+        const name_ = name.replace(/-/g, '_');
+
+        blockImports.push(
+            `import { block as block_${name_} } from '@gdi/block-${name}';`
+        );
+
+        blockParams.push(`[block_${name_}.id]: block_${name_}`);
+    }
+
     const contentBlockInit = templateBlockInit(blockImports, blockParams);
     fs.writeFileSync(
-        '../packages/block-viewer/src/blocks/blocks.init.ts',
+        '../packages/block-viewer/src/data/blocks.init.ts',
         contentBlockInit
     );
 
-    const datasets = await axios.get(DATASETS_JSON_URL);
-    // updateViewerPackageJson()
-
-    writeJson(
-        `../packages/block-viewer/src/blocks/blocks.datasets.json`,
-        datasets.data
-    );
-
-    writeJson(
-        '../packages/block-viewer/src/blocks/blocks.byTemplate.json',
-        byTemplate
-    );
-
-    writeJson('../packages/block-viewer/src/blocks/blocks.menu.json', menu);
-
-    console.timeEnd('refresh');
-};
-
-const updateViewerPackageJson = () => {
-    const packageViewer = readJson('../packages/block-viewer/package.json');
-
-    packageViewer.dependencies = {
-        ...packageViewer.dependencies,
-        ...dependencies,
-    };
-
-    writeJson('../packages/block-viewer/package.json', packageViewer);
+    console.timeEnd('refreshBlockImports');
 };
 
 const readJson = (path) => {

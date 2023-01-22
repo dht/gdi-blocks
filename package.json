@@ -3,13 +3,18 @@
     "private": true,
     "version": "0.0.1",
     "scripts": {
-        "dev": "cd packages/block-viewer && npm run dev",
-        "refresh": "cd scripts && node refresh.js"
+        "dev": "npm run server & npm run client",
+        "refresh": "cd scripts && node refresh.js",
+        "generateDb": "cd packages/block-viewer/scripts && node generateDb.js",
+        "client": "cd packages/block-viewer && npm run dev",
+        "server": "cd packages/block-viewer/server && npm run dev"
     },
     "workspaces": [
-        "packages/block-base",
-        "packages/block-viewer",
         "blocks/**",
+        "packages/*",
+        "packages/*/server",
+        "packages/*/scripts",
+        "stores/*",
         "scripts"
     ],
     "license": "MIT",
@@ -27,7 +32,7 @@
             "pre-commit": "sh ./scripts/pre-commit-prevent-large-files.sh"
         }
     },
-    "description": "<p align=\"center\">   <br />   <a href=\"https://usegdi.com/\" target=\"blank\"><img src=\"https://raw.githubusercontent.com/dht/gdi/main/clients/gdi-admin/public/Logo.webp\" width=\"160\" alt=\"gdi Logo\" /></a> </p> <p align=\"center\">   An open-source & extendable content management system (CMS) written in ReactJS, hosted on <a href=\"https://firebase.google.com\" target=\"_blank\">Firebase</a> </p> <p align=\"center\">   <a href=\"https://usegdi.com/admin/pages/home?demo=on\" target=\"_blank\">Demo</a>&nbsp;//&nbsp;   <a href=\"https://usegdi.com/docs/\" target=\"_blank\">Documentation</a>&nbsp;//&nbsp;   <a href=\"https://usegdi.com\" target=\"_blank\">Homepage</a> </p>",
+    "description": "",
     "main": ".prettierrc.js",
     "keywords": [],
     "author": ""

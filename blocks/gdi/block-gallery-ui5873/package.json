@@ -16,7 +16,7 @@
         "shared-base": "^0.4.8",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "@gdi/engine": "^0.4.7",
+        "@gdi/engine": "^0.4.9",
         "@gdi/web-ui": "^0.4.4"
     },
     "devDependencies": {
