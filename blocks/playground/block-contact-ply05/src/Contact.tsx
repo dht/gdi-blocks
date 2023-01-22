@@ -146,7 +146,7 @@ export function Contact(props: ContactProps) {
             {/* <div style={{ height: '50vh', width: '100%' }}>
                 <GoogleMapReact
                     bootstrapURLKeys={{
-                        key: 'AIzaSyDRai_xikJ4YCZS-EZLHt3Q13FYWjUNOI8',
+                        key: '',
                     }}
                     defaultCenter={{
                         lat: 10.99835602,
