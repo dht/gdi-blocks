@@ -43,7 +43,7 @@ export function Hero(props: HeroProps) {
 
     return (
         <>
-            <Wrapper>
+            <Wrapper id='Home'>
                 <Container className='container'>
                     <Row className='row'>
                         <Column className='col-lg-6 p-40px '>

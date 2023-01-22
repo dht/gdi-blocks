@@ -44,7 +44,7 @@ export function Blog(props: BlogProps) {
     return (
         <>
             <Wrapper>
-                <Container className='container' >
+                <Container className='container' id='Blog' >
                     <Row className='row'>
                         <Column className='text-center col-lg-12'> 
                         <Header> {header} </Header>

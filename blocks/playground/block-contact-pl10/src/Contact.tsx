@@ -40,7 +40,7 @@ export function Contact(props: ContactProps) {
 
     return (
         <>
-            <Wrapper id='contact' >
+            <Wrapper id='Contact' >
                 <ContainerFluid className=' p-0 container-fluid' >
                         <Row className='row'>
                             <Column className='col-lg-12'>

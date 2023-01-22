@@ -42,8 +42,8 @@ export function About(props: AboutProps) {
 
     return (
         <>
-            <Wrapper>
-                <FlexContainer>
+            <Wrapper >
+                <FlexContainer id='About'>
                     <Col>
                         {aboutCardData.map((value: Json,index:number) => {
                             return (
