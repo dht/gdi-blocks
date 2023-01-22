@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container, Wrapper, Body, Button, Box, H2 } from './About.style';
-
+import { useDataset } from '@gdi/engine';
 export const id = 'com.usegdi.blocks.about-ply02';
 
 export type AboutProps = {
@@ -18,30 +18,38 @@ export type AboutColors = {};
 
 export type AboutExtra = {
     imageUrl: string;
-    socialDatasetId: string;
+    aboutDatasetId: string;
     headerParams: [{ title: string; description: string }];
 };
 
 export function About(props: AboutProps) {
     const { strings, extra } = props;
     const { button } = strings;
+    const { aboutDatasetId } = extra;
+    const items = useDataset(aboutDatasetId ?? '') ?? {};
 
+    function renderItem(item: Json) {
+        const { title, description } = item;
+
+        return (
+            <Box key={item.id}>
+                <H2>{title}</H2>
+                <Body>{description}</Body>
+                <Button>{button}</Button>
+            </Box>
+        );
+    }
+
+    function renderItems() {
+        return items.map((item: Json) => renderItem(item));
+    }
     return (
         <Wrapper
             className='About-container'
             data-testid='About-container'
             extra={extra}
         >
-            <Container>
-                {extra.headerParams.map((header, index) => (
-                        <Box key={index}>
-                            <H2>{header.title}</H2>
-                            <Body>{header.description}</Body>
-                            <Button>{button}</Button>
-                        </Box>
-                    )
-                )}
-            </Container>
+            <Container>{renderItems()}</Container>
         </Wrapper>
     );
 }

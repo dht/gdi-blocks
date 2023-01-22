@@ -33,16 +33,21 @@ export type FooterStrings = {
 export type FooterColors = {};
 
 export type FooterExtra = {
-    menu: [{ name: string; link: string }];
+    footerMenuDatasetId?: string;
     linksDatasetId?: string;
     menuHeaders: string[];
 };
 
 export function Footer(props: FooterProps) {
     const { header, address, mail, tel, description } = props.strings;
-    const { linksDatasetId = '', menu, menuHeaders } = props.extra;
+    const {
+        linksDatasetId = '',
+        footerMenuDatasetId = '',
+        menuHeaders,
+    } = props.extra;
 
     const social = useDataset(linksDatasetId);
+    const items = useDataset(footerMenuDatasetId);
     const urls = Object.values(social).map((i: Json) => i.url);
 
     return (
@@ -60,11 +65,12 @@ export function Footer(props: FooterProps) {
                     <Section isSection={true}>
                         <Column>{menuHeaders[0]}</Column>
                         <Ul>
-                            {menu.map((item, index) => (
-                                <Li key={index}>
-                                    <Link>{item.name}</Link>
-                                </Li>
-                            ))}
+                            {items.map(
+                                (
+                                    item: { name: string; link: string },
+                                    index: number
+                                ) => menuItem(index, item)
+                            )}
                         </Ul>
                     </Section>
                     <Section>
@@ -84,6 +90,17 @@ export function Footer(props: FooterProps) {
             </Container>
         </Wrapper>
     );
+
+    function menuItem(
+        index: number,
+        item: { name: string; link: string }
+    ): JSX.Element {
+        return (
+            <Li key={index}>
+                <Link>{item.name}</Link>
+            </Li>
+        );
+    }
 }
 
 export default Footer;

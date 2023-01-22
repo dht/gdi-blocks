@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Wrapper, Container, Row, Title, Column } from './Header.style';
 import { TopMenu } from '../../../../packages/block-base/src/components/TopMenu/TopMenu';
-import { SiteContext } from '@gdi/engine';
+import { SiteContext, useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.header-ply07';
 
@@ -18,15 +18,20 @@ export type HeaderStrings = {
 export type HeaderColors = {};
 
 export type HeaderExtra = {
-    items: [];
+    headerDatasetId: string;
+};
+
+export type IMenuItem = {
+    href: string;
+    title: string;
+    isTitle?: boolean;
 };
 
 export function Header(props: HeaderProps) {
-    const { strings } = props;
-    const { header } = strings;
-    const { items } = props.extra;
+    const { header } = props.strings;
+    const { headerDatasetId } = props.extra;
     const { ga } = useContext(SiteContext);
-
+    const items: IMenuItem[] = useDataset(headerDatasetId ?? '') ?? {};
     const onClick = (componentName: string) => (item: Json) => {
         ga('navigate', {
             category: 'menu',

@@ -11,7 +11,7 @@ export const params: IWidgetParams = {
             },
             descriptionTwo: { fieldType: 'longText', order: 1 },
             header: { fieldType: 'text', isRequired: true, order: 2 },
-            description: { fieldType: 'text', order: 3 },
+            button: { fieldType: 'text', isRequired: true, order: 3 },
         },
         colors: {},
         extra: {

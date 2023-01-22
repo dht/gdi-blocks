@@ -26,7 +26,6 @@ export type QuotesProps = {
 
 export type QuotesStrings = {
     header: string;
-    lists: [];
 };
 
 export type QuotesColors = {};
@@ -36,11 +35,12 @@ export type QuotesExtra = {
 };
 
 export function Quotes(props: QuotesProps) {
-    const { header, lists } = props.strings;
+    const { header } = props.strings;
+    const { quotesDatasetId } = props.extra;
 
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const items = lists;
+    const items = useDataset(quotesDatasetId ?? '');
 
     const { ga } = useContext(SiteContext);
 

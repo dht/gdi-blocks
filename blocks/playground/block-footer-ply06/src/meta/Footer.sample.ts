@@ -11,15 +11,8 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            menu: [
-                { name: 'About', link: '' },
-                { name: 'Projects', link: '' },
-                { name: 'Services', link: '' },
-                { name: 'Plans & Pricing', link: '' },
-                { name: 'Tools & Tips', link: '' },
-                { name: 'Contact', link: '' },
-            ],
             linksDatasetId: 'social',
+            footerMenuDatasetId: 'footerMenus',
             menuHeaders: ['MENU', 'SOCIALS'],
         },
     },

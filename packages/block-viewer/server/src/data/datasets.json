@@ -622,16 +622,99 @@
     },
     "aboutServices": {
         "1": {
+            "id": "1",
             "title": "Services",
             "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
         },
         "2": {
+            "id": "2",
             "title": "Projects",
             "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
         },
         "3": {
+            "id": "3",
             "title": "Clients",
             "description": "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you."
+        }
+    },
+    "footerMenus": {
+        "1": { "id": "1", "name": "About", "link": "" },
+        "2": { "id": "2", "name": "Projects", "link": "" },
+        "3": { "id": "3", "name": "Services", "link": "" },
+        "4": { "id": "4", "name": "Plans & Pricing", "link": "" },
+        "5": { "id": "5", "name": "Tools & Tips", "link": "" },
+        "6": { "id": "6", "name": "Contact", "link": "" }
+    },
+    "headerMenus": {
+        "1": {
+            "id": "1",
+            "href": "#About",
+            "title": "About"
+        },
+        "2": {
+            "id": "2",
+            "href": "#Projects",
+            "title": "Projects"
+        },
+        "3": {
+            "id": "3",
+            "href": "#Services",
+            "title": "Services"
+        },
+        "4": {
+            "id": "4",
+            "href": "#Plans & Pricing",
+            "title": "Plans & Pricing"
+        },
+        "5": {
+            "id": "5",
+            "href": "#Tools & Tips",
+            "title": "Tools & Tips"
+        },
+        "6": {
+            "id": "6",
+            "href": "#Contact",
+            "title": "Contact"
+        }
+    },
+    "contactForms": {
+        "inputBoxFirstRow": [
+            { "title": "First Name", "isRequired": false },
+            { "title": "Last Name", "isRequired": false }
+        ],
+        "inputBoxSecondRow": [
+            { "title": "Email", "isRequired": true },
+            { "title": "Subject", "isRequired": false }
+        ]
+    },
+    "testimonials": {
+        "1": {
+            "jobTitle": "CEO",
+            "id": "1",
+            "description": "Iusto aut dolores repudiandae illo iste eum id corporis ut numquam vel voluptatem porro ad totam voluptatem odio et dolorem rerum asperiores et omnis et minima autem quidem laudantium fugiat reiciendis esse et quia tempora vitae et corporis.",
+            "name": "William Baker",
+            "company": "AirBnb"
+        },
+        "2": {
+            "id": "2",
+            "company": "AirBnb",
+            "jobTitle": "Head of Photography",
+            "name": "Carol McMillan",
+            "description": "Nemo reprehenderit rem laborum et veniam voluptas voluptas et in est adipisci ut consequatur doloremque eum rem id voluptatem et ipsam dolores blanditiis hic officia perferendis sunt eaque in quas."
+        },
+        "3": {
+            "description": "Molestiae doloribus commodi laudantium totam magni impedit ullam aut voluptatem occaecati ut ratione accusantium impedit sit porro ipsa non impedit ut voluptatibus quis aspernatur voluptatibus necessitatibus veritatis laborum odio numquam ut voluptatem ipsa distinctio possimus.",
+            "jobTitle": "Photographer Team Lead",
+            "id": "3",
+            "company": "Google",
+            "name": "Jeffery Newman"
+        },
+        "4": {
+            "jobTitle": "CEO",
+            "description": "Sint vitae qui sint architecto enim consequatur assumenda aspernatur quaerat voluptatum unde quas et dicta repellendus adipisci dolore a quia iure quo quo commodi iste ut quidem nisi unde ut sed deserunt laudantium culpa numquam autem omnis magnam dolores quas.",
+            "name": "Manuel Lopez",
+            "company": "FlatRent Inc.",
+            "id": "4"
         }
     }
 }
