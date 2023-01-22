@@ -46,6 +46,7 @@ export default defineConfig({
 			'@gdi/block-contact-pl10': `${cwd}/blocks/playground/block-contact-pl10/src`,
 			'@gdi/block-counter-ply08': `${cwd}/blocks/playground/block-counter-ply08/src`,
 			'@gdi/block-cta-ply05': `${cwd}/blocks/playground/block-cta-ply05/src`,
+			'@gdi/block-footer-pl011': `${cwd}/blocks/playground/block-footer-pl011/src`,
 			'@gdi/block-hero-ply02': `${cwd}/blocks/playground/block-hero-ply02/src`,
 			'@gdi/block-quotes-ply04': `${cwd}/blocks/playground/block-quotes-ply04/src`,
 			'@gdi/block-testimonials-ply06': `${cwd}/blocks/playground/block-testimonials-ply06/src`,

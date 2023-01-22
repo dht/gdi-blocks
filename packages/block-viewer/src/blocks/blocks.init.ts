@@ -21,6 +21,7 @@ import { block as block_blog_ply09 } from '@gdi/block-blog-ply09';
 import { block as block_contact_pl10 } from '@gdi/block-contact-pl10';
 import { block as block_counter_ply08 } from '@gdi/block-counter-ply08';
 import { block as block_cta_ply05 } from '@gdi/block-cta-ply05';
+import { block as block_footer_pl011 } from '@gdi/block-footer-pl011';
 import { block as block_hero_ply02 } from '@gdi/block-hero-ply02';
 import { block as block_quotes_ply04 } from '@gdi/block-quotes-ply04';
 import { block as block_testimonials_ply06 } from '@gdi/block-testimonials-ply06';
@@ -63,6 +64,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_contact_pl10.id]: block_contact_pl10,
 			[block_counter_ply08.id]: block_counter_ply08,
 			[block_cta_ply05.id]: block_cta_ply05,
+			[block_footer_pl011.id]: block_footer_pl011,
 			[block_hero_ply02.id]: block_hero_ply02,
 			[block_quotes_ply04.id]: block_quotes_ply04,
 			[block_testimonials_ply06.id]: block_testimonials_ply06,

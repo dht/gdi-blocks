@@ -94,6 +94,9 @@
             "@gdi/block-cta-ply05": [
                 "blocks/playground/block-cta-ply05"
             ],
+            "@gdi/block-footer-pl011": [
+                "blocks/playground/block-footer-pl011"
+            ],
             "@gdi/block-hero-ply02": [
                 "blocks/playground/block-hero-ply02"
             ],
