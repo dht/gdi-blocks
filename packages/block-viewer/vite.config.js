@@ -50,6 +50,7 @@ export default defineConfig({
 			'@gdi/block-hero-ply02': `${cwd}/blocks/playground/block-hero-ply02/src`,
 			'@gdi/block-quotes-ply04': `${cwd}/blocks/playground/block-quotes-ply04/src`,
 			'@gdi/block-testimonials-ply06': `${cwd}/blocks/playground/block-testimonials-ply06/src`,
+			'@gdi/block-topnav-pl012': `${cwd}/blocks/playground/block-topnav-pl012/src`,
 			'@gdi/block-hero-plylx': `${cwd}/blocks/reference/block-hero-plylx/src`,
 			'@gdi/block-top-41j4k': `${cwd}/blocks/reference/block-top-41j4k/src`,
 			'@gdi/block-grid-st001': `${cwd}/blocks/stack/block-grid-st001/src`,

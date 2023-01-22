@@ -22,16 +22,17 @@
         "twins-aou31": 4
     },
     "playground": {
-        "about-ply03": 1,
-        "apps-ply07": 5,
-        "blog-ply09": 7,
-        "contact-pl10": 8,
-        "counter-ply08": 6,
-        "cta-ply05": 3,
-        "footer-pl011": 9,
-        "hero-ply02": 0,
-        "quotes-ply04": 2,
-        "testimonials-ply06": 4
+        "about-ply03": 2,
+        "apps-ply07": 6,
+        "blog-ply09": 8,
+        "contact-pl10": 9,
+        "counter-ply08": 7,
+        "cta-ply05": 4,
+        "footer-pl011": 10,
+        "hero-ply02": 1,
+        "quotes-ply04": 3,
+        "testimonials-ply06": 5,
+        "topnav-pl012": 0
     },
     "reference": {
         "hero-plylx": 1,

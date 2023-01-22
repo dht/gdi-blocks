@@ -106,6 +106,9 @@
             "@gdi/block-testimonials-ply06": [
                 "blocks/playground/block-testimonials-ply06"
             ],
+            "@gdi/block-topnav-pl012": [
+                "blocks/playground/block-topnav-pl012"
+            ],
             "@gdi/block-hero-plylx": [
                 "blocks/reference/block-hero-plylx"
             ],

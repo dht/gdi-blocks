@@ -24,6 +24,8 @@ export function Top(props: TopProps) {
     const { logoUrl } = extra;
     const { menuItems, ga } = useContext(SiteContext);
 
+    console.log(menuItems)
+
     const onClick = (componentName: string) => (item: Json) => {
         ga('navigate', {
             category: 'menu',

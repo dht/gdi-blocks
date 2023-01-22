@@ -25,6 +25,7 @@ import { block as block_footer_pl011 } from '@gdi/block-footer-pl011';
 import { block as block_hero_ply02 } from '@gdi/block-hero-ply02';
 import { block as block_quotes_ply04 } from '@gdi/block-quotes-ply04';
 import { block as block_testimonials_ply06 } from '@gdi/block-testimonials-ply06';
+import { block as block_topnav_pl012 } from '@gdi/block-topnav-pl012';
 import { block as block_hero_plylx } from '@gdi/block-hero-plylx';
 import { block as block_top_41j4k } from '@gdi/block-top-41j4k';
 import { block as block_grid_st001 } from '@gdi/block-grid-st001';
@@ -68,6 +69,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_hero_ply02.id]: block_hero_ply02,
 			[block_quotes_ply04.id]: block_quotes_ply04,
 			[block_testimonials_ply06.id]: block_testimonials_ply06,
+			[block_topnav_pl012.id]: block_topnav_pl012,
 			[block_hero_plylx.id]: block_hero_plylx,
 			[block_top_41j4k.id]: block_top_41j4k,
 			[block_grid_st001.id]: block_grid_st001,

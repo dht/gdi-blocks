@@ -43,7 +43,7 @@ export function Hero(props: HeroProps) {
 
     return (
         <>
-             <Wrapper>
+            <Wrapper>
                 <Container className='container'>
                     <Row className='row'>
                         <Column className='col-lg-6 p-40px '>
@@ -51,25 +51,26 @@ export function Hero(props: HeroProps) {
                             <P> {description} </P>
                             <HeroButton> {buttonText} </HeroButton>
                             <ClientIcon className='row mt-5'>
-                        {clientDataSet.map((clientImage:Json)=>{
-                            return(
-                                <>
-                                <ClientIcon className="col-lg-3 col-3 ">
-                                <Client src={clientImage.imgUrl} />
-                                </ClientIcon>
-                                </>
-                            )
-                        })} 
-                        </ClientIcon>
+                                {clientDataSet.map((clientImage: Json) => {
+                                    return (
+                                        <>
+                                            <ClientIcon className='col-lg-3 col-3 '>
+                                                <Client
+                                                    src={clientImage.imgUrl}
+                                                />
+                                            </ClientIcon>
+                                        </>
+                                    );
+                                })}
+                            </ClientIcon>
                         </Column>
 
-                        <Column className='col-lg-6' >
-                        <HeroImg extra={extra}></HeroImg>
-                        
+                        <Column className='col-lg-6'>
+                            <HeroImg extra={extra}></HeroImg>
                         </Column>
                     </Row>
                 </Container>
-             </Wrapper>
+            </Wrapper>
         </>
     );
 }

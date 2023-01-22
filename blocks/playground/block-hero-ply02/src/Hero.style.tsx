@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { HeroExtra } from './Hero';
-import { Grid, mobile, css, device } from '@gdi/engine';
+import { mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     background-color: white;
     background-size: cover;
     height: 84vh;
     color: #000;
+    padding-top: 100px;
 
     ${device(
         'tablet'
@@ -18,54 +19,33 @@ export const Wrapper = styled.div`
     ${mobile(
         css`
             height: 110vh;
+            padding-top: 60px;
         `
     )}
 `;
 
-
-
-
-
 export const HeroButton = styled.button`
     margin-top: 30px;
-    padding: 15px 20px;
+    padding: 20px 44px;
     border-radius: 30px;
-    font-size: 15px;
+    font-size: 17px;
     color: white;
     border: none;
     font-weight: bold;
     cursor: pointer;
     background-color: #5c6ac4;
-`;
 
-export const H1 = styled.h3`
-    font-size: 60px;
-    padding: 0;
-    vertical-align: baseline;
-    color: black;
-    line-height: 60px;
-    font-family: 'Circular', sans-serif;
-    word-spacing: 5px;
-    
-    ${device(
-        '720p',
-            css`
-                font-size: 45px;
-            `
-    )}
-    ${device(
-        'tablet',
-            css`
-                font-size: 45px;
-            `
-    )}
     ${mobile(
         css`
-            font-size: 35px;
-            line-height: 35px;
+            padding: 15px 20px;
+            font-size: 15px;
+            margin-top: 20px;
         `
     )}
 `;
+
+
+
 
 export const P = styled.p`
     font-weight: normal;
@@ -74,7 +54,7 @@ export const P = styled.p`
 
     ${mobile(
         css`
-            font-size: 17px;
+            font-size: 18px;
             padding-left: 12px;
             padding-right: 12px;
         `
@@ -168,3 +148,36 @@ export const Row = styled.div`
 export const Column = styled.div``;
 
 
+
+export const H1 = styled.h1`
+    font-size: 60px;
+    padding: 0;
+    vertical-align: baseline;
+    color: black;
+    line-height: 60px;
+    font-family: 'Circular',sans-serif;
+    word-spacing: 5px;
+    font-weight:400;
+    line-height:72px;
+    font-style:normal
+    
+    ${device(
+        '720p',
+            css`
+                font-size: 45px;
+            `
+    )}
+    ${device(
+        'tablet',
+            css`
+                font-size: 45px;
+            `
+    )}
+    ${mobile(
+        css`
+            font-size: 35px;
+            line-height: 35px;
+            padding-left: 10px;
+        `
+    )}
+`;
