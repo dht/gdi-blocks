@@ -10,37 +10,37 @@ import {
     ContactImage,
     EmailBox,
     SubmitButton, 
-} from './Contact.style';
+} from './Footer.style';
 
 export const id = 'com.usegdi.blocks.footer-pl011';
 
-export type ContactProps = {
-    strings: ContactStrings;
-    colors: ContactColors;
-    extra: ContactExtra;
+export type FooterProps = {
+    strings: FooterStrings;
+    colors: FooterColors;
+    extra: FooterExtra;
 };
 
-export type ContactStrings = {
+export type FooterStrings = {
     slogan?: string;
     header?: string;
     placeholder?:string;
     buttonText?:string;
 };
 
-export type ContactColors = {};
+export type FooterColors = {};
 
-export type ContactExtra = {
+export type FooterExtra = {
     contactImageUrl:string;
 };
 
-export function Contact(props: ContactProps) {
+export function Footer(props: FooterProps) {
     const { extra , strings  } = props;
     const { contactImageUrl  } = extra;
     const { slogan, header , placeholder , buttonText } = strings;
 
     return (
         <>
-            <Wrapper id='contact' >
+            <Wrapper>
                 <ContainerFluid className=' p-0 container-fluid' >
                         <Row className='row'>
                             <Column className='col-lg-12'>
@@ -64,4 +64,4 @@ export function Contact(props: ContactProps) {
         </>
     );
 }
-export default Contact;
+export default Footer;

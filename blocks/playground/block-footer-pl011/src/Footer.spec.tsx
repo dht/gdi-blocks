@@ -1,4 +1,4 @@
-import { TestimonialsDriver } from './Contact.driver';
+import { TestimonialsDriver } from './Footer.driver';
 import Chance from 'chance';
 
 const chance = new Chance();
@@ -12,7 +12,6 @@ describe('Hero', () => {
 
     it('should render button', () => {
         const label = chance.word();
-
         const element = driver.given
             .props({
                 title: label,

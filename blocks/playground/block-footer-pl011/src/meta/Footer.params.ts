@@ -1,4 +1,4 @@
-import { id } from '../Contact';
+import { id } from '../Footer';
 
 export const params: IWidgetParams = {
     id,

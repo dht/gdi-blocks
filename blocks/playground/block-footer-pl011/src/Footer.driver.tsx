@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { SiteContext } from '@gdi/engine';
 import { render, fireEvent } from '@testing-library/react';
-import { Contact, ContactProps } from './Contact';
+import { Contact, ContactProps } from './Footer';
 import { BaseComponentDriver } from 'testing-base';
 
 export class TestimonialsDriver extends BaseComponentDriver {

@@ -1,8 +1,8 @@
-import { Contact } from './Contact'
-import { params } from './meta/Contact.params';
-import { sampleData } from './meta/Contact.sample';
-import { dimensions } from './meta/Contact.dimensions';
-import { screenshots } from './meta/Contact.screenshots';
+import { Footer } from './Footer'
+import { params } from './meta/Footer.params';
+import { sampleData } from './meta/Footer.sample';
+import { dimensions } from './meta/Footer.dimensions';
+import { screenshots } from './meta/Footer.screenshots';
 
 export const block: IBlock = {
     id: 'com.usegdi.blocks.footer-pl011',
@@ -16,5 +16,5 @@ export const block: IBlock = {
     dataTags: [],
     widgetType: 'about',
     isBlock: true,
-    component: Contact,
+    component: Footer,
 };
