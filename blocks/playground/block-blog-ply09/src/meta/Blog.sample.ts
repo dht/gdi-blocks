@@ -2,8 +2,8 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            slogan: 'See what people have to say about our product',
-            header: 'But don’t take our work for it',
+            slogan: "See what we're up to on a rainy night",
+            header: 'Latest reads from blog',
         },
         colors: {},
         extra: {

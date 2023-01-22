@@ -9,6 +9,10 @@ import {
     SubHeader,
     Wrapper,
     ContactBack,
+    ContactImage,
+    EmailBox,
+    SubmitButton,
+    EmailContainer,
    
     
 } from './Contact.style';
@@ -19,39 +23,50 @@ export type ContactProps = {
     strings: ContactStrings;
     colors: ContactColors;
     extra: ContactExtra;
+
+
 };
 
 export type ContactStrings = {
     slogan?: string;
-    header: string;
+    header?: string;
+    placeholder?:string;
+    buttonText?:string;
 };
 
 export type ContactColors = {};
 
 export type ContactExtra = {
-    BlogDataSet: Json;
+    contactImageUrl:string;
 };
 
 export function Contact(props: ContactProps) {
-    const { extra } = props;
-    const { BlogDataSet } = extra;
+    const { extra , strings  } = props;
+    const { contactImageUrl  } = extra;
+    const { slogan, header , placeholder , buttonText } = strings;
+
 
     return (
         <>
-            <Wrapper>
+            <Wrapper id='contact' >
                 <ContainerFluid className=' p-0 container-fluid' >
                         <Row className='row'>
                             <Column className='col-lg-12'>
                                 <ContactBack>
 
-                                    <div className="row">
-                                        <div className="col-lg-6 ">
-                                            <img src="https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png" alt="" />
-                                        </div>
-                                        <div className="col-lg-6">
-                                            djdj
-                                        </div>
-                                    </div>
+                                    <Row className="row">
+                                        <Column className="col-lg-6 text-center ">
+                                            <ContactImage src={contactImageUrl} alt="" />
+                                        </Column>
+                                        <Column className="col-lg-6">
+                                           <Header> {header} </Header>
+                                           <SubHeader> {slogan} </SubHeader>
+                                            <EmailContainer>
+                                            <EmailBox type="text" placeholder={placeholder} />
+                                            <SubmitButton> {buttonText} </SubmitButton>
+                                            </EmailContainer>
+                                        </Column>
+                                    </Row>
                                 </ContactBack>
                             </Column>
                         </Row>

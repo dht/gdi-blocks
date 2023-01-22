@@ -37,8 +37,9 @@ export type BlogExtra = {
 };
 
 export function Blog(props: BlogProps) {
-    const { extra } = props;
+    const { extra,strings } = props;
     const { BlogDataSet } = extra;
+    const { slogan, header } = strings;
 
     return (
         <>
@@ -46,8 +47,8 @@ export function Blog(props: BlogProps) {
                 <Container className='container' >
                     <Row className='row'>
                         <Column className='text-center col-lg-12'> 
-                        <Header>Latest reads from blog</Header>
-                         <SubHeader>See what we're up to on a rainy night</SubHeader> 
+                        <Header> {header} </Header>
+                         <SubHeader> {slogan} </SubHeader> 
                          </Column>
                     </Row>
                     <Row className='row'>

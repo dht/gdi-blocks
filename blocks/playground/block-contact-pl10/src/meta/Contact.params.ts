@@ -6,10 +6,12 @@ export const params: IWidgetParams = {
         strings: {
             slogan: { fieldType: 'text', order: 0 },
             header: { fieldType: 'text', isRequired: true, order: 1 },
+            buttonText :{fieldType:'text',order:2},
+            placeholder : {fieldType:'text',order:3},
         },
         colors: {},
         extra: {
-            BlogDataSet : {fieldType:'dataset',order:2}
+            contactImageUrl : {fieldType:'text',order:2}
         },
     },
 };
