@@ -4,12 +4,19 @@ import {
     Header,
     Row,
     Column,
-    SubHeader,
     Wrapper,
-    ContactBack,
-    ContactImage,
-    EmailBox,
-    SubmitButton, 
+    FooterBack,
+    FooterText,
+    FooterButton,
+    DividerLine,
+    FooterList,
+    FooterListItems,
+    FooterIcon,
+    Address,
+    FooterListHeading,
+    FooterEmail,
+    SendButton,
+    LighterText, 
 } from './Footer.style';
 
 export const id = 'com.usegdi.blocks.footer-pl011';
@@ -21,44 +28,124 @@ export type FooterProps = {
 };
 
 export type FooterStrings = {
-    slogan?: string;
-    header?: string;
+    FooterQuote?: string;
+    footerText?: string;
     placeholder?:string;
     buttonText?:string;
+    reservedText?:string;
+    sendButtonIcon:string;
 };
 
 export type FooterColors = {};
 
 export type FooterExtra = {
-    contactImageUrl:string;
+    footerDataset:Json;
 };
 
 export function Footer(props: FooterProps) {
     const { extra , strings  } = props;
-    const { contactImageUrl  } = extra;
-    const { slogan, header , placeholder , buttonText } = strings;
+    const {  footerDataset } = extra;
+    const { FooterQuote, footerText , placeholder , buttonText ,reservedText ,sendButtonIcon } = strings;
+   
 
     return (
         <>
             <Wrapper>
-                <ContainerFluid className=' p-0 container-fluid' >
+                <ContainerFluid className=' p-0 container-fluid'>
                         <Row className='row'>
                             <Column className='col-lg-12'>
-                                <ContactBack>
-                                    <Row className="row">
-                                        <Column className="col-lg-6 text-center ">
-                                            <ContactImage src={contactImageUrl} alt="" />
+                                <FooterBack>
+                                    <Row className='row'>
+                                        <Column className='col-lg-6 padding-left-sm-30px footer-text-center'>
+                                            <FooterText> {FooterQuote}</FooterText>
                                         </Column>
-                                        <Column className="col-lg-6">
-                                           <Header> {header} </Header>
-                                           <SubHeader> {slogan} </SubHeader>
-                                            <EmailBox type="text" placeholder={placeholder} />
-                                            <SubmitButton> {buttonText} </SubmitButton>
+                                        <Column className='col-lg-6  text-align-right'>
+                                            <FooterButton> {buttonText} </FooterButton>
                                         </Column>
-                                    </Row>
-                                </ContactBack>
+                                    </Row> 
+                                </FooterBack>
                             </Column>
                         </Row>
+                        <Row className='row'>
+                            <Column className='col-lg-12'>
+                                <DividerLine></DividerLine>
+                            </Column>
+                        </Row>
+                        <Row className='row'>
+                            <Column className='col-lg-12'>
+                                <FooterBack>
+                                    <Row className='row text-light'>
+                                        {footerDataset.headings.map((heading:any,index:number)=>{
+                                            return(
+                                                <>
+                                                  <Column className='col-lg-3 col-md-3'>
+                                        
+                                                    <FooterList>
+                                                    <FooterListItems>  <FooterListHeading>{heading} </FooterListHeading> </FooterListItems>
+                                                        {heading === footerDataset.headings[0] &&footerDataset.Resources.map((resources:string[])=>{
+                                                            return(
+                                                                <>
+                                                                     <FooterListItems> {resources} </FooterListItems>
+                                                                </>
+                                                            )
+                                                        })}
+
+                                                        {heading === footerDataset.headings[1] &&footerDataset.Company.map((company:string[])=>{
+                                                            return(
+                                                                <>
+                                                                     <FooterListItems> {company} </FooterListItems>
+                                                                </>
+                                                            )
+                                                        })}
+
+                                                         {heading === footerDataset.headings[2] &&footerDataset.ContactDetails.data.map((address:any)=>{
+                                                            return(
+                                                                <>
+                                                                     <FooterListItems className='d-flex'><FooterIcon className="material-symbols-outlined"> {address.icon} </FooterIcon> <Address>{address.data}</Address>  </FooterListItems>
+                                                                    
+                                                                </>
+                                                            )
+                                                        })}
+                                                    </FooterList>
+                                                  </Column>
+                                                </>
+                                            )
+                                        })}
+                                        
+
+                               <Column className='col-lg-3 pt-4'>
+                                        <FooterList>
+                                        <FooterListHeading> {footerText} </FooterListHeading>
+                                        <FooterListItems>
+                                        <FooterEmail placeholder={placeholder} ></FooterEmail>
+                                        <SendButton className='material-symbols-outlined'> {sendButtonIcon} </SendButton>
+                                        </FooterListItems>
+                                        </FooterList>
+                                        
+                               </Column>
+                                        
+                                    </Row> 
+                                </FooterBack>
+                            </Column>
+                        </Row>  
+
+                         <Row className='row'>
+                            <Column className='col-lg-12'>
+                                <DividerLine></DividerLine>
+                            </Column>
+                        </Row> 
+                        <Row className='row'>
+                            <Column className='col-lg-12'>
+                                <FooterBack>
+                                    <Row className='row'>
+                                        <Column className='col-lg-12 pb-5 text-center'>
+                                            <LighterText className='padding-left-sm-30px' > {reservedText}</LighterText>
+                                        </Column>
+                                    </Row> 
+                                </FooterBack>
+                            </Column>
+                        </Row>
+
                 </ContainerFluid>
           </Wrapper>
         </>

@@ -2,14 +2,46 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            slogan: 'News and updates of our product, people & more',
+            FooterQuote: 'Ready to revolutionize your website?',
             header: 'Get updates at your inbox, Whenever you want it.',
-            buttonText :"Subscribe Newsletter",
-            placeholder:"Email Address"
+            buttonText :"Discover More",
+            placeholder:"Enter Email Address",
+            footerText : "Sign up for Newsletter",
+            reservedText:"© Built with pride and caffeine. All rights reserved.",
+            sendButtonIcon:"send"
+
         },
         colors: {},
         extra: {
-            contactImageUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png"
+            footerDataset : 
+                {
+                    "Resources":[
+                            "Home",
+                            "About",
+                            "Blog",
+                            "Contact"
+                        ],
+                    "Company" : [
+                        "Product",
+                        "FAQ",
+                        "Privacy Policy",
+                        "Terms & Condition"
+
+                    ],
+                    "ContactDetails":{
+                        "data":[
+                            {icon:"location_on",data:"221B Baker Street"},
+                            {icon:"call",data:"(372) 587-2335"},
+                            {icon:"schedule",data:"11 a.m - 12 p.m"}
+                        ]
+                    },
+                    "headings":[
+                        "Resources",
+                        "Company",
+                        "Contact Details"
+                    ]
+                }
+            
         },
     },
 };
