@@ -83,7 +83,7 @@ export const GridContainer = styled(Grid.Container)`
     ${device(
         'tablet',
         css`
-             grid-template-columns: repeat(2, auto);
+             /* grid-template-columns: repeat(2, auto); */
              padding: 0 15px;
              column-gap: 10px;
         `
@@ -103,7 +103,6 @@ export const ParentRenderDiv = styled.div`
     flex-direction: row;
     column-gap: 15px;
     color: #888;
-    /* padding: 60px 0 0 0; */
 
     &:nth-child(n + 4) {
         padding: 60px 0 0 0;
@@ -114,9 +113,8 @@ export const ParentRenderDiv = styled.div`
     ${device(
         'tablet',
         css`
-             /* width: ${(props) => props.theme.vw(30)}; */
-             /* flex-direction: column; */
-             &:nth-child(n + 3) {
+             flex-direction: column;
+             &:nth-child(n + 4) {
         padding: 60px 0 0 0;
     } 
         `

@@ -8,10 +8,11 @@ import {
     Close,
 } from './TopMenuMobile.style';
 import classnames from 'classnames';
-
+import {IMenuMobile } from '../TopMenu'
 export type TopMenuProps = {
     items: IMenuItem[];
     onClick: (item: IMenuItem) => void;
+    mobileMenu: IMenuMobile;
 };
 
 type IMenuItem = {
@@ -20,7 +21,7 @@ type IMenuItem = {
 };
 
 export function TopMenu(props: TopMenuProps) {
-    const { items } = props;
+    const { items , mobileMenu} = props;
     const [showOverlay, setShowOverlay] = useState<boolean>();
 
     useEffect(() => {
@@ -43,12 +44,13 @@ export function TopMenu(props: TopMenuProps) {
         });
 
         return (
-            <MenuItem key={href}>
+            <MenuItem key={href} mobileMenus={mobileMenu} >
                 <MenuItemLink
                     key={item.title + String(index)}
                     className={className}
                     href={href}
-                    onClick={() => props.onClick(item)}
+                    onClick={() => props.onClick(item) } mobileMenus={mobileMenu}
+                   
                 >
                     {title}
                 </MenuItemLink>
@@ -62,16 +64,16 @@ export function TopMenu(props: TopMenuProps) {
 
     function renderOverlay() {
         const className = classnames('animate__animated', {
-            animate__fadeInUp: showOverlay,
-            animate__fadeOutDown: !showOverlay,
+            animate__fadeInLeft: showOverlay,
+            animate__fadeOutLeft: !showOverlay,
             hideOverlay: typeof showOverlay === 'undefined',
             disableOverlay: !showOverlay,
         });
 
         return (
-            <Overlay className={className}>
-                <Close onClick={() => setShowOverlay(false)}>
-                    <i className='material-icons'>close</i>
+            <Overlay className={className} mobileMenus={mobileMenu}>
+                <Close onClick={() => setShowOverlay(false)} mobileMenus={mobileMenu}>
+                    <i className='material-icons'> {mobileMenu.isPostionChanged ? 'arrow_back' : 'close'}</i>
                 </Close>
                 {renderItems()}
             </Overlay>
@@ -81,8 +83,8 @@ export function TopMenu(props: TopMenuProps) {
     function renderMenu() {}
 
     return (
-        <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper'>
-            <Button onClick={() => setShowOverlay(true)}>
+        <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper' mobileMenus={mobileMenu}>
+            <Button onClick={() => setShowOverlay(true)} mobileMenus={mobileMenu}> 
                 <i className='material-icons'>menu</i>
             </Button>
             {renderOverlay()}

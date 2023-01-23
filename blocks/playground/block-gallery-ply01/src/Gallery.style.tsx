@@ -3,9 +3,8 @@ import { GalleryExtra } from './Gallery';
 import { Grid, mobile, device, css } from '@gdi/engine';
 
 export const Wrapper = styled.div`
-   font-family: 'Ubuntu', sans-serif;
-    /* height: ${(props) => props.theme.vh(63)}; */
-
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     .top {
         top: 225px;
     }
@@ -13,39 +12,27 @@ export const Wrapper = styled.div`
     ${device(
         '720p',
         css`
-        .top {
-                top: 185px;
+            .top {
+                top: 75px;
             }
-
-           /* height: ${(props) => props.theme.vh(100)};
-            .carousel-inner {
-                /* transform: scale(2.2); */
-               // padding-top: 65px;
-            } */
         `
     )}
     ${device(
         'tablet',
         css`
-            /* .top {
-                top: 0px;
+            .top {
+                top: 60px;
             }
-
-            height: ${(props) => props.theme.vh(30)};
-            .carousel-inner {
-                transform: scale(2.2);
-                padding-top: 65px;
-            } */
         `
     )}
     ${mobile(
         css`
-            /* height: ${(props) => props.theme.vh(63)};
-            .carousel-inner {
-                width: 100%;
-                transform: scale(4.1);
-                padding-top: 65px;
-            } */
+
+        padding-top:  40px;
+            .top {
+                top: 10px;
+            }
+            
         `
     )}
 `;
@@ -57,15 +44,15 @@ export const Image = styled.img``;
 export const Span = styled.span``;
 
 export const Button = styled.button``;
+
 export const Text = styled.span`
     font-size: 45px;
     color: white;
     text-align: center;
     margin: 0;
-    ${device(
-        '720p',
+    ${mobile(
         css`
-            /* font-size: 25px; */
+            font-size: 30px;
         `
     )}
 `;
@@ -82,11 +69,11 @@ export const IconPerson = styled.div`
     top: 120px;
     z-index: 999;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform 0.3s;
     .iconFont {
         font-size: 40px;
         &:hover {
-            transform: scale(1.1); 
+            transform: scale(1.1);
         }
     }
-`
+`;

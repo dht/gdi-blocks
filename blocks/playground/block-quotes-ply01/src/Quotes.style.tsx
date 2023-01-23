@@ -10,7 +10,6 @@ export const Wrapper = styled.div`
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
     align-items: center;
-    /* padding: ${(props) => props.theme.vh(20)} 0; */
     display: flex;
     color: #888;
 `;
@@ -85,7 +84,7 @@ export const Quote = styled.div`
 `;
 
 export const QuoteContent = styled.div`
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -126,6 +125,12 @@ export const QuotePersonImage = styled.div<{ imageUrl: string }>`
     height: 151px;
     border-radius: 50%;
     margin-bottom: 20px;
+
+    ${mobile(css`
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    `)}
 `;
 
 export const QuotePersonName = styled.div`

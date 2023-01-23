@@ -4,8 +4,6 @@ export const Wrapper = styled.div`
     flex: 1;
     background-color: white;
     color: #334;
-    position: fixed;
-    z-index: 999;
 `;
 
 export const H1 = styled.h1`

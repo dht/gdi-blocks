@@ -30,5 +30,9 @@
     "description": "<p align=\"center\">   <br />   <a href=\"https://usegdi.com/\" target=\"blank\"><img src=\"https://raw.githubusercontent.com/dht/gdi/main/clients/gdi-admin/public/Logo.webp\" width=\"160\" alt=\"gdi Logo\" /></a> </p> <p align=\"center\">   An open-source & extendable content management system (CMS) written in ReactJS, hosted on <a href=\"https://firebase.google.com\" target=\"_blank\">Firebase</a> </p> <p align=\"center\">   <a href=\"https://usegdi.com/admin/pages/home?demo=on\" target=\"_blank\">Demo</a>&nbsp;//&nbsp;   <a href=\"https://usegdi.com/docs/\" target=\"_blank\">Documentation</a>&nbsp;//&nbsp;   <a href=\"https://usegdi.com\" target=\"_blank\">Homepage</a> </p>",
     "main": ".prettierrc.js",
     "keywords": [],
-    "author": ""
+    "author": "",
+    "dependencies": {
+        "esbuild": "^0.17.3",
+        "global": "^4.4.0"
+    }
 }

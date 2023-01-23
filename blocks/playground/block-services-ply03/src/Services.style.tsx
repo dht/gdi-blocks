@@ -10,14 +10,12 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
     align-items: center;
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
-    /* height: ${(props) => props.theme.vh(88)}; */
-    padding: 69px 0 ;
-    ${mobile(
+    padding: 69px 0;
+
+    ${device(
+        'tablet',
         css`
-            /* height: auto;
-            padding-top: 50px;
-            padding-bottom: 50px;
-            padding-left: 5px; */
+           padding-left: 14px;
         `
     )}
 `;
@@ -31,16 +29,11 @@ export const Container = styled(Grid.Container)`
     flex: 1;
 
     ${device(
-        '720p',
+        'tablet',
         css`
-            /* padding-left: 130px; */
-        `
-    )}
-
-${device(
-        'HD',
-        css`
-            /* padding-left: 40px; */
+            justify-content: flex-start;
+            align-items: flex-start;
+            column-gap: 22px;
         `
     )}
 
@@ -61,6 +54,14 @@ export const H1 = styled.h1`
     color: #333;
     font-weight: 300;
     text-align: center;
+
+    ${device(
+        'tablet',
+        css`
+            font-size: 32px;
+        `
+    )}
+
     ${mobile(
         css`
             font-size: 25px;
@@ -93,9 +94,8 @@ export const SkillAncher = styled.span`
     word-wrap: break-all;
     font-weight: 300;
     color: #888;
-    /* margin-top: 12px; */
     text-decoration: none;
-    /* margin-bottom: 30px; */
+
     cursor: pointer;
     ${device(
         '720p',
@@ -134,17 +134,9 @@ export const GridItem = styled(Grid.Container)`
     justify-content: center;
     flex: 1;
     padding-top: 12px;
-    ${device(
-        '720p',
-        css`
-            /* width: 30% !important; */
-        `
-    )}
 
     ${mobile(
         css`
-            /* padding-left: 12px;
-            padding-right: 12px; */
             width: 100% !important;
         `
     )}
@@ -156,6 +148,13 @@ export const Infortmation = styled.div`
     justify-content: flex-start;
     align-items: flex-start;
     width: ${(props) => props.theme.vw(38)};
+
+    ${device(
+        'tablet',
+        css`
+              width: ${(props) => props.theme.vw(47)};
+        `
+    )}
 
     ${mobile(
         css`
@@ -178,18 +177,24 @@ export const ReadIcon = styled.div`
         color: #1d9d73;
         background-color: #f6f8fa;
         border-radius: 50%;
-        /* border: 1px solid grey; */
         padding: 15px;
     }
     &:hover {
         .check {
-        color: #fff;
-        background-color: #1d9d73;
+            color: #fff;
+            background-color: #1d9d73;
         }
-      }
+    }
 `;
 
 export const Image = styled.img`
+    ${device(
+        'tablet',
+        css`
+            height: 405px;
+            width: 330px;
+        `
+    )}
     ${mobile(
         css`
             width: ${(props) => props.theme.vw(90)}; ;
@@ -197,5 +202,4 @@ export const Image = styled.img`
     )}
 `;
 
-export const Figure = styled.div``
- 
+export const Figure = styled.div``;

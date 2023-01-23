@@ -10,16 +10,29 @@ export type TopMenuProps = {
     onClick: (item: IMenuItem) => void;
     color?: string;
     colorsFont: IMenuItemColorFont;
+    mobileMenu: IMenuMobile;
 };
 
 export type IMenuItemColorFont = {
-    isColor: boolean;
-    backgroundColor: string;
-    textColor: string;
-    fontFamily: string;
-
+    isColor?: boolean;
+    backgroundColor?: string;
+    textColor?: string;
+    fontFamily?: string;
+    fontSize?: string;
 };
    
+
+export type IMenuMobile ={
+    isPostionChanged?: boolean;
+   position?: string;
+   zIndex?: number;
+   float?: string;
+   backgroundColor?: string;
+   color?: string;
+   fontFamily?: string;
+   fontSize?: string;
+};
+
 
 
 export type IMenuItem = {
@@ -49,13 +62,13 @@ export function TopMenu(props: TopMenuProps) {
         });
 
         return (
-            <MenuItem key={href} color={color}>
+            <MenuItem key={href} colorFont={colorsFont}>
                 <MenuItemLink
                     key={item.title + String(index)}
                     className={className}
                     href={href}
                     onClick={() => props.onClick(item)}
-                    color={color}
+                    colorFont={colorsFont}
                 >
                     {title}
                 </MenuItemLink>

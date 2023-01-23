@@ -4,19 +4,15 @@ import { Grid, mobile, device, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #ffffff;
-    /* height: ${(props) => props.theme.vh(60)}; */
     font-family: 'Ubuntu', sans-serif;
-    padding: 50px 0;
+    padding: 49px 0;
 
-    ${device('720p', css``)}
     ${device(
         'tablet',
         css`
             .tabletView {
                 padding: 0px 19px 0 18px;
-              /* width: ${(props) => props.theme.vw(100)}; */
             }
-            
         `
     )}
     ${mobile(css``)}
@@ -53,6 +49,8 @@ export const H2 = styled.h2`
     ${mobile(
         css`
             font-size: 25px;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 300;
         `
     )}
 `;
@@ -65,12 +63,6 @@ export const Skill = styled.div`
     color: #888;
     margin-bottom: 30px;
 
-    ${device(
-        'tablet',
-        css`
-            /* width: ${(props) => props.theme.vw(93)}; */
-        `
-    )}
     ${mobile(
         css`
             text-align: center;
@@ -162,6 +154,10 @@ export const GridItem = styled(Grid.Container)`
     )}
 `;
 
+export const RenderDiv = styled.div`
+    overflow: hidden;
+`;
+
 export const RederImage = styled.img`
     transition: transform 0.3s;
     width: 100%;
@@ -172,11 +168,8 @@ export const RederImage = styled.img`
     }
 `;
 
-export const RenderDiv = styled.div`
-    overflow: hidden;
-`;
 
-export const IconArrow = styled.div`
+export const IconArrow = styled.div<{isVisible: boolean}>`
     height: 42px;
     width: 42px;
     color: #1d9d73;
@@ -188,6 +181,7 @@ export const IconArrow = styled.div`
     text-align: center;
     font-size: 27px;
     border: 1px solid #1d9d73;
+    display: ${props => (props.isVisible? 'block' : 'none')};
     cursor: pointer;
     &:hover {
         color: #fff;

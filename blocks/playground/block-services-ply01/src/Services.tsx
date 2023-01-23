@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Container, H2, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RenderDiv,RederImage , IconArrow} from './Services.style';
 
 
@@ -27,6 +27,30 @@ export function Services(props: ServicesProps) {
     const { header, description } = strings;
     const { serviceDataset} = extra;
   
+
+
+    const [visible, setVisible] = useState(false)
+  
+    const toggleVisible = () => {
+      const scrolled = document.documentElement.scrollTop;
+      if (scrolled > 300){
+        setVisible(true)
+      } 
+      else if (scrolled <= 300){
+        setVisible(false)
+      }
+    };
+    
+    const scrollToTop = () =>{
+      window.scrollTo({
+        top: 0, 
+        behavior: 'smooth'
+        /* you can also use 'auto' behaviour
+           in place of 'smooth' */
+      });
+    };
+    window.addEventListener('scroll', toggleVisible);
+    
     return (
             <Wrapper
                 className='Service-container'
@@ -37,10 +61,10 @@ export function Services(props: ServicesProps) {
                     <H2>{header}</H2>
                     <Skill>{description}</Skill>
                 
-              <GridContainer className='tabletView'>{renderItems(serviceDataset)}</GridContainer>
+              <GridContainer className='tabletView '>{renderItems(serviceDataset)}</GridContainer>
               </Container>
-              <IconArrow>
-           <i className='material-icons iconFont'>expand_less</i>
+              <IconArrow onClick={scrollToTop}  isVisible={visible}>
+             <i className='material-icons'>expand_less</i>
          </IconArrow>
             </Wrapper>
     );
@@ -50,11 +74,14 @@ function renderItems(gridData : Json) {
     return gridData.map((item: Json, index: number) =>  
         <GridItem key={item.id}>
             <RenderDiv>
-           <RederImage src={item.imageUrl} alt={item.title} />
+              <RederImage src={item.imageUrl} alt={item.title} />
            </RenderDiv>
            <SkillAncher>{item.title}</SkillAncher>
            <Skill>{item.description}</Skill>
         </GridItem>
     );
 }
+
+
+
 export default Services;
