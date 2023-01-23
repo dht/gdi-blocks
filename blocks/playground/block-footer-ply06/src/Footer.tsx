@@ -10,6 +10,7 @@ import {
     Li,
     Link,
     Row,
+    Section,
     Ul,
     Wrapper,
 } from './Footer.style';
@@ -48,33 +49,37 @@ export function Footer(props: FooterProps) {
         <Wrapper className='Footer-wrapper' data-testid='Footer-wrapper'>
             <Container>
                 <Row>
-                    <Column className='pb-4'>
-                        <Copy>{text}</Copy>
-                    </Column>
-                    <Column>
-                        <Copy>{'MENU'}</Copy>
-                    </Column>
-                    <Column>
-                        <Copy>{'SOCIALS'}</Copy>
-                    </Column>
-                </Row>
-                <Row>
-                    <Column>
-                        <Details>{address}</Details>
-                        <Details>{mail}</Details>
-                        <Details>{tel}</Details>
-                    </Column>
-                    <Column>
-                        {menu.map((item, index) => (
-                            <Link key={index}>{item.name}</Link>
-                        ))}
-                    </Column>
-                    <Column>
-                        <Copy>
-                            <SocialIcons grayscale urls={urls} />
-                        </Copy>
-                        <Copy className='pt-4'>{description}</Copy>
-                    </Column>
+                    <Section>
+                        <Column>{text}</Column>
+                        <p>
+                            <Details>{address}</Details>
+                            <Details>{mail}</Details>
+                            <Details>{tel}</Details>
+                        </p>
+                    </Section>
+                    <Section isSection={true}>
+                        <Column>{'MENU'}</Column>
+                        <Ul>
+                            {menu.map((item, index) => (
+                                <Li>
+                                    <Link key={index}>{item.name}</Link>
+                                </Li>
+                            ))}
+                        </Ul>
+                    </Section>
+                    <Section>
+                        <Column>{'SOCIALS'}</Column>
+                        <p>
+                            <Ul>
+                                <Li>
+                                    <SocialIcons grayscale urls={urls} />
+                                </Li>
+                                <Li>
+                                    <Copy className='pt-4'>{description}</Copy>
+                                </Li>
+                            </Ul>
+                        </p>
+                    </Section>
                 </Row>
             </Container>
         </Wrapper>

@@ -49,15 +49,16 @@ export const Box = styled.div`
     height: 50%;
     text-align: center;
     padding: 20px;
-    border: 1px solid grey;
+    border: 1px solid #8080807d;
     margin: 0;
+
     ${mobile(
         css`
             width: 95%;
             margin-bottom: 20px;
             height: 26em;
             padding: 1px;
-            border: 0px solid grey;
+            border: 0px solid #8080807d;
         `
     )};
 `;

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css } from '@gdi/engine';
+import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;
@@ -7,34 +7,44 @@ export const Wrapper = styled.div`
     color: #fff;
     padding: 50px 0;
     font-size: 18px;
-    justify-content: space-between;
+    justify-content: space-around;
 `;
 
-export const Container = styled(Grid.Container)`
+export const Container = styled.div`
     padding: 10px;
+    max-width: 100%;
 
     ${mobile(css``)}
 `;
 
-export const Row = styled(Grid.Row)``;
+export const Row = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 
-export const Column = styled(Grid.Column)`
-    flex: 1;
+    ${mobile(css`
+        display: block !important;
+    `)}
+`;
+
+export const Column = styled.h2`
+    font-size: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    margin-bottom: 30px;
 `;
 
 export const Ul = styled.ul`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    justify-content: flex-end;
+    line-height: 1.8em;
 `;
 
 export const Li = styled.li`
-    padding: 0 10px;
+    padding: 0;
     margin: 0;
+    list-style-type: none;
 `;
 
 export const A = styled.a`
@@ -55,23 +65,47 @@ export const A = styled.a`
 `;
 
 export const Copy = styled.div`
-    font-size: 20px;
+    font-size: 12px;
     font-variation-settings: 'wdth' 100, 'wght' 300;
+    width: 60%;
+    line-height: 1.6em;
 `;
 
 export const Link = styled.div`
-    font-size: 20px;
+    font-size: 16px;
     font-variation-settings: 'wdth' 100, 'wght' 300;
     &:hover {
         cursor: pointer;
-        text-decoration-line: underline;
-        color: orange;
+        text-decoration-line: none;
+        color: #8699c8;
     }
 `;
 
+export const NewRow = styled.ul`
+    line-height: 1.8em;
+`;
+
 export const Details = styled.div`
-    font-size: 20px;
+    font-size: 14px;
     font-variation-settings: 'wdth' 100, 'wght' 300;
+    letter-spacing: 0.05em;
+    font-weight: 300;
+    line-height: 1.6em;
+`;
+
+export const Section = styled.div<{ isSection?: boolean }>`
+    ${device(
+        'tablet',
+        css`
+            flex-basis: min-content;
+        `
+    )}
+
+    ${mobile(
+        css`
+            display: ${(props) => (props?.isSection ? 'none' : 'block')};
+        `
+    )}
 `;
 
 export const Social = styled.div``;

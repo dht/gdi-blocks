@@ -287,7 +287,8 @@ export const GoogleMapContainer = styled.div`
     ${device(
         'tablet',
         css`
-            width: 70%;
+            width: 60%;
+            padding-left: 0;
         `
     )}
     

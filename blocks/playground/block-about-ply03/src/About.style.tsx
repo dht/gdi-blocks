@@ -16,6 +16,7 @@ export const Wrapper = styled.div<{ extra: AboutExtra }>`
         left: 0px;
         opacity: 0.1;
     }
+    padding-top: 50px;
     background-color: rgba(216, 232, 242);
     ${mobile(
         css`
@@ -55,7 +56,6 @@ export const H1 = styled.h1`
 
 export const Body = styled.div`
     color: black;
-    background-color: #ffffff44;
     padding: 2px 30px;
     border-radius: 5px;
     font-size: 18px;
