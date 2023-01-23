@@ -2,7 +2,7 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            text: 'JAMES CONSULTING',
+            header: 'JAMES CONSULTING',
             address: '500 Terry Francois Street San Francisco, CA 94158',
             mail: 'info@mysite.com',
             tel: '123-456-7890',
@@ -20,6 +20,7 @@ export const sampleData: ISampleDataPerFlavour = {
                 { name: 'Contact', link: '' },
             ],
             linksDatasetId: 'social',
+            menuHeaders: ['MENU', 'SOCIALS'],
         },
     },
 };

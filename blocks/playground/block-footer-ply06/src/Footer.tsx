@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useDataset, SiteContext } from '@gdi/engine';
+import { useDataset } from '@gdi/engine';
 import { SocialIcons } from '@gdi/web-ui';
 import {
     A,
@@ -23,7 +23,7 @@ export type FooterProps = {
 };
 
 export type FooterStrings = {
-    text: string;
+    header: string;
     address: string;
     mail: string;
     tel: number;
@@ -35,12 +35,13 @@ export type FooterColors = {};
 export type FooterExtra = {
     menu: [{ name: string; link: string }];
     linksDatasetId?: string;
+    menuHeaders: string[];
 };
 
 export function Footer(props: FooterProps) {
     const { strings, extra } = props;
-    const { text, address, mail, tel, description } = strings;
-    const { linksDatasetId = '', menu } = extra;
+    const { header, address, mail, tel, description } = strings;
+    const { linksDatasetId = '', menu, menuHeaders } = extra;
 
     const social = useDataset(linksDatasetId);
     const urls = Object.values(social).map((i: Json) => i.url);
@@ -50,7 +51,7 @@ export function Footer(props: FooterProps) {
             <Container>
                 <Row>
                     <Section>
-                        <Column>{text}</Column>
+                        <Column>{header}</Column>
                         <p>
                             <Details>{address}</Details>
                             <Details>{mail}</Details>
@@ -58,7 +59,7 @@ export function Footer(props: FooterProps) {
                         </p>
                     </Section>
                     <Section isSection={true}>
-                        <Column>{'MENU'}</Column>
+                        <Column>{menuHeaders[0]}</Column>
                         <Ul>
                             {menu.map((item, index) => (
                                 <Li>
@@ -68,7 +69,7 @@ export function Footer(props: FooterProps) {
                         </Ul>
                     </Section>
                     <Section>
-                        <Column>{'SOCIALS'}</Column>
+                        <Column>{menuHeaders[1]}</Column>
                         <p>
                             <Ul>
                                 <Li>

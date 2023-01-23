@@ -24,7 +24,9 @@ export type QuotesProps = {
     extra: QuotesExtra;
 };
 
-export type QuotesStrings = {};
+export type QuotesStrings = {
+    header: string;
+};
 
 export type QuotesColors = {};
 
@@ -32,10 +34,10 @@ export type QuotesExtra = {
     quotesDatasetId?: string;
 };
 
-//  TODO:: CHANGE THE DATASET WITH OUR CUSTOM DATA. Get it from props
 export function Quotes(props: QuotesProps) {
     const { extra } = props;
     const { quotesDatasetId } = extra;
+    const { header } = props.strings;
 
     const [activeIndex, setActiveIndex] = useState(0);
 
@@ -85,7 +87,7 @@ export function Quotes(props: QuotesProps) {
     }
     return (
         <Wrapper className='Media-container' data-testid='Media-container'>
-            <H1>{'TESTIMONIALS'}</H1>
+            <H1>{header}</H1>
             <Arrows
                 items={items}
                 activeIndex={activeIndex}

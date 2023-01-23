@@ -12,6 +12,7 @@ export const params: IWidgetParams = {
         colors: {},
         extra: {
             linksDatasetId: { fieldType: 'dataset', order: 0 },
+            menuHeaders: { fieldType: 'dataset', order: 1 },
         },
     },
 };

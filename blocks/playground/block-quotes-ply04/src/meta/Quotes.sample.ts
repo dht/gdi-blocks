@@ -1,7 +1,9 @@
 export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
-        strings: {},
+        strings: {
+            header: 'TESTIMONIALS',
+        },
         colors: {},
         extra: {
             quotesDatasetId: 'quotes',

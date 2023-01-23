@@ -7,15 +7,6 @@ import {
     Column,
     ContactTitle,
     ContactTitleText,
-    Items,
-    Item,
-    JobTitle,
-    JobCompany,
-    Period,
-    Year,
-    Dash,
-    LineRow,
-    JobDescription,
     Input,
     InputContainer,
     ContactTitle3,
@@ -23,7 +14,6 @@ import {
     Button,
     GoogleMapContainer,
 } from './Contact.style';
-import { useDataset } from '@gdi/engine';
 import GoogleMapReact from 'google-map-react';
 
 export const id = 'com.usegdi.blocks.contact-ply05';
@@ -36,7 +26,10 @@ export type ContactProps = {
 
 export type ContactStrings = {
     header: string;
-    description?: string;
+    button: string;
+    messageTextBox: string;
+    inputBoxFirstRow: [{ title: string; isRequired: boolean }];
+    inputBoxSecondRow: [{ title: string; isRequired: boolean }];
 };
 
 export type ContactColors = {};
@@ -46,40 +39,16 @@ export type ContactExtra = {
 };
 
 export function Contact(props: ContactProps) {
-    const { strings, extra } = props;
-    const { header, description } = strings;
-    const { ContactDatasetId } = extra;
-
-    const items = useDataset(ContactDatasetId ?? '');
-
-    const educationItems = items.filter((i: Json) => i.type === 'education');
-    const experienceItems = items.filter((i: Json) => i.type === 'experience');
-
-    function renderItem(item: Json) {
-        const { yearStart, yearEnd, jobTitle, company, description } = item;
-
-        return (
-            <Item key={item.id} className='item'>
-                <LineRow>
-                    <JobCompany>{company}</JobCompany>
-                    <Period>
-                        <Year>{yearStart}</Year>
-                        <Dash>-</Dash>
-                        <Year>{yearEnd}</Year>
-                    </Period>
-                </LineRow>
-                <JobTitle>{jobTitle}</JobTitle>
-                <JobDescription>{description}</JobDescription>
-            </Item>
-        );
-    }
-
-    function renderItems(items: Json[]) {
-        return items.map((item: Json) => renderItem(item));
-    }
+    const {
+        header,
+        inputBoxFirstRow,
+        inputBoxSecondRow,
+        button,
+        messageTextBox,
+    } = props.strings;
 
     const Marker = (props: any) => {
-        return <div className='SuperAwesomePin'>{ props.text }</div>;
+        return <div className='SuperAwesomePin'>{props.text}</div>;
     };
 
     return (
@@ -87,60 +56,52 @@ export function Contact(props: ContactProps) {
             <Container>
                 <H2>{header}</H2>
                 <Row>
-                    <Column>
-                        <ContactTitle>
-                            <ContactTitleText>First Name</ContactTitleText>
-                            <InputContainer>
-                                <Input></Input>
-                            </InputContainer>
-                        </ContactTitle>
-                        <Items>{renderItems(educationItems)}</Items>
-                    </Column>
-                    <Column>
-                        <ContactTitle>
-                            <ContactTitleText>Last Name</ContactTitleText>
-                            <InputContainer>
-                                <Input></Input>
-                            </InputContainer>
-                        </ContactTitle>
-                        <Items>{renderItems(experienceItems)}</Items>
-                    </Column>
+                    {inputBoxFirstRow.map((inputObject, index) => (
+                        <Column key={index}>
+                            <ContactTitle>
+                                <ContactTitleText>
+                                    {inputObject.title}
+                                </ContactTitleText>
+                                <InputContainer>
+                                    <Input></Input>
+                                </InputContainer>
+                            </ContactTitle>
+                        </Column>
+                    ))}
                 </Row>
                 <Row>
-                    <Column>
-                        <ContactTitle>
-                            <ContactTitleText>Email *</ContactTitleText>
-                            <InputContainer>
-                                <Input isRequired={true}></Input>
-                            </InputContainer>
-                        </ContactTitle>
-                        <Items>{renderItems(educationItems)}</Items>
-                    </Column>
-                    <Column>
-                        <ContactTitle>
-                            <ContactTitleText>Subject</ContactTitleText>
-                            <InputContainer>
-                                <Input></Input>
-                            </InputContainer>
-                        </ContactTitle>
-                        <Items>{renderItems(experienceItems)}</Items>
-                    </Column>
+                    {inputBoxSecondRow.map((inputObject, index) => (
+                        <Column key={index}>
+                            <ContactTitle>
+                                <ContactTitleText>
+                                    {inputObject.isRequired
+                                        ? inputObject.title + ' *'
+                                        : inputObject.title}
+                                </ContactTitleText>
+                                <InputContainer>
+                                    <Input
+                                        isRequired={inputObject.isRequired}
+                                    ></Input>
+                                </InputContainer>
+                            </ContactTitle>
+                        </Column>
+                    ))}
                 </Row>
                 <Row>
                     <Column>
                         <ContactMessage>
-                            <ContactTitleText>Message *</ContactTitleText>
+                            <ContactTitleText>
+                                {messageTextBox} *
+                            </ContactTitleText>
                             <InputContainer>
                                 <Input isRequired={true}></Input>
                             </InputContainer>
                         </ContactMessage>
-                        <Items>{renderItems(educationItems)}</Items>
                     </Column>
                     <Column isButton={true}>
                         <ContactTitle3>
-                            <Button>Submit</Button>
+                            <Button>{button}</Button>
                         </ContactTitle3>
-                        <Items>{renderItems(experienceItems)}</Items>
                     </Column>
                 </Row>
             </Container>
@@ -155,11 +116,7 @@ export function Contact(props: ContactProps) {
                     }}
                     defaultZoom={14}
                 >
-                    <Marker
-                        lat={-34.397}
-                        lng={150.644}
-                        text='My Location'
-                    />
+                    <Marker lat={-34.397} lng={150.644} text='My Location' />
                 </GoogleMapReact>
             </GoogleMapContainer>
         </Wrapper>

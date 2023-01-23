@@ -13,14 +13,13 @@ export const Wrapper = styled.div`
 export const Container = styled.div`
     padding: 10px;
     max-width: 100%;
-
     ${mobile(css``)}
 `;
 
 export const Row = styled.div`
     display: flex;
-    align-items: center;
     justify-content: space-around;
+    align-items: flex-start;
 
     ${mobile(css`
         display: block !important;
