@@ -17,13 +17,11 @@ import {
     LineRow,
     JobDescription,
     Input,
-    MapContainer,
-    IconWrapperEmail,
-    IconWrapperName,
     InputContainer,
     ContactTitle3,
     ContactMessage,
     Button,
+    GoogleMapContainer,
 } from './Contact.style';
 import { useDataset } from '@gdi/engine';
 import GoogleMapReact from 'google-map-react';
@@ -79,6 +77,10 @@ export function Contact(props: ContactProps) {
     function renderItems(items: Json[]) {
         return items.map((item: Json) => renderItem(item));
     }
+
+    const Marker = (props: any) => {
+        return <div className='SuperAwesomePin'>{ props.text }</div>;
+    };
 
     return (
         <Wrapper className='Contact-container' data-testid='Contact-container'>
@@ -142,19 +144,24 @@ export function Contact(props: ContactProps) {
                     </Column>
                 </Row>
             </Container>
-            <MapContainer></MapContainer>
-            {/* <div style={{ height: '50vh', width: '100%' }}>
+            <GoogleMapContainer>
                 <GoogleMapReact
                     bootstrapURLKeys={{
                         key: '',
                     }}
                     defaultCenter={{
-                        lat: 10.99835602,
-                        lng: 77.01502627,
+                        lat: 19.178197,
+                        lng: 77.287577,
                     }}
-                    defaultZoom={11}
-                ></GoogleMapReact>
-            </div> */}
+                    defaultZoom={14}
+                >
+                    <Marker
+                        lat={-34.397}
+                        lng={150.644}
+                        text='My Location'
+                    />
+                </GoogleMapReact>
+            </GoogleMapContainer>
         </Wrapper>
     );
 }

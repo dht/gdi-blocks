@@ -255,6 +255,48 @@ export const Input = styled.input<{ isRequired?: boolean }>`
     `)}
 `;
 
+export const GoogleMapContainer = styled.div`
+    height: 40vh;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    padding-left: 30px;
+
+    ${device(
+        'HD+',
+        css`
+            width: 60%;
+        `
+    )}
+
+    ${device(
+        'HD',
+        css`
+            width: 65%;
+        `
+    )}
+
+    ${device(
+        '720p',
+        css`
+            width: 55%;
+        `
+    )}
+
+    ${device(
+        'tablet',
+        css`
+            width: 70%;
+        `
+    )}
+    
+    ${mobile(css`
+        width: 80%;
+        padding-left: 0;
+    `)}
+`;
+
 export const MapContainer = styled.div`
     width: 50%;
     height: 250px;

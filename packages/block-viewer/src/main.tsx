@@ -11,9 +11,5 @@ const container = document.getElementById('root');
 if (container) {
     const root = createRoot(container);
 
-    root.render(
-        <React.StrictMode>
-            <AppContainer />
-        </React.StrictMode>
-    );
+    root.render(<AppContainer />);
 }

@@ -65,8 +65,8 @@ export function Footer(props: FooterProps) {
                         <Details>{tel}</Details>
                     </Column>
                     <Column>
-                        {menu.map((item) => (
-                            <Link>{item.name}</Link>
+                        {menu.map((item, index) => (
+                            <Link key={index}>{item.name}</Link>
                         ))}
                     </Column>
                     <Column>

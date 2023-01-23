@@ -33,8 +33,8 @@ export function About(props: AboutProps) {
             extra={extra}
         >
             <Container>
-                {extra.headerParams.map((header) => (
-                    <Box>
+                {extra.headerParams.map((header, index) => (
+                    <Box key={index}>
                         <H2>{header}</H2>
                         <Body>{description}</Body>
                         <Button>{button}</Button>
