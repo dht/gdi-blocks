@@ -4,10 +4,8 @@ import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: ServicesColors }>`
     background-color: #f6f8fa;
-    /* height: ${(props) => props.theme.vh(100)}; */
     font-family: 'Ubuntu', sans-serif;
     padding: 60px 0;
-    /* padding-left: 22px; */
     ${mobile(
         css`
             padding-top: 20px;
@@ -83,7 +81,6 @@ export const GridContainer = styled(Grid.Container)`
     ${device(
         'tablet',
         css`
-             /* grid-template-columns: repeat(2, auto); */
              padding: 0 15px;
              column-gap: 10px;
         `
@@ -119,12 +116,7 @@ export const ParentRenderDiv = styled.div`
     } 
         `
     )}
-    ${device(
-        '720p',
-        css`
-            /* flex-direction: column; */
-        `
-    )}
+ 
      ${mobile(
         css`
           flex-direction: column;

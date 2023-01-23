@@ -5,13 +5,15 @@ import {
     MenuItem,
     MenuItemLink,
     Overlay,
+    Span,
     Close,
-} from './TopMenuMobile.style';
+} from './mobile-navbar.style';
 import classnames from 'classnames';
 
-export type TopMenuProps = {
+export type MobileTopMenuProps = {
     items: IMenuItem[];
     onClick: (item: IMenuItem) => void;
+    color?: string;
 };
 
 type IMenuItem = {
@@ -19,7 +21,7 @@ type IMenuItem = {
     title: string;
 };
 
-export function TopMenu(props: TopMenuProps) {
+export function MobileTopMenu(props: MobileTopMenuProps) {
     const { items } = props;
     const [showOverlay, setShowOverlay] = useState<boolean>();
 
@@ -62,8 +64,8 @@ export function TopMenu(props: TopMenuProps) {
 
     function renderOverlay() {
         const className = classnames('animate__animated', {
-            animate__fadeInUp: showOverlay,
-            animate__fadeOutDown: !showOverlay,
+            animate__fadeInLeft: showOverlay,
+            animate__fadeOutLeft: !showOverlay,
             hideOverlay: typeof showOverlay === 'undefined',
             disableOverlay: !showOverlay,
         });
@@ -71,7 +73,7 @@ export function TopMenu(props: TopMenuProps) {
         return (
             <Overlay className={className}>
                 <Close onClick={() => setShowOverlay(false)}>
-                    <i className='material-icons'>close</i>
+                    <i className='material-icons'>arrow_back</i>
                 </Close>
                 {renderItems()}
             </Overlay>
@@ -84,10 +86,12 @@ export function TopMenu(props: TopMenuProps) {
         <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper'>
             <Button onClick={() => setShowOverlay(true)}>
                 <i className='material-icons'>menu</i>
+                <Span>Home</Span>
             </Button>
+
             {renderOverlay()}
         </Wrapper>
     );
 }
 
-export default TopMenu;
+export default MobileTopMenu;

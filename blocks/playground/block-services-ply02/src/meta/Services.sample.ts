@@ -46,7 +46,7 @@ export const sampleData: ISampleDataPerFlavour = {
                     "icon":"handyman",
                     "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
                     "readmore": "Read more "
-                }
+                },
         
             ],
         },

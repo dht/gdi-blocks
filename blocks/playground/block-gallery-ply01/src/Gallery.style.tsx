@@ -6,14 +6,55 @@ export const Wrapper = styled.div`
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     .top {
-        top: 225px;
+        top: 210px;
     }
+
+    ${device(
+        '4k',
+        css`
+            .top {
+                top: 540px;
+            }
+        `
+    )}
+    ${device(
+        '2k',
+        css`
+            .top {
+                top: 320px;
+            }
+        `
+    )}
+      ${device(
+        '1080p',
+        css`
+            .top {
+                top: 220px;
+            }
+        `
+    )}
+    ${device(
+        'HD+',
+        css`
+            .top {
+                top: 190px;
+            }
+        `
+    )}
+    ${device(
+        'HD',
+        css`
+            .top {
+                top: 145px;
+            }
+        `
+    )}
 
     ${device(
         '720p',
         css`
             .top {
-                top: 75px;
+                top: 140px;
             }
         `
     )}
@@ -21,18 +62,34 @@ export const Wrapper = styled.div`
         'tablet',
         css`
             .top {
-                top: 60px;
+                top: 140px;
+            }
+
+            .carousel-inner {
+                height: 400px;
+                img {
+                    height: 400px;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
             }
         `
     )}
     ${mobile(
         css`
-
-        padding-top:  40px;
+            /* padding-top: 40px; */
             .top {
-                top: 10px;
+                top: 220px;
             }
-            
+
+            .carousel-inner {
+                height: 600px;
+                img {
+                    height: 600px;
+                    object-fit: cover;
+                    object-position: 50% 50%;
+                }
+            }
         `
     )}
 `;

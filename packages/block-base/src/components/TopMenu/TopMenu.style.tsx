@@ -1,70 +1,28 @@
 import styled from 'styled-components';
-import { mobile, css, device } from '@gdi/engine';
-import { IMenuItem, IMenuItemColorFont } from './TopMenu';
+import { mobile, css } from '@gdi/engine';
 
-export const Wrapper = styled.div<{ extra: IMenuItemColorFont }>`
+export const Wrapper = styled.div`
     flex: 1;
-    background-color: ${(props) =>
-        props.extra.isColor ? props.extra.backgroundColor : `#333`};
-    font-family: ${(props) =>
-        props.extra.isColor
-            ? props.extra.fontFamily
-            : `Encode Sans, sans-serif`};
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: ${(props) =>
-        props.extra.isColor ? 'flex-end' : `center`};
 `;
 
-export const MenuItem = styled.div<{ colorFont: IMenuItemColorFont }>`
-    padding: 15px;
+export const MenuItem = styled.div<{ color: string }>`
+    padding: 20px;
     cursor: pointer;
     white-space: nowrap;
-
-    &:nth-child(1) {
-        position: absolute;
-        left: 300px;
-
-        & > :first-child {
-            font-size: 35px;
-            font-weight: 500;
-        }
-    }
-
-    &:nth-child(5) {
-        padding-right: 350px;
-    }
-
     &:hover {
-        background: ${(props) =>
-            props.colorFont.isColor
-                ? props.colorFont.backgroundColor
-                : 'rgba(255, 255, 255, 0.1)'};
+        background: rgba(255, 255, 255, 0.1);
         a {
-            color: ${(props) => props.colorFont.textColor};
+            color: ${(props) => props.color};
         }
     }
-
-    ${device(
-        'tablet',
-        css`
-            &:nth-child(1) {
-                position: absolute;
-                left: 50px;
-            }
-
-            &:nth-child(5) {
-                padding-right: 100px;
-            }
-        `
-    )}
 `;
 
-export const MenuItemLink = styled.a<{ colorFont: IMenuItemColorFont }>`
-    color: ${(props) => props.colorFont.textColor};
+export const MenuItemLink = styled.a<{ color: string }>`
+    color: ${(props) => props.color};
     text-decoration: none;
-    font-size: ${(props) =>
-        props.colorFont.isColor ? props.colorFont.fontSize + 'px' : '18px'};
+    font-size: 14px;
     font-variation-settings: 'wdth' 105, 'wght' 350;
 `;

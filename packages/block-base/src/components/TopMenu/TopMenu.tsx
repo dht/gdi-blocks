@@ -9,52 +9,26 @@ export type TopMenuProps = {
     items: IMenuItem[];
     onClick: (item: IMenuItem) => void;
     color?: string;
-    colorsFont: IMenuItemColorFont;
-    mobileMenu: IMenuMobile;
 };
 
-export type IMenuItemColorFont = {
-    isColor?: boolean;
-    backgroundColor?: string;
-    textColor?: string;
-    fontFamily?: string;
-    fontSize?: string;
-};
-   
-
-export type IMenuMobile ={
-    isPostionChanged?: boolean;
-   position?: string;
-   zIndex?: number;
-   float?: string;
-   backgroundColor?: string;
-   color?: string;
-   fontFamily?: string;
-   fontSize?: string;
-};
-
-
-
-export type IMenuItem = {
+type IMenuItem = {
     href: string;
     title: string;
-    isTitle?: boolean;
-    isFlex?: boolean;
 };
 
 export function TopMenu(props: TopMenuProps) {
-    const { items, color = 'white' , colorsFont} = props;
+    const { items, color = 'white' } = props;
     const { width } = useWindowSize();
 
     if (width < 700) {
         return <TopMenuMobile {...props} />;
     }
+
     function renderItem(item: IMenuItem, index: number) {
-        const { title, href, isTitle , isFlex } = item;
-    
-        console.log(colorsFont);
+        const { title, href } = item;
+
         if (!title) {
-            return `text`;
+            return null;
         }
 
         const className = classnames(item, {
@@ -62,13 +36,13 @@ export function TopMenu(props: TopMenuProps) {
         });
 
         return (
-            <MenuItem key={href} colorFont={colorsFont}>
+            <MenuItem key={href} color={color}>
                 <MenuItemLink
                     key={item.title + String(index)}
                     className={className}
                     href={href}
                     onClick={() => props.onClick(item)}
-                    colorFont={colorsFont}
+                    color={color}
                 >
                     {title}
                 </MenuItemLink>
@@ -81,7 +55,7 @@ export function TopMenu(props: TopMenuProps) {
     }
 
     return (
-        <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper' extra={colorsFont} >
+        <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper'>
             {renderItems()}
         </Wrapper>
     );

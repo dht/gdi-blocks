@@ -2,7 +2,7 @@ export const sampleData: ISampleDataPerFlavour = {
     normal: {
         id: 'normal',
         strings: {
-            text: 'Header',
+            header: 'wegy',
         },
         colors: {},
         extra: {},

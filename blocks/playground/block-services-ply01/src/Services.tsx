@@ -45,8 +45,6 @@ export function Services(props: ServicesProps) {
       window.scrollTo({
         top: 0, 
         behavior: 'smooth'
-        /* you can also use 'auto' behaviour
-           in place of 'smooth' */
       });
     };
     window.addEventListener('scroll', toggleVisible);
@@ -73,8 +71,9 @@ export function Services(props: ServicesProps) {
 function renderItems(gridData : Json) {
     return gridData.map((item: Json, index: number) =>  
         <GridItem key={item.id}>
-            <RenderDiv>
-              <RederImage src={item.imageUrl} alt={item.title} />
+            <RenderDiv className='hover-border'>
+              <span>
+              <RederImage src={item.imageUrl} alt={item.title} /></span>
            </RenderDiv>
            <SkillAncher>{item.title}</SkillAncher>
            <Skill>{item.description}</Skill>

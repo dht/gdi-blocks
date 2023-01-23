@@ -128,6 +128,62 @@ export const GridItem = styled(Grid.Container)`
     flex-direction: column;
     justify-content: center;
     text-align: center;
+
+    .hover-border {
+        position: relative;
+        span {
+            position: relative;
+            width: 100%;
+            max-width: 100%;
+            display: inline-block;
+            overflow: hidden;
+        }
+
+        span::before {
+            top: 0;
+            left: 0;
+            right: 100%;
+            bottom: 100%;
+            border-top: 10px solid #1d9d73;
+            border-left: 10px solid #1d9d73;
+            content: '';
+            opacity: 0;
+            pointer-events: none;
+            z-index: 3;
+            position: absolute;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+            box-shadow: none;
+        }
+
+        span:hover::before {
+            opacity: 1;
+            bottom: 0;
+            right: 0;
+        }
+        span::after {
+            left: 100%;
+            top: 100%;
+            bottom: 0;
+            right: 0;
+            border-bottom: 10px solid #1d9d73;
+            border-right: 10px solid #1d9d73;
+            content: '';
+            opacity: 0;
+            pointer-events: none;
+            z-index: 3;
+            position: absolute;
+            box-sizing: border-box;
+            transition: all 0.5s ease;
+            box-shadow: none;
+        }
+
+        span:hover::after {
+            opacity: 1;
+            top: 0;
+            left: 0;
+        }
+    }
     &:nth-child(2) {
         margin: 0 30px;
     }
@@ -154,22 +210,21 @@ export const GridItem = styled(Grid.Container)`
     )}
 `;
 
-export const RenderDiv = styled.div`
-    overflow: hidden;
-`;
+export const RenderDiv = styled.div``;
 
 export const RederImage = styled.img`
-    transition: transform 0.3s;
     width: 100%;
+    transition: all 0.5s linear;
+    transform: scale(1);
     cursor: pointer;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.1) !important;
+        opacity: 1 !important;
     }
 `;
 
-
-export const IconArrow = styled.div<{isVisible: boolean}>`
+export const IconArrow = styled.div<{ isVisible: boolean }>`
     height: 42px;
     width: 42px;
     color: #1d9d73;
@@ -181,7 +236,7 @@ export const IconArrow = styled.div<{isVisible: boolean}>`
     text-align: center;
     font-size: 27px;
     border: 1px solid #1d9d73;
-    display: ${props => (props.isVisible? 'block' : 'none')};
+    display: ${(props) => (props.isVisible ? 'block' : 'none')};
     cursor: pointer;
     &:hover {
         color: #fff;
