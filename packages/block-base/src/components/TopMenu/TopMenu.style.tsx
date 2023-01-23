@@ -8,30 +8,24 @@ export const Wrapper = styled.div<{ extra: IMenuItemColorFont }>`
     display: flex;
     flex-direction: row;
     align-items: center;
-    max-width: 1100px;
-    margin-left: 200px;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 2px 0 gold;
-
-    ${mobile(css`
-        display: none;
-    `)}
 `;
 
-export const MenuItem = styled.div<{ extra: IMenuItem }>`
+export const MenuItem = styled.div<{ color: string }>`
     padding: 20px;
     cursor: pointer;
-    flex: ${(props) => (props.extra.isFlex ? 'auto' : 'none')};
+    white-space: nowrap;
+
     &:hover {
         background:${(props) => (props.extra.isTitle ? '#fff' : ' rgba(255, 255, 255, 0.1)')};
         a {
-            color: ${(props) => (props.extra.isTitle ? '#333' : '#f2c973')};
+            color: ${(props) => props.color};
         }
     }
 `;
 
-export const MenuItemLink = styled.a <{ extra: IMenuItem }>`
-    color: ${(props) => (props.extra ? '#333' : '#fff')};
+export const MenuItemLink = styled.a<{ color: string }>`
+    color: ${(props) => props.color};
     text-decoration: none;
     font-size: 18px;
-    font-variation-settings: 'wdth' 110, 'wght' 650;
+    font-variation-settings: 'wdth' 105, 'wght' 350;
 `;

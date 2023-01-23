@@ -7,7 +7,7 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            portfolioDatasetId: 'myPortfolio',
+            portfolioDatasetId: 'portfolio',
         },
     },
 };

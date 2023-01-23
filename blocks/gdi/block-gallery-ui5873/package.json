@@ -9,15 +9,15 @@
     },
     "dependencies": {
         "@gdi/block-base": "^0.4.13",
-        "@gdi/engine": "^0.4.6",
-        "@gdi/web-ui": "^0.4.4",
         "polished": "^4.2.2",
-        "shared-base": "^0.4.2",
         "styled-components": "^5.3.6"
     },
     "peerDependencies": {
+        "shared-base": "^0.4.8",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "@gdi/engine": "^0.4.7",
+        "@gdi/web-ui": "^0.4.4"
     },
     "devDependencies": {
         "@gdi/types": "^0.4.6",

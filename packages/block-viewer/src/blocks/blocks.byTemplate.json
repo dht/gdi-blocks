@@ -3,10 +3,11 @@
         "card-ah4j1": 0
     },
     "gdi": {
-        "apps-jf84j": 3,
-        "features-j4k1h": 5,
-        "footer-ajk34": 6,
-        "gallery-ui5873": 4,
+        "apps-jf84j": 4,
+        "features-j4k1h": 6,
+        "footer-ajk34": 7,
+        "gallery-ui5873": 5,
+        "header-aouu4": 3,
         "hero-ajh53": 1,
         "top-41hj5": 0,
         "twins-j1j43": 2
@@ -20,20 +21,17 @@
         "top-9yur8": 0,
         "twins-aou31": 4
     },
-    "playground": {
-        "footer-ply01": 6,
-        "gallery-ply01": 1,
-        "header-ply07": 0,
-        "quotes-ply01": 5,
-        "services-ply01": 2,
-        "services-ply02": 3,
-        "services-ply03": 4
+    "reference": {
+        "hero-plylx": 1,
+        "top-41j4k": 0
+    },
+    "stack": {
+        "grid-st001": 99
     },
     "starter": {
         "about-iuhr3": 2,
         "contact-au487": 9,
         "cta-p8y4a": 3,
-        "header-aouu4": 99,
         "hero-hu45i": 1,
         "numbers-jk123": 4,
         "portfolio-aiou3": 5,

@@ -1,10 +1,14 @@
 import React from 'react';
 import { Wrapper, MenuItem, MenuItemLink } from './TopMenu.style';
 import classnames from 'classnames';
+import { useTheme } from 'styled-components';
+import { useWindowSize } from 'react-use';
+import { TopMenu as TopMenuMobile } from './mobile/TopMenuMobile';
 
 export type TopMenuProps = {
     items: IMenuItem[];
     onClick: (item: IMenuItem) => void;
+    color?: string;
     colorsFont: IMenuItemColorFont;
 };
 
@@ -26,7 +30,12 @@ export type IMenuItem = {
 };
 
 export function TopMenu(props: TopMenuProps) {
-    const { items , colorsFont} = props;
+    const { items, color = 'white' , colorsFont} = props;
+    const { width } = useWindowSize();
+
+    if (width < 700) {
+        return <TopMenuMobile {...props} />;
+    }
     function renderItem(item: IMenuItem, index: number) {
         const { title, href, isTitle , isFlex } = item;
     
@@ -40,13 +49,13 @@ export function TopMenu(props: TopMenuProps) {
         });
 
         return (
-            <MenuItem key={href} extra={item}>
+            <MenuItem key={href} color={color}>
                 <MenuItemLink
                     key={item.title + String(index)}
                     className={className}
                     href={href}
-                    onClick={() => props.onClick(item)
-                    } extra={item}
+                    onClick={() => props.onClick(item)}
+                    color={color}
                 >
                     {title}
                 </MenuItemLink>
