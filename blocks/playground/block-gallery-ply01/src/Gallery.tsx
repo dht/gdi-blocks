@@ -19,21 +19,19 @@ export type GalleryExtra = {
 };
 
 export function Gallery(props: GalleryProps) {
-    const { extra } = props;
-    const { galleryDataset } = extra;
+    const { galleryDataset } = props.extra;
 
     return (
         <Wrapper
             id='carouselExampleCaptions'
             className='carousel slide'
             data-testid='Gallery-container'
-            // data-bs-ride='carousel'
             data-interval="false"
         >
             <Container className='carousel-inner '>
                 {galleryDataset.map((item: Json) => (
                     <Container className='carousel-item active '  key={item.id}>
-                        <img
+                        <Image
                             src={item.imageUrl}
                             className='d-block w-100'
                             alt='img'

@@ -41,6 +41,7 @@ export const Button = styled.button`
         float: left;
     }
 `;
+
 export const Span = styled.span`
     position: fixed;
     top: -6px;
@@ -52,6 +53,7 @@ export const Span = styled.span`
     white-space: nowrap;
     overflow: hidden;
 `;
+
 export const Overlay = styled.div`
     position: fixed;
     top: 0;

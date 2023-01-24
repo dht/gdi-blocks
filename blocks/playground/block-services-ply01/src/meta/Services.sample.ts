@@ -8,7 +8,6 @@ export const sampleData: ISampleDataPerFlavour = {
         colors: {
         },
         extra: {
-            imageUrl: 'https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/ipad.jpg',
             serviceDataset:  [
                 {
                     id: "ser1",

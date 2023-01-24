@@ -5,8 +5,8 @@ import { dimensions } from './meta/Header.dimensions';
 import { screenshots } from './meta/Header.screenshots';
 
 export const block: IBlock = {
-    id: 'com.usegdi.blocks.header-ply07',
-    name: 'header-ply07',
+    id: 'com.usegdi.blocks.header-ply01',
+    name: 'header-ply01',
     description: '',
     params,
     sampleData,

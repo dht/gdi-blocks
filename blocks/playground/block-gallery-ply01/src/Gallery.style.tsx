@@ -17,6 +17,7 @@ export const Wrapper = styled.div`
             }
         `
     )}
+
     ${device(
         '2k',
         css`
@@ -25,6 +26,7 @@ export const Wrapper = styled.div`
             }
         `
     )}
+
       ${device(
         '1080p',
         css`
@@ -33,6 +35,7 @@ export const Wrapper = styled.div`
             }
         `
     )}
+
     ${device(
         'HD+',
         css`
@@ -41,6 +44,7 @@ export const Wrapper = styled.div`
             }
         `
     )}
+
     ${device(
         'HD',
         css`
@@ -77,7 +81,6 @@ export const Wrapper = styled.div`
     )}
     ${mobile(
         css`
-            /* padding-top: 40px; */
             .top {
                 top: 220px;
             }
@@ -98,21 +101,22 @@ export const Container = styled.div``;
 
 export const Image = styled.img``;
 
-export const Span = styled.span``;
-
-export const Button = styled.button``;
-
 export const Text = styled.span`
     font-size: 45px;
     color: white;
     text-align: center;
     margin: 0;
+
     ${mobile(
         css`
             font-size: 30px;
         `
     )}
 `;
+
+export const Button = styled.button``;
+
+export const Span = styled.span``;
 
 export const IconPerson = styled.div`
     background-color: #1d9d73;
@@ -127,8 +131,10 @@ export const IconPerson = styled.div`
     z-index: 999;
     cursor: pointer;
     transition: transform 0.3s;
+
     .iconFont {
         font-size: 40px;
+        
         &:hover {
             transform: scale(1.1);
         }

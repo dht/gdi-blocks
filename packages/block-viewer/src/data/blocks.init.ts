@@ -17,7 +17,7 @@ import { block as block_top_9yur8 } from '@gdi/block-top-9yur8';
 import { block as block_twins_aou31 } from '@gdi/block-twins-aou31';
 import { block as block_footer_ply01 } from '@gdi/block-footer-ply01';
 import { block as block_gallery_ply01 } from '@gdi/block-gallery-ply01';
-import { block as block_header_ply07 } from '@gdi/block-header-ply07';
+import { block as block_header_ply01 } from '@gdi/block-header-ply01';
 import { block as block_quotes_ply01 } from '@gdi/block-quotes-ply01';
 import { block as block_services_ply01 } from '@gdi/block-services-ply01';
 import { block as block_services_ply02 } from '@gdi/block-services-ply02';
@@ -57,7 +57,7 @@ import { block as block_top_aqwer } from '@gdi/block-top-aqwer';
 			[block_twins_aou31.id]: block_twins_aou31,
 			[block_footer_ply01.id]: block_footer_ply01,
 			[block_gallery_ply01.id]: block_gallery_ply01,
-			[block_header_ply07.id]: block_header_ply07,
+			[block_header_ply01.id]: block_header_ply01,
 			[block_quotes_ply01.id]: block_quotes_ply01,
 			[block_services_ply01.id]: block_services_ply01,
 			[block_services_ply02.id]: block_services_ply02,

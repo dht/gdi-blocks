@@ -15,6 +15,7 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
             }
         `
     )}
+
     ${mobile(css``)}
 `;
 
@@ -46,6 +47,7 @@ export const H2 = styled.h2`
     &:hover {
         color: #333;
     }
+
     ${mobile(
         css`
             font-size: 25px;
@@ -62,38 +64,6 @@ export const Skill = styled.div`
     text-align: center;
     color: #888;
     margin-bottom: 30px;
-
-    ${mobile(
-        css`
-            text-align: center;
-        `
-    )}
-`;
-
-export const SkillAncher = styled.div`
-    font-size: 20px;
-    line-height: 23px;
-    max-width: 100%;
-    color: #1d9d73;
-    margin: 20px 0 15px;
-    font-weight: 300;
-    cursor: pointer;
-    &:hover {
-        color: #333;
-    }
-    ${device(
-        '720p',
-        css`
-            font-size: 20px;
-        `
-    )}
-
-    ${device(
-        'tablet',
-        css`
-            font-size: 16px;
-        `
-    )}
 
     ${mobile(
         css`
@@ -184,15 +154,18 @@ export const GridItem = styled(Grid.Container)`
             left: 0;
         }
     }
+
     &:nth-child(2) {
         margin: 0 30px;
     }
+
     ${device(
         '720p',
         css`
             width: 30%;
         `
     )}
+
     ${device(
         'tablet',
         css`
@@ -224,6 +197,40 @@ export const RederImage = styled.img`
     }
 `;
 
+export const SkillAncher = styled.div`
+    font-size: 20px;
+    line-height: 23px;
+    max-width: 100%;
+    color: #1d9d73;
+    margin: 20px 0 15px;
+    font-weight: 300;
+    cursor: pointer;
+
+    &:hover {
+        color: #333;
+    }
+
+    ${device(
+        '720p',
+        css`
+            font-size: 20px;
+        `
+    )}
+
+    ${device(
+        'tablet',
+        css`
+            font-size: 16px;
+        `
+    )}
+
+    ${mobile(
+        css`
+            text-align: center;
+        `
+    )}
+`;
+
 export const IconArrow = styled.div<{ isVisible: boolean }>`
     height: 42px;
     width: 42px;
@@ -238,6 +245,7 @@ export const IconArrow = styled.div<{ isVisible: boolean }>`
     border: 1px solid #1d9d73;
     display: ${(props) => (props.isVisible ? 'block' : 'none')};
     cursor: pointer;
+    
     &:hover {
         color: #fff;
         background-color: #1d9d73;

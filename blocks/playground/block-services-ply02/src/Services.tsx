@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import {
     Container,
-    H1,
     Wrapper,
     SkillAncher,
     Skill,
@@ -30,8 +29,6 @@ export type ServicesExtra = {
 export function Services(props: ServicesProps) {
     const { strings, colors, extra } = props;
     const { servicesDataset } = extra;
-
-    const { ga } = useContext(SiteContext);
 
     return (
         <Wrapper

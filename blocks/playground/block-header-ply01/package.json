@@ -1,5 +1,5 @@
 {
-    "name": "@gdi/block-header-ply07",
+    "name": "@gdi/block-header-ply01",
     "version": "0.4.6",
     "scripts": {
         "build": "tsc & vite build && npm run scss",
@@ -42,13 +42,13 @@
     "files": [
         "dist"
     ],
-    "main": "./dist/block-header-ply07.umd.js",
-    "module": "./dist/block-header-ply07.es.js",
+    "main": "./dist/block-header-ply01.umd.js",
+    "module": "./dist/block-header-ply01.es.js",
     "types": "./dist/dts/index.d.ts",
     "exports": {
         ".": {
-            "import": "./dist/block-header-ply07.es.js",
-            "require": "./dist/block-header-ply07.umd.js"
+            "import": "./dist/block-header-ply01.es.js",
+            "require": "./dist/block-header-ply01.umd.js"
         },
         "./dist/index.css": {
             "import": "./dist/index.css",

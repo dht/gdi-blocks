@@ -16,7 +16,7 @@ export default defineConfig({
             entry: path.resolve(__dirname, 'src/index.ts'),
             name: 'Header',
             formats: ['es', 'umd'],
-            fileName: (format) => `block-header-ply07.${format}.js`,
+            fileName: (format) => `block-header-ply01.${format}.js`,
         },
         rollupOptions: {
             plugins: [ANALYZE_BUNDLE ? analyze() : null],

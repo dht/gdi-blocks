@@ -20,6 +20,7 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
     )}
 `;
 
+
 export const Container = styled(Grid.Container)`
     display: flex;
     flex-direction: row;
@@ -45,6 +46,49 @@ export const Container = styled(Grid.Container)`
         `
     )}
 `;
+
+
+export const Figure = styled.div``;
+
+export const Image = styled.img`
+    ${device(
+        'tablet',
+        css`
+            height: 405px;
+            width: 330px;
+        `
+    )}
+    ${mobile(
+        css`
+            width: ${(props) => props.theme.vw(90)}; ;
+        `
+    )}
+`;
+
+export const Infortmation = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: ${(props) => props.theme.vw(38)};
+
+    ${device(
+        'tablet',
+        css`
+              width: ${(props) => props.theme.vw(47)};
+        `
+    )}
+
+    ${mobile(
+        css`
+            flex-direction: column;
+            align-items: flex-start;
+            width: 100%;
+            max-width: 100%;
+        `
+    )}
+`;
+
 
 export const H1 = styled.h1`
     font-size: 35px;
@@ -87,30 +131,6 @@ export const Skill = styled.div`
     )}
 `;
 
-export const SkillAncher = styled.span`
-    font-size: 20px;
-    line-height: 23px;
-    max-width: 100%;
-    word-wrap: break-all;
-    font-weight: 300;
-    color: #888;
-    text-decoration: none;
-
-    cursor: pointer;
-    ${device(
-        '720p',
-        css`
-            font-size: 20px;
-        `
-    )}
-
-    ${mobile(
-        css`
-            text-align: center;
-        `
-    )}
-`;
-
 export const GridContainer = styled(Grid.Container)`
     flex: 1;
 
@@ -142,30 +162,6 @@ export const GridItem = styled(Grid.Container)`
     )}
 `;
 
-export const Infortmation = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: ${(props) => props.theme.vw(38)};
-
-    ${device(
-        'tablet',
-        css`
-              width: ${(props) => props.theme.vw(47)};
-        `
-    )}
-
-    ${mobile(
-        css`
-            flex-direction: column;
-            align-items: flex-start;
-            width: 100%;
-            max-width: 100%;
-        `
-    )}
-`;
-
 export const ReadIcon = styled.div`
     display: flex;
     flex-direction: row;
@@ -187,19 +183,33 @@ export const ReadIcon = styled.div`
     }
 `;
 
-export const Image = styled.img`
+export const SkillAncher = styled.span`
+    font-size: 20px;
+    line-height: 23px;
+    max-width: 100%;
+    word-wrap: break-all;
+    font-weight: 300;
+    color: #888;
+    text-decoration: none;
+
+    cursor: pointer;
     ${device(
-        'tablet',
+        '720p',
         css`
-            height: 405px;
-            width: 330px;
+            font-size: 20px;
         `
     )}
+
     ${mobile(
         css`
-            width: ${(props) => props.theme.vw(90)}; ;
+            text-align: center;
         `
     )}
 `;
 
-export const Figure = styled.div``;
+
+
+
+
+
+

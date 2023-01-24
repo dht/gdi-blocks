@@ -29,7 +29,7 @@ export type QuotesColors = {};
 
 export type QuotesExtra = {
 
-    aboutDataset: Json;
+    aboutDataset: [];
 };
 
 export function Quotes(props: QuotesProps) {

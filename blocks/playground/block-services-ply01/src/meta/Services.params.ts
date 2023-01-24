@@ -10,7 +10,6 @@ export const params: IWidgetParams = {
         colors: {
         },
         extra: {
-            imageUrl: { fieldType: 'image', isRequired: true, order: 1 },
             serviceDataset: { fieldType: 'dataset', order: 3 }, 
         },
     },

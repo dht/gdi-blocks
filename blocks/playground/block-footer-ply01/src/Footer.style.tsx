@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css } from '@gdi/engine';
+import { Grid} from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;
