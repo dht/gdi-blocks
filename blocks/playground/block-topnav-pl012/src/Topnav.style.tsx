@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css } from '@gdi/engine';
+import { Grid, mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     position: absolute;
@@ -34,12 +34,39 @@ export const Flex = styled.div`
 `;
 
 export const LogoImage = styled.img`
-
     height: 40px;
+    margin-top: 20px;
+
+
+    ${device(
+        'HD',
+            css`
+                height: 30px;
+                margin-left: 60px;
+            `
+    )}
+
+    ${device(
+        '720p',
+            css`
+                height: 30px;
+                margin-top: 20px;
+            `
+    )};
+
+    ${device(
+        'tablet',
+            css`
+                height: 30px;
+            `
+    )};
 
     ${mobile(
         css`
             height: 20px;
+            margin-top: 18px;
+            padding-left: 10px;
+            position: absolute;
         `
     )}
 `;

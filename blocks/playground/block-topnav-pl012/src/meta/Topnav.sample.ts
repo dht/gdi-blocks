@@ -14,9 +14,6 @@ export const sampleData: ISampleDataPerFlavour = {
                 {href: '#Blog', title: 'Blog'},
                 {href: '#Contact', title: 'Contact'},
                 {href: '#GetWebifyToday', title: 'Get Webify Today'},
-
-
-
             ]
         },
     },

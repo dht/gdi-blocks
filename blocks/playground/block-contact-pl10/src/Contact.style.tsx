@@ -66,7 +66,7 @@ export const Header = styled.h3 `
 
 ${mobile(
     css`
-        font-size: 27px;
+        font-size: 25px;
     `
 )}
 `
@@ -97,6 +97,8 @@ padding: 90px 200px 90px 200px;
     ${mobile(
         css`
             padding: 18px;
+            padding-top: 90px;
+            padding-bottom: 90px;
         `
     )}
 
@@ -173,10 +175,11 @@ font-weight: bold;
 
 export const SubHeader = styled.p`
     font-size: 22px;
-    font-family: 'Roboto'
-sans-serif;
+    font-family: 'Roboto' , sans-serif;
 font-weight: lighter;
 color:white;
+
+margin-bottom: 30px;
 
     ${mobile(
         css`

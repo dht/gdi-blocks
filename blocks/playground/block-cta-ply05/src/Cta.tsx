@@ -19,6 +19,7 @@ import {
     ModalDialog,
     ModalBody,
     ModalIframe,
+    VideoImageContainer,
 } from './Cta.style';
 
 export const id = 'com.usegdi.blocks.cta-ply05';
@@ -57,9 +58,11 @@ export function Cta(props: CtaProps) {
                     </Column>
                 </Row>
 
-                <Row className='row'>
+                <Row className='row pl-3'>
                     <Column className='col-lg-6 mt-4'>
-                        <VideoImage extra={extra} >
+
+                    <VideoImageContainer >
+                    <VideoImage extra={extra} >
                             <ModalButton
                                 type='button'
                                 className=' btn'
@@ -98,18 +101,20 @@ export function Cta(props: CtaProps) {
                                 </ModalDialog>
                             </Row>
                             
-                        </VideoImage>
+                        </VideoImage>                       
+                    </VideoImageContainer>
+                        
                     </Column>
                     
-                    <Column className='col-lg-6 d-flex'>
-                        <ProductInfo>
+                    <Column className='col-lg-6'>
+                        <ProductInfo >
                             <Row className='row'>
                                 {productDataset.map(
                                     (value: Json, index: number) => {
                                         return (
                                             <>
-                                                <Column className='col-lg-12 products-card '>
-                                                    <Icon className={iconClass}>
+                                                <Column className='col-lg-12 products-card'  >
+                                                    <Icon className={`material-symbols-outlined ${index===1?"icon2":""} `}>
                                                         {value.icon}
                                                     </Icon>
                                                     <H5 className='mt-2'>

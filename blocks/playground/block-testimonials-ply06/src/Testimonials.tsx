@@ -51,7 +51,7 @@ export function Testomonials(props: TestomonialsProps) {
     return (
         <>
             <Wrapper>
-                <Container className='container'>
+                <Container className='container mobile-padding-0'>
                     <Row className='row'>
                         <Column className='col-lg-12 text-center'>
                             <H1> {header} </H1>

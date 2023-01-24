@@ -9,6 +9,7 @@ export type TopMenuProps = {
     items: IMenuItem[];
     onClick: (item: IMenuItem) => void;
     color?: string;
+    buttonColor?:string;
 };
 
 type IMenuItem = {
@@ -20,7 +21,7 @@ export function TopMenu(props: TopMenuProps) {
     const { items, color = 'white' } = props;
     const { width } = useWindowSize();
 
-    if (width < 700) {
+    if (width < 768) {
         return <TopMenuMobile {...props} />;
     }
 

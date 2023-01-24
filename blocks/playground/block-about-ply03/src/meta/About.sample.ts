@@ -3,7 +3,8 @@ export const sampleData: ISampleDataPerFlavour = {
         id: 'normal',
         strings: {
             header: 'Build websites with webify. Any niche. In minutes.',
-            description: 'Webify is the all-in-one WordPress theme to build a beautiful online presence for you. Our team discussed every single detail to make sure Webify is the most versatile and unique theme created so far . It’s more then a WordPress theme. It’s like a design tool that let’s you create websites of any niche, easily. Each and every block is created with AB testing and UX research. Take a look at all the pages and elements and see how beautiful your webiste will become. No coding required, ofcourse!',
+            description: 'Webify is the all-in-one WordPress theme to build a beautiful online presence for you. Our team discussed every single detail to make sure Webify is the most versatile and unique theme created so far.',
+            secondDescription:"It’s more then a WordPress theme. It’s like a design tool that let’s you create websites of any niche, easily. Each and every block is created with AB testing and UX research. Take a look at all the pages and elements and see how beautiful your webiste will become. No coding required, ofcourse!",
             buttonText:"Take 1-min Tour"
         },
         colors: {},
@@ -23,16 +24,14 @@ export const sampleData: ISampleDataPerFlavour = {
                 {
                     "cardTitle":"Fox in the Box",
                     "cardDescription":"We will work with you as the business transforms into one that is efficient, customer-centric.",
-                    "cardIcon":"timer"
+                    "cardIcon":"local_pizza"
                 },
                 {
                     "cardTitle":"Avant Garde",
                     "cardDescription":"We can change the way your business thinks and behaves long-term in order to combat the threat of digital disruption.",
-                    "cardIcon":"local_pizza"
+                    "cardIcon":"timer"
                 },
                 
-                
-
             ]
         },
     },

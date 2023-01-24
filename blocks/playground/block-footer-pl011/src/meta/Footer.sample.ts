@@ -7,8 +7,8 @@ export const sampleData: ISampleDataPerFlavour = {
             buttonText :"Discover More",
             placeholder:"Enter Email Address",
             footerText : "Sign up for Newsletter",
-            reservedText:"© Built with pride and caffeine. All rights reserved.",
-            sendButtonIcon:"send"
+            copyRight:"© Built with pride and caffeine. All rights reserved.",
+            sendButtonIcon:"fa fa-paper-plane"
 
         },
         colors: {},

@@ -7,6 +7,13 @@ export const Wrapper = styled.div`
     color: black;
     border-top: 1px solid silver;
     padding-bottom: 75px;
+
+    
+    ${mobile(
+        css`
+            padding: 60px 0;
+        `
+    )}
 `;
 
 
@@ -51,7 +58,7 @@ export const Container = styled(Grid.Container)`
 `
 
 export const Row = styled(Grid.Row)`
-    padding: 30px;
+    padding: 30px 0px 0px 0px;
 
 
     ${device(
@@ -63,6 +70,10 @@ export const Row = styled(Grid.Row)`
 
     ${mobile(
         css`
+            .mobile-padding {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
             padding: 10px;
         `
     )}
@@ -76,7 +87,7 @@ letter-spacing: 2px;
 font-variant: normal;
 font-weight: 400;
 font-style: normal;
-font-family: 'Circular',sans-serif !important;
+font-family: 'Circular',sans-serif;
 
 
 ${device(
@@ -155,10 +166,10 @@ export const Icon = styled.span`
 `;
 export const CardCounter = styled.h3`
     font-size: 54px !important ;
-    margin-top: 5px;
-    font-weight: 450;
+    margin-top: 7px;
+    font-weight: 600;
     font-style: normal;
-    font-family: 'Circular',sans-serif !important;
+    font-family: 'Circular',sans-serif; ;
 
     ${device(
         'tablet',
@@ -167,6 +178,7 @@ export const CardCounter = styled.h3`
             `
     )}
 `;
+
 export const CardTitle = styled.span`
     font-size: 22px;
     color: #666666;

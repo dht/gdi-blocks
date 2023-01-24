@@ -32,7 +32,7 @@ export type FooterStrings = {
     footerText?: string;
     placeholder?:string;
     buttonText?:string;
-    reservedText?:string;
+    copyRight?:string;
     sendButtonIcon:string;
 };
 
@@ -45,7 +45,7 @@ export type FooterExtra = {
 export function Footer(props: FooterProps) {
     const { extra , strings  } = props;
     const {  footerDataset } = extra;
-    const { FooterQuote, footerText , placeholder , buttonText ,reservedText ,sendButtonIcon } = strings;
+    const { FooterQuote, footerText , placeholder , buttonText ,copyRight ,sendButtonIcon } = strings;
    
 
     return (
@@ -116,9 +116,9 @@ export function Footer(props: FooterProps) {
                                <Column className='col-lg-3 pt-4'>
                                         <FooterList>
                                         <FooterListHeading> {footerText} </FooterListHeading>
-                                        <FooterListItems>
+                                        <FooterListItems className='listitem'>
                                         <FooterEmail placeholder={placeholder} ></FooterEmail>
-                                        <SendButton className='material-symbols-outlined'> {sendButtonIcon} </SendButton>
+                                        <SendButton className={sendButtonIcon}></SendButton>
                                         </FooterListItems>
                                         </FooterList>
                                         
@@ -138,8 +138,8 @@ export function Footer(props: FooterProps) {
                             <Column className='col-lg-12'>
                                 <FooterBack>
                                     <Row className='row'>
-                                        <Column className='col-lg-12 pb-5 text-center'>
-                                            <LighterText className='padding-left-sm-30px' > {reservedText}</LighterText>
+                                        <Column className='col-lg-12 pb-4 text-center'>
+                                            <LighterText className='padding-left-sm-30px' > {copyRight}</LighterText>
                                         </Column>
                                     </Row> 
                                 </FooterBack>

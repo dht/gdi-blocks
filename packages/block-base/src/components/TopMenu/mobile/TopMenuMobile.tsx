@@ -82,7 +82,7 @@ export function TopMenu(props: TopMenuProps) {
 
     return (
         <Wrapper className='TopMenu-wrapper' data-testid='TopMenu-wrapper'>
-            <Button onClick={() => setShowOverlay(true)}>
+            <Button onClick={() => setShowOverlay(true)} buttonColor={"black"} >
                 <i className='material-icons'>menu</i>
             </Button>
             {renderOverlay()}

@@ -1,17 +1,16 @@
 import React, { useContext } from 'react';
-import { 
-    Container, 
-    Wrapper, 
-    SubTitle, 
-    Row, 
+import {
+    Container,
+    Wrapper,
+    SubTitle,
+    Row,
     H1,
     Card,
     CardBody,
     Icon,
     CardCounter,
-    CardTitle
+    CardTitle,
 } from './Counter.style';
-
 
 import { Column } from '@gdi/engine';
 
@@ -42,9 +41,7 @@ export function Apps(props: CounterProps) {
     return (
         <>
             <Wrapper>
-
                 <Container>
-
                     <Row>
                         <Column className='text-center'>
                             <H1>{header}</H1>
@@ -52,22 +49,26 @@ export function Apps(props: CounterProps) {
                         </Column>
                     </Row>
                     <Row>
-                        {counterDataset.map((counterData:Json)=>{
-                            return(
+                        {counterDataset.map((counterData: Json) => {
+                            return (
                                 <>
-                                 <Column>
-                            <Card className='card'>
-                                <CardBody className='card-body'>
-                                <Icon className="material-symbols-outlined">
-                                {counterData.icon}
-                                </Icon>
-                                <CardCounter> {counterData.count} </CardCounter>
-                                <CardTitle> {counterData.title} </CardTitle>
-                                </CardBody>
-                            </Card>
-                        </Column>
+                                    <Column className='mt-0 mobile-padding '>
+                                        <Card className='card'>
+                                            <CardBody className='card-body'>
+                                                <Icon className='material-symbols-outlined'>
+                                                    {counterData.icon}
+                                                </Icon>
+                                                <CardCounter>
+                                                    {counterData.count}
+                                                </CardCounter>
+                                                <CardTitle>
+                                                    {counterData.title}
+                                                </CardTitle>
+                                            </CardBody>
+                                        </Card>
+                                    </Column>
                                 </>
-                            )
+                            );
                         })}
                     </Row>
                 </Container>

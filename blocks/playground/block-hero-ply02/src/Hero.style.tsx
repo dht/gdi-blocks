@@ -5,21 +5,44 @@ import { mobile, css, device } from '@gdi/engine';
 export const Wrapper = styled.div`
     background-color: white;
     background-size: cover;
-    height: 84vh;
+    height: auto;
     color: #000;
-    padding-top: 100px;
+    padding-top: 90px;
+    padding-bottom: 100px;
+    font-family: 'Circular',sans-serif !important;
+
+
+    ${device(
+        'HD',
+            css`
+                padding-top: 30px;
+                padding-bottom: 50px;
+            `
+    )}
+
+    ${device(
+        '720p',
+            css`
+                padding-bottom: 50px;
+                padding-left: 0px;
+                padding-top: 20px;
+                
+            `
+    )}
 
     ${device(
         'tablet'
             ,css`
                 height: 120vh;
+                padding-top: 30px;
+                
             
             `)}
 
     ${mobile(
         css`
             height: 110vh;
-            padding-top: 60px;
+            padding-top: 50px;            
         `
     )}
 `;
@@ -29,34 +52,50 @@ export const HeroButton = styled.button`
     padding: 20px 44px;
     border-radius: 30px;
     font-size: 17px;
+    margin-bottom: 20px;
     color: white;
     border: none;
     font-weight: bold;
     cursor: pointer;
     background-color: #5c6ac4;
 
+
+    ${device(
+        'tablet',
+            css`
+                padding: 15px 25px;
+                margin-top: 20px;
+                font-size: 15px;
+            `
+    )}
     ${mobile(
         css`
             padding: 15px 20px;
             font-size: 15px;
             margin-top: 20px;
+          margin-left: 20px;
+
         `
     )}
 `;
-
-
-
 
 export const P = styled.p`
     font-weight: normal;
     font-size: 22px;
     color: #666666;
 
+    ${device(
+        'tablet',
+            css`
+                font-size: 17px;
+            `
+    )}
     ${mobile(
         css`
             font-size: 18px;
-            padding-left: 12px;
-            padding-right: 12px;
+            line-height: 27px;
+            padding-left: 25px;
+            padding-right: 40px;
         `
     )}
 `;
@@ -82,44 +121,54 @@ export const HeroImg = styled.div<{ extra: HeroExtra }>`
         css`
             height: 360px;
         `
-    )}
-
+    )};
 
     ${mobile(
         css`
-            height: 300px;
+            height: 250px;
             background-size: 100% 100%;
-            width: 100%;
+            width: 89%;
+            margin : 0px 10px;
         `
     )}
 `;
 
 export const Client = styled.img`
-    ${device(
-        'tablet',
-        css`
-            width: 100%;
-        `
-    )}
 
-    ${device(
-        '720p',
-        css`
-            width: 100%;
-            height: 30px;
-        `
-    )}   
+        height: auto;
+        max-width: 100%;
+        
+        ${device(
+            'tablet',
+            css`
+                
+            `
+        )};
 
-    ${mobile(
-        css`
-            height: 24px;
-            width: 100%;
-        `
-    )}
+        ${device(
+            '720p',
+            css`
+               
+            `
+        )};
+
+        ${mobile(
+            css`
+               
+            `
+        )};
 `;
 
 
-export const ClientIcon = styled.div``;
+export const ClientIcon = styled.div`
+
+            ${mobile(
+                css`
+                    margin-left: 7px;
+                    margin-right: -11px;
+                `
+            )}
+`;
 
 
 export const Container = styled.div``;
@@ -148,36 +197,52 @@ export const Row = styled.div`
 export const Column = styled.div``;
 
 
-
 export const H1 = styled.h1`
     font-size: 60px;
     padding: 0;
     vertical-align: baseline;
     color: black;
-    line-height: 60px;
     font-family: 'Circular',sans-serif;
     word-spacing: 5px;
     font-weight:400;
+    margin-bottom: 10px;
     line-height:72px;
-    font-style:normal
-    
+    font-style:normal;
+
+
+    ${device(
+        'HD',
+            css`
+                margin-top: 50px;
+                font-size: 45px;
+                line-height: 39px;
+            `
+    )}
+
     ${device(
         '720p',
             css`
-                font-size: 45px;
+                font-size: 43px;
+                line-height: 40px;
+                margin-top: 65px !important;
             `
-    )}
+    )};
+     
+
     ${device(
         'tablet',
             css`
-                font-size: 45px;
+                line-height: 50px;
+                font-size: 38px;
             `
     )}
+    
     ${mobile(
         css`
-            font-size: 35px;
+            font-size: 37px;
             line-height: 35px;
-            padding-left: 10px;
+            padding-left: 25px;
+
         `
     )}
 `;

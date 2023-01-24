@@ -36,7 +36,6 @@ export function Topnav(props: TopnavProps) {
     const { navItemColor } = colors;
     const {  ga } = useContext(SiteContext);
 
-    console.log(topNavDataset)
    
 
     const onClick = (componentName: string) => (item: Json) => {
@@ -56,7 +55,7 @@ export function Topnav(props: TopnavProps) {
         >
             <Container>
                 <Row>
-                    <Column className='p-4'> <LogoImage src={logoUrl} alt="logo" /> </Column>
+                    <Column><LogoImage src={logoUrl} alt="logo" /></Column>
                     <Flex />
                     <TopMenu color={navItemColor} items={topNavDataset} onClick={onClick('topMenu')} />
                 </Row>

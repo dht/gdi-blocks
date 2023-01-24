@@ -6,46 +6,52 @@ export const Wrapper = styled.div`
     background-size: cover;
     background-position: center bottom;
     background-color: white;
-    color: black;
-    height: ${(props) => props.theme.vh(88)};
+    color: rgb(0, 0, 0);
     display: flex;
-    padding-top: 70px;
-    border-top: 1px solid silver;
+    
+    padding: 100px 0;
+    border-top: 1px solid #eaeaea;;
+    border-bottom: 1px solid #eaeaea;;
+
     font-family: ${(props) => props.theme.fontFamily};
 
-    ${device(
-        'tablet',
-            css`
-                height: 70vh;
-            `
-    )}
+    
 
     ${device(
         '720p',
             css`
                 height: 97vh;
             `
-    )}
+    )};
+    ${device(
+        'tablet',
+            css`
+                height: auto;
+                min-height: 600px !important;
+                
+            `
+    )};
     
 
     ${device(
         'mobile',
             css`
-                
-             height: 120vh;
+                padding-top: 70px;
+                height: 120vh;
+                padding-bottom: 0px;
             `
-        
         )}
 `;
 
 
 
-export const H1 = styled.h1`
-    font-size: 50px;
+export const H1 = styled.h3`
+    font-size: 42px;
     padding: 0;
     color: black;
     text-align: center;
     font-weight:500;
+    font-family: "Circular",sans-serif;
 
      
     ${device(
@@ -65,9 +71,10 @@ export const H1 = styled.h1`
 
 
 export const SubTitle = styled.p`
-    font-size: 22px;
+    font-size: 18px;
     color: #666666;
     font-family: 'Roboto', sans-serif;
+    padding-bottom: 30px;
 `;
 
 
@@ -75,10 +82,6 @@ export const SubTitle = styled.p`
 
 export const Row = styled.div``;
 export const Column = styled.div``;
-
-
-
-
 
 export const CarouselInner = styled.div``;
 export const Carousel = styled.div``;
@@ -125,8 +128,9 @@ export const ClientImage = styled.img`
     ${mobile(
         css`
             position: static;
-            width: 100%;
-            height: 300px;
+            width: 120%;
+            height: 210px;
+            transform: translateX(-30px);
             border-radius: 10px 10px 0px 0px;
         `
     )}
@@ -226,28 +230,23 @@ export const CarouselSubContainer = styled.div`
             `
     )}
 
-    ${device(
-        'tablet',
-            css`
-                .margintop {
-                    margin-top: 0px;
-                }
-            `
-    )}
 
     ${mobile(
         css`
-            border: 0.8px solid #B5B5B5;
+            border-top: 0px;
             border-radius: 0px 0px 10px 10px;
-            border-top: none;
-            padding: 17px;
+            border: none;
+            position: relative;
+            left: 20px;
+            padding-right: 40px;
+            right: 20px;
+            padding-left: 0px;
+            
             .margintop {
                 margin-top: 20px;
             }
         `
         )}
-
-
 `
 
 export const CarouselSubContainer2 = styled.div`
@@ -265,6 +264,8 @@ export const CarouselSubContainer2 = styled.div`
     ${mobile(
         css`
         border-radius: 10px 10px 0px 0px;
+        padding-left: 50px;
+        padding-right: 50px;
         `
     )}
 
@@ -316,11 +317,5 @@ export const P = styled.p`
 
 `;
 
-
-
-
-
-export const Container = styled.div``;
-
-
-
+export const Container = styled.div`
+`;

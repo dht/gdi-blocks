@@ -25,6 +25,7 @@ export type HeroStrings = {
     header: string;
     description?: string;
     buttonText?: string;
+    secondDescription?:string;
 };
 
 export type HeroColors = {};
@@ -37,7 +38,7 @@ export type HeroExtra = {
 
 export function About(props: AboutProps) {
     const { strings, extra } = props;
-    const { header, description, buttonText } = strings;
+    const { header, description, buttonText , secondDescription } = strings;
     const { aboutCardData } = extra;
 
     return (
@@ -48,9 +49,9 @@ export function About(props: AboutProps) {
                         {aboutCardData.map((value: Json,index:number) => {
                             return (
                                 <>
-                                    <AboutCard className='mt-5 ml-5 shadow '>
-                                        <CardIcone  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon3":"" || index===3?"icon4":"" } `} > {value.cardIcon} </CardIcone>
-                                        <H2 className='mt-3'>{value.cardTitle}</H2>
+                                    <AboutCard className={index==3?"mtt-0":"" || index===0?"card1":"" || index===1?"card2":""} >
+                                        <CardIcone  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon4":"" || index===3?"icon3":"" } `} > {value.cardIcon} </CardIcone>
+                                        <H2 className='mt-3 h2'>{value.cardTitle}</H2>
                                         <Span> {value.cardDescription} </Span>
                                     </AboutCard>
                                 </>
@@ -58,9 +59,10 @@ export function About(props: AboutProps) {
                         })}
                     </Col>
                     <Col>
-                        <H1 className='mt-50px' style={{fontFamily:"'Circular',sans-serif"}} > {header} </H1>
+                        <H1 className='margin-top' >{header} </H1>
                         <P> {description} </P>
-                        <Button className='mt-10'> {buttonText} </Button>
+                        <P> {secondDescription} </P>
+                        <Button className='mt-3'> {buttonText} </Button>
                     </Col>
                 </FlexContainer>
             </Wrapper>

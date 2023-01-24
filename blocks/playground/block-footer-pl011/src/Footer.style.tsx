@@ -7,11 +7,12 @@ export const Wrapper = styled.div`
     background-position: center bottom;
     background-color: white;
     color: black;
-    height: ${(props) => props.theme.vh('auto')};
+    
     display: flex;
     padding-top: 0px;
     padding-bottom: 0px;
-    font-family: ${(props) => props.theme.fontFamily};
+    font-family: 'Circular',sans-serif;
+
 
     ${device(
         '720p',
@@ -95,11 +96,11 @@ ${mobile(
         font-size: 27px;
     `
 )}
-`
+`;
 
 export const FooterBack = styled.div`
 background-color : black;
-padding: 60px 200px 60px 200px;
+padding: 60px 200px 50px 200px;
     ${device(
         'HD',
             css`
@@ -142,8 +143,7 @@ export const FooterText = styled.h2`
     color: #969E9E;
     font-weight: bold;
     font-size: 19.6px;
-    font-family: 'Circular'
-sans-serif;
+    font-family: 'Circular',sans-serif;
 
     ${mobile(
         css`
@@ -160,6 +160,7 @@ export const FooterButton = styled.button`
     font-size: 17px;
     font-weight: bold;
     color: black;
+    margin-top: -33px;
     background-color: white;
     outline: none;
     border: none;
@@ -184,10 +185,9 @@ export const DividerLine = styled.div`
 `;
 
 export const FooterList = styled.ul`
-
     text-decoration: none;
     list-style-type: none;
-    font-family: 'Circular' sans-serif;
+    font-family: 'Circular',sans-serif;
     
     ${mobile(
         css`
@@ -199,7 +199,7 @@ export const FooterList = styled.ul`
 `;
 
 export const FooterListItems = styled.li`
-    margin-top: 14px;
+    margin-top: 20px;
     font-size: 17px;
     color:#A0A0A0;
     font-weight: 600;
@@ -208,6 +208,10 @@ export const FooterListItems = styled.li`
     cursor: pointer;
     &:hover {
         color: white !important;
+    }
+
+    &.listitem {
+        margin-top: 10px;
     }
 `;
 
@@ -228,6 +232,7 @@ export const FooterListHeading = styled.span`
     font-size: 19px;
     font-family: 'Circular' sans-serif;
     font-weight: 500;
+    line-height: 19.2px;
 
 `;
 
@@ -236,28 +241,30 @@ padding: 10px;
 margin-top: 14px;
 border-radius: 4px 0px 0px 4px;
 border: none;
-width: 85%;
+width: 83%;
 height: 44px;
-font-size: 21px;
+font-size: 17px;
 outline: none;
     
 `;
 
 export const SendButton = styled.button`
 padding: 10px;
-margin-top: 14px !important;
+padding-bottom: 13px;
 border-radius: 0px 4px 4px 0px;
 border: none;
-width: 15%;
+width: 17%;
 height: 45px;
-font-weight: bold;
 outline: none;
 background-color: #5D5A9E;
 color: white;
+font-size: 17px;
 
 `;
 
 export const LighterText = styled.span`
     color:#707070;
     font-size: 17px;
+    position: relative;
+    bottom: 35px;
 `;

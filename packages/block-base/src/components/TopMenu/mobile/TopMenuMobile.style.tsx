@@ -25,11 +25,11 @@ export const MenuItemLink = styled.a`
     font-variation-settings: 'wdth' 110, 'wght' 350;
 `;
 
-export const Button = styled.button`
+export const Button = styled.button<{ buttonColor: string }>`
     float: right;
     background-color: transparent;
     border: none;
-    color: white;
+    color: ${(props) => props.buttonColor};
 
     i {
         font-size: 40px;

@@ -44,9 +44,9 @@ export function Hero(props: HeroProps) {
     return (
         <>
             <Wrapper id='Home'>
-                <Container className='container'>
+                <Container className='container px-0'>
                     <Row className='row'>
-                        <Column className='col-lg-6 p-40px '>
+                        <Column className='col-lg-6 ps-0 '>
                             <H1> {header} </H1>
                             <P> {description} </P>
                             <HeroButton> {buttonText} </HeroButton>
@@ -57,6 +57,7 @@ export function Hero(props: HeroProps) {
                                             <ClientIcon className='col-lg-3 col-3 '>
                                                 <Client
                                                     src={clientImage.imgUrl}
+                                                    
                                                 />
                                             </ClientIcon>
                                         </>
@@ -65,7 +66,7 @@ export function Hero(props: HeroProps) {
                             </ClientIcon>
                         </Column>
 
-                        <Column className='col-lg-6'>
+                        <Column className='col-lg-6 pe-0'>
                             <HeroImg extra={extra}></HeroImg>
                         </Column>
                     </Row>

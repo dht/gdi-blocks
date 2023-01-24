@@ -7,13 +7,11 @@ export const Wrapper = styled.div`
     background-position: center bottom;
     background-color: white;
     color: black;
-    height: ${(props) => props.theme.vh('auto')};
+    /* height: ${(props) => props.theme.vh('auto')}; */
     display: flex;
-    padding-top: 70px;
-    padding-bottom: 170px;
+    padding: 120px 0;
     border-top: 1px solid silver;
     font-family: ${(props) => props.theme.fontFamily};
-
 
 
     ${device(
@@ -26,16 +24,17 @@ export const Wrapper = styled.div`
     ${device(
         'tablet',
             css`
+                padding-top: 70px;
                 height: auto;
             `
     )}
 
-   
 
     ${device(
         'mobile',
             css`
-                
+            padding-bottom: 70px;
+            padding-top:70px;   
              height: auto;
             `
         
@@ -53,30 +52,56 @@ export const Row = styled.div`
 
 export const Column = styled.div`
 
-`
+${mobile(
+    css`
+        padding-left: 30px;
+        padding-right: 30px;
+    `
+)}
+
+`;
 
 export const Header = styled.h3 `
     font-size: 48px;
     font-weight: 500;
-    font-family: 'Circular'
-sans-serif;
+    font-family: 'Circular' ,sans-serif;
+
+    ${device(
+        'tablet',
+            css`
+                font-size: 40px;
+            `
+    )}
 
 ${mobile(
     css`
-        font-size: 32px;
+        font-size: 30px;
     `
 )}
 `
 
 export const SubHeader = styled.p`
     font-size: 22px;
-    font-family: 'Roboto'
-sans-serif;
-font-weight: 300;
-color:
-RGB(102, 102, 102)
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+    color:
+    RGB(102, 102, 102);
 
-`
+    ${device(
+        'tablet',
+            css`
+                font-size: 16px;
+            `
+    )}
+
+${mobile(
+    css`
+        font-size: 16px;
+    `
+)}
+
+
+`;
 
 export const Card = styled.div`
 overflow: hidden;
@@ -96,11 +121,14 @@ transition-duration: 0.3s;
 export const CardHeader = styled.div`
 overflow: hidden;
 `;
+
 export const CardBody = styled.div`
 min-height: 200px;
 padding: 30px;
 
 `;
+
+
 export const CardImage = styled.img`
         height: 100%;
         width: 100%;
@@ -112,10 +140,26 @@ export const CardImage = styled.img`
 
         &:hover .cardHover {
             transform: translateY(-10px);
-        }
+        };
+
+
+        ${device(
+            'tablet',
+                css`
+                    border-radius: 4px 4px 0px 0px;
+                `
+        )}
+
+
+        ${mobile(
+            css`
+        border-radius: 3px 3px 0px 0px;
+                
+            `
+        )}
 `;
 
-export const CardTitle = styled.p`
+export const CardTitle = styled.span`
 color: #7A77D0;
 font-weight: bold;
 font-size: 17px;
@@ -125,7 +169,20 @@ font-size: 17px;
 export const CardDescription = styled.h5`
 font-family: 'Circular',sans-serif;
 font-weight: 400;
-font-size: 22px;   
+margin-top: 6px;
+font-size: 22px;
+
+    ${device(
+        'tablet',
+            css`
+                font-size: 18px;
+            `
+    )}        
+    ${mobile(
+        css`
+            font-size: 17px;
+        `
+    )}
 `;
 
 export const CardFooterText = styled.p`
@@ -135,4 +192,16 @@ font-weight: lighter;
 font-size: 17px;
 position: absolute;
 bottom: 10px;
+
+
+.label2::before {
+    content: '•';
+    color: #b5b5b5;
+    font-size: 20px;
+    line-height: 18px;
+    margin: 0 7px;
+}
+
 `;
+
+export const Label = styled.label``;

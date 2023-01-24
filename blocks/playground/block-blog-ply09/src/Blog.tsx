@@ -14,6 +14,7 @@ import {
     CardImage,
     CardTitle,
     CardDescription,
+    Label,
     
 } from './Blog.style';
 
@@ -56,7 +57,7 @@ export function Blog(props: BlogProps) {
                         {BlogDataSet.map((blogData:Json)=>{
                             return(
                                 <>
-                                <Column className='col-lg-4 mt-5'> 
+                                <Column className='col-lg-4 mt-5 mobile-padding'> 
                             <Card className='card p-0'>
                                 <CardHeader className='card-header bg-light p-0 '>
                                     <CardImage src={blogData.imgUrl} alt="" />
@@ -65,8 +66,8 @@ export function Blog(props: BlogProps) {
                                     <CardTitle> {blogData.title} </CardTitle>
                                     <CardDescription> {blogData.description} </CardDescription>
                                     <CardFooterText>
-                                        {blogData.name} &nbsp; &nbsp; 
-                                        {blogData.date}
+                                        <Label>{blogData.name}</Label>    
+                                        <Label className='label2'>{blogData.date}</Label>
                                     </CardFooterText>
                                 </CardBody>
                             </Card>
