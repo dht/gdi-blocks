@@ -193,9 +193,7 @@ export const ContactTitleText = styled.div`
     font-size: 20px;
     font-weight: 500;
     align-self: flex-start;
-    /* padding-bottom: 8px; */
     position: relative;
-    /* margin-bottom: 60px; */
 
     ${mobile(css``)}
 `;

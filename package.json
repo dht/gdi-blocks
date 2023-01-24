@@ -18,6 +18,7 @@
     ],
     "license": "MIT",
     "devDependencies": {
+        "@types/cors": "^2.8.13",
         "@types/jest": "^27.5.1",
         "base-types": "^0.0.4",
         "esbuild": "^0.15.18",

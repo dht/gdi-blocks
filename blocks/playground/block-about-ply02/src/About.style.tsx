@@ -5,26 +5,7 @@ import { mobile, css, device } from '@gdi/engine';
 export const Wrapper = styled.div<{ extra: AboutExtra }>`
     flex: 1;
     background-color: white;
-    height: ${(props) => props.theme.vh(55)};
-    ${device(
-        '720p',
-        css`
-            height: ${(props) => props.theme.vh(70)};
-        `
-    )};
-
-    ${device(
-        'tablet',
-        css`
-            height: ${(props) => props.theme.vh(90)};
-        `
-    )};
-
-    ${mobile(
-        css`
-            height: ${(props) => props.theme.vh(170)};
-        `
-    )};
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     font-family: ${(props) => props.theme.fontFamily};

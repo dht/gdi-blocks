@@ -15,6 +15,7 @@ import {
     GoogleMapContainer,
 } from './Contact.style';
 import GoogleMapReact from 'google-map-react';
+import Map from './../../../../packages/block-base/src/components/Maps/Map';
 
 export const id = 'com.usegdi.blocks.contact-ply05';
 
@@ -106,18 +107,15 @@ export function Contact(props: ContactProps) {
                 </Row>
             </Container>
             <GoogleMapContainer>
-                <GoogleMapReact
-                    bootstrapURLKeys={{
-                        key: '',
-                    }}
+                <Map
+                    lat={-34.397}
+                    lng={150.644}
+                    defaultZoom={14}
                     defaultCenter={{
                         lat: 19.178197,
                         lng: 77.287577,
                     }}
-                    defaultZoom={14}
-                >
-                    <Marker lat={-34.397} lng={150.644} text='My Location' />
-                </GoogleMapReact>
+                />
             </GoogleMapContainer>
         </Wrapper>
     );

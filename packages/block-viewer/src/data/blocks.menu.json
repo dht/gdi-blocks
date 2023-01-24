@@ -1,23 +1,42 @@
 {
-    "card": ["Card"],
-    "gdi": ["Apps", "Tempaltes", "Features"],
-    "kickstarter": ["Customers ❤️", "Movement", "Diary", "Contact"],
+    "card": [
+        "Card\r"
+    ],
+    "gdi": [
+        "Apps\r",
+        "Tempaltes\r",
+        "Features\r"
+    ],
+    "kickstarter": [
+        "Customers ❤️\r",
+        "Movement\r",
+        "Diary\r",
+        "Contact\r"
+    ],
     "playground": [
-        "About",
-        "Projects",
-        "Services",
-        "Plans & Pricing",
-        "Tools & Tips",
-        "Contact"
+        "About\r",
+        "Projects\r",
+        "Services\r",
+        "Plans & Pricing\r",
+        "Tools & Tips\r",
+        "Contact\r"
     ],
     "reference": [
-        "About",
-        "Projects",
-        "Services",
-        "Plans & Pricing",
-        "Tools & Tips",
-        "Contact"
+        "About\r",
+        "Projects\r",
+        "Services\r",
+        "Plans & Pricing\r",
+        "Tools & Tips\r",
+        "Contact\r"
     ],
-    "stack": ["Stack"],
-    "starter": ["Portfolio", "Services", "Resume", "Testimonials", "Contact Me"]
+    "stack": [
+        "Stack\r"
+    ],
+    "starter": [
+        "Portfolio\r",
+        "Services\r",
+        "Resume\r",
+        "Testimonials\r",
+        "Contact Me\r"
+    ]
 }

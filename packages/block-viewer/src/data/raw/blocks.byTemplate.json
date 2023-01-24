@@ -3,51 +3,51 @@
         "card-ah4j1": 0
     },
     "gdi": {
-        "apps-jf84j": 4,
-        "features-j4k1h": 6,
+        "apps-jf84j": 99,
+        "features-j4k1h": 99,
         "footer-ajk34": 7,
-        "gallery-ui5873": 5,
-        "header-aouu4": 3,
-        "hero-ajh53": 1,
-        "top-41hj5": 0,
-        "twins-j1j43": 2
+        "gallery-ui5873": 99,
+        "header-aouu4": 99,
+        "hero-ajh53": 99,
+        "top-41hj5": 99,
+        "twins-j1j43": 99
     },
     "kickstarter": {
-        "cta-uiey3": 5,
-        "divider-aku34": 2,
-        "footer-ui4y2": 6,
-        "hero-ouywy": 1,
-        "quotes-opur3": 3,
-        "top-9yur8": 0,
-        "twins-aou31": 4
+        "cta-uiey3": 99,
+        "divider-aku34": 99,
+        "footer-ui4y2": 99,
+        "hero-ouywy": 99,
+        "quotes-opur3": 99,
+        "top-9yur8": 99,
+        "twins-aou31": 99
     },
     "playground": {
-        "about-ply02": 2,
-        "about-ply03": 3,
-        "contact-ply05": 5,
+        "about-ply02": 99,
+        "about-ply03": 99,
+        "contact-ply05": 99,
         "footer-ply06": 6,
-        "header-ply07": 0,
-        "hero-ply01": 1,
-        "quotes-ply04": 4
+        "header-ply07": 99,
+        "hero-ply01": 99,
+        "quotes-ply04": 99
     },
     "reference": {
-        "hero-plylx": 1,
-        "top-41j4k": 0
+        "hero-plylx": 99,
+        "top-41j4k": 99
     },
     "stack": {
         "grid-st001": 99
     },
     "starter": {
-        "about-iuhr3": 2,
-        "contact-au487": 9,
-        "cta-p8y4a": 3,
-        "hero-hu45i": 1,
-        "numbers-jk123": 4,
-        "portfolio-aiou3": 5,
-        "quotes-iaj2f": 6,
-        "resume-iuo4f": 7,
+        "about-iuhr3": 99,
+        "contact-au487": 99,
+        "cta-p8y4a": 99,
+        "hero-hu45i": 99,
+        "numbers-jk123": 99,
+        "portfolio-aiou3": 99,
+        "quotes-iaj2f": 99,
+        "resume-iuo4f": 99,
         "section-gkj41": 99,
-        "services-uoq83": 8,
-        "top-aqwer": 0
+        "services-uoq83": 99,
+        "top-aqwer": 99
     }
 }

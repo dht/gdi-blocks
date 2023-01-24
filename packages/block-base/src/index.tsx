@@ -25,3 +25,4 @@ export { Share } from './components/Share/Share';
 export { SocialMenu } from './components/SocialMenu/SocialMenu';
 export { TopMenu } from './components/TopMenu/TopMenu';
 export { Whatsapp } from './components/Whatsapp/Whatsapp';
+export { Map } from './components/Maps/Map';

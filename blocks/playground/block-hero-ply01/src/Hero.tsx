@@ -25,8 +25,8 @@ export type HeroExtra = {
 };
 
 export function Hero(props: HeroProps) {
-    const { strings, extra } = props;
-    const { slogan, header, button } = strings;
+    const { extra } = props;
+    const { slogan, header, button } = props.strings;
 
     return (
         <Wrapper

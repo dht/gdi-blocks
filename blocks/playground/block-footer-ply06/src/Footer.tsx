@@ -39,9 +39,8 @@ export type FooterExtra = {
 };
 
 export function Footer(props: FooterProps) {
-    const { strings, extra } = props;
-    const { header, address, mail, tel, description } = strings;
-    const { linksDatasetId = '', menu, menuHeaders } = extra;
+    const { header, address, mail, tel, description } = props.strings;
+    const { linksDatasetId = '', menu, menuHeaders } = props.extra;
 
     const social = useDataset(linksDatasetId);
     const urls = Object.values(social).map((i: Json) => i.url);
