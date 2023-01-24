@@ -14,20 +14,6 @@ export const Wrapper = styled.div`
     color: black;
 `;
 
-export const ContainerItem = styled.div`
-    width: 650px;
-    height: 404px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: transform 0.5s ease-in-out;
-    text-align: center;
-
-    ${mobile(css`
-        width: ${(props) => props.theme.vw(95)};
-        height: ${(props) => props.theme.vh(75)};
-    `)}
-`;
 
 export const H1 = styled.h1`
     font-size: 40px;
@@ -60,7 +46,7 @@ export const Image = styled.div<{ url: string }>`
 
 export const Content = styled.div`
     width: 650px;
-    height: 404px;
+    height: 300px;
     position: relative;
     overflow: hidden;
 

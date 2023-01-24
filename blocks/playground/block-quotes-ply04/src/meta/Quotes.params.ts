@@ -5,6 +5,7 @@ export const params: IWidgetParams = {
     schema: {
         strings: {
             header: { fieldType: 'text', order: 0 },
+            lists: { fieldType: 'dataset', order: 1 },
         },
         colors: {},
         extra: {
