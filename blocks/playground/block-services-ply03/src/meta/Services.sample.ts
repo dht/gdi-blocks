@@ -11,22 +11,22 @@ export const sampleData: ISampleDataPerFlavour = {
             imageUrl: 'https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/ipad.jpg',
             serviceDataset:  [
                 {
-                    id: "g1",
+                    id: "se1",
                     title: "Lorem ipsum dolor sit amet",
                     icon:"business_center",
                 },
                 {
-                    id: "g2",
+                    id: "se2",
                     title: "Conse cteture adipising",
                     icon:"chat_bubble",
                 },
                 {
-                    id: "g3",
+                    id: "se3",
                     title: "Elit sed do eiusmod tempor",
                     icon:"settings",
                 },
                 {
-                    id: "g4",
+                    id: "se4",
                     title: "Incididunt ut labore",
                     icon:"key",
                 }
