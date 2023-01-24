@@ -35,6 +35,7 @@ export const Container = styled.div`
     flex-direction: row;
     align-items: center;
     align-self: center;
+    padding: 0px 20px;
     flex: 1;
     justify-content: center;
     ${mobile(

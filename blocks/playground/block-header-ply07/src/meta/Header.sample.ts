@@ -5,6 +5,33 @@ export const sampleData: ISampleDataPerFlavour = {
             header: 'James Consulting',
         },
         colors: {},
-        extra: {},
+        extra: {
+            items: [
+                {
+                    href: '#About',
+                    title: 'About',
+                },
+                {
+                    href: '#Projects',
+                    title: 'Projects',
+                },
+                {
+                    href: '#Services',
+                    title: 'Services',
+                },
+                {
+                    href: '#Plans & Pricing',
+                    title: 'Plans & Pricing',
+                },
+                {
+                    href: '#Tools & Tips',
+                    title: 'Tools & Tips',
+                },
+                {
+                    href: '#Contact',
+                    title: 'Contact',
+                },
+            ],
+        },
     },
 };

@@ -12,8 +12,10 @@ export const Wrapper = styled.div`
         max-width: 99vw;
     `)}
 `;
-export const MobileContainer = styled(Grid.Container)`
+export const MobileContainer = styled.div`
     max-width: initial;
+    display: inline-flex;
+
     width: 100%;
 
     ${mobile(css``)}
@@ -21,6 +23,7 @@ export const MobileContainer = styled(Grid.Container)`
 
 export const Container = styled.div`
     max-width: initial;
+    display: inline-flex;
     width: 100%;
 
     ${mobile(css``)}

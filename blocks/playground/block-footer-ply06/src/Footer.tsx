@@ -62,8 +62,8 @@ export function Footer(props: FooterProps) {
                         <Column>{menuHeaders[0]}</Column>
                         <Ul>
                             {menu.map((item, index) => (
-                                <Li>
-                                    <Link key={index}>{item.name}</Link>
+                                <Li key={index}>
+                                    <Link>{item.name}</Link>
                                 </Li>
                             ))}
                         </Ul>
