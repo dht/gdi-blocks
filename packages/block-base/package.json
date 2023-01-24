@@ -1,6 +1,6 @@
 {
     "name": "@gdi/block-base",
-    "version": "0.4.14",
+    "version": "0.4.15",
     "scripts": {
         "build": "tsc & vite build && npm run scss",
         "test": "jest",
@@ -15,7 +15,7 @@
         "styled-components": "^5.3.6"
     },
     "peerDependencies": {
-        "@gdi/engine": "^0.4.7",
+        "@gdi/engine": "^0.4.9",
         "@gdi/web-ui": "^0.4.4",
         "react": "^18.2.0",
         "react-dom": "^18.2.0"

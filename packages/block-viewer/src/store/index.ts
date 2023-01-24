@@ -1,18 +1,20 @@
-import { actions } from './actions';
-import { clearState, initialState, reducers } from './initialState';
-import { endpointsConfigOverrides } from './api';
-import { selectors } from './selectors.index';
-import { combineReducers, createStore } from 'redux';
+import { StoreBuilder } from 'redux-connected';
+import { mixer } from '@gdi/store-mixer';
+import { viewer } from '@gdi/store-viewer';
+import { appSagas } from '../sagas';
 
-export const viewer = {
-    initialState,
-    actions,
-    reducers,
-    selectors,
-    endpointsConfigOverrides,
-    clearState,
-};
+const storeBuilder = new StoreBuilder('viewer');
 
-const root = combineReducers(reducers);
+storeBuilder
+    .withReducers('viewer', viewer.reducers)
+    .withInitialState('viewer', viewer.initialState)
+    .withDevtoolsExtensions(true)
+    .withSagas(...appSagas)
+    .withReducers('mixer', mixer.reducers)
+    .withInitialState('mixer', mixer.initialState)
+    .withDevtoolsExtensions(true);
 
-export const store = createStore(root, initialState);
+export let store = storeBuilder.build();
+
+export const actions = mixer.actions;
+export const selectors = mixer.selectors;

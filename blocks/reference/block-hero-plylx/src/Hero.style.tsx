@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { HeroExtra } from './Hero';
-import { Grid, mobile, css } from '@gdi/engine';
-import { CustomButtonBase, Parallax } from '@gdi/block-base';
+import { mobile, css } from '@gdi/engine';
+import { Parallax } from '@gdi/block-base';
 
 export const Wrapper = styled(Parallax)`
     flex: 1;
