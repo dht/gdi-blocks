@@ -1,46 +1,26 @@
 import React, { useContext, useMemo } from 'react';
-import { EngineContext, parseSampleData } from '@gdi/engine';
-import { unflattenInstanceProps, sortBy } from 'shared-base';
+import { EngineContext } from '@gdi/engine';
+import allMenus from '../data/blocks.menu.json';
+import { findTemplateByBlockId } from '../utils/pages';
+
+const SECTION_WIDGET_ID = 'com.usegdi.blocks.section-gkj41';
 
 export function useElements(
-    blockIds: string[] = [],
-    order = {},
-    menuItems: string[] = []
+    pageStructure: IElement[],
+    menuItems: string[] = [],
+    predicate?: (element: IElement) => boolean
 ) {
     const { blocks } = useContext(EngineContext);
 
     const elements = useMemo(() => {
-        const items: Json = blockIds
-            .map((blockId: string) => {
-                const block = Object.values(blocks).find(
-                    (b: IBlock) => b.name === blockId
-                );
-
-                if (!block) {
-                    return null;
-                }
-
-                const { id, sampleData } = block;
-                const firstKey = Object.keys(sampleData)[0];
-                const firstData = parseSampleData(sampleData[firstKey]);
-
-                return {
-                    id,
-                    order: order[blockId] ?? 1,
-                    pageInstanceId: 'i1',
-                    widgetId: id,
-                    instanceProps: unflattenInstanceProps(firstData),
-                };
-            })
-            .filter((i) => i)
-            .sort(sortBy('order'));
+        const items = [...pageStructure];
 
         menuItems.forEach((menuItem) => {
             items.push({
                 id: `menu-${menuItem}`,
                 order: 0,
                 pageInstanceId: 'i1',
-                widgetId: 'com.usegdi.blocks.section-gkj41',
+                widgetId: SECTION_WIDGET_ID,
                 instanceProps: {
                     strings: {
                         text: menuItem,
@@ -56,8 +36,21 @@ export function useElements(
             });
         });
 
-        return items;
-    }, [blockIds, blocks]);
+        return items.filter(predicate || i);
+    }, [pageStructure, blocks]);
 
     return elements as IElement[];
 }
+
+export const useBlock = (pageStructure: IElement[], blockId: string) => {
+    const templateId = findTemplateByBlockId(blockId as string);
+    const menuItems = allMenus[templateId ?? ''] ?? [];
+
+    return useElements(pageStructure, menuItems, (element: IElement) => {
+        const { widgetId } = element;
+        const name = widgetId.split('.').pop();
+        return name === blockId || widgetId === SECTION_WIDGET_ID;
+    });
+};
+
+const i = () => true;

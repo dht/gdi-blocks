@@ -6,7 +6,7 @@ import { store } from '../store';
 import { Theme } from '@gdi/web-ui';
 import { ThemeProvider } from 'styled-components';
 import { useStyledTheme } from '@gdi/hooks';
-import { initBlocks } from '../blocks/blocks.init';
+import { initBlocks } from '../data/blocks.init';
 import { EngineContextProvider } from '@gdi/engine';
 
 export type AppContainerProps = {};
