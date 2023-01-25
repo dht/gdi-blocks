@@ -1,6 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { H1, Wrapper, Greeting, Box } from './Hero.style';
-import { CustomButtonBase } from '@gdi/block-base';
+import { ButtonBase } from '@gdi/block-base';
 
 export const id = 'com.usegdi.blocks.hero-plylx';
 
@@ -19,8 +19,9 @@ export type HeroStrings = {
 export type HeroColors = {};
 
 export type HeroExtra = {
-    imageUrl: string;
-    imageUrlMobile: string;
+    placeholderImageUrl: string;
+    backImageUrl: string;
+    frontImageUrl: string;
     socialDatasetId: string;
 };
 
@@ -33,7 +34,7 @@ export function Hero(props: HeroProps) {
             <Box>
                 <Greeting>{slogan}</Greeting>
                 <H1>{header}</H1>
-                <CustomButtonBase>{button}</CustomButtonBase>
+                <ButtonBase>{button}</ButtonBase>
             </Box>
         </Wrapper>
     );

@@ -12,7 +12,6 @@ export const Wrapper = styled.div<{ rotation: number }>`
     display: flex;
     transform: rotate(-3deg);
     flex-direction: column;
-    position: absolute;
 `;
 
 export const Flex = styled.div`
