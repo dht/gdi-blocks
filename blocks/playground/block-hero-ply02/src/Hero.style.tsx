@@ -133,8 +133,7 @@ export const HeroImg = styled.div<{ extra: HeroExtra }>`
     )}
 `;
 
-export const Client = styled.img`
-
+export const ClientImageSection = styled.img`
         height: auto;
         max-width: 100%;
         
@@ -152,11 +151,6 @@ export const Client = styled.img`
             `
         )};
 
-        ${mobile(
-            css`
-               
-            `
-        )};
 `;
 
 
@@ -242,7 +236,6 @@ export const H1 = styled.h1`
             font-size: 37px;
             line-height: 35px;
             padding-left: 25px;
-
         `
     )}
 `;

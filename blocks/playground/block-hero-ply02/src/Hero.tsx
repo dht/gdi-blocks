@@ -9,7 +9,7 @@ import {
     Row,
     Column,
     HeroButton,
-    Client,
+    ClientImageSection,
 } from './Hero.style';
 
 export const id = 'com.usegdi.blocks.hero-ply02';
@@ -55,9 +55,8 @@ export function Hero(props: HeroProps) {
                                     return (
                                         <>
                                             <ClientIcon className='col-lg-3 col-3 '>
-                                                <Client
+                                                <ClientImageSection
                                                     src={clientImage.imgUrl}
-                                                    
                                                 />
                                             </ClientIcon>
                                         </>
@@ -65,7 +64,6 @@ export function Hero(props: HeroProps) {
                                 })}
                             </ClientIcon>
                         </Column>
-
                         <Column className='col-lg-6 pe-0'>
                             <HeroImg extra={extra}></HeroImg>
                         </Column>
