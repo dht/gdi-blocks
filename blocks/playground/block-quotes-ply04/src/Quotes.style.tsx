@@ -4,8 +4,6 @@ import { mobile, Grid, css } from '@gdi/engine';
 export const Wrapper = styled.div`
     flex: 1;
     background-color: white;
-    padding: 50px;
-    display: flex;
     flex-direction: column;
     align-items: center;
     padding: ${(props) => props.theme.vh(20)} 0;
@@ -20,8 +18,7 @@ export const H1 = styled.h1`
     max-width: 500px;
     font-weight: 400;
     margin: 10px 0;
-    padding: 0;
-    padding-bottom: 50px;
+    padding: 0 0 50px 0;
     color: #163c60;
     text-align: center;
     position: relative;
@@ -146,15 +143,6 @@ export const QuoteContent = styled.div`
     align-items: flex-start;
 `;
 
-export const QuoteSign = styled.div`
-    position: relative;
-    right: 5px;
-
-    i {
-        font-size: 50px;
-    }
-`;
-
 export const QuoteBody = styled.div`
     color: black;
     font-size: 25px;
@@ -175,16 +163,6 @@ export const QuotePerson = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-`;
-
-export const QuotePersonImage = styled.div<{ imageUrl: string }>`
-    background-image: url(${(props) => props.imageUrl});
-    background-size: cover;
-    background-position: center center;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 20px;
 `;
 
 export const QuotePersonName = styled.div`

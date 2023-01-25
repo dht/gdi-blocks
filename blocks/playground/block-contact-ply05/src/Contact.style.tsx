@@ -36,31 +36,16 @@ export const H2 = styled.h2`
     `)}
 `;
 
-export const Description = styled.p`
-    font-size: 18px;
-    max-width: 500px;
-    text-align: justify;
-    line-height: 29px;
-    color: rgba(255, 255, 255, 0.6);
-
-    ${mobile(css`
-        line-height: 34px;
-        font-size: 22px;
-        font-weight: 300;
-        text-align: center;
-    `)}
-`;
 export const Row = styled(Grid.Row)`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     flex: 1;
     width: 70%;
-    margin: 30px 0px;
+    margin: 30px 0;
 
     ${mobile(css`
-        margin: 0px 0px;
-        width: auto;
+        margin: 0;
         flex-direction: column;
         width: 85%;
     `)}
@@ -76,8 +61,7 @@ export const Column = styled(Grid.Column)<{ isButton?: boolean }>`
         display: ${(props) => (props.isButton ? 'contents' : 'flex')};
     `)}
 `;
-
-export const IconWrapperName = styled.div`
+styled.div`
     width: 70px;
     height: 70px;
     display: flex;
@@ -95,8 +79,7 @@ export const IconWrapperName = styled.div`
         display: none;
     `)}
 `;
-
-export const IconWrapperEmail = styled.div`
+styled.div`
     width: 70px;
     height: 70px;
     display: flex;
@@ -117,8 +100,7 @@ export const IconWrapperEmail = styled.div`
 
 export const ContactTitle = styled.div`
     font-size: 32px;
-    padding: 0;
-    padding-left: 15px;
+    padding: 0 15px 0 0;
     margin: 0;
     display: block;
     flex-direction: row;
@@ -135,8 +117,7 @@ export const ContactTitle = styled.div`
 export const ContactMessage = styled.div`
     width: 710px;
     font-size: 32px;
-    padding: 0;
-    padding-left: 15px;
+    padding: 0 15px 0 0;
     margin: 0;
     display: block;
     flex-direction: row;
@@ -174,8 +155,7 @@ export const ContactMessage = styled.div`
 export const ContactTitle3 = styled.div`
     width: 140px;
     font-size: 32px;
-    padding: 0;
-    padding-left: 15px;
+    padding: 0 15px 0 0;
     margin: 0;
     display: block;
     flex-direction: row;
@@ -240,7 +220,6 @@ export const Input = styled.input<{ isRequired?: boolean }>`
     font-size: 18px;
     width: 100%;
     color: white;
-    padding-bottom: 5px;
     box-sizing: content-box;
 
     &:focus {
@@ -249,7 +228,7 @@ export const Input = styled.input<{ isRequired?: boolean }>`
     }
 
     ${mobile(css`
-        padding: 0px;
+        padding: 0;
     `)}
 `;
 
@@ -295,22 +274,7 @@ export const GoogleMapContainer = styled.div`
         padding-left: 0;
     `)}
 `;
-
-export const MapContainer = styled.div`
-    width: 50%;
-    height: 250px;
-    position: relative;
-    background: url('https://developers.google.com/static/maps/images/landing/hero_maps_static_api_480.png')
-        center / cover;
-    align-items: center;
-    align-self: center;
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    justify-content: center;
-`;
-
-export const JobTitle = styled.div`
+styled.div`
     font-size: 22px;
     font-weight: bold;
     font-variation-settings: 'wdth' 105, 'wght' 250;
@@ -322,8 +286,7 @@ export const JobTitle = styled.div`
         text-align: center;
     `)}
 `;
-
-export const LineRow = styled.div`
+styled.div`
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -334,8 +297,7 @@ export const LineRow = styled.div`
         align-items: center;
     `)}
 `;
-
-export const Period = styled.div`
+styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -347,42 +309,3 @@ export const Period = styled.div`
     `)}
 `;
 
-export const Year = styled.div``;
-
-export const Dash = styled.div`
-    padding: 0 3px;
-`;
-
-export const JobCompany = styled.div`
-    font-size: 27px;
-    font-weight: bold;
-    font-variation-settings: 'wdth' 105, 'wght' 350;
-    color: gold;
-
-    ${mobile(css`
-        font-size: 28px;
-        text-align: center;
-    `)}
-`;
-
-export const Items = styled.div``;
-
-export const Item = styled.div`
-    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
-    padding: 20px;
-`;
-
-export const JobDescription = styled.p`
-    font-size: 18px;
-    max-width: 500px;
-    text-align: justify;
-    line-height: 29px;
-    color: rgba(255, 255, 255, 0.6);
-
-    ${mobile(css`
-        line-height: 34px;
-        font-size: 22px;
-        font-weight: 300;
-        text-align: center;
-    `)}
-`;

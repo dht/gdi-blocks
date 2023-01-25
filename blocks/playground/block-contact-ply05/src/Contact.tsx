@@ -14,7 +14,6 @@ import {
     Button,
     GoogleMapContainer,
 } from './Contact.style';
-import GoogleMapReact from 'google-map-react';
 import Map from './../../../../packages/block-base/src/components/Maps/Map';
 
 export const id = 'com.usegdi.blocks.contact-ply05';
@@ -47,10 +46,6 @@ export function Contact(props: ContactProps) {
         button,
         messageTextBox,
     } = props.strings;
-
-    const Marker = (props: any) => {
-        return <div className='SuperAwesomePin'>{props.text}</div>;
-    };
 
     return (
         <Wrapper className='Contact-container' data-testid='Contact-container'>

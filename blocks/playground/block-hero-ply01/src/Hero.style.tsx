@@ -25,7 +25,7 @@ export const Box = styled.div`
     padding: 30px 50px;
     text-align: center;
     border-radius: 20px 20px 0 0;
-    box-shadow: 0 0 0px 10px rgba(255, 255, 255, 0.5),
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5),
         0 0 10px rgba(0, 0, 0, 0.5);
 
     ${device(

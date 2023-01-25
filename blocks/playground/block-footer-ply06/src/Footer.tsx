@@ -2,13 +2,13 @@ import React, { useContext } from 'react';
 import { useDataset } from '@gdi/engine';
 import { SocialIcons } from '@gdi/web-ui';
 import {
-    A,
     Column,
     Container,
     Copy,
     Details,
     Li,
     Link,
+    Paragraph,
     Row,
     Section,
     Ul,
@@ -51,11 +51,11 @@ export function Footer(props: FooterProps) {
                 <Row>
                     <Section>
                         <Column>{header}</Column>
-                        <p>
+                        <Paragraph>
                             <Details>{address}</Details>
                             <Details>{mail}</Details>
                             <Details>{tel}</Details>
-                        </p>
+                        </Paragraph>
                     </Section>
                     <Section isSection={true}>
                         <Column>{menuHeaders[0]}</Column>
@@ -69,7 +69,7 @@ export function Footer(props: FooterProps) {
                     </Section>
                     <Section>
                         <Column>{menuHeaders[1]}</Column>
-                        <p>
+                        <Paragraph>
                             <Ul>
                                 <Li>
                                     <SocialIcons grayscale urls={urls} />
@@ -78,7 +78,7 @@ export function Footer(props: FooterProps) {
                                     <Copy className='pt-4'>{description}</Copy>
                                 </Li>
                             </Ul>
-                        </p>
+                        </Paragraph>
                     </Section>
                 </Row>
             </Container>

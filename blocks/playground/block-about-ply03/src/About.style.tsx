@@ -10,10 +10,10 @@ export const Wrapper = styled.div<{ extra: AboutExtra }>`
         background-size: cover;
         background-position: center bottom;
         position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
         opacity: 0.1;
     }
     padding-top: 50px;
@@ -34,10 +34,9 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    align-self: center;
     flex: 1;
     max-width: 800px;
-    width: 0px;
+    width: 0;
     height: 70%;
     position: relative;
 `;
@@ -47,8 +46,7 @@ export const H1 = styled.h1`
     max-width: 500px;
     font-weight: 500;
     margin: 10px 0;
-    padding: 0;
-    padding-bottom: 20px;
+    padding: 0 0 20px 0;
     color: #163c60;
     text-align: center;
     position: relative;
@@ -63,7 +61,6 @@ export const Body = styled.div`
     text-align-last: center;
     font-weight: bold;
     line-height: 1.5;
-    padding-bottom: 20px;
     font-variation-settings: 'wdth' 125, 'wght' 350;
 `;
 
@@ -72,8 +69,6 @@ export const Button = styled.div`
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 2px;
-    margin-bottom: 30px;
     font-variation-settings: 'wdth' 125, 'wght' 350;
     background-color: white;
     padding: 20px;

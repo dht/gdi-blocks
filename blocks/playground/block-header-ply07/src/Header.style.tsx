@@ -12,14 +12,6 @@ export const Wrapper = styled.div`
         max-width: 99vw;
     `)}
 `;
-export const MobileContainer = styled.div`
-    max-width: initial;
-    display: inline-flex;
-
-    width: 100%;
-
-    ${mobile(css``)}
-`;
 
 export const Container = styled.div`
     max-width: initial;
@@ -39,16 +31,8 @@ export const Row = styled(Grid.Row)`
 
 export const Column = styled(Grid.Column)``;
 
-export const Flex = styled.div`
-    flex: 1;
-
-    ${mobile(css`
-        display: none;
-    `)}
-`;
-
 export const Title = styled.h1`
-    padding: 0px 10px;
+    padding: 0 10px;
     margin: 0;
     font-variation-settings: 'wdth' 100, 'wght' 450;
     text-transform: uppercase;

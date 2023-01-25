@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css, device } from '@gdi/engine';
+import { mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;
@@ -33,6 +33,8 @@ export const Column = styled.h2`
     margin-bottom: 30px;
 `;
 
+export const Paragraph = styled.div``;
+
 export const Ul = styled.ul`
     list-style-type: none;
     padding: 0;
@@ -44,23 +46,6 @@ export const Li = styled.li`
     padding: 0;
     margin: 0;
     list-style-type: none;
-`;
-
-export const A = styled.a`
-    cursor: pointer;
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-        color: gold;
-        text-decoration: underline;
-    }
-
-    &:active {
-        position: relative;
-        bottom: 1px;
-        left: 1px;
-    }
 `;
 
 export const Copy = styled.div`
@@ -78,10 +63,6 @@ export const Link = styled.div`
         text-decoration-line: none;
         color: #8699c8;
     }
-`;
-
-export const NewRow = styled.ul`
-    line-height: 1.8em;
 `;
 
 export const Details = styled.div`
@@ -106,5 +87,3 @@ export const Section = styled.div<{ isSection?: boolean }>`
         `
     )}
 `;
-
-export const Social = styled.div``;
