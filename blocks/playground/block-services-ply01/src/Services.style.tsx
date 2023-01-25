@@ -16,7 +16,11 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
         `
     )}
 
-    ${mobile(css``)}
+    ${mobile(css`
+        .tabletView{
+            padding: 0px 5px 0 2px;
+        }
+    `)}
 `;
 
 export const Container = styled(Grid.Container)`
@@ -72,19 +76,15 @@ export const Skill = styled.div`
     )}
 `;
 
-export const GridContainer = styled(Grid.Container)`
+export const GridContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     flex: 1;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    align-items: stretch;
 
-    ${device(
-        '720p',
-        css`
-            column-gap: 15px;
-        `
-    )}
 
     ${mobile(
         css`
@@ -93,12 +93,13 @@ export const GridContainer = styled(Grid.Container)`
     )}
 `;
 
-export const GridItem = styled(Grid.Container)`
+export const GridItem = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
-
+    width: 31.55%;
+    height:  100%;
     .hover-border {
         position: relative;
         span {
@@ -155,10 +156,6 @@ export const GridItem = styled(Grid.Container)`
         }
     }
 
-    &:nth-child(2) {
-        margin: 0 30px;
-    }
-
     ${device(
         '720p',
         css`
@@ -166,14 +163,7 @@ export const GridItem = styled(Grid.Container)`
         `
     )}
 
-    ${device(
-        'tablet',
-        css`
-            &:nth-child(2) {
-                margin: 0 10px;
-            }
-        `
-    )}
+    
     ${mobile(
         css`
             padding-left: 12px;

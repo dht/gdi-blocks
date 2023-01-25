@@ -28,7 +28,7 @@ export function Services(props: ServicesProps) {
     const { serviceInfoDatasetId} = extra;
   
     const servicenInfoData  = useDataset(serviceInfoDatasetId ?? '') ?? {} ;
-
+ console.log('servicenInfoData', servicenInfoData)
     const [visible, setVisible] = useState(false)
   
     const toggleVisible = () => {

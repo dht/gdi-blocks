@@ -18,6 +18,12 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
            padding-left: 14px;
         `
     )}
+
+${mobile(
+        css`
+            padding-left: 10px;
+        `
+    )}
 `;
 
 
@@ -25,7 +31,7 @@ export const Container = styled(Grid.Container)`
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     column-gap: 40px;
     flex: 1;
 
@@ -131,7 +137,7 @@ export const Skill = styled.div`
     )}
 `;
 
-export const GridContainer = styled(Grid.Container)`
+export const GridContainer = styled.div`
     flex: 1;
 
     ${device(
@@ -148,7 +154,7 @@ export const GridContainer = styled(Grid.Container)`
     )}
 `;
 
-export const GridItem = styled(Grid.Container)`
+export const GridItem = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -187,7 +193,7 @@ export const SkillAncher = styled.span`
     font-size: 20px;
     line-height: 23px;
     max-width: 100%;
-    word-wrap: break-all;
+    word-break: break-all;
     font-weight: 300;
     color: #888;
     text-decoration: none;

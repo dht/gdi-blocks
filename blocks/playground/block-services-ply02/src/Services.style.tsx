@@ -21,8 +21,6 @@ export const Container = styled(Grid.Container)`
     justify-content: center;
     align-items: center;
     flex: 1;
-
-   
 `;
 
 export const GridContainer = styled(Grid.Container)`
