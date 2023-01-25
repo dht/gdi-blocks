@@ -11,7 +11,7 @@ export const params: IWidgetParams = {
         },
         extra: {
             imageUrl: { fieldType: 'image', isRequired: true, order: 1 },
-            serviceDataset: { fieldType: 'dataset', order: 3 }, 
+            serviceDatasetId: { fieldType: 'dataset', isRequired: true, order: 3 }, 
         },
     },
 };

@@ -10,7 +10,7 @@ export const params: IWidgetParams = {
         colors: {
         },
         extra: {
-            serviceDataset: { fieldType: 'dataset', order: 3 }, 
+            serviceInfoDatasetId: { fieldType: 'dataset', isRequired:true , order: 3 }, 
         },
     },
 };

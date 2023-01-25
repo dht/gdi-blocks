@@ -7,7 +7,7 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            galleryDataset: { fieldType: 'dataset', order: 3 },
+            galleryDatasetId: { fieldType: 'dataset',  isRequired: true,order: 3 },
         },
     },
 };

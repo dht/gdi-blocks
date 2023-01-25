@@ -6,7 +6,7 @@ export const params: IWidgetParams = {
         strings: {},
         colors: {},
         extra: {
-            aboutDataset: { fieldType: 'dataset', order: 3 },
+            aboutDatasetId: { fieldType: 'dataset',  isRequired: true, order: 3 },
         },
     },
 };

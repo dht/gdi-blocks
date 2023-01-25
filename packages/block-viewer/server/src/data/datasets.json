@@ -619,5 +619,140 @@
             "location": "New York",
             "youtubeUrl": "https://www.youtube.com/embed/O3EplEYzvBY"
         }
+    },
+    "gallaries": {
+           "1":{
+            "id":"1",
+            "imageUrl":"https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/slider/slide-1.jpg",
+            "title":"Create cute websites fast with us!"
+        },
+        "2":{
+            "id":"2",
+            "imageUrl":"https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/slider/slide-2.jpg",
+            "title":"Tell the World aboout yourself"
+        },
+      "3":{
+            "id":"3",
+            "imageUrl":"https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/slider/slide-3.jpg",
+            "title":"Better landing pages"
+        }
+    },
+    "siteReviews":{
+       "1": {
+            "id": "1",
+            "imageUrl":
+                "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/testimonials/testimonials-1.jpg",
+            "name": "Tom Cooper",
+            "jobTitle": "Designer",
+            "description":
+                "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet conse ctetur adipisicing elit."
+        },
+      "2":  {
+            "id": "2",
+            "imageUrl":
+                "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/testimonials/testimonials-2.jpg",
+            "name": "Arsen Akopyan, Russia",
+            "jobTitle": "Designer",
+            "description":
+                "Roughly a year ago I decided to found a restaurant in Moscow. You know, there is a big infighting in this sphere. company business-creation program became my salvation. I had got many valuable lessons there and tried to embody them. As a result, my restaurant is one of the most popular and successful in Russia."
+        },
+      "3":  {
+            "id": "3",
+            "imageUrl":
+                "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/testimonials/testimonials-3.jpg",
+            "name": "Federico Blancato, Italy",
+            "jobTitle": "Designer",
+            "description":
+                "After graduating from the university, I faced with the problem. There were no company where I had not heard a refusal. My friend advised me company. I have chosen a probation program. I was lucky enough to undergo a training in Google company. That was 3 years ago, and nowadays I am a happy top-manager of this company."
+        }
+    },
+
+    "serviceInformations-1":{
+      "1":  {
+            "id": "1",
+            "title": "Responsive Design",
+            "imageUrl": "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img1.jpg",
+            "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
+        },
+      "2":  {
+            "id": "2",
+            "title": "Built for mobile and up",
+            "imageUrl": "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img2.jpg",
+            "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
+        },
+      "3":  {
+            "id": "3",
+            "title": "Variant Builder included",
+            "imageUrl": "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img3.jpg",
+            "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
+        }
+    },
+    "serviceInformations-2":{
+        
+          "1":  {
+                 "id": "1",
+                 "icon":"laptop",
+                 "title": "Responsive Design",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             },
+           "2":  {
+                 "id": "2",
+                 "title": "Cross-Browser Support",
+                 "icon":"thumb_up_off_alt",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             },
+          "3":   {
+                 "id": "3",
+                 "title": "Creative Design",
+                 "icon":"emoji_objects",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             },
+           "4" : {
+                 "id": "4",
+                 "title": "Bootstrap 3.1",
+                 "icon":"redeem",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             },
+            "5": {
+                 "id": "5",
+                 "title": "100 Icon Fonts",
+                 "icon":"edit_note",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             },
+           "6":  {
+                 "id": "6",
+                 "title": "More Features",
+                 "icon":"handyman",
+                 "description": "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labore et dolore magn.",
+                 "readmore": "Read more "
+             }
+
+    },
+    "serviceInformations-3" :{
+       "1":{
+            "id": "1",
+            "title": "Lorem ipsum dolor sit amet",
+            "icon":"business_center"
+        },
+       "2": {
+            "id": "2",
+            "title": "Conse cteture adipising",
+            "icon":"chat_bubble"
+        },
+       "3": {
+            "id": "3",
+            "title": "Elit sed do eiusmod tempor",
+            "icon":"settings"
+        },
+      "4":  {
+            "id": "4",
+            "title": "Incididunt ut labore",
+            "icon":"key"
+        }
     }
 }

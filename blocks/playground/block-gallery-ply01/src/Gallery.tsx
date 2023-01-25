@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { useDataset } from '@gdi/engine';
 import { Container, Image, Wrapper , Span , Button , Text, IconPerson} from './Gallery.style';
 
 export const id = 'com.usegdi.blocks.gallery-ply01';
@@ -15,12 +16,18 @@ export type GalleryStrings = {
 export type GalleryColors = {};
 
 export type GalleryExtra = {
-    galleryDataset: Json;
+    galleryDatasetId: string;
 };
 
 export function Gallery(props: GalleryProps) {
-    const { galleryDataset } = props.extra;
+    const { extra } = props;
+    const { galleryDatasetId } = extra;
+   
+    const galleryDataset = useDataset(galleryDatasetId ?? '') ?? {};
 
+
+    console.log('galleryDataset', galleryDataset);
+    
     return (
         <Wrapper
             id='carouselExampleCaptions'

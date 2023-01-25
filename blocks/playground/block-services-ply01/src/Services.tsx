@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import { Container, H2, Wrapper,  Skill, SkillAncher, GridContainer, GridItem, RenderDiv,RederImage , IconArrow} from './Services.style';
-
+import { useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.block-services-ply01';
 
@@ -19,15 +19,15 @@ export type ServicesColors = {
 };
 
 export type ServicesExtra = {
-    serviceDataset: Json;
+  serviceInfoDatasetId: string;
 };
 
 export function Services(props: ServicesProps) {
     const { strings, colors, extra } = props;
     const { header, description } = strings;
-    const { serviceDataset} = extra;
+    const { serviceInfoDatasetId} = extra;
   
-
+    const servicenInfoData  = useDataset(serviceInfoDatasetId ?? '') ?? {} ;
 
     const [visible, setVisible] = useState(false)
   
@@ -59,7 +59,7 @@ export function Services(props: ServicesProps) {
                     <H2>{header}</H2>
                     <Skill>{description}</Skill>
                 
-              <GridContainer className='tabletView '>{renderItems(serviceDataset)}</GridContainer>
+              <GridContainer className='tabletView '>{renderItems(servicenInfoData)}</GridContainer>
               </Container>
               <IconArrow onClick={scrollToTop}  isVisible={visible}>
              <i className='material-icons'>expand_less</i>

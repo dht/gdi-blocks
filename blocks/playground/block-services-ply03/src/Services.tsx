@@ -12,7 +12,7 @@ import {
     Image,
     Figure
 } from './Services.style';
-
+import { useDataset } from '@gdi/engine';
 export const id = 'com.usegdi.block-services-ply01';
 
 export type ServicesProps = {
@@ -29,14 +29,17 @@ export type ServicesStrings = {
 export type ServicesColors = {};
 
 export type ServicesExtra = {
-    serviceDataset: Json;
+    serviceDatasetId: string;
     imageUrl: string;
 };
 
 export function Services(props: ServicesProps) {
     const { strings, colors, extra } = props;
     const { header, description } = strings;
-    const { imageUrl, serviceDataset } = extra;
+    const { imageUrl, serviceDatasetId } = extra;
+
+
+    const serviceDataset = useDataset(serviceDatasetId ?? '') ?? {};
 
     return (
         <Wrapper

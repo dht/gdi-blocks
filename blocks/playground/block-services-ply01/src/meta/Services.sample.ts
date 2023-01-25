@@ -8,26 +8,7 @@ export const sampleData: ISampleDataPerFlavour = {
         colors: {
         },
         extra: {
-            serviceDataset:  [
-                {
-                    id: "ser1",
-                    title: "Responsive Design",
-                    imageUrl: "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img1.jpg",
-                    description: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
-                },
-                {
-                    id: "ser2",
-                    title: "Built for mobile and up",
-                    imageUrl: "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img2.jpg",
-                    description: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
-                },
-                {
-                    id: "ser3",
-                    title: "Variant Builder included",
-                    imageUrl: "https://livedemo00-joomla.template-help.com/joomla_prod-23811/images/pages/page1-img3.jpg",
-                    description: "Lorem ipsum dolor sit amet conse ctetur adipisicing elit, sed do eiusmod tempor incid idunt ut labor."
-                }
-            ]
+            serviceInfoDatasetId:  'serviceInformations-1'
         },
     },
 };

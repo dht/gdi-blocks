@@ -9,7 +9,7 @@ import {
     GridContainer,
 } from './Services.style';
 import { SiteContext } from '@gdi/engine';
-
+import { useDataset } from '@gdi/engine';
 export const id = 'com.usegdi.block-services-ply02';
 
 export type ServicesProps = {
@@ -23,12 +23,14 @@ export type ServicesStrings = {};
 export type ServicesColors = {};
 
 export type ServicesExtra = {
-    servicesDataset: Json;
+    servicesDatasetId: string;
 };
 
 export function Services(props: ServicesProps) {
     const { strings, colors, extra } = props;
-    const { servicesDataset } = extra;
+    const { servicesDatasetId } = extra;
+
+    const servicesDataset = useDataset(servicesDatasetId ?? '') ?? {};
 
     return (
         <Wrapper

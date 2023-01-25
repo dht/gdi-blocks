@@ -29,19 +29,19 @@ export type QuotesColors = {};
 
 export type QuotesExtra = {
 
-    aboutDataset: [];
+    aboutDatasetId: string;
 };
 
 export function Quotes(props: QuotesProps) {
     const { extra } = props;
-    const { aboutDataset} = extra;
+    const { aboutDatasetId} = extra;
 
     const [activeIndex, setActiveIndex] = useState(0);
 
-    const items = aboutDataset
-
+    const items  = useDataset(aboutDatasetId ?? '') ?? {} ;
     const { ga } = useContext(SiteContext);
 
+    
     function onChange(index: number) {
         setActiveIndex(index);
 
