@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { AboutExtra } from './About';
-import { mobile, css, device } from '@gdi/engine';
+import { mobile, css } from '@gdi/engine';
 
 export const Wrapper = styled.div<{ extra: AboutExtra }>`
     flex: 1;
@@ -14,9 +14,8 @@ export const Wrapper = styled.div<{ extra: AboutExtra }>`
 export const Container = styled.div`
     display: flex;
     flex-direction: row;
-    align-items: center;
     align-self: center;
-    padding: 0px 20px;
+    padding: 0 20px;
     flex: 1;
     justify-content: center;
     ${mobile(
@@ -40,7 +39,7 @@ export const Box = styled.div`
             margin-bottom: 20px;
             height: 26em;
             padding: 1px;
-            border: 0px solid #8080807d;
+            border: 0 solid #8080807d;
         `
     )};
 `;
@@ -53,14 +52,11 @@ export const H2 = styled.h2`
     text-align: center;
     display: inline-flex;
     justify-content: center;
-    align-items: center;
     align-self: center;
     align-content: center;
-    margin: 10px 10px;
-    padding: 0;
-    padding-bottom: 20px;
+    margin: 10px;
+    padding: 0 0 20px 0;
     color: black;
-    text-align: center;
 `;
 
 export const Body = styled.div`
@@ -72,7 +68,6 @@ export const Body = styled.div`
     line-height: 1.5em;
     font-weight: bold;
     font-variation-settings: 'wdth' 125, 'wght' 350;
-    padding-bottom: 20px;
 `;
 
 export const Button = styled.div`
