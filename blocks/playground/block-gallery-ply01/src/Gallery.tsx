@@ -1,6 +1,19 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useDataset } from '@gdi/engine';
-import { Container, Image, Wrapper , Span , Button , Text, IconPerson} from './Gallery.style';
+import {
+    Container,
+    Image,
+    Wrapper,
+    Carousel,
+    TextContainer,
+    PrevSpan,
+    Span,
+    NextSpan,
+    PrevButton,
+    NextButton,
+    Text,
+    IconPerson,
+} from './Gallery.style';
 
 export const id = 'com.usegdi.blocks.gallery-ply01';
 
@@ -10,8 +23,7 @@ export type GalleryProps = {
     extra: GalleryExtra;
 };
 
-export type GalleryStrings = {
-};
+export type GalleryStrings = {};
 
 export type GalleryColors = {};
 
@@ -22,60 +34,42 @@ export type GalleryExtra = {
 export function Gallery(props: GalleryProps) {
     const { extra } = props;
     const { galleryDatasetId } = extra;
-   
+
     const galleryDataset = useDataset(galleryDatasetId ?? '') ?? {};
 
-
-    console.log('galleryDataset', galleryDataset);
-    
     return (
         <Wrapper
             id='carouselExampleCaptions'
-            className='carousel slide'
             data-testid='Gallery-container'
-            data-interval="false"
+            data-interval='false'
         >
-            <Container className='carousel-inner '>
+            <Container>
                 {galleryDataset.map((item: Json) => (
-                    <Container className='carousel-item active '  key={item.id}>
-                        <Image
-                            src={item.imageUrl}
-                            className='d-block w-100'
-                            alt='img'
-                        />
-                        <Container className='carousel-caption d-md-block top'>
+                    <Carousel key={item.id}>
+                        <Image src={item.imageUrl} alt='img' />
+                        <TextContainer>
                             <Text>{item.title}</Text>
-                        </Container>
-                    </Container>
+                        </TextContainer>
+                    </Carousel>
                 ))}
             </Container>
-            <Button
-                className='carousel-control-prev'
-                type='button'
+            <PrevButton
                 data-bs-target='#carouselExampleCaptions'
                 data-bs-slide='prev'
             >
-                <Span
-                    className='carousel-control-prev-icon'
-                    aria-hidden='true'
-                ></Span>
-                <Span className='visually-hidden'>Previous</Span>
-            </Button>
-            <Button
-                className='carousel-control-next'
-                type='button'
+                <PrevSpan aria-hidden='true'></PrevSpan>
+                <Span>Previous</Span>
+            </PrevButton>
+            <NextButton
                 data-bs-target='#carouselExampleCaptions'
                 data-bs-slide='next'
             >
-                <Span
-                    className='carousel-control-next-icon'
-                    aria-hidden='true'
-                ></Span>
-                <Span className='visually-hidden'>Next</Span>
-            </Button>
-         <IconPerson>
-           <i className='material-icons iconFont'>person_outline</i>
-         </IconPerson>
+                <NextSpan aria-hidden='true'></NextSpan>
+                <Span>Next</Span>
+            </NextButton>
+            <IconPerson>
+                <i className='material-icons iconFont'>person_outline</i>
+            </IconPerson>
         </Wrapper>
     );
 }

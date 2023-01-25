@@ -2,7 +2,9 @@ import styled from 'styled-components';
 import { GalleryExtra } from './Gallery';
 import { Grid, mobile, device, css } from '@gdi/engine';
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div.attrs(()=>({
+    className: 'carousel slide'
+}))`
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
     .top {
@@ -97,9 +99,21 @@ export const Wrapper = styled.div`
     )}
 `;
 
-export const Container = styled.div``;
+export const Container = styled.div.attrs(()=>({
+    className:'carousel-inner'
+}))``;
 
-export const Image = styled.img``;
+export const Carousel = styled.div.attrs(()=>({
+    className: 'carousel-item active'
+}))``;
+
+export const Image = styled.img.attrs(()=>({
+    className: 'd-block w-100'
+}))``;
+
+export const TextContainer = styled.div.attrs(()=>({
+    className: 'carousel-caption d-md-block top'
+}))``;
 
 export const Text = styled.span`
     font-size: 45px;
@@ -114,9 +128,27 @@ export const Text = styled.span`
     )}
 `;
 
-export const Button = styled.button``;
+export const PrevButton = styled.button.attrs(()=> ({
+    className: 'carousel-control-prev',
+    type: 'button',
+}))``;
 
-export const Span = styled.span``;
+export const NextButton = styled.button.attrs(()=>({
+    className: 'carousel-control-next',
+    type: 'button'
+}))``;
+
+export const PrevSpan = styled.span.attrs(()=>({
+    className:'carousel-control-prev-icon'
+}))``;
+
+export const NextSpan = styled.span.attrs(() => ({
+    className:'carousel-control-next-icon'
+}))``;
+
+export  const Span = styled.span.attrs(() => ({
+    className:'visually-hidden'
+}))``;
 
 export const IconPerson = styled.div`
     background-color: #1d9d73;
