@@ -11,7 +11,7 @@ export const Wrapper = styled.div<{ extra: ServicesColors }>`
         'tablet',
         css`
             .tabletView {
-                padding: 0px 19px 0 18px;
+                padding: 0px 10px 0 13px;
             }
         `
     )}
