@@ -2,8 +2,49 @@ import styled from 'styled-components';
 import { GalleryExtra } from './Gallery';
 import { Grid, mobile, device, css } from '@gdi/engine';
 
-export const Wrapper = styled.div.attrs(()=>({
-    className: 'carousel slide'
+const getTop= (size: string) => {
+    switch (size) {
+        case '4k':
+            return css`
+                .top {
+                    top: 530px;
+                }
+            `;
+        case '2k':
+            return css`
+                .top {
+                    top: 320px;
+                }
+            `;
+        case '1080p':
+            return css`
+                .top {
+                    top: 220px;
+                }
+            `;
+        case 'HD+':
+            return css`
+                .top {
+                    top: 190px;
+                }
+            `;
+        case 'HD':
+            return css`
+                .top {
+                    top: 145px;
+                }
+            `;
+        case '720p':
+            return css`
+                .top {
+                    top: 140px;
+                }
+            `;
+    }
+};
+
+export const Wrapper = styled.div.attrs(() => ({
+    className: 'carousel slide',
 }))`
     font-family: 'Ubuntu', sans-serif;
     font-weight: 300;
@@ -11,59 +52,18 @@ export const Wrapper = styled.div.attrs(()=>({
         top: 210px;
     }
 
-    ${device(
-        '4k',
-        css`
-            .top {
-                top: 540px;
-            }
-        `
-    )}
+    ${device('4k', getTop('4k'))}
 
-    ${device(
-        '2k',
-        css`
-            .top {
-                top: 320px;
-            }
-        `
-    )}
+    ${device('2k', getTop('2k'))}
 
-      ${device(
-        '1080p',
-        css`
-            .top {
-                top: 220px;
-            }
-        `
-    )}
+    ${device('1080p', getTop('1080p'))}
 
-    ${device(
-        'HD+',
-        css`
-            .top {
-                top: 190px;
-            }
-        `
-    )}
+    ${device('HD+', getTop('HD+'))}
 
-    ${device(
-        'HD',
-        css`
-            .top {
-                top: 145px;
-            }
-        `
-    )}
+    ${device('HD', getTop('HD'))}
 
-    ${device(
-        '720p',
-        css`
-            .top {
-                top: 140px;
-            }
-        `
-    )}
+    ${device('720p', getTop('720p'))}
+
     ${device(
         'tablet',
         css`
@@ -99,20 +99,20 @@ export const Wrapper = styled.div.attrs(()=>({
     )}
 `;
 
-export const Container = styled.div.attrs(()=>({
-    className:'carousel-inner'
+export const Container = styled.div.attrs(() => ({
+    className: 'carousel-inner',
 }))``;
 
-export const Carousel = styled.div.attrs(()=>({
-    className: 'carousel-item active'
+export const Carousel = styled.div.attrs(() => ({
+    className: 'carousel-item active',
 }))``;
 
-export const Image = styled.img.attrs(()=>({
-    className: 'd-block w-100'
+export const Image = styled.img.attrs(() => ({
+    className: 'd-block w-100',
 }))``;
 
-export const TextContainer = styled.div.attrs(()=>({
-    className: 'carousel-caption d-md-block top'
+export const TextContainer = styled.div.attrs(() => ({
+    className: 'carousel-caption d-md-block top',
 }))``;
 
 export const Text = styled.span`
@@ -128,26 +128,26 @@ export const Text = styled.span`
     )}
 `;
 
-export const PrevButton = styled.button.attrs(()=> ({
+export const PrevButton = styled.button.attrs(() => ({
     className: 'carousel-control-prev',
     type: 'button',
 }))``;
 
-export const NextButton = styled.button.attrs(()=>({
+export const NextButton = styled.button.attrs(() => ({
     className: 'carousel-control-next',
-    type: 'button'
+    type: 'button',
 }))``;
 
-export const PrevSpan = styled.span.attrs(()=>({
-    className:'carousel-control-prev-icon'
+export const PrevSpan = styled.span.attrs(() => ({
+    className: 'carousel-control-prev-icon',
 }))``;
 
 export const NextSpan = styled.span.attrs(() => ({
-    className:'carousel-control-next-icon'
+    className: 'carousel-control-next-icon',
 }))``;
 
-export  const Span = styled.span.attrs(() => ({
-    className:'visually-hidden'
+export const Span = styled.span.attrs(() => ({
+    className: 'visually-hidden',
 }))``;
 
 export const IconPerson = styled.div`
@@ -166,7 +166,7 @@ export const IconPerson = styled.div`
 
     .iconFont {
         font-size: 40px;
-        
+
         &:hover {
             transform: scale(1.1);
         }
