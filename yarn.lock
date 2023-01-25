@@ -4206,7 +4206,7 @@ es-get-iterator@^1.1.2:
     isarray "^2.0.5"
     stop-iteration-iterator "^1.0.0"
 
-esbuild@^0.15.18, esbuild@^0.15.9:
+esbuild@^0.15.9:
   version "0.15.18"
   resolved "https://registry.npmjs.org/esbuild/-/esbuild-0.15.18.tgz"
   integrity sha512-x/R72SmW3sSFRm5zrrIjAhCeQSAWoni3CmHEqfQrZIQTM3lVCdehdwuIqaOtfC2slvpdlLa62GYoN8SxT23m6Q==
