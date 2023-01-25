@@ -1,3 +1,4 @@
+import { useDataset } from '@gdi/engine';
 import React from 'react';
 import {
     H1,
@@ -6,7 +7,7 @@ import {
     Col,
     P,
     AboutCard,
-    H2,
+    H4,
     Span,
     Button,
     CardIcone,
@@ -21,7 +22,6 @@ export type AboutProps = {
 };
 
 export type HeroStrings = {
-    slogan?: string;
     header: string;
     description?: string;
     buttonText?: string;
@@ -32,37 +32,36 @@ export type HeroColors = {};
 
 export type HeroExtra = {
     imageUrl: string;
-    socialDatasetId: string;
-    aboutCardData:Json;
+    aboutCardId:string;
 };
 
 export function About(props: AboutProps) {
     const { strings, extra } = props;
     const { header, description, buttonText , secondDescription } = strings;
-    const { aboutCardData } = extra;
+    const { aboutCardId } = extra;
+
+    const aboutCardData = useDataset(aboutCardId)
 
     return (
         <>
             <Wrapper >
-                <FlexContainer id='About'>
+                <FlexContainer>
                     <Col>
                         {aboutCardData.map((value: Json,index:number) => {
                             return (
-                                <>
                                     <AboutCard className={index==3?"mtt-0":"" || index===0?"card1":"" || index===1?"card2":""} >
                                         <CardIcone  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon4":"" || index===3?"icon3":"" } `} > {value.cardIcon} </CardIcone>
-                                        <H2 className='mt-3 h2'>{value.cardTitle}</H2>
+                                        <H4>{value.cardTitle}</H4>
                                         <Span> {value.cardDescription} </Span>
                                     </AboutCard>
-                                </>
                             );
                         })}
                     </Col>
                     <Col>
-                        <H1 className='margin-top' >{header} </H1>
+                        <H1>{header} </H1>
                         <P> {description} </P>
                         <P> {secondDescription} </P>
-                        <Button className='mt-3'> {buttonText} </Button>
+                        <Button> {buttonText} </Button>
                     </Col>
                 </FlexContainer>
             </Wrapper>

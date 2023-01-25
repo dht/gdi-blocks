@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Grid, mobile, css, device } from '@gdi/engine';
+import {  mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     background-color: white;
@@ -22,44 +22,11 @@ export const Wrapper = styled.div`
     )};
 `;
 
-export const H1 = styled.h1`
-    font-size: 48px;
-    margin-bottom: 22px;
-    padding: 10;
-    line-height: 55px;
-    vertical-align: baseline;
-    color: black;
-    font-family: 'Circular', sans-serif;
-    word-spacing: 5px;
-    font-weight: 400;
 
-    ${device(
-        '720p',
-        css`
-            font-size: 45px;
-        `
-    )}
 
-    ${device(
-        'tablet',
-        css`
-            font-size: 35px;
-            padding-left: 30px;
-            padding-right: 30px;
-        `
-    )}
-    ${mobile(
-        css`
-            font-size: 40px;
-            line-height: 46px;
-            width: 300px;
-            padding-left: 5px;
-            padding-right: 20px;
-        `
-    )}
-`;
-
-export const FlexContainer = styled.div`
+export const FlexContainer = styled.div.attrs(()=>({
+    id:"About"
+}))`
     display: flex;
     flex-direction: row;
     padding-left: 10%;
@@ -293,16 +260,7 @@ export const AboutCard = styled.div`
     )}
 `;
 
-export const H2 = styled.h4`
-    font-weight: 400;
-    font-size: 18px;
-    ${device(
-        '720p',
-        css`
-            font-size: 21px;
-        `
-    )}
-`;
+
 
 export const Span = styled.span`
     font-size: 16px;
@@ -388,4 +346,57 @@ export const CardIcone = styled.span`
         border-radius: 50%;
         background-color: #ecf9f9;
     }
+`;
+
+export const H4 = styled.h4.attrs(()=>({
+    className:"mt-3 h2"
+}))`
+    font-weight: 400;
+    font-size: 18px;
+    ${device(
+        '720p',
+        css`
+            font-size: 21px;
+        `
+    )}
+`;
+
+
+export const H1 = styled.h1.attrs(()=>({
+    className : "margin-top"
+}))`
+    font-size: 48px;
+    margin-bottom: 22px;
+    padding: 10;
+    line-height: 55px;
+    vertical-align: baseline;
+    color: black;
+    font-family: 'Circular', sans-serif;
+    word-spacing: 5px;
+    font-weight: 400;
+
+    ${device(
+        '720p',
+        css`
+            font-size: 45px;
+        `
+    )}
+
+    ${device(
+        'tablet',
+        css`
+            font-size: 35px;
+            padding-left: 30px;
+            padding-right: 30px;
+        `
+    )}
+    ${mobile(
+        css`
+            font-size: 40px;
+            line-height: 46px;
+            width: 300px;
+            padding-left: 5px;
+            padding-right: 20px;
+        `
+    )}
 `;

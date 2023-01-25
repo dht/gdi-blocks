@@ -10,29 +10,7 @@ export const sampleData: ISampleDataPerFlavour = {
         colors: {},
         extra: {
             imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/hero-img-1.png',
-            aboutCardData:[
-                {
-                    "cardTitle":"Super Creative",
-                    "cardDescription":"Digital transformation describes an organisation making a fundamental change from its.",
-                    "cardIcon":"weekend"
-                },
-                {
-                    "cardTitle":"Feature-driven",
-                    "cardDescription":"It’s also a cultural change, a shift in mindset where the whole company supports a new way of thinking.",
-                    "cardIcon":"watch"
-                },
-                {
-                    "cardTitle":"Fox in the Box",
-                    "cardDescription":"We will work with you as the business transforms into one that is efficient, customer-centric.",
-                    "cardIcon":"local_pizza"
-                },
-                {
-                    "cardTitle":"Avant Garde",
-                    "cardDescription":"We can change the way your business thinks and behaves long-term in order to combat the threat of digital disruption.",
-                    "cardIcon":"timer"
-                },
-                
-            ]
+            aboutCardId:"aboutCard"
         },
     },
 };

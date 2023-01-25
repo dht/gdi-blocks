@@ -10,7 +10,7 @@ import {
 
 import { LocalGallery } from '@gdi/web-ui';
 
-import { SiteContext } from '@gdi/engine';
+import { SiteContext, useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.apps-ply07';
 
@@ -28,17 +28,18 @@ export type AppsStrings = {
 export type AppsColors = {};
 
 export type AppsExtra = {
-    appsDatasetId: string;
-    appsDataset: Json;
+    workDatasetId: string;
 };
 
 export function Apps(props: AppsProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { appsDataset } = extra;
+    const { workDatasetId } = extra;
 
    
     const { ga } = useContext(SiteContext);
+
+    const workData = useDataset(workDatasetId)
 
     function onClick(item: Json) {
         ga('navigate', {
@@ -88,7 +89,7 @@ export function Apps(props: AppsProps) {
                     <SubTitle className='text-center'> {slogan} </SubTitle>
                     <div className='text-dark'>
                         <LocalGallery
-                            items={appsDataset as Json[]}
+                            items={workData as Json[]}
                             contain
                             renderOverlay={renderOverlay}
                             onClick={onClick}

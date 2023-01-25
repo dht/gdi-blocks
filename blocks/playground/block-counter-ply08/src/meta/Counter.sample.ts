@@ -7,29 +7,7 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            counterDataset :[
-                {
-                    icon:"devices_other",
-                    count:"230",
-                    title:"Website Created"
-                },
-                {
-                    icon:"store",
-                    count:"34",
-                    title:"Cloud Apps Built"
-                },
-                {
-                    icon:"timer",
-                    count:"72+",
-                    title:"Projects Complated"
-                },
-                {
-                    icon:"favorite_border",
-                    count:"14k",
-                    title:"Likes on Dribbble "
-                },
-                
-            ]
+            counterDatasetId :"counter"
         },
     },
 };

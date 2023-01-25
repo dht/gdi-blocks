@@ -71,32 +71,6 @@ export const Column = styled.div`
 
 `;
 
-export const Header = styled.h3 `
-    font-size: 48px;
-    font-weight: 500;
-    font-family: 'Circular' sans-serif;
-    color: white;
-
-        ${device(
-            '720p',
-                css`
-                    font-size: 40px;
-                `
-        )}
-        ${device(
-            'tablet',
-            css`
-                font-size: 25px;
-                margin-top: 14px;
-            `
-        )}
-
-${mobile(
-    css`
-        font-size: 27px;
-    `
-)}
-`;
 
 export const FooterBack = styled.div`
 background-color : black;

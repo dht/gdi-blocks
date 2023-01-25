@@ -8,11 +8,14 @@ import {
     Card,
     CardBody,
     Icon,
-    CardCounter,
+    CounterCard,
     CardTitle,
+    HeadingColumn,
+    CardContainer,
+    Column
 } from './Counter.style';
 
-import { Column } from '@gdi/engine';
+import {  useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.counter-ply08';
 
@@ -30,44 +33,46 @@ export type CounterStrings = {
 export type CounterColors = {};
 
 export type CounterExtra = {
-    counterDataset: Json;
+    counterDatasetId: string;
 };
 
 export function Apps(props: CounterProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { counterDataset } = extra;
+    const { counterDatasetId } = extra;
+
+    const counters = useDataset(counterDatasetId);
 
     return (
         <>
             <Wrapper>
                 <Container>
                     <Row>
-                        <Column className='text-center'>
+                        <HeadingColumn>
                             <H1>{header}</H1>
                             <SubTitle> {slogan} </SubTitle>
-                        </Column>
+                        </HeadingColumn>
                     </Row>
                     <Row>
-                        {counterDataset.map((counterData: Json) => {
+                        {counters.map((counterData: Json) => {
                             return (
-                                <>
-                                    <Column className='mt-0 mobile-padding '>
-                                        <Card className='card'>
-                                            <CardBody className='card-body'>
-                                                <Icon className='material-symbols-outlined'>
-                                                    {counterData.icon}
-                                                </Icon>
-                                                <CardCounter>
+                                    <Column>
+                                    <CardContainer>
+                                        <Card>
+                                            <CardBody>
+                                                <Icon>{counterData.icon}</Icon>
+                                                <CounterCard>
                                                     {counterData.count}
-                                                </CardCounter>
+                                                </CounterCard>
                                                 <CardTitle>
                                                     {counterData.title}
                                                 </CardTitle>
                                             </CardBody>
                                         </Card>
+                                    </CardContainer>
                                     </Column>
-                                </>
+
+                                
                             );
                         })}
                     </Row>

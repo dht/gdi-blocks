@@ -1,17 +1,15 @@
+import { useDataset } from '@gdi/engine';
 import React, { useContext } from 'react';
 import {
     Container,
     H1,
     H5,
     Wrapper,
-    Row,
     SubTitle,
     VideoImage,
     ProductInfo,
-    Column,
     Icon,
     ProductDescription,
-    iconClass,
     ModalButton,
     PlayIcon,
     ModalContent,
@@ -20,13 +18,19 @@ import {
     ModalBody,
     ModalIframe,
     VideoImageContainer,
+    HeaderRow,
+    ModalRow,
+    VideoColumn,
+    ContentRow,
+    ModalButtonClosed,
+    ProductColumn,
+    ProductCard,
 } from './Cta.style';
 
 export const id = 'com.usegdi.blocks.cta-ply05';
 
 export type CtaProps = {
     strings: CtaStrings;
-    colors: CtaColors;
     extra: CtaExtra;
 };
 
@@ -35,103 +39,89 @@ export type CtaStrings = {
     header: string;
 };
 
-export type CtaColors = {};
-
 export type CtaExtra = {
     imageUrl: string;
-    productDataset: Json;
-    youtubeUrl:string
+    productDatasetId: string;
+    youtubeUrl: string;
 };
 
 export function Cta(props: CtaProps) {
-    const { strings, colors, extra } = props;
+    const { strings, extra } = props;
     const { slogan, header } = strings;
-    const { imageUrl, productDataset,youtubeUrl } = extra;
+    const { productDatasetId, youtubeUrl } = extra;
+
+    const productData = useDataset(productDatasetId);
 
     return (
         <Wrapper>
             <Container>
-                <Row className='row'>
-                    <Column className='col-lg-12 text-center'>
-                        <H1>{header}</H1>
-                        <SubTitle> {slogan}</SubTitle>
-                    </Column>
-                </Row>
+                <HeaderRow>
+                    <H1>{header}</H1>
+                    <SubTitle> {slogan}</SubTitle>
+                </HeaderRow>
 
-                <Row className='row pl-3'>
-                    <Column className='col-lg-6 mt-4'>
+                <ContentRow>
+                    <VideoColumn>
+                        <VideoImageContainer>
+                            <VideoImage extra={extra}>
+                                <ModalButton
+                                    type='button'
+                                    data-bs-toggle='modal'
+                                    data-bs-target='#exampleModal'
+                                >
+                                    <PlayIcon>play_circle</PlayIcon>
+                                </ModalButton>
 
-                    <VideoImageContainer >
-                    <VideoImage extra={extra} >
-                            <ModalButton
-                                type='button'
-                                className=' btn'
-                                data-bs-toggle='modal'
-                                data-bs-target='#exampleModal'
-                            >
-                                <PlayIcon className='material-symbols-outlined playbutton '>
-                                    play_circle
-                                </PlayIcon>
-                            </ModalButton>
+                                <ModalRow
+                                    aria-labelledby='exampleModalLabel'
+                                    aria-hidden='true'
+                                >
+                                    <ModalDialog>
+                                        <ModalContent>
+                                            <ModalHeader>
+                                                <ModalButtonClosed
+                                                    type='button'
+                                                    data-bs-dismiss='modal'
+                                                    aria-label='Close'
+                                                ></ModalButtonClosed>
+                                            </ModalHeader>
 
-                            <Row
-                                className='modal fade'
-                                id='exampleModal'
-                                aria-labelledby='exampleModalLabel'
-                                aria-hidden='true'
-                            >
-                                <ModalDialog className='modal-dialog'>
-                                    <ModalContent className='modal-content modal-class  '>
-                                        <ModalHeader className='modal-header  '>
-                                            <ModalButton
-                                                type='button'
-                                                className='btn-close btn-danger btn '
-                                                data-bs-dismiss='modal'
-                                                aria-label='Close'
-                                            ></ModalButton>
-                                        </ModalHeader>
+                                            <ModalBody>
+                                                <ModalIframe
+                                                    src={youtubeUrl}
+                                                ></ModalIframe>
+                                            </ModalBody>
+                                        </ModalContent>
+                                    </ModalDialog>
+                                </ModalRow>
+                            </VideoImage>
+                        </VideoImageContainer>
+                    </VideoColumn>
 
-                                        <ModalBody className='modal-body'>
-                                            <ModalIframe
-                                               className='iframe-class'
-                                                src={youtubeUrl}
-                                            ></ModalIframe>
-                                        </ModalBody>
-                                    </ModalContent>
-                                </ModalDialog>
-                            </Row>
-                            
-                        </VideoImage>                       
-                    </VideoImageContainer>
-                        
-                    </Column>
-                    
-                    <Column className='col-lg-6'>
-                        <ProductInfo >
-                            <Row className='row'>
-                                {productDataset.map(
-                                    (value: Json, index: number) => {
-                                        return (
-                                            <>
-                                                <Column className='col-lg-12 products-card'  >
-                                                    <Icon className={`material-symbols-outlined ${index===1?"icon2":""} `}>
-                                                        {value.icon}
-                                                    </Icon>
-                                                    <H5 className='mt-2'>
-                                                        {value.label}
-                                                    </H5>
-                                                    <ProductDescription>
-                                                        {value.description}
-                                                    </ProductDescription>
-                                                </Column>
-                                            </>
-                                        );
-                                    }
-                                )}
-                            </Row>
+                    <ProductColumn>
+                        <ProductInfo>
+                            {productData.map((value: Json, index: number) => {
+                                return (
+                                    <>
+                                        <ProductCard>
+                                            <Icon
+                                                className={`material-symbols-outlined ${
+                                                    index === 1 ? 'icon2' : ''
+                                                } `}
+                                            >
+                                                {value.icon}
+                                            </Icon>
+                                            <H5>{value.label}</H5>
+                                            <ProductDescription>
+                                                {value.description}
+                                            </ProductDescription>
+                                        </ProductCard>
+                                    </>
+                                );
+                            })}
                         </ProductInfo>
-                    </Column>
-                </Row>
+                    </ProductColumn>
+                </ContentRow>
             </Container>
         </Wrapper>
     );

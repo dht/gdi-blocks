@@ -7,18 +7,18 @@ export const Wrapper = styled.div`
     background-position: center bottom;
     background-color: white;
     color: black;
-    
+
     display: flex;
     border-top: 1px solid #e5e5e5;
     padding-top: 100px;
     padding-bottom: 125px;
-    font-family: 'Circular',sans-serif;
+    font-family: 'Circular', sans-serif;
 
     ${device(
         'tablet',
-            css`
-                padding: 70px 0;
-            `
+        css`
+            padding: 70px 0;
+        `
     )}
 
     ${mobile(
@@ -26,7 +26,6 @@ export const Wrapper = styled.div`
             padding: 70px 0;
         `
     )}
-
 `;
 
 export const Container = styled(Grid.Container)`
@@ -42,14 +41,14 @@ export const H1 = styled.h3`
     padding: 0;
     color: black;
     text-align: center;
-    font-weight:normal;
-    font-family: 'Circular',sans-serif;
+    font-weight: normal;
+    font-family: 'Circular', sans-serif;
 
     ${device(
         'tablet',
-            css`
-                font-size: 35px;
-            `
+        css`
+            font-size: 35px;
+        `
     )}
     ${mobile(
         css`
@@ -58,18 +57,16 @@ export const H1 = styled.h3`
     )}
 `;
 
-
-
 export const SubTitle = styled.p`
     font-size: 18px;
     color: #666666;
     margin-bottom: 50px;
-    
+
     ${device(
         'tablet',
-            css`
-                font-size:18px;
-            `
+        css`
+            font-size: 18px;
+        `
     )}
     ${mobile(
         css`
@@ -78,16 +75,18 @@ export const SubTitle = styled.p`
     )}
 `;
 
-export const ImageContainer = styled.img`
+export const ImageContainer = styled.img.attrs(() => ({
+    className: 'shadow',
+}))`
     width: 100%;
     height: 400px;
 
     ${device(
         'tablet',
-            css`
-                width: 90%;
-                margin-left: 25px;
-            `
+        css`
+            width: 90%;
+            margin-left: 25px;
+        `
     )}
 
     ${mobile(
@@ -98,6 +97,8 @@ export const ImageContainer = styled.img`
         `
     )}
 `;
+export const Column = styled(Grid.Column)``;
 
-export const Row = styled.div``;
-export const Column = styled.div``;
+export const Row = styled.div.attrs(() => ({
+    className: 'row',
+}))``;

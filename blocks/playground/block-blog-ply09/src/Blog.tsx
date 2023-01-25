@@ -1,13 +1,12 @@
+import { useDataset } from '@gdi/engine';
 import React, { useContext } from 'react';
 import {
-    
     Card,
     CardHeader,
     CardFooterText,
     Container,
     Header,
     Row,
-    Column,
     SubHeader,
     Wrapper,
     CardBody,
@@ -15,7 +14,9 @@ import {
     CardTitle,
     CardDescription,
     Label,
-    
+    HeadingRow,
+    HeadingColumn,
+    BlogCard,
 } from './Blog.style';
 
 export const id = 'com.usegdi.blocks.blog-ply09';
@@ -34,51 +35,61 @@ export type BlogStrings = {
 export type BlogColors = {};
 
 export type BlogExtra = {
-    BlogDataSet: Json;
+    blogDataSetId: string;
 };
 
 export function Blog(props: BlogProps) {
-    const { extra,strings } = props;
-    const { BlogDataSet } = extra;
+    const { extra, strings } = props;
+    const { blogDataSetId } = extra;
     const { slogan, header } = strings;
+
+    const blogData = useDataset(blogDataSetId);
 
     return (
         <>
             <Wrapper>
-                <Container className='container' id='Blog' >
-                    <Row className='row'>
-                        <Column className='text-center col-lg-12'> 
-                        <Header> {header} </Header>
-                         <SubHeader> {slogan} </SubHeader> 
-                         </Column>
-                    </Row>
-                    <Row className='row'>
-
-                        {BlogDataSet.map((blogData:Json)=>{
-                            return(
+                <Container id='Blog'>
+                    <HeadingRow>
+                        <HeadingColumn>
+                            <Header> {header} </Header>
+                            <SubHeader> {slogan} </SubHeader>
+                        </HeadingColumn>
+                    </HeadingRow>
+                    <Row>
+                        {blogData.map((blogData: Json) => {
+                            return (
                                 <>
-                                <Column className='col-lg-4 mt-5 mobile-padding'> 
-                            <Card className='card p-0'>
-                                <CardHeader className='card-header bg-light p-0 '>
-                                    <CardImage src={blogData.imgUrl} alt="" />
-                                </CardHeader>
-                                <CardBody className='card-body'>
-                                    <CardTitle> {blogData.title} </CardTitle>
-                                    <CardDescription> {blogData.description} </CardDescription>
-                                    <CardFooterText>
-                                        <Label>{blogData.name}</Label>    
-                                        <Label className='label2'>{blogData.date}</Label>
-                                    </CardFooterText>
-                                </CardBody>
-                            </Card>
-                        
-                         </Column>
+                                    <BlogCard>
+                                        <Card>
+                                            <CardHeader>
+                                                <CardImage
+                                                    src={blogData.imgUrl}
+                                                />
+                                            </CardHeader>
+                                            <CardBody>
+                                                <CardTitle>
+                                                    {blogData.title}
+                                                </CardTitle>
+                                                <CardDescription>
+                                                    {blogData.description}
+                                                </CardDescription>
+                                                <CardFooterText>
+                                                    <Label>
+                                                        {blogData.name}
+                                                    </Label>
+                                                    <Label className='label2'>
+                                                        {blogData.date}
+                                                    </Label>
+                                                </CardFooterText>
+                                            </CardBody>
+                                        </Card>
+                                    </BlogCard>
                                 </>
-                            )
+                            );
                         })}
                     </Row>
                 </Container>
-          </Wrapper>
+            </Wrapper>
         </>
     );
 }

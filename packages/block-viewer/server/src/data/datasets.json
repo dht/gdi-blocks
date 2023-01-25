@@ -619,5 +619,256 @@
             "location": "New York",
             "youtubeUrl": "https://www.youtube.com/embed/O3EplEYzvBY"
         }
+    },
+    "clientLogos" : {
+        "c1":{
+            "id":"c1",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client4.png"
+        },
+        "c2":{
+            "id":"c2",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client2.png"
+        },
+        "c3":{
+            "id":"c3",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client1.png"
+        },
+        "c4":{
+            "id":"c4",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client3.png"
+        }
+    },
+    "aboutCard":{
+        "ab1":{
+            "id":"ab1",
+            "cardTitle":"Super Creative",
+            "cardDescription":"Digital transformation describes an organisation making a fundamental change from its.",
+            "cardIcon":"weekend"
+        },
+        "ab2":{
+            "id":"ab2",
+            "cardTitle":"Feature-driven",
+            "cardDescription":"It’s also a cultural change, a shift in mindset where the whole company supports a new way of thinking.",
+            "cardIcon":"watch"
+        },
+        "ab3":{
+            "id":"ab3",
+            "cardTitle":"Fox in the Box",
+            "cardIcon":"local_pizza",
+            "cardDescription":"We will work with you as the business transforms into one that is efficient, customer-centric."
+        },
+        "ab4":{
+            "id":"ab4",
+            "cardTitle":"Avant Garde",
+            "cardDescription":"We can change the way your business thinks and behaves long-term in order to combat the threat of digital disruption.",
+            "cardIcon":"timer"
+        }
+    },
+    "product":{
+        "p1":{
+            "id":"p1",
+            "icon":"local_mall",
+            "description":"Our award-winning templates are the most beautiful way to present your ideas online. Stand out with a professional website, portfolio, or online store.",
+            "label":"Super Creative"
+        },
+        "p2":{
+            "id":"p2",
+            "icon":"layers",
+            "label":"Design-driven",
+            "description":"Trusted by the world’s best, Squarespace empowers people with creative ideas to succeed. Every block is designed and coded with huge attention to details."
+        }
+    },
+    "testimonials":{
+        "testi1":{
+            "id":"testi1",
+            "logo":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client2.png",
+                    "description":"'We had so many different requirements for the tool that we easily knocked out 99% of them because they didn’t have the customizations and the features that we needed'",
+                    "sign":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
+                    "clientName":"Bob Mathews",
+                    "clientDesignation":"System Engineer",
+                    "image":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/testimonial1.png" 
+        },
+        "testi2":{
+            "id":"testi2",
+            "logo":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/client3.png",
+            "description":"'Your testimonial page serves as a platform to show off how others have benefited from your product or service, making it a powerful tool.'",
+            "sign":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/signature.png",
+            "clientName":"Anna Robertson",
+            "clientDesignation":"Web Consultant",
+            "image":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/Testi.png"
+        }
+    },
+
+    "workData":{
+        "work1":{
+            "id":"work1",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/willian-justen-de-vasconcellos-550613-unsplash-1-1.jpg",
+                    "tags":[
+                        "Branding"
+                    ]
+        },
+        "work2":{
+            "id":"work2",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/aiony-haust-783975-unsplash-1.jpg",
+                    "description":"Adding my app 2",
+                    "tags":[
+                        "Branding"
+                    ]
+        },
+        "work3":{
+            "id":"work3",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/p3fh6ya5evi.jpg",
+                    "tags":[
+                        "Branding"
+                    ]
+        },
+        "work4":{
+            "id":"work4",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/g83y6do219w.jpg",
+                    "tags":[
+                        "Motion"
+                    ]        
+        },
+        "work5":{
+            "id":"work5",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/w6onivdcfn0.jpg",
+            "tags":[
+                "Motion"
+            ]
+        },
+        "work6":{
+            "id":"work6",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/wbfvgbpdxfa.jpg",
+            "tags":[
+                "Motion"
+            ]
+        },
+        "work7":{
+            "id":"work7",
+            "imgUrl":"https://expertphotography.b-cdn.net/wp-content/uploads/2020/07/social-media-for-photographers-follow-1.jpg",
+                    "tags":[
+                        "Photography"
+                    ]
+        },
+        "work8":{
+            "id":"work8",
+            "imgUrl":"https://www.adobe.com/content/dam/cc/us/en/creativecloud/photography/discover/exposure-in-photography/thumbnail.jpeg",
+                    "tags":[
+                        "Photography"
+                    ]     
+        },
+        "work9":{
+            "id":"work9",
+            "imgUrl":"https://images.ctfassets.net/3s5io6mnxfqz/2JAEcP3ciDKVQTUHIgDY61/17bf9162dda3bb7d566c5f7953f9526c/AdobeStock_275914630.jpeg",
+                    "tags":[
+                        "Photography"
+                    ]
+        },
+        "work10":{
+            "id":"work10",
+            "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqOcLqmJdah4FNsuhsC86gpOc1lnoT2sn6Ug&usqp=CAU",
+            "tags":[
+                "Photography"
+            ]
+        },
+        "work11":{
+            "id":"work11",
+            "imgUrl":"https://img.freepik.com/free-vector/gradient-ui-ux-background_23-2149052117.jpg",
+                    "tags":[
+                        "UI/UX"
+                    ]
+        },
+        "work12":{
+            "id":"work12",
+            "imgUrl":"https://buildfire.com/wp-content/uploads/2021/10/Whats-the-Difference-Between-UX-Design-vs.-UI-Design_@3x-1-scaled-1200x900.jpg",
+            "tags":[
+                "UI/UX"
+            ]
+        }
+    },
+    "counter":{
+        "co1":{
+            "id":"co1",
+            "icon":"devices_other",
+            "count":"230",
+            "title":"Website Created"
+        },
+        "co2":{
+            "id":"co2",
+            "icon":"store",
+            "count":"34",
+            "title":"Cloud Apps Built"
+        },
+        "co3":{
+            "id":"co3",
+            "icon":"timer",
+            "count":"72+",
+            "title":"Projects Complated"
+        },
+        "co4":{
+            "id":"co4",
+            "icon":"favorite_border",
+            "count":"14k",
+            "title":"Likes on Dribbble "
+        }
+    },
+    "blogsData":{
+        "blog1":{
+            "id":"blog1",
+            "title":"Lifestyle",
+            "name":"David Beck",
+            "description":"The Thin Blur Line Between Corporate Lifestyle & Other Things",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/d2phv1q00pk-570x392.jpg",
+            "date":"April 15, 2019"
+        },
+        "blog2":{
+            "id":"blog12",
+            "title":"Lifestyle",
+            "description":"Halfway Though a Decade & More",
+            "name":"David Beck",
+            "date":"April 15, 2019",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/hcfwew744z4-570x392.jpg"
+        },
+        "blog3":{
+            "id":"blog13",
+            "title":"Lifestyle",
+            "name":"David Beck",
+            "description":"How to Live a Balanced Life like Everyone",
+            "imgUrl":"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/5qgiuubxkwm-570x392.jpg",
+            "date":"April 15, 2019"
+        }
+    },
+    "topNav":{
+        "nav1":{
+            "id":"nav1",
+            "href":"#Home",
+            "title":"Home"
+        },
+        "nav2":{
+            "id":"nav2",
+            "href":"#Megamenu",
+            "title":"Megamenu"
+        },
+        "nav3":{
+            "id":"nav3",
+            "href":"#About",
+            "title":"About"
+        },
+        "nav4":{
+            "id":"nav4",
+            "href":"Blog",
+            "title":"Blog"
+        },
+        "nav5":{
+            "id":"nav5",
+            "href":"Contact",
+            "title":"Contact"
+        },
+        "nav6":{
+            "id":"nav6",
+            "href":"#GetWebifyToday",
+            "title":"Get Webify Today"
+        }
     }
+    
 }

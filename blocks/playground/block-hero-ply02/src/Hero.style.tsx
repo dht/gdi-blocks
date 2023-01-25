@@ -9,40 +9,37 @@ export const Wrapper = styled.div`
     color: #000;
     padding-top: 90px;
     padding-bottom: 100px;
-    font-family: 'Circular',sans-serif !important;
-
+    font-family: 'Circular', sans-serif !important;
 
     ${device(
         'HD',
-            css`
-                padding-top: 30px;
-                padding-bottom: 50px;
-            `
+        css`
+            padding-top: 30px;
+            padding-bottom: 50px;
+        `
     )}
 
     ${device(
         '720p',
-            css`
-                padding-bottom: 50px;
-                padding-left: 0px;
-                padding-top: 20px;
-                
-            `
+        css`
+            padding-bottom: 50px;
+            padding-left: 0px;
+            padding-top: 20px;
+        `
     )}
 
     ${device(
-        'tablet'
-            ,css`
-                height: 120vh;
-                padding-top: 30px;
-                
-            
-            `)}
+        'tablet',
+        css`
+            height: 120vh;
+            padding-top: 30px;
+        `
+    )}
 
     ${mobile(
         css`
             height: 110vh;
-            padding-top: 50px;            
+            padding-top: 50px;
         `
     )}
 `;
@@ -59,22 +56,20 @@ export const HeroButton = styled.button`
     cursor: pointer;
     background-color: #5c6ac4;
 
-
     ${device(
         'tablet',
-            css`
-                padding: 15px 25px;
-                margin-top: 20px;
-                font-size: 15px;
-            `
+        css`
+            padding: 15px 25px;
+            margin-top: 20px;
+            font-size: 15px;
+        `
     )}
     ${mobile(
         css`
             padding: 15px 20px;
             font-size: 15px;
             margin-top: 20px;
-          margin-left: 20px;
-
+            margin-left: 20px;
         `
     )}
 `;
@@ -86,9 +81,9 @@ export const P = styled.p`
 
     ${device(
         'tablet',
-            css`
-                font-size: 17px;
-            `
+        css`
+            font-size: 17px;
+        `
     )}
     ${mobile(
         css`
@@ -99,7 +94,6 @@ export const P = styled.p`
         `
     )}
 `;
-
 
 export const HeroImg = styled.div<{ extra: HeroExtra }>`
     background-image: url(${(props) => props.extra.imageUrl});
@@ -128,56 +122,108 @@ export const HeroImg = styled.div<{ extra: HeroExtra }>`
             height: 250px;
             background-size: 100% 100%;
             width: 89%;
-            margin : 0px 10px;
+            margin: 0px 10px;
         `
     )}
 `;
 
 export const ClientImageSection = styled.img`
-        height: auto;
-        max-width: 100%;
-        
-        ${device(
-            'tablet',
-            css`
-                
-            `
-        )};
+    height: auto;
+    max-width: 100%;
 
-        ${device(
-            '720p',
-            css`
-               
-            `
-        )};
+    ${device('tablet', css``)};
 
+    ${device('720p', css``)};
 `;
 
-
-export const ClientIcon = styled.div`
-
-            ${mobile(
-                css`
-                    margin-left: 7px;
-                    margin-right: -11px;
-                `
-            )}
+export const ClientIcon = styled.div.attrs(() => ({
+    className: 'row mt-5',
+}))`
+    ${mobile(
+        css`
+            margin-left: 7px;
+            margin-right: -11px;
+        `
+    )}
 `;
 
+export const ClientIconColumn = styled.div.attrs(() => ({
+    className: 'col-lg-3 col-3',
+}))``;
 
-export const Container = styled.div``;
-export const Row = styled.div`
+export const InformationColumn = styled.div.attrs(() => ({
+    className: 'col-lg-6 ps-0',
+}))``;
+
+export const ImageColumn = styled.div.attrs(() => ({
+    className: 'col-lg-6 pe-0',
+}))``;
+
+export const H1 = styled.h1`
+    font-size: 60px;
+    padding: 0;
+    vertical-align: baseline;
+    color: black;
+    font-family: 'Circular', sans-serif;
+    word-spacing: 5px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 72px;
+    font-style: normal;
+
+    ${device(
+        'HD',
+        css`
+            margin-top: 50px;
+            font-size: 45px;
+            line-height: 39px;
+        `
+    )}
+
+    ${device(
+        '720p',
+        css`
+            font-size: 43px;
+            line-height: 40px;
+            margin-top: 65px !important;
+        `
+    )};
+
+    ${device(
+        'tablet',
+        css`
+            line-height: 50px;
+            font-size: 38px;
+        `
+    )}
+
+    ${mobile(
+        css`
+            font-size: 37px;
+            line-height: 35px;
+            padding-left: 25px;
+        `
+    )}
+`;
+
+export const Container = styled.div.attrs(() => ({
+    className: 'container px-0',
+}))``;
+
+export const Row = styled.div.attrs(() => ({
+    className: 'row',
+}))`
     .p-40px {
         padding: 40px;
     }
 
     ${device(
         'tablet',
-            css`
-                .p-40px {
-                    padding: 0px;
-                }
-            `
+        css`
+            .p-40px {
+                padding: 0px;
+            }
+        `
     )}
 
     ${mobile(
@@ -185,57 +231,6 @@ export const Row = styled.div`
             .p-40px {
                 padding: 10px;
             }
-        `
-    )}
-`;
-export const Column = styled.div``;
-
-
-export const H1 = styled.h1`
-    font-size: 60px;
-    padding: 0;
-    vertical-align: baseline;
-    color: black;
-    font-family: 'Circular',sans-serif;
-    word-spacing: 5px;
-    font-weight:400;
-    margin-bottom: 10px;
-    line-height:72px;
-    font-style:normal;
-
-
-    ${device(
-        'HD',
-            css`
-                margin-top: 50px;
-                font-size: 45px;
-                line-height: 39px;
-            `
-    )}
-
-    ${device(
-        '720p',
-            css`
-                font-size: 43px;
-                line-height: 40px;
-                margin-top: 65px !important;
-            `
-    )};
-     
-
-    ${device(
-        'tablet',
-            css`
-                line-height: 50px;
-                font-size: 38px;
-            `
-    )}
-    
-    ${mobile(
-        css`
-            font-size: 37px;
-            line-height: 35px;
-            padding-left: 25px;
         `
     )}
 `;

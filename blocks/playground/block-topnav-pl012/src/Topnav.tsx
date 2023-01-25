@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
-import { Column, SiteContext } from '@gdi/engine';
+import { Column, SiteContext , useDataset } from '@gdi/engine';
 
-import { TopMenu, Logo } from '@gdi/block-base';
+import { TopMenu } from '@gdi/block-base';
 
 import {
     Container, Flex, LogoImage, Row, Wrapper 
@@ -25,18 +25,18 @@ export type TopnavColors = {
 };
 
 export type TopnavExtra = {
-    topNavDataset:string[];
+    topNavDatasetId:string;
     logoUrl: string;
 };
 
 export function Topnav(props: TopnavProps) {
     const { extra , strings ,colors } = props;
-    const { topNavDataset, logoUrl } = extra;
+    const { topNavDatasetId, logoUrl } = extra;
     const {  } = strings;
     const { navItemColor } = colors;
     const {  ga } = useContext(SiteContext);
 
-   
+    const topNavData = useDataset(topNavDatasetId)
 
     const onClick = (componentName: string) => (item: Json) => {
         ga('navigate', {
@@ -55,9 +55,9 @@ export function Topnav(props: TopnavProps) {
         >
             <Container>
                 <Row>
-                    <Column><LogoImage src={logoUrl} alt="logo" /></Column>
+                    <Column><LogoImage src={logoUrl} /></Column>
                     <Flex />
-                    <TopMenu color={navItemColor} items={topNavDataset} onClick={onClick('topMenu')} />
+                    <TopMenu color={navItemColor} items={topNavData} onClick={onClick('topMenu')} />
                 </Row>
             </Container>
         </Wrapper>

@@ -32,6 +32,7 @@ export function Hero(props: HeroProps) {
     const { ga } = useContext(SiteContext);
 
     const social = useDataset(socialDatasetId);
+    
     const urls = Object.values(social).map((i: Json) => i.url);
 
     const onClick = (url: string) => () => {

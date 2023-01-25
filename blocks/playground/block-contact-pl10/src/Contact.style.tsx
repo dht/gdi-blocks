@@ -37,11 +37,6 @@ export const Wrapper = styled.div`
         )}
 `;
 
-
-export const ContainerFluid = styled.div``;
-
-export const Row = styled.div``;
-
 export const Column = styled.div``;
 
 export const Header = styled.h3 `
@@ -188,3 +183,23 @@ margin-bottom: 30px;
     )}
 
 `;
+
+export const ContainerFluid = styled.div.attrs(()=>({
+    className:"p-0 container-fluid"
+}))``;
+
+export const Row = styled.div.attrs(()=>({
+    className:"row"
+}))``;
+
+export const Container = styled.div.attrs(()=>({
+    className:"col-lg-12"
+}))``;
+
+export const ColumnContainer = styled.div.attrs(()=>({
+    className:"col-lg-6 text-center "
+}))``;
+
+export const ColumnContainer2 = styled.div.attrs(()=>({
+    className:"col-lg-6"
+}))``;

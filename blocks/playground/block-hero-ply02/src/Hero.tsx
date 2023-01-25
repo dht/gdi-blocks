@@ -7,10 +7,14 @@ import {
     HeroImg,
     Container,
     Row,
-    Column,
+    ClientIconColumn,
+    ImageColumn,
     HeroButton,
     ClientImageSection,
+    InformationColumn,
 } from './Hero.style';
+
+import { useDataset } from '@gdi/engine';
 
 export const id = 'com.usegdi.blocks.hero-ply02';
 
@@ -21,7 +25,6 @@ export type HeroProps = {
 };
 
 export type HeroStrings = {
-    slogan?: string;
     header: string;
     description?: string;
     buttonText?: string;
@@ -33,40 +36,39 @@ export type HeroExtra = {
     imageUrl: string;
     socialDatasetId: string;
     heroDatasetId: string;
-    clientDataSet: Json;
+    clientLogoDataSetId: string;
 };
 
 export function Hero(props: HeroProps) {
     const { strings, extra } = props;
     const { header, description, buttonText } = strings;
-    const { clientDataSet } = extra;
+    const { clientLogoDataSetId } = extra;
+    const clientLogo = useDataset(clientLogoDataSetId);
 
     return (
         <>
             <Wrapper id='Home'>
-                <Container className='container px-0'>
-                    <Row className='row'>
-                        <Column className='col-lg-6 ps-0 '>
+                <Container>
+                    <Row>
+                        <InformationColumn>
                             <H1> {header} </H1>
                             <P> {description} </P>
                             <HeroButton> {buttonText} </HeroButton>
-                            <ClientIcon className='row mt-5'>
-                                {clientDataSet.map((clientImage: Json) => {
+                            <ClientIcon>
+                                {clientLogo.map((clientImage: Json) => {
                                     return (
-                                        <>
-                                            <ClientIcon className='col-lg-3 col-3 '>
+                                            <ClientIconColumn>
                                                 <ClientImageSection
                                                     src={clientImage.imgUrl}
                                                 />
-                                            </ClientIcon>
-                                        </>
+                                            </ClientIconColumn>
                                     );
                                 })}
                             </ClientIcon>
-                        </Column>
-                        <Column className='col-lg-6 pe-0'>
+                        </InformationColumn>
+                        <ImageColumn>
                             <HeroImg extra={extra}></HeroImg>
-                        </Column>
+                        </ImageColumn>
                     </Row>
                 </Container>
             </Wrapper>
