@@ -42,7 +42,7 @@ export type FooterExtra = {
     footerResourcesDatasetId: string;
     footerCompanyDatasetId: string;
     footerContactDatasetId: string;
-    headers: Json;
+    headers: string[];
 };
 
 export function Footer(props: FooterProps) {
