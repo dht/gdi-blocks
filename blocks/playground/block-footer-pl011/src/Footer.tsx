@@ -1,5 +1,5 @@
 import { useDataset } from '@gdi/engine';
-import React, { useContext } from 'react';
+import React from 'react';
 import {
     ContainerFluid,
     Row,
@@ -12,7 +12,6 @@ import {
     FooterList,
     FooterListItems,
     FooterIcon,
-    Address,
     FooterListHeading,
     FooterEmail,
     SendButton,

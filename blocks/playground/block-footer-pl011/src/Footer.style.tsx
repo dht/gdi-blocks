@@ -184,7 +184,7 @@ export const FooterList = styled.ul`
 export const FooterListItems = styled.li.attrs(()=>({
     className:"listitem"
 }))`
-    margin-top: 20px;
+    margin-top: 20px !important;
     font-size: 17px;
     color:#A0A0A0;
     font-weight: 600;
@@ -208,11 +208,7 @@ export const FooterIcon = styled.span.attrs(()=>({
     font-weight: 400;
 `;
 
-export const Address = styled.span`
-    font-size: 17px;
-    margin-left: 10px;
 
-`;
 
 export const FooterListHeading = styled.span`
     color:#707070;
