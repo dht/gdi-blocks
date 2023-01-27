@@ -9,7 +9,7 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            BlogDataSetId : {fieldType:'dataset',order:2}
+            blogDataSetId : {fieldType:'dataset',order:2}
         },
     },
 };

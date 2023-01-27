@@ -9,7 +9,7 @@ export const params: IWidgetParams = {
             buttonText :{fieldType:'text',order:2},
             placeholder : {fieldType:'text',order:3},
             footerText : {fieldType:"text",order:4},
-            reservedText:{fieldType:"text",order:5},
+            copyRight:{fieldType:"text",order:5},
             sendButtonIcon:{fieldType:"text",order:6}
         },
         colors: {},
