@@ -17,6 +17,14 @@ import {
     FooterEmail,
     SendButton,
     LighterText,
+    MenuSection,
+    FooterTopRow,
+    DividerColumn,
+    FooterMainColumn,
+    HeadingColumn,
+    FooterBottom,
+    CopyRightSection,
+    FooterSloganSection,
 } from './Footer.style';
 
 export const id = 'com.usegdi.blocks.footer-pl011';
@@ -69,33 +77,33 @@ export function Footer(props: FooterProps) {
     return (
         <>
             <Wrapper>
-                <ContainerFluid className=' p-0 container-fluid'>
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
+                <ContainerFluid>
+                    <Row>
+                        <FooterTopRow>
                             <FooterBack>
-                                <Row className='row'>
-                                    <Column className='col-lg-6 padding-left-sm-30px footer-text-center'>
+                                <Row>
+                                    <FooterSloganSection >
                                         <FooterText> {FooterQuote}</FooterText>
-                                    </Column>
-                                    <Column className='col-lg-6  text-align-right'>
+                                    </FooterSloganSection>
+                                    <Column>
                                         <FooterButton>
                                             {buttonText}
                                         </FooterButton>
                                     </Column>
                                 </Row>
                             </FooterBack>
-                        </Column>
+                        </FooterTopRow>
                     </Row>
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
+                    <Row>
+                        <DividerColumn>
                             <DividerLine></DividerLine>
-                        </Column>
+                        </DividerColumn>
                     </Row>
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
+                    <Row>
+                        <FooterMainColumn>
                             <FooterBack>
-                                <Row className='row text-light'>
-                                    <Column className='col-lg-3'>
+                                <MenuSection>
+                                    <HeadingColumn>
                                         <FooterList>
                                             <FooterListHeading>
                                                 {headers[0]}
@@ -110,9 +118,9 @@ export function Footer(props: FooterProps) {
                                                 }
                                             )}
                                         </FooterList>
-                                    </Column>
+                                    </HeadingColumn>
 
-                                    <Column className='col-lg-3'>
+                                    <HeadingColumn>
                                         <FooterList>
                                             <FooterListHeading>
                                                 {headers[1]}
@@ -127,9 +135,9 @@ export function Footer(props: FooterProps) {
                                                 }
                                             )}
                                         </FooterList>
-                                    </Column>
+                                    </HeadingColumn>
 
-                                    <Column className='col-lg-3'>
+                                    <HeadingColumn>
                                         <FooterList>
                                             <FooterListHeading>
                                                 {headers[2]}
@@ -138,7 +146,7 @@ export function Footer(props: FooterProps) {
                                                 (contact: Json) => {
                                                     return (
                                                         <FooterListItems>
-                                                            <FooterIcon className='material-symbols-outlined'>
+                                                            <FooterIcon>
                                                                 {contact.icon}
                                                             </FooterIcon>
                                                             {contact.title}
@@ -147,14 +155,14 @@ export function Footer(props: FooterProps) {
                                                 }
                                             )}
                                         </FooterList>
-                                    </Column>
+                                    </HeadingColumn>
 
-                                    <Column className='col-lg-3'>
+                                    <HeadingColumn>
                                         <FooterList>
                                             <FooterListHeading>
                                                 {footerText}
                                             </FooterListHeading>
-                                            <FooterListItems className='listitem'>
+                                            <FooterListItems>
                                                 <FooterEmail
                                                     placeholder={placeholder}
                                                 ></FooterEmail>
@@ -163,29 +171,27 @@ export function Footer(props: FooterProps) {
                                                 ></SendButton>
                                             </FooterListItems>
                                         </FooterList>
-                                    </Column>
-                                </Row>
+                                    </HeadingColumn>
+                                </MenuSection>
                             </FooterBack>
-                        </Column>
+                        </FooterMainColumn>
                     </Row>
 
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
+                    <Row>
+                        <DividerColumn>
                             <DividerLine></DividerLine>
-                        </Column>
+                        </DividerColumn>
                     </Row>
-                    <Row className='row'>
-                        <Column className='col-lg-12'>
+                    <Row>
+                        <FooterBottom>
                             <FooterBack>
-                                <Row className='row'>
-                                    <Column className='col-lg-12 pb-4 text-center'>
-                                        <LighterText className='padding-left-sm-30px'>
-                                            {copyRight}
-                                        </LighterText>
-                                    </Column>
+                                <Row>
+                                    <CopyRightSection>
+                                        <LighterText>{copyRight}</LighterText>
+                                    </CopyRightSection>
                                 </Row>
                             </FooterBack>
-                        </Column>
+                        </FooterBottom>
                     </Row>
                 </ContainerFluid>
             </Wrapper>

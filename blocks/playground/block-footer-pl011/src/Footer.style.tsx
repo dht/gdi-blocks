@@ -38,11 +38,21 @@ export const Wrapper = styled.div`
 `;
 
 
-export const ContainerFluid = styled.div``;
+export const ContainerFluid = styled.div.attrs(()=>({
+    className:"p-0 container-fluid"
+}))``;
 
-export const Row = styled.div``;
+export const Row = styled.div.attrs(()=>({
+    className:"row"
+}))``;
 
-export const Column = styled.div`
+export const MenuSection = styled.div.attrs(()=>({
+    className:" row MenuSection"
+}))``;
+
+export const Column = styled.div.attrs(()=>({
+    className:"col-lg-6  text-align-right"
+}))`
     &.text-align-right {
         text-align: right;
     }
@@ -171,7 +181,9 @@ export const FooterList = styled.ul`
 
 `;
 
-export const FooterListItems = styled.li`
+export const FooterListItems = styled.li.attrs(()=>({
+    className:"listitem"
+}))`
     margin-top: 20px;
     font-size: 17px;
     color:#A0A0A0;
@@ -188,7 +200,9 @@ export const FooterListItems = styled.li`
     }
 `;
 
-export const FooterIcon = styled.span`
+export const FooterIcon = styled.span.attrs(()=>({
+    className:"material-symbols-outlined"
+}))`
     color: white;
     font-size: 22px;
     font-weight: 400;
@@ -235,9 +249,39 @@ font-size: 17px;
 
 `;
 
-export const LighterText = styled.span`
+export const LighterText = styled.span.attrs(()=>({
+    className:"padding-left-sm-30px"
+}))`
     color:#707070;
     font-size: 17px;
     position: relative;
     bottom: 35px;
 `;
+
+export const FooterTopRow = styled.div.attrs(()=>({
+    className:"col-lg-12"
+}))``;
+
+export const DividerColumn = styled.div.attrs(()=>({
+    className:"col-lg-12"
+}))``;
+
+export const FooterMainColumn = styled.div.attrs(()=>({
+    className:"col-lg-12"
+}))``;
+
+export const HeadingColumn = styled.div.attrs(()=>({
+    className:"col-lg-3"
+}))``;
+
+export const FooterBottom = styled.div.attrs(()=>({
+    className:"col-lg-12"
+}))``;
+
+export const CopyRightSection = styled.div.attrs(()=>({
+    className:"col-lg-12 text-center"
+}))``;
+
+export const FooterSloganSection = styled.div.attrs(()=>({
+    className:"col-lg-6 padding-left-sm-30px footer-text-center"
+}))``;
