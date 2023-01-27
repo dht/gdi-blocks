@@ -869,6 +869,71 @@
             "href":"#GetWebifyToday",
             "title":"Get Webify Today"
         }
+    },
+    "footerResourcesDataset":{
+        "resource1":{
+            "id":"resource1",
+            "href":"#Home",
+            "title":"Home"
+        },
+        "resource2":{
+            "id":"resource2",
+            "href":"#About",
+            "title":"About"
+        },
+        "resource3":{
+            "id":"resource3",
+            "href":"#Blog",
+            "title":"Blog"
+        },
+        "resource4":{
+            "id":"resource4",
+            "href":"#Contact",
+            "title":"Contact"
+        }
+    },
+    "footerCompanyDataSet":{
+        "company1":{
+            "id":"company1",
+            "href":"",
+            "title":"Product"
+        },
+        "company2":{
+            "id":"company2",
+            "href":"",
+            "title":"FAQ"
+        },
+        "company3":{
+            "id":"company3",
+            "href":"",
+            "title":"Privacy Policy"
+        },
+        "company4":{
+            "id":"company4",
+            "href":"",
+            "title":"Terms & Conditions"
+        }
+    },
+    "footerContactDataSet":{
+        "contact1":{
+            "id":"contact1",
+            "href":"",
+            "title":"221B Baker Street",
+            "icon":"location_on"
+        },
+        "contact2":{
+            "id":"contact2",
+            "href":"",
+            "title":"(372) 587-2335",
+            "icon":"call"
+        },
+        "contact3":{
+            "id":"contact3",
+            "href":"",
+            "title":"11 a.m - 12 p.m",
+            "icon":"schedule"
+        }
+        
     }
     
 }

@@ -71,8 +71,6 @@ export function Apps(props: CounterProps) {
                                         </Card>
                                     </CardContainer>
                                     </Column>
-
-                                
                             );
                         })}
                     </Row>

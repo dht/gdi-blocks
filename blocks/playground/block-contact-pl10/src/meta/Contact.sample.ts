@@ -9,7 +9,7 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            ContactImageUrl:'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png',
+            contactImageUrl:'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png',
         }
     },
 };

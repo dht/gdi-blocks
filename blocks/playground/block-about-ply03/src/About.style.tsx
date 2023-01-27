@@ -150,7 +150,6 @@ export const P = styled.div`
 `;
 
 export const AboutCard = styled.div`
-    height: auto;
     width: 32%;
     float: left;
     padding:40px 30px;
@@ -159,11 +158,8 @@ export const AboutCard = styled.div`
     border: 1px solid #eaeaea;
     margin-top: 35px;
     padding-bottom: 40px;
-
-    overflow: hidden;
-  height: 300px;
-  text-overflow: ellipsis; 
-
+    max-height: auto;
+    min-height: 300px !important;
     
     .ic {
         padding: 10px;
@@ -173,10 +169,45 @@ export const AboutCard = styled.div`
         font-size: 30px;
     }
 
+    &:nth-child(1) .material-symbols-outlined {
+        color: #5c6ac4 !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #eef0f9;
+    }
+
+    &:nth-child(2) .material-symbols-outlined {
+        color: red !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #fceae7;
+    }
+
+    &:nth-child(3) .material-symbols-outlined {
+        color: #47c1bf !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #ecf9f9;
+    }
+    &:nth-child(4) .material-symbols-outlined {
+        color: #9c6ade !important;
+        font-weight: bold;
+        font-size: 30px;
+        padding: 10px;
+        border-radius: 50%;
+        background-color: #f5f0fc;
+    }
+    
     &:hover .ic {
         color: black;
     }
-
+   
     &:hover {
     
         transition-duration: 0.5s !important;
@@ -237,6 +268,7 @@ export const AboutCard = styled.div`
     &:hover Span {
         color: white;
         transition-duration: 0.8s !important;
+        
     }
 
     ${device(
@@ -279,7 +311,6 @@ export const Span = styled.span`
     word-spacing: 2px;
     letter-spacing: 1px;
     font-family: 'Roboto' sans-serif;
-
  
     ${device(
         'HD',
@@ -331,32 +362,7 @@ export const CardIcon = styled.span`
     border-radius: 50%;
     background-color: #eef0f9;
 
-    &.icon2 {
-        color: red !important;
-        font-weight: bold;
-        font-size: 30px;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: #fceae7;
-    }
-
-    &.icon3 {
-        color: #9c6ade !important;
-        font-weight: bold;
-        font-size: 30px;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: #f5f0fc;
-    }
-
-    &.icon4 {
-        color: #47c1bf !important;
-        font-weight: bold;
-        font-size: 30px;
-        padding: 10px;
-        border-radius: 50%;
-        background-color: #ecf9f9;
-    }
+    
 `;
 
 export const H4 = styled.h4.attrs(()=>({

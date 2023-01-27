@@ -158,9 +158,16 @@ export const CounterCard = styled.h3`
     font-family: 'Circular', sans-serif;
 
     ${device(
+        'HD',
+          css`
+            font-size: 35px !important;
+          `
+    )}
+
+    ${device(
         'tablet',
         css`
-            font-size: 40px !important;
+            font-size: 30px !important;
         `
     )}
 `;
@@ -172,7 +179,21 @@ export const CardTitle = styled.span`
     font-family: 'Roboto', sans-serif;
 
     ${device(
+        'HD',
+            css`
+                font-size: 20px;
+            `
+    )}
+
+    ${device(
         'tablet',
+        css`
+            font-size: 14px;
+            
+        `
+    )}
+
+    ${mobile(
         css`
             font-size: 17px;
         `
@@ -185,8 +206,37 @@ export const HeadingColumn = styled(Grid.Column)`
 
 export const CardContainer = styled(Grid.Column).attrs(() => ({
     className: 'mobile-padding',
-}))``;
+}))`
+
+
+    ${device(
+        'tablet',
+            css`
+                padding: 0px;
+            `
+    )}
+
+    
+`;
 
 export const Column = styled.div.attrs(()=>({
-    className:"col-lg-3"
-}))``
+    
+}))`
+    width: 25%;
+
+    ${device(
+        'tablet',
+            css`
+                width: 25%;
+                
+            `
+    )}
+
+    ${mobile(
+        css`
+            width: 100%;
+        `
+    )}
+
+
+`

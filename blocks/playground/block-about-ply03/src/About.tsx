@@ -50,7 +50,7 @@ export function About(props: AboutProps) {
                         {aboutCardData.map((value: Json,index:number) => {
                             return (
                                     <AboutCard  >
-                                        <CardIcon  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon4":"" || index===3?"icon3":"" } `} > {value.cardIcon} </CardIcon>
+                                        <CardIcon  className={`material-symbols-outlined`} > {value.cardIcon} </CardIcon>
                                         <H4>{value.cardTitle}</H4>
                                         <Span> {value.cardDescription} </Span>
                                     </AboutCard>

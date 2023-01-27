@@ -14,8 +14,10 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-           footerDataset : {fieldType:'dataset', order:0},
-
+            headers : {fieldType:"dataset",order:0},
+            footerResourcesDatasetId : {fieldType:'dataset', order:1},
+            footerCompanyDatasetId:{fieldType:'dataset',order:2},
+            footerContactDatasetId:{fieldType:'dataset',order:3}
         },
     },
 };

@@ -1,3 +1,4 @@
+import { useDataset } from '@gdi/engine';
 import React, { useContext } from 'react';
 import {
     ContainerFluid,
@@ -38,12 +39,20 @@ export type FooterStrings = {
 export type FooterColors = {};
 
 export type FooterExtra = {
-    footerDataset: Json;
+    footerResourcesDatasetId: string;
+    footerCompanyDatasetId: string;
+    footerContactDatasetId: string;
+    headers: Json;
 };
 
 export function Footer(props: FooterProps) {
     const { extra, strings } = props;
-    const { footerDataset } = extra;
+    const {
+        footerResourcesDatasetId,
+        footerCompanyDatasetId,
+        footerContactDatasetId,
+        headers,
+    } = extra;
     const {
         FooterQuote,
         footerText,
@@ -52,6 +61,10 @@ export function Footer(props: FooterProps) {
         copyRight,
         sendButtonIcon,
     } = strings;
+
+    const resourceData = useDataset(footerResourcesDatasetId);
+    const companyData = useDataset(footerCompanyDatasetId);
+    const contactData = useDataset(footerContactDatasetId);
 
     return (
         <>
@@ -66,7 +79,6 @@ export function Footer(props: FooterProps) {
                                     </Column>
                                     <Column className='col-lg-6  text-align-right'>
                                         <FooterButton>
-                                            
                                             {buttonText}
                                         </FooterButton>
                                     </Column>
@@ -83,95 +95,63 @@ export function Footer(props: FooterProps) {
                         <Column className='col-lg-12'>
                             <FooterBack>
                                 <Row className='row text-light'>
-                                    {footerDataset.headings.map(
-                                        (heading: any, index: number) => {
-                                            return (
-                                                <>
-                                                    <Column className='col-lg-3 col-md-3'>
-                                                        <FooterList>
-                                                            <FooterListItems>
-                                                                
-                                                                <FooterListHeading>
-                                                                    {heading}
-                                                                </FooterListHeading>
-                                                            </FooterListItems>
-                                                            {heading ===
-                                                                footerDataset
-                                                                    .headings[0] &&
-                                                                footerDataset.Resources.map(
-                                                                    (
-                                                                        resources: string[]
-                                                                    ) => {
-                                                                        return (
-                                                                            <>
-                                                                                <FooterListItems>
-                                                                                    
-                                                                                    {
-                                                                                        resources
-                                                                                    }
-                                                                                </FooterListItems>
-                                                                            </>
-                                                                        );
-                                                                    }
-                                                                )}
-
-                                                            {heading ===
-                                                                footerDataset
-                                                                    .headings[1] &&
-                                                                footerDataset.Company.map(
-                                                                    (
-                                                                        company: string[]
-                                                                    ) => {
-                                                                        return (
-                                                                            <>
-                                                                                <FooterListItems>
-                                                                                    
-                                                                                    {
-                                                                                        company
-                                                                                    }
-                                                                                </FooterListItems>
-                                                                            </>
-                                                                        );
-                                                                    }
-                                                                )}
-
-                                                            {heading ===
-                                                                footerDataset
-                                                                    .headings[2] &&
-                                                                footerDataset.ContactDetails.data.map(
-                                                                    (
-                                                                        address: any
-                                                                    ) => {
-                                                                        return (
-                                                                            <>
-                                                                                <FooterListItems className='d-flex'>
-                                                                                    <FooterIcon className='material-symbols-outlined'>
-                                                                                        
-                                                                                        {
-                                                                                            address.icon
-                                                                                        }
-                                                                                    </FooterIcon>
-                                                                                    <Address>
-                                                                                        {
-                                                                                            address.data
-                                                                                        }
-                                                                                    </Address>
-                                                                                </FooterListItems>
-                                                                            </>
-                                                                        );
-                                                                    }
-                                                                )}
-                                                        </FooterList>
-                                                    </Column>
-                                                </>
-                                            );
-                                        }
-                                    )}
-
-                                    <Column className='col-lg-3 pt-4'>
+                                    <Column className='col-lg-3'>
                                         <FooterList>
                                             <FooterListHeading>
-                                                
+                                                {headers[0]}
+                                            </FooterListHeading>
+                                            {resourceData.map(
+                                                (resource: Json) => {
+                                                    return (
+                                                        <FooterListItems>
+                                                            {resource.title}
+                                                        </FooterListItems>
+                                                    );
+                                                }
+                                            )}
+                                        </FooterList>
+                                    </Column>
+
+                                    <Column className='col-lg-3'>
+                                        <FooterList>
+                                            <FooterListHeading>
+                                                {headers[1]}
+                                            </FooterListHeading>
+                                            {companyData.map(
+                                                (resource: Json) => {
+                                                    return (
+                                                        <FooterListItems>
+                                                            {resource.title}
+                                                        </FooterListItems>
+                                                    );
+                                                }
+                                            )}
+                                        </FooterList>
+                                    </Column>
+
+                                    <Column className='col-lg-3'>
+                                        <FooterList>
+                                            <FooterListHeading>
+                                                {headers[1]}
+                                            </FooterListHeading>
+                                            {contactData.map(
+                                                (contact: Json) => {
+                                                    return (
+                                                        <FooterListItems>
+                                                            <FooterIcon className='material-symbols-outlined'>
+                                                                {contact.icon}
+                                                            </FooterIcon>
+                                                            {contact.title}
+                                                        </FooterListItems>
+                                                    );
+                                                }
+                                            )}
+                                        </FooterList>
+                                    </Column>
+
+                                    <Column className='col-lg-3'>
+                                        <FooterList>
+                                            <FooterListHeading>
                                                 {footerText}
                                             </FooterListHeading>
                                             <FooterListItems className='listitem'>
@@ -200,7 +180,6 @@ export function Footer(props: FooterProps) {
                                 <Row className='row'>
                                     <Column className='col-lg-12 pb-4 text-center'>
                                         <LighterText className='padding-left-sm-30px'>
-                                            
                                             {copyRight}
                                         </LighterText>
                                     </Column>
@@ -213,4 +192,5 @@ export function Footer(props: FooterProps) {
         </>
     );
 }
+
 export default Footer;

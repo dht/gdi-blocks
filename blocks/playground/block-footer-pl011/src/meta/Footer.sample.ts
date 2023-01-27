@@ -13,34 +13,11 @@ export const sampleData: ISampleDataPerFlavour = {
         },
         colors: {},
         extra: {
-            footerDataset : 
-                {
-                    "Resources":[
-                            "Home",
-                            "About",
-                            "Blog",
-                            "Contact"
-                        ],
-                    "Company" : [
-                        "Product",
-                        "FAQ",
-                        "Privacy Policy",
-                        "Terms & Condition"
 
-                    ],
-                    "ContactDetails":{
-                        "data":[
-                            {icon:"location_on",data:"221B Baker Street"},
-                            {icon:"call",data:"(372) 587-2335"},
-                            {icon:"schedule",data:"11 a.m - 12 p.m"}
-                        ]
-                    },
-                    "headings":[
-                        "Resources",
-                        "Company",
-                        "Contact Details"
-                    ]
-                }
+            headers:["Resource","Company","Contact Details"],
+            footerResourcesDatasetId:"footerResourcesDataset",
+            footerCompanyDatasetId:"footerCompanyDataSet",
+            footerContactDatasetId:"footerContactDataSet"
             
         },
     },
