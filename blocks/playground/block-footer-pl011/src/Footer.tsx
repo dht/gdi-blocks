@@ -81,7 +81,7 @@ export function Footer(props: FooterProps) {
                         <FooterTopRow>
                             <FooterBack>
                                 <Row>
-                                    <FooterSloganSection >
+                                    <FooterSloganSection>
                                         <FooterText> {FooterQuote}</FooterText>
                                     </FooterSloganSection>
                                     <Column>
@@ -148,6 +148,7 @@ export function Footer(props: FooterProps) {
                                                             <FooterIcon>
                                                                 {contact.icon}
                                                             </FooterIcon>
+                                                            &nbsp;
                                                             {contact.title}
                                                         </FooterListItems>
                                                     );
