@@ -272,6 +272,7 @@ export const Icon = styled.span`
         color: #50b83c;
         border-radius: 50%;
         background-color: #edf8eb;
+        
         margin-top: 25px !important;
     }
 
