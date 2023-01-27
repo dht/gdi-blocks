@@ -49,7 +49,6 @@ export function Cta(props: CtaProps) {
     const { strings, extra } = props;
     const { slogan, header } = strings;
     const { productDatasetId, youtubeUrl } = extra;
-
     const productData = useDataset(productDatasetId);
 
     return (

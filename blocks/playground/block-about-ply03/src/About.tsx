@@ -10,7 +10,7 @@ import {
     H4,
     Span,
     Button,
-    CardIcone
+    CardIcon
 } from './About.style';
 
 export const id = 'com.usegdi.blocks.about-ply03';
@@ -50,7 +50,7 @@ export function About(props: AboutProps) {
                         {aboutCardData.map((value: Json,index:number) => {
                             return (
                                     <AboutCard  >
-                                        <CardIcone  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon4":"" || index===3?"icon3":"" } `} > {value.cardIcon} </CardIcone>
+                                        <CardIcon  className={`material-symbols-outlined ${index===1?"icon2":"" || index===2?"icon4":"" || index===3?"icon3":"" } `} > {value.cardIcon} </CardIcon>
                                         <H4>{value.cardTitle}</H4>
                                         <Span> {value.cardDescription} </Span>
                                     </AboutCard>

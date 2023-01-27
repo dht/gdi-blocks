@@ -10,7 +10,6 @@ export const sampleData: ISampleDataPerFlavour = {
             productDatasetId :"product",
             imageUrl: 'https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/video-block-bg.jpg',
             youtubeUrl:'https://www.youtube.com/embed/7KIEvEODCI4?autoplay=1'
-            
         },
     },
 };

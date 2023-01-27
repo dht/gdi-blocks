@@ -221,6 +221,15 @@ export const AboutCard = styled.div`
         box-shadow: 0 10px 19px 1px rgb(156 106 222 / 20%);
     }
 
+    &:hover {
+        background-image: linear-gradient(
+            120deg,
+            rgba(87, 82, 208, 0.5) 0%,
+            #605bd2
+        );
+        box-shadow: 0 10px 19px 1px rgb(87 82 208 / 20%);
+    }
+
     &:hover .h2 {
         color: white !important;
         transition-duration: 0.8s;
@@ -314,7 +323,7 @@ export const Span = styled.span`
     )}
 `;
 
-export const CardIcone = styled.span`
+export const CardIcon = styled.span`
     color: #5c6ac4 !important;
     font-weight: bold;
     font-size: 30px;
