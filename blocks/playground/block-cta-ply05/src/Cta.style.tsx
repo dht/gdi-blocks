@@ -185,14 +185,15 @@ ${device(
                 height: 200px;
             }
             .modal-class {
-                width: 370px;
+                width: 350px;
                 height: 200px;
-                left: -5px;
-                top: 200px;
+                left: 130px;
+                top: 0px;
             }
             .playbutton {
                 font-size: 65px;
                 margin-left: -136px;
+                top: 25px;
             }
         `
     )}

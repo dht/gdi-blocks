@@ -61,6 +61,7 @@ export const SubTitle = styled.p`
     font-size: 18px;
     color: #666666;
     margin-bottom: 50px;
+    text-align: center;
 
     ${device(
         'tablet',
