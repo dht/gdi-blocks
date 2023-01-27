@@ -856,12 +856,12 @@
         },
         "nav4":{
             "id":"nav4",
-            "href":"Blog",
+            "href":"#Blog",
             "title":"Blog"
         },
         "nav5":{
             "id":"nav5",
-            "href":"Contact",
+            "href":"#Contact",
             "title":"Contact"
         },
         "nav6":{
