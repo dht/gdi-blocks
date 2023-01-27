@@ -47,7 +47,7 @@ export function About(props: AboutProps) {
             <Wrapper >
                 <FlexContainer>
                     <Col>
-                        {aboutCardData.map((value: Json,index:number) => {
+                        {aboutCardData.map((value: Json) => {
                             return (
                                     <AboutCard  >
                                         <CardIcon  className={`material-symbols-outlined`} > {value.cardIcon} </CardIcon>

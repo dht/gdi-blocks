@@ -1,5 +1,5 @@
 import { useDataset } from '@gdi/engine';
-import React, { useContext } from 'react';
+import React from 'react';
 import {
     Card,
     CardHeader,
@@ -56,29 +56,29 @@ export function Blog(props: BlogProps) {
                         </HeadingColumn>
                     </HeadingRow>
                     <Row>
-                        {blogData.map((blogData: Json) => {
+                        {blogData.map((blog: Json) => {
                             return (
                                 <>
                                     <BlogCard>
                                         <Card>
                                             <CardHeader>
                                                 <CardImage
-                                                    src={blogData.imgUrl}
+                                                    src={blog.imgUrl}
                                                 />
                                             </CardHeader>
                                             <CardBody>
                                                 <CardTitle>
-                                                    {blogData.title}
+                                                    {blog.title}
                                                 </CardTitle>
                                                 <CardDescription>
-                                                    {blogData.description}
+                                                    {blog.description}
                                                 </CardDescription>
                                                 <CardFooterText>
                                                     <Label>
-                                                        {blogData.name}
+                                                        {blog.name}
                                                     </Label>
                                                     <Label className='label2'>
-                                                        {blogData.date}
+                                                        {blog.date}
                                                     </Label>
                                                 </CardFooterText>
                                             </CardBody>
@@ -93,4 +93,5 @@ export function Blog(props: BlogProps) {
         </>
     );
 }
+
 export default Blog;

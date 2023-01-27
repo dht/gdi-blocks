@@ -4,8 +4,7 @@ import { Grid, mobile, css, device } from '@gdi/engine';
 export const Wrapper = styled.div`
     flex: 1;
     background-color: #223;
-    padding: 100px 0;
-    padding-top: 0px;
+    padding-top: 0;
 
     ${device(
         'tablet',
@@ -23,8 +22,7 @@ export const Wrapper = styled.div`
 export const H2 = styled.h3`
     font-size: 42px;
     padding: 0;
-    margin: 0;
-    margin-bottom:10px;
+    margin: 0 0 10px 0;
     color: white;
 
 

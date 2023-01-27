@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mobile, css, device, Grid } from '@gdi/engine';
+import { mobile, css, device } from '@gdi/engine';
 
 export const Wrapper = styled.div`
     flex: 1;
@@ -117,7 +117,7 @@ export const CardBody = styled.div.attrs(()=>({
 export const CardImage = styled.img`
     height: 100%;
     width: 100%;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 0 0;
     transition-duration: 0.3s;
     &:hover {
         transform: scale(1.04);
@@ -130,13 +130,13 @@ export const CardImage = styled.img`
     ${device(
         'tablet',
         css`
-            border-radius: 4px 4px 0px 0px;
+            border-radius: 4px 4px 0 0;
         `
     )}
 
     ${mobile(
         css`
-            border-radius: 3px 3px 0px 0px;
+            border-radius: 3px 3px 0 0;
         `
     )}
 `;
@@ -167,7 +167,7 @@ export const CardDescription = styled.h5`
 `;
 
 export const CardFooterText = styled.p`
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     font-size: 17px;
     position: absolute;

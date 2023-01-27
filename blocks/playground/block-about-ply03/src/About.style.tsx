@@ -99,7 +99,6 @@ export const Col = styled.div`
     ${mobile(
         css`
             .pt-10 {
-                padding-top: 4%;
                 padding: 20px;
             }
             .hero-button {
@@ -158,7 +157,6 @@ export const AboutCard = styled.div`
     border: 1px solid #eaeaea;
     margin-top: 35px;
     padding-bottom: 40px;
-    max-height: auto;
     min-height: 300px !important;
     
     .ic {

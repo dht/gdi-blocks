@@ -9,8 +9,6 @@ export const Wrapper = styled.div`
     color: black;
     height: ${(props) => props.theme.vh('auto')};
     display: flex;
-    padding-top: 0px;
-    padding-bottom: 0px;
     font-family: ${(props) => props.theme.fontFamily};
 
     ${device(
@@ -42,7 +40,7 @@ export const Column = styled.div``;
 export const Header = styled.h3 `
     font-size: 48px;
     font-weight: 500;
-    font-family: 'Circular' sans-serif;
+    font-family: 'Circular', sans-serif;
     color: white;
 
         ${device(
@@ -133,7 +131,7 @@ export const EmailBox = styled.input`
     font-size: 17px;
     width: 300px;
     color: #666666;
-    border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0 0 5px;
 
     ${mobile(
         css`
@@ -154,7 +152,7 @@ font-size: 17px;
 padding: 10px 16px ;
 color: white;
 background-color: #50B83C;
-border-radius: 0px 5px 5px 0px;
+border-radius: 0 5px 5px 0;
 font-weight: bold;
   
   ${mobile(

@@ -34,7 +34,7 @@ export const Wrapper = styled.div`
         css`
             padding-top: 70px;
             height: 120vh;
-            padding-bottom: 0px;
+            padding-bottom: 0;
         `
     )}
 `;
@@ -86,7 +86,7 @@ export const ClientImage = styled.img`
     min-height: 270px !important;
     height: 100%;
     width: 99%;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     background-size: cover !important;
 
     ${device(
@@ -104,7 +104,7 @@ export const ClientImage = styled.img`
             width: 120%;
             height: 210px;
             transform: translateX(-30px);
-            border-radius: 10px 10px 0px 0px;
+            border-radius: 10px 10px 0 0;
         `
     )}
 `;
@@ -195,26 +195,25 @@ export const CarouselSubContainer = styled.div`
         'tablet',
         css`
             .margintop {
-                margin-top: 0px;
+                margin-top: 0;
             }
             .margintop-p {
-                margin-top: 0px;
+                margin-top: 0;
             }
-            padding: 20px;
-            padding-bottom: 10px;
+            padding: 20px 20px 10px 20px;
         `
     )}
 
     ${mobile(
         css`
-            border-top: 0px;
+            border-top: 0;
             border-radius: 0 0 10px 10px;
             border: none;
             position: relative;
             left: 20px;
             padding-right: 40px;
             right: 20px;
-            padding-left: 0px;
+            padding-left: 0;
 
             .margintop {
                 margin-top: 20px;
@@ -224,7 +223,7 @@ export const CarouselSubContainer = styled.div`
 `;
 
 export const CarouselSubContainer2 = styled.div`
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0 10px 10px 0;
     overflow: hidden;
     width: 100%;
     ${device(

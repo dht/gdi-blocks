@@ -84,7 +84,7 @@ export const VideoImage = styled.div<{ extra: CtaExtra }>`
     align-items: center;
     justify-content: center;
 
-    .playbutton {
+    .play-button {
         font-size: 150px;
         margin-top: -70px;
     }
@@ -97,7 +97,7 @@ export const VideoImage = styled.div<{ extra: CtaExtra }>`
         background-color: transparent !important;
         width: 1220px;
         height: 100%;
-        padding: 0px;
+        padding: 0;
         border: none;
         position: absolute;
         left: -300px;
@@ -113,7 +113,7 @@ export const VideoImage = styled.div<{ extra: CtaExtra }>`
                 width: 1000px;
                 height: 490px;
                 left: -210px;
-                top: 0px;
+                top: 0;
             }
         `
     )}
@@ -127,7 +127,7 @@ export const VideoImage = styled.div<{ extra: CtaExtra }>`
             .modal-class {
                 width: 620px;
                 height: 300px;
-                left: 0px;
+                left: 0;
                 top: 100px;
             }
         `
@@ -164,7 +164,7 @@ ${device(
                 top: 100px;
             }
 
-            .playbutton {
+            .play-button {
                 position: relative;
                 top: -40px;
                 font-size: 110px;
@@ -190,7 +190,7 @@ ${device(
                 left: 130px;
                 top: 0px;
             }
-            .playbutton {
+            .play-button {
                 font-size: 65px;
                 margin-left: -136px;
                 top: 25px;
@@ -258,10 +258,9 @@ export const ProductDescription = styled.p`
 export const Icon = styled.span`
     padding: 18px;
     font-weight: bold;
-    margin-top: -20px !important;
+    margin-top: -30px !important;
     font-size: 30px;
     color: #007ace;
-    margin-top: 0px;
     border-radius: 50%;
     background-color: aliceblue;
 
@@ -297,9 +296,7 @@ export const HeaderRow = styled.div`
     text-align: center;
 `;
 
-export const HeaderColumn = styled.div.attrs(() => ({
-    className: '',
-}));
+
 
 export const ModalRow = styled.div.attrs(() => ({
     className: ' modal fade',
@@ -307,7 +304,7 @@ export const ModalRow = styled.div.attrs(() => ({
 }))``;
 
 export const PlayIcon = styled.span.attrs(() => ({
-    className: 'material-symbols-outlined playbutton ',
+    className: 'material-symbols-outlined play-button ',
 }))``;
 
 export const VideoColumn = styled.div.attrs(() => ({
@@ -352,7 +349,6 @@ export const ProductColumn = styled.div.attrs(() => ({
 export const ProductCard = styled.div`
     ${mobile(
         css`
-            margin-top: -95px;
             position: relative;
             height: 200px;
             left: 100px;

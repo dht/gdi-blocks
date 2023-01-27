@@ -9,8 +9,7 @@ export const Wrapper = styled.div`
     color: black;
     
     display: flex;
-    padding-top: 0px;
-    padding-bottom: 0px;
+   
     font-family: 'Circular',sans-serif;
 
 
@@ -104,7 +103,7 @@ padding: 60px 200px 50px 200px;
                 padding-left: 30px;
             }
             padding-top: 50px;
-            padding-left: 0px;
+            
         `
     )}
 
@@ -213,7 +212,7 @@ export const FooterListHeading = styled.span`
 export const FooterEmail = styled.input`
 padding: 10px;
 margin-top: 14px;
-border-radius: 4px 0px 0px 4px;
+border-radius: 4px 0 0 4px;
 border: none;
 width: 83%;
 height: 44px;
@@ -225,7 +224,7 @@ outline: none;
 export const SendButton = styled.button`
 padding: 10px;
 padding-bottom: 13px;
-border-radius: 0px 4px 4px 0px;
+border-radius: 0 4px 4px 0;
 border: none;
 width: 17%;
 height: 45px;

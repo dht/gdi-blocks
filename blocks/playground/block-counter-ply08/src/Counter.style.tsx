@@ -52,7 +52,7 @@ export const Container = styled(Grid.Container)`
 `;
 
 export const Row = styled(Grid.Row)`
-    padding: 30px 0px 0px 0px;
+    padding: 30px 0 0 0;
 
     ${device(
         'tablet',
@@ -212,7 +212,7 @@ export const CardContainer = styled(Grid.Column).attrs(() => ({
     ${device(
         'tablet',
             css`
-                padding: 0px;
+                padding: 0;
             `
     )}
 
