@@ -32,14 +32,13 @@ export type ContactStrings = {
 export type ContactColors = {};
 
 export type ContactExtra = {
-    contactImage: string;
+    ContactImageUrl?: string;
 };
 
 export function Contact(props: ContactProps) {
     const { extra, strings } = props;
-    const { contactImage } = extra;
+    const { ContactImageUrl } = extra;
     const { slogan, header, placeholder, buttonText } = strings;
-    console.log(slogan)
 
     return (
         <>
@@ -50,7 +49,7 @@ export function Contact(props: ContactProps) {
                             <ContactBack>
                                 <Row>
                                     <ColumnContainer>
-                                        <ContactImage src={contactImage} />
+                                        <ContactImage src={ContactImageUrl} />          
                                     </ColumnContainer>
                                     <ColumnContainer2>
                                         <Header> {header} </Header>

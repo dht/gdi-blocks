@@ -11,7 +11,7 @@ export const params: IWidgetParams = {
         },
         colors: {},
         extra: {
-            contactImage : {fieldType:'image', isRequired:true, order:2}
+            ContactImageUrl : {fieldType:'image', isRequired:true, order:1}
         },
     },
 };

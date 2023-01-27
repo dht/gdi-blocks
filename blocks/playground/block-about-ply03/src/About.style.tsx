@@ -154,47 +154,17 @@ export const AboutCard = styled.div`
     width: 32%;
     float: left;
     padding:40px 30px;
-    border-radius: 8px;
+    border-radius: 5px;
     margin-left: 64px;
-    border: 1px solid silver;
+    border: 1px solid #eaeaea;
     margin-top: 35px;
+    padding-bottom: 40px;
 
-    &.card1 {
-        margin-top: 70px !important;
-    }
+    overflow: hidden;
+  height: 300px;
+  text-overflow: ellipsis; 
 
-    &.card1:hover {
-        background-image: linear-gradient(
-            120deg,
-            rgba(87, 82, 208, 0.5) 0%,
-            #605bd2
-        );
-        box-shadow: 0 10px 19px 1px rgb(87 82 208 / 20%);
-    }
-
-    &.card2:hover {
-        background-image: linear-gradient(
-            120deg,
-            rgba(222, 54, 24, 0.6) 0%,
-            #de3618
-        );
-        box-shadow: 0 10px 19px 1px rgb(222 54 24 / 20%);
-    }
-
-    &.mtt-0 {
-        margin-top: -272px !important;
-        
-    }
-
-    &.mtt-0:hover {
-        background-image: linear-gradient(
-            120deg,
-            rgba(156, 106, 222, 0.6) 0%,
-            #9c6ade
-        );
-        box-shadow: 0 10px 19px 1px rgb(156 106 222 / 20%);
-    }
-
+    
     .ic {
         padding: 10px;
         background-color: antiquewhite;
@@ -208,18 +178,47 @@ export const AboutCard = styled.div`
     }
 
     &:hover {
-        
+    
+        transition-duration: 0.5s !important;
+        cursor: pointer;
+        transform: scale(1.03);
+    }
 
+    &:nth-child(1):hover{
+        background-image: linear-gradient(
+            120deg,
+            rgba(87, 82, 208, 0.5) 0%,
+            #605bd2
+        );
+        box-shadow: 0 10px 19px 1px rgb(87 82 208 / 20%);
+    };
+
+    &:nth-child(2):hover{
+        background-image: linear-gradient(
+            120deg,
+            rgba(222, 54, 24, 0.6) 0%,
+            #de3618
+        );
+        box-shadow: 0 10px 19px 1px rgb(222 54 24 / 20%);
+    };
+
+    &:nth-child(3):hover{
         background-image: linear-gradient(
             120deg,
             rgba(71, 193, 191, 0.6) 0%,
             #47c1bf
         );
+    border-radius: 5px;
         box-shadow: 0 10px 19px 1px rgb(71 193 191 / 20%);
+    };
 
-        transition-duration: 0.5s !important;
-        cursor: pointer;
-        transform: scale(1.03);
+    &:nth-child(4):hover{
+        background-image: linear-gradient(
+            120deg,
+            rgba(156, 106, 222, 0.6) 0%,
+            #9c6ade
+        );
+        box-shadow: 0 10px 19px 1px rgb(156 106 222 / 20%);
     }
 
     &:hover .h2 {
@@ -262,6 +261,8 @@ export const AboutCard = styled.div`
 
 
 
+
+
 export const Span = styled.span`
     font-size: 16px;
     color: #666666;
@@ -270,6 +271,7 @@ export const Span = styled.span`
     letter-spacing: 1px;
     font-family: 'Roboto' sans-serif;
 
+ 
     ${device(
         'HD',
         css`
@@ -286,7 +288,7 @@ export const Span = styled.span`
     )}
 `;
 
-export const Button = styled.button`
+    export const Button = styled.button`
     margin-top: 30px;
     padding: 15px 20px;
     border-radius: 30px;

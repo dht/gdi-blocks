@@ -5,11 +5,11 @@ export const sampleData: ISampleDataPerFlavour = {
             slogan: 'News and updates of our product, people & more ',
             header: 'Get updates at your inbox, Whenever you want it.',
             buttonText :"Subscribe Newsletter",
-            placeholder:"Email Address"
+            placeholder:"Email Address",
         },
         colors: {},
         extra: {
-            contactImage:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png"
+            ContactImageUrl:"https://webify-13e95.kxcdn.com/demo/webify/creative/wp-content/uploads/sites/8/2019/04/newsletter-img.png"
         },
     },
 };
