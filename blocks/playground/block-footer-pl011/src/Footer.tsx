@@ -132,7 +132,7 @@ export function Footer(props: FooterProps) {
                                     <Column className='col-lg-3'>
                                         <FooterList>
                                             <FooterListHeading>
-                                                {headers[1]}
+                                                {headers[2]}
                                             </FooterListHeading>
                                             {contactData.map(
                                                 (contact: Json) => {
